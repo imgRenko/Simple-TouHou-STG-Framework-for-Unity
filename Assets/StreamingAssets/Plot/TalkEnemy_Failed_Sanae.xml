@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Story>
+  <StoryText>
+     	<Text1 name ="早苗" value ="你不可能这么快适应符卡规则的？你也只是做出如此多的草草了事的符卡而已"/>
+     	<Text2 name ="梅莉" value ="呜呜......因为周围杂物太多了。"/>
+     	<Text3 name ="早苗" value ="什么意思？照这样子，你连活都活不下去。"/>
+  </StoryText>
+  <Num>
+    	<Num name ="ALLTalkStep" value ="2"/>
+  </Num>
+</Story>

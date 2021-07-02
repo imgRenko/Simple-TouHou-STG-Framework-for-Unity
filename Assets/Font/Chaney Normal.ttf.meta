@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 18d4392aef5877d46970fa432ce8fe7d
+timeCreated: 1497366496
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Chaney
+  fontNames:
+  - Chaney
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

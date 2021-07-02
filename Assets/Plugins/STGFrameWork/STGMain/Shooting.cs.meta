@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 2691613b9eb91a246986ed29a8022eb7
+timeCreated: 1597819820
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - CustomCollisionGroup: {instanceID: 0}
+  - BulletShootingObject: {instanceID: 0}
+  - CustomSprite: {fileID: 21300016, guid: 26f67eb0f5869ed42ab8f1bbfd614b95, type: 3}
+  - CreatingCustomSprite: {fileID: 21300018, guid: e0d9ad3715a425d42bfb5d0b4863e733,
+      type: 3}
+  - BulletBase: {instanceID: 0}
+  - MasterBulletObject: {instanceID: 0}
+  - _BezierController: {instanceID: 0}
+  - _Masterbullet: {instanceID: 0}
+  - ShootingOrginalData: {instanceID: 0}
+  executionOrder: 15
+  icon: {fileID: 2800000, guid: e84aa189032d86f4db47e62083f05426, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

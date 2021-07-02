@@ -1,0 +1,2529 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4232447690997939445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4232447690997939450}
+  - component: {fileID: 4232447690997939448}
+  - component: {fileID: 4232447690997939451}
+  m_Layer: 0
+  m_Name: Charge (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4232447690997939450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447690997939445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.09353034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4232447692201609302}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4232447690997939448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447690997939445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2691613b9eb91a246986ed29a8022eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateWithSelfComponent: 1
+  Canceled: 0
+  GlobalSpeedPercent: 1
+  UseShootingEvent: 1
+  UseShootingDestroy: 1
+  UseShootingUsing: 1
+  UseShootingFinishAllShotTask: 1
+  UseBulletEventWhenBulletCreate: 1
+  UseBulletEventWhenBulletDestroy: 1
+  UseBulletEventWhenBulletRestoreMainLevel: 1
+  UseBulletEventOnDestroyingPlayer: 1
+  UseBulletEvent: 1
+  CaluateDelayToPercent: 1
+  XmlShooting: 
+  ignoreSCExpression: 0
+  IgnorePlot: 0
+  InvaildDestroy: 0
+  UseThread: 0
+  Note: "\u8981\u63CF\u8FF0\u8FD9\u4E2A\u53D1\u5C04\u5668\uFF0C\u8BF7\u5728\u8FD9\u91CC\u7559\u4E0B\u6CE8\u91CA\u3002"
+  BulletTag: 
+  Orginal: {x: 0, y: 0}
+  PositionIncrement: {x: 0, y: 0}
+  UseRandomOffset: 0
+  XOffset: 1
+  YOffset: 1
+  useEllipse: 0
+  keepRegularEllipse: 1
+  ellipseSize: {x: 1, y: 1}
+  ellipseScale: 0
+  ellipseRotation: 0
+  Radius: 2
+  RadiusIncrement: 0
+  UseRandomRadius: 0
+  RadiusOffset: 5
+  ShootingSpeed: 1
+  ShootingAcceleratedSpeed: 0
+  MoveDirection: 0
+  MoveDirectionOffset: 0
+  MoveShooting: 0
+  CanShoot: 1
+  Way: 1
+  SpecialBounsShoot: 0
+  Delay: 0
+  UseRandomWay: 0
+  WayOffset: 3
+  Timer: 2
+  Range: 360
+  Angle: -109.90436
+  MaxAngle: 360
+  MinAngle: -360
+  AngleIncreament: 0
+  UseRandomAngle: 1
+  AngleOffset: 360
+  MaxFrame: 24
+  Reusable: 0
+  FollowPlayer: 0
+  firstLine: 0
+  middleIndex: 1
+  lineIndex: 0
+  DisallowInverse: 0
+  ChangeBulletRotationSmoothly: 0
+  ChangeInverseRotation: 0
+  BulletRotationSmoothlyPrecent: 0.05
+  RotationSmoothType: 1
+  BulletRotation: 0
+  BulletTargetRotation: 0
+  AimToPlayer: 0
+  UseRandomBulletRotation: 0
+  BulletRotationOffset: 1
+  BulletAcceleratedRotation: 0
+  Speed: -5.8
+  BulletTargetSpeed: 0
+  SpeedIncreament: 0
+  ChangeSpeedSmoothly: 0
+  ChangeSpeedPrecent: 0.05
+  SpeedSmoothType: 1
+  RandomSpeed: 0
+  SingleWayRandomSpeed: 0
+  MaxSpeed: 8
+  MinSpeed: -8
+  SpeedOffset: 1
+  AcceleratedSpeed: 0
+  RandomAcceleratedSpeed: 0
+  AcceleratedSpeedOffset: 1
+  UseDynamicsCollision: 1
+  NoCollisionWhenCreateAnimationPlaying: 1
+  CreateAnimationSpeed: 1
+  BulletCollision: 2
+  NoCollisionWhenAlphaLow: 0
+  UseCustomCollisionGroup: 0
+  CustomCollisionGroup: {fileID: 0}
+  SquareLength: {x: 0, y: 0}
+  CollisionRadius: 0.12
+  UseAlphaWithDepth: 0
+  minDepth: 0
+  maxDepth: 0.5
+  BulletBreakingAnimationName: BulletBreak1
+  BulletCreatingAnimationName: BulletCreate
+  NoCreateAnimation: 1
+  CreateAnimationIndex: 0
+  NoDestroyAnimation: 0
+  DestroyAnimationIndex: 0
+  TwistedRotation: 0
+  InverseRotation: 1
+  useTrails: 0
+  TrailLength: 20
+  TrailUpdate: 1
+  MaterialIndex: 1
+  BulletDepth: 0
+  BulletShootingObject: {fileID: 0}
+  FollowAngle: 0
+  ShootingShotMaxTime: -1
+  MakeSubBullet: 0
+  DonDestroyIfMasterDestroy: 0
+  MaxLiveFrame: 35
+  SpriteIndex: 0
+  DonDestroy: 0
+  UseCustomSprite: 1
+  UseBulletAnimation: 0
+  BulletSpritePerFrame: []
+  DestroyAnimSprites: []
+  useDefaultSprite: 0
+  WaitingTime: 3
+  CustomSprite: {fileID: 21300252, guid: 26f67eb0f5869ed42ab8f1bbfd614b95, type: 3}
+  CreatingCustomSprite: {fileID: 21300018, guid: e0d9ad3715a425d42bfb5d0b4863e733,
+    type: 3}
+  BulletColor: {r: 1, g: 1, b: 1, a: 0.584}
+  BrokenBulletColor: {r: 1, g: 1, b: 1, a: 1}
+  CreateBulletColor: {r: 1, g: 1, b: 1, a: 0.603}
+  Scale: {x: 1, y: 1}
+  EnabledGlobalOffset: 0
+  GlobalOffset: {x: 0, y: 0}
+  EnabledAcceleratedGlobalOffset: 0
+  AcceleratedGlobalOffset: {x: 0, y: 0}
+  DestroyWhenDonRender: 1
+  EnableForForce: 0
+  ForceObject: []
+  Share: 0
+  Continue: 0
+  ApplyTrigger: 0
+  TriggerList: []
+  AvoidPlayer: 1
+  AvoidRange: 0.3
+  Graze: 0
+  rollBack: 0
+  EnemyShooting: 0
+  followRotation: 1
+  RadiusDirection: 0
+  RandomRadiusDirection: 360
+  DefaultEnabled: 0
+  order: 1
+  TempValue: []
+  TempValueIncrease: []
+  TempValueBool: 
+  PlayerSound: 0
+  Sound: []
+  IntervalSoundTime: 4
+  ShotMess: 0
+  ReadPointTrackSpeed: 0
+  LoopTrack: 0
+  CalculateAngle: 1
+  FilpX: 0
+  FilpY: 0
+  ShotAtPlayer: 0
+  FollowObjectWithSameAngle: 0
+  delayRunTime: 0
+  RandomTimer: 3
+  EnableRandomTimer: 0
+  displayer: 0
+  thisTransform: {fileID: 0}
+  BulletBase: {fileID: 0}
+  trackDataInfoRemaining:
+    animationCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    calculateFrame: 1
+    targetPos: {x: 0, y: 0, z: 0}
+    regularPattern: 0
+  bulletIndexChecking: 0
+  CopySign: 0
+  ShotIndex: 765
+  ShotBullet:
+  - {fileID: 0}
+  ShootSubBullet: 0
+  MasterBulletObject: {fileID: 0}
+  XMLPath: 
+  BezierPointTrack: []
+  _BezierController: {fileID: 0}
+  TotalFrame: 0
+  _Masterbullet: {fileID: 0}
+  ShootingOrginalData: {fileID: 4232447690997939448}
+--- !u!114 &4232447690997939451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447690997939445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf3f6369dd820e4b829531454bd32c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  TargetShooting:
+  - {fileID: 4232447690997939448}
+  autoGet: 1
+  autoGetBullet: 0
+  Note: "\uFF08\u4E8E\u6B64\u5904\u8F93\u5165\u6CE8\u89E3\uFF09"
+  ForOnlyOne: 0
+  Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 100
+      value: 1200
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  CurveX:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  CurveY:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Red:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Green:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Blue:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Alpha:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isVector2: 0
+  isVector4: 0
+  EnableRelection: 1
+  simpleSetting: 0
+  ParmIndex: 53
+  caluateToFrame: 1
+  ShootingTime: 0
+  Intend: {fileID: 0}
+  CurveChange: []
+  RandomKeySettings: []
+  groupStrings: []
+  frameSetting: []
+  Name:
+  - "\u4F5C\u4E3A\u654C\u4EBA\u79FB\u52A8\u5668\u4F7F\u7528"
+  - "\u76EE\u7684\u654C\u4EBA"
+  - "\u4F7F\u7528\u534F\u7A0B\u4E8B\u4EF6"
+  - "\u53EF\u590D\u7528\u5B50\u5F39"
+  - "\u51CF\u4F4E\u5B50\u5F39\u9500\u6BC1\u53EF\u80FD\u6027"
+  - "\u6D89\u53CA\u5168\u5C40\u901F\u5EA6"
+  - "\u4E8E\u7279\u522B\u60C5\u51B5\u6682\u505C\u8FD0\u52A8"
+  - "\u5B50\u5F39Tag"
+  - "\u5B50\u5F39\u8FD0\u52A8\u901F\u5EA6"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6"
+  - "\u8F68\u8FF9\u957F\u5EA6"
+  - "\u8F68\u8FF9\u5237\u65B0\u901F\u5EA6"
+  - "\u5E73\u6ED1\u6539\u53D8\u5B50\u5F39\u901F\u5EA6"
+  - "\u5B50\u5F39\u901F\u5EA6\u63D2\u503C\u901F\u5EA6"
+  - "\u901F\u5EA6\u63D2\u503C\u65B9\u5F0F"
+  - AcceleratedSpeedDirectionNow
+  - "\u5168\u5C40\u52A0\u901F\u5EA6\u65B9\u5411"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411"
+  - "\u5B50\u5F39\u89D2\u901F\u5EA6"
+  - "\u5E73\u6ED1\u6539\u53D8\u89D2\u901F\u5EA6"
+  - "\u89D2\u901F\u5EA6\u63D2\u503C\u901F\u5EA6"
+  - "\u89D2\u901F\u5EA6\u63D2\u503C\u65B9\u5F0F"
+  - "\u78B0\u649E\u534A\u5F84"
+  - SpriteIndex
+  - "\u5B50\u5F39\u4F7F\u7528\u5BFF\u547D"
+  - "\u5B50\u5F39\u5E74\u9F84"
+  - "\u5DF2\u7ECF\u64E6\u5F39"
+  - "\u65F6\u523B\u7784\u51C6\u73A9\u5BB6"
+  - "\u4E0D\u8FDB\u884C\u9500\u6BC1"
+  - "\u4F7F\u7528\u8F68\u8FF9"
+  - BulletPos
+  - "\u4F7F\u7528\u5B50\u5F39"
+  - BulletShooting
+  - BulletIndex
+  - BulletSprite
+  - BulletSpriteRenderer
+  - TriggerList
+  - BrokenBulletColor
+  - BulletColor
+  - BulletSpriteController
+  - UseCollision
+  - UseCustomCollisionGroup
+  - CustomCollisionGroupMainController
+  - Trail
+  - TrailShooting
+  - CustomCollisionGroup
+  - BulletCollision
+  - SquareLength
+  - Scale
+  - trackData
+  - BulletBreakingAnimationName
+  - TwistedRotation
+  - InverseRotation
+  - InverseRotateDirection
+  - DestroyWhenDontRender
+  - NoDestroyAnimation
+  - NoCollisionWhenCreateAnimationPlaying
+  - NoCollisionWhenAlphaLow
+  - UseCustomAnimation
+  - EnabledAcceleratedGlobalOffset
+  - EnabledGlobalOffset
+  - animationController
+  - ChangeInverseRotation
+  - DonDestroyIfMasterDestroy
+  - BulletFramesSprites
+  - UseForce
+  - UseAlphaWithDepth
+  - delayBulletEventRunTime
+  - minDepth
+  - maxDepth
+  - ForceObject
+  - nextFramewaitTime
+  - ID
+  - BarrageBatch
+  - CreateAnimationPlayed
+  - ReadPointTrackSpeed
+  - Pos_X
+  - Pos_Y
+  - BezierPointTrack
+  - FilpX
+  - FilpY
+  - SingleParmCurve
+  - AnimationControl
+  - TargetSpeed
+  - TargetRotation
+  - Parent
+  - AsSubBullet
+  - SubBullet
+  - ShootingRef
+  - PlayerCharacter
+  - Player
+  - Zero
+  - OtherObject
+  - DestroyAnimSprites
+  - trackInfoSign
+  - DestroyMode
+  - countingTime
+  - FollowObjectWithSameAngle
+  - CommandList
+  - trackLerpBegin
+  - trackCount
+  - OriSpd
+  - originalPatternPos
+  - inTrigger
+  - BulletTransform
+  - EnableBulletEvent
+  - shootingIndex
+  - TempValueInt
+  - TempValueFloat
+  - TempValueBool
+  - UnitScale
+  - EnableFollow
+  - EnableTrail
+  ShootingName:
+  - "\u65E0\u5F3A\u5236\u53D1\u5C04\u8981\u6C42\uFF0C\u4E0D\u53D1\u5C04\u5B50\u5F39"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u901F\u5EA6\u63A7\u5236\u767E\u5206\u6BD4"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u64AD\u653E\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u88AB\u9500\u6BC1\u65F6\u662F\u5426\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u4F7F\u7528\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u5B8C\u6210\u5168\u90E8\u53D1\u5C04\u4EFB\u52A1\u65F6\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u521B\u5EFA\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u88AB\u9500\u6BC1\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u6062\u590D\u4E3B\u5C42\u7EA7\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u51FB\u4E2D\u73A9\u5BB6\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u8FD0\u52A8\u65F6\u4E8B\u4EF6"
+  - "\u8BA1\u7B97\u5EF6\u8FDF\u65F6\u95F4\u5230\u5355\u4F4D\u767E\u5206\u6BD4"
+  - "\u4F7F\u7528XML\u6570\u636E\u6587\u4EF6\u50A8\u5B58\u53D1\u5C04\u5668\u6570\u636E"
+  - "\u5FFD\u7565\u58F0\u660E\u7B26\u5361\u65F6\u95F4\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u5FFD\u7565\u5267\u60C5\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u9664\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u6D88\u5F39\u5176\u4F59\u60C5\u51B5\u4E0D\u6D88\u5F39"
+  - "\u4F7F\u7528\u534F\u540C\u4E8B\u4EF6"
+  - Note
+  - BulletTag
+  - "\u53D1\u5C04\u5668\u53D1\u5C04\u4E2D\u5FC3\u539F\u70B9"
+  - "\u4F4D\u7F6E\u539F\u70B9\u81EA\u589E\u503C(\u5DF2\u88AB\u5F03\u7528\u53C2\u6570)"
+  - "\u5141\u8BB8\u968F\u673A\u539F\u70B9"
+  - "\u539F\u70B9X\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u539F\u70B9Y\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u5141\u8BB8\u4F7F\u7528\u692D\u5706"
+  - "\u4FDD\u6301\u692D\u5706\u89C4\u6574(\u4E0D\u518D\u4F7F\u7528)"
+  - "\u692D\u5706\u957F\u77ED\u8F74\u5411\u91CF"
+  - "\u692D\u5706\u653E\u5927\u500D\u6570"
+  - "\u692D\u5706\u65CB\u8F6C\u5EA6\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5706\u5F62\u5F39\u5E55\u4F7F\u7528\u968F\u673A\u534A\u5F84\u53C2\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u968F\u673A\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u52A0\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411\u968F\u673A\u504F\u79FB"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u8FDB\u884C\u79FB\u52A8"
+  - CanShoot
+  - "\u5F39\u5E55\u53D1\u5C04\u6761\u6570"
+  - "\u989D\u5916\u53D1\u5C04\u6B21\u6570"
+  - "\u5EF6\u8FDF\u53D1\u5C04\u65F6\u95F4"
+  - "\u5141\u8BB8\u5F39\u5E55\u4EE5\u968F\u673A\u6761\u6570\u53D1\u5C04"
+  - "\u5F39\u5E55\u968F\u673A\u6761\u6570\u8303\u56F4"
+  - "\u53D1\u5C04\u95F4\u9694"
+  - "\u53D1\u5C04\u8303\u56F4"
+  - "\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5927\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5C0F\u53D1\u5C04\u5EA6\u6570"
+  - "\u53D1\u5C04\u89D2\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u968F\u673A\u53D1\u5C04\u89D2\u5EA6"
+  - "\u968F\u673A\u53D1\u5C04\u89D2\u5EA6\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u4F7F\u7528\u5E27\u6570"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u590D\u7528"
+  - "\u81EA\u673A\u72D9\u5B50\u5F39"
+  - "\u628A\u7B2C\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6700\u4E2D\u592E\u7684\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6307\u5B9A\u7684\u6761\u5E8F\u53F7\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - DisallowInverse
+  - "\u5141\u8BB8\u5E73\u6ED1\u6539\u53D8\u5B50\u5F39\u901F\u5EA6\u65B9\u5411(\u8BF7\u4F7F\u7528BaseEvent)"
+  - "\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u767E\u5206\u6BD4"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u65B9\u5F0F"
+  - "\u5B50\u5F39\u671D\u5411"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u76EE\u6807\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u59CB\u7EC8\u671D\u5411\u73A9\u5BB6"
+  - "\u5141\u8BB8\u968F\u673A\u901F\u5EA6\u65B9\u5411"
+  - "\u968F\u673A\u901F\u5EA6\u65B9\u5411\u8303\u56F4\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u81EA\u589E\u503C"
+  - "\u5B50\u5F39\u8FD0\u52A8\u901F\u5EA6"
+  - "\u5B50\u5F39\u5E73\u6ED1\u901F\u5EA6\u76EE\u7684\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u5230\u67D0\u4E00\u4E2A\u503C"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u767E\u5206\u6BD4"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u65B9\u5F0F"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u5355\u8DEF\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u6700\u5927\u5B50\u5F39\u901F\u5EA6"
+  - "\u6700\u5C0F\u5B50\u5F39\u901F\u5EA6"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6\u8303\u56F4"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u968F\u673A\u52A0\u901F\u5EA6"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6\u968F\u673A\u8303\u56F4"
+  - "\u5141\u8BB8\u52A8\u6001\u78B0\u649E\u76D2"
+  - "\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u65F6\u65E0\u78B0\u649E"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u64AD\u653E\u901F\u5EA6"
+  - "\u5B50\u5F39\u78B0\u649E\u65B9\u5F0F"
+  - "\u900F\u660E\u5EA6\u8FC7\u4F4E\u4E0D\u4F7F\u7528\u5B50\u5F39\u78B0\u649E"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2"
+  - "\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2\u5BF9\u8C61"
+  - "\u78B0\u649E\u77E9\u5F62\u5BF9\u89D2\u7EBF\u5411\u91CF"
+  - "\u78B0\u649E\u5706\u5F62\u534A\u5F84"
+  - "\u5B50\u5F39\u900F\u660E\u5EA6\u968F\u6DF1\u5EA6\u53D8\u5316(\u5B9E\u9A8C)"
+  - "\u5B50\u5F39\u6700\u4F4E\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u6700\u9AD8\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u9500\u6BC1\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u5B50\u5F39\u521B\u5EFA\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u5E8F\u53F7"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u9500\u6BC1\u52A8\u753B"
+  - "\u5B50\u5F39\u9500\u6BC1\u52A8\u753B\u5E8F\u53F7"
+  - "\u5141\u8BB8\u5B50\u5F39\u626D\u66F2\u65CB\u8F6C"
+  - "\u5141\u8BB8\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5141\u8BB8\u62D6\u5C3E\u6548\u679C(\u8017\u8D39\u6027\u80FD)"
+  - "\u62D6\u5C3E\u957F\u5EA6"
+  - "\u62D6\u5C3E\u66F4\u65B0\u65F6\u95F4(\u8D8A\u77ED\u8D8A\u6E05\u695A)"
+  - "\u5B50\u5F39\u6750\u8D28"
+  - "\u5B50\u5F39\u6DF1\u5EA6"
+  - "\u88AB\u53D1\u5C04\u5B50\u5F39\u9700\u8981\u643A\u5E26\u7684\u5BF9\u8C61"
+  - "\u643A\u5E26\u5B50\u5F39\u4E0E\u53D1\u5C04\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u4E00\u81F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u53D1\u5C04\u6B21\u6570"
+  - "\u643A\u5E26\u5B50\u5F39\u4F5C\u4E3A\u5B50\u7EA7\u5B50\u5F39\u8DDF\u968F\u7236\u7EA7\u5B50\u5F39"
+  - "\u7236\u7EA7\u5B50\u5F39\u9500\u6BC1\u4E0D\u9500\u6BC1\u5B50\u7EA7\u5B50\u5F39"
+  - "\u5B50\u5F39\u6700\u5927\u4F7F\u7528\u65F6\u95F4"
+  - "\u5B50\u5F39\u56FE\u50CF\u7EC4\u5E8F\u53F7"
+  - "\u51CF\u5C11\u5B50\u5F39\u9500\u6BC1\u53EF\u80FD\u6027"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u5B50\u5F39\u5916\u89C2"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u5B50\u5F39\u9500\u6BC1\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u4F7F\u7528\u9ED8\u8BA4\u96C6\u5408"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B\u64AD\u653E\u95F4\u9694"
+  - CustomSprite
+  - CreatingCustomSprite
+  - BulletColor
+  - BrokenBulletColor
+  - CreateBulletColor
+  - "\u5B50\u5F39\u7F29\u653E"
+  - "\u542F\u7528\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u542F\u7528\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u51FA\u5C4F\u9500\u6BC1\u5B50\u5F39"
+  - "\u5141\u8BB8\u7ED9\u5B50\u5F39\u4F7F\u7528\u529B\u573A"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u529B\u573A\u5BF9\u8C61"
+  - "\u5171\u4EAB\u53D1\u5C04\u5668"
+  - "\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u4E0D\u5173\u95ED\u53D1\u5C04\u5668"
+  - "\u4F7F\u53D1\u5C04\u7684\u5B50\u5F39\u5E94\u7528\u89E6\u53D1\u5668"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u89E6\u53D1\u5668\u5BF9\u8C61"
+  - "\u5141\u8BB8\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6"
+  - "\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6\u7684\u8303\u56F4"
+  - "\u5DF2\u7ECF\u5B9E\u73B0\u64E6\u5F39"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u56DE\u6EDA"
+  - "\u4F5C\u4E3A\u654C\u4EBA\u53D1\u5C04\u5668(\u5DF2\u7ECF\u542F\u7528)"
+  - "\u968F\u5BF9\u8C61\u65CB\u8F6C\u5EA6\u8C03\u6574\u53D1\u5C04\u89D2\u5EA6"
+  - "\u534A\u5F84\u65B9\u5411"
+  - "\u968F\u673A\u534A\u5F84\u65B9\u5411\u8303\u56F4"
+  - DefaultEnabled
+  - "\u56DE\u6EDA\u4E8B\u4EF6\u5728\u811A\u672C\u4E2D\u987A\u5E8F"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u4E34\u65F6\u5E03\u5C14\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u64AD\u653E\u58F0\u97F3"
+  - "\u58F0\u6E90"
+  - "\u64AD\u653E\u58F0\u97F3\u95F4\u9694"
+  - "\u5C04\u51FB\u6DF7\u4E71\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u8BFB\u53D6\u901F\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u5FAA\u73AF"
+  - "\u8BA1\u7B97\u8D1D\u585E\u5C14\u66F2\u7EBF\u5207\u7EBF"
+  - "\u5B50\u5F39\u56FE\u50CFX\u8F74\u53CD\u8F6C"
+  - "\u5B50\u5F39\u56FE\u50CFY\u8F74\u53CD\u8F6C"
+  - ShotAtPlayer
+  - "\u5B50\u5F39\u643A\u5E26\u5BF9\u8C61\u9700\u8981\u65CB\u8F6C\u5750\u6807\u7CFB"
+  - "\u5B50\u5F39\u66F2\u7EBF\u4E8B\u4EF6\u5EF6\u8FDF\u6267\u884C\u65F6\u95F4"
+  - "\u968F\u673A\u53D1\u5C04\u5468\u671F\u8303\u56F4"
+  - "\u542F\u7528\u968F\u673A\u53D1\u5C04\u5468\u671F"
+  - BulletBase
+  - trackDataInfoRemaining
+  - bulletIndexChecking
+  - ShotIndex
+  - ShotBullet
+  - ShootSubBullet
+  - MasterBulletObject
+  - XMLPath
+  - XmlDocumentary
+  - Key
+  - BezierPointTrack
+  - _BezierController
+  - TotalFrame
+  - _Masterbullet
+  - ShootingOrginalData
+  - "\u65E0\u5F3A\u5236\u53D1\u5C04\u8981\u6C42\uFF0C\u4E0D\u53D1\u5C04\u5B50\u5F39"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u901F\u5EA6\u63A7\u5236\u767E\u5206\u6BD4"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u64AD\u653E\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u88AB\u9500\u6BC1\u65F6\u662F\u5426\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u4F7F\u7528\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u5B8C\u6210\u5168\u90E8\u53D1\u5C04\u4EFB\u52A1\u65F6\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u521B\u5EFA\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u88AB\u9500\u6BC1\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u6062\u590D\u4E3B\u5C42\u7EA7\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u51FB\u4E2D\u73A9\u5BB6\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u8FD0\u52A8\u65F6\u4E8B\u4EF6"
+  - "\u8BA1\u7B97\u5EF6\u8FDF\u65F6\u95F4\u5230\u5355\u4F4D\u767E\u5206\u6BD4"
+  - "\u4F7F\u7528XML\u6570\u636E\u6587\u4EF6\u50A8\u5B58\u53D1\u5C04\u5668\u6570\u636E"
+  - "\u5FFD\u7565\u58F0\u660E\u7B26\u5361\u65F6\u95F4\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u5FFD\u7565\u5267\u60C5\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u9664\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u6D88\u5F39\u5176\u4F59\u60C5\u51B5\u4E0D\u6D88\u5F39"
+  - "\u4F7F\u7528\u534F\u540C\u4E8B\u4EF6"
+  - Note
+  - BulletTag
+  - "\u53D1\u5C04\u5668\u53D1\u5C04\u4E2D\u5FC3\u539F\u70B9"
+  - "\u4F4D\u7F6E\u539F\u70B9\u81EA\u589E\u503C(\u5DF2\u88AB\u5F03\u7528\u53C2\u6570)"
+  - "\u5141\u8BB8\u968F\u673A\u539F\u70B9"
+  - "\u539F\u70B9X\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u539F\u70B9Y\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u5141\u8BB8\u4F7F\u7528\u692D\u5706"
+  - "\u4FDD\u6301\u692D\u5706\u89C4\u6574(\u4E0D\u518D\u4F7F\u7528)"
+  - "\u692D\u5706\u957F\u77ED\u8F74\u5411\u91CF"
+  - "\u692D\u5706\u653E\u5927\u500D\u6570"
+  - "\u692D\u5706\u65CB\u8F6C\u5EA6\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5706\u5F62\u5F39\u5E55\u4F7F\u7528\u968F\u673A\u534A\u5F84\u53C2\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u968F\u673A\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u52A0\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411\u968F\u673A\u504F\u79FB"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u8FDB\u884C\u79FB\u52A8"
+  - CanShoot
+  - "\u5F39\u5E55\u53D1\u5C04\u6761\u6570"
+  - "\u989D\u5916\u53D1\u5C04\u6B21\u6570"
+  - "\u5EF6\u8FDF\u53D1\u5C04\u65F6\u95F4"
+  - "\u5141\u8BB8\u5F39\u5E55\u4EE5\u968F\u673A\u6761\u6570\u53D1\u5C04"
+  - "\u5F39\u5E55\u968F\u673A\u6761\u6570\u8303\u56F4"
+  - "\u53D1\u5C04\u95F4\u9694"
+  - "\u53D1\u5C04\u8303\u56F4"
+  - "\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5927\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5C0F\u53D1\u5C04\u5EA6\u6570"
+  - "\u53D1\u5C04\u89D2\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u968F\u673A\u53D1\u5C04\u89D2\u5EA6"
+  - "\u968F\u673A\u53D1\u5C04\u89D2\u5EA6\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u4F7F\u7528\u5E27\u6570"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u590D\u7528"
+  - "\u81EA\u673A\u72D9\u5B50\u5F39"
+  - "\u628A\u7B2C\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6700\u4E2D\u592E\u7684\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6307\u5B9A\u7684\u6761\u5E8F\u53F7\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - DisallowInverse
+  - "\u5141\u8BB8\u5E73\u6ED1\u6539\u53D8\u5B50\u5F39\u901F\u5EA6\u65B9\u5411(\u8BF7\u4F7F\u7528BaseEvent)"
+  - "\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u767E\u5206\u6BD4"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u65B9\u5F0F"
+  - "\u5B50\u5F39\u671D\u5411"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u76EE\u6807\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u59CB\u7EC8\u671D\u5411\u73A9\u5BB6"
+  - "\u5141\u8BB8\u968F\u673A\u901F\u5EA6\u65B9\u5411"
+  - "\u968F\u673A\u901F\u5EA6\u65B9\u5411\u8303\u56F4\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u81EA\u589E\u503C"
+  - "\u5B50\u5F39\u8FD0\u52A8\u901F\u5EA6"
+  - "\u5B50\u5F39\u5E73\u6ED1\u901F\u5EA6\u76EE\u7684\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u5230\u67D0\u4E00\u4E2A\u503C"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u767E\u5206\u6BD4"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u65B9\u5F0F"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u5355\u8DEF\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u6700\u5927\u5B50\u5F39\u901F\u5EA6"
+  - "\u6700\u5C0F\u5B50\u5F39\u901F\u5EA6"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6\u8303\u56F4"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u968F\u673A\u52A0\u901F\u5EA6"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6\u968F\u673A\u8303\u56F4"
+  - "\u5141\u8BB8\u52A8\u6001\u78B0\u649E\u76D2"
+  - "\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u65F6\u65E0\u78B0\u649E"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u64AD\u653E\u901F\u5EA6"
+  - "\u5B50\u5F39\u78B0\u649E\u65B9\u5F0F"
+  - "\u900F\u660E\u5EA6\u8FC7\u4F4E\u4E0D\u4F7F\u7528\u5B50\u5F39\u78B0\u649E"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2"
+  - "\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2\u5BF9\u8C61"
+  - "\u78B0\u649E\u77E9\u5F62\u5BF9\u89D2\u7EBF\u5411\u91CF"
+  - "\u78B0\u649E\u5706\u5F62\u534A\u5F84"
+  - "\u5B50\u5F39\u900F\u660E\u5EA6\u968F\u6DF1\u5EA6\u53D8\u5316(\u5B9E\u9A8C)"
+  - "\u5B50\u5F39\u6700\u4F4E\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u6700\u9AD8\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u9500\u6BC1\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u5B50\u5F39\u521B\u5EFA\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u5E8F\u53F7"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u9500\u6BC1\u52A8\u753B"
+  - "\u5B50\u5F39\u9500\u6BC1\u52A8\u753B\u5E8F\u53F7"
+  - "\u5141\u8BB8\u5B50\u5F39\u626D\u66F2\u65CB\u8F6C"
+  - "\u5141\u8BB8\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5141\u8BB8\u62D6\u5C3E\u6548\u679C(\u8017\u8D39\u6027\u80FD)"
+  - "\u62D6\u5C3E\u957F\u5EA6"
+  - "\u62D6\u5C3E\u66F4\u65B0\u65F6\u95F4(\u8D8A\u77ED\u8D8A\u6E05\u695A)"
+  - "\u5B50\u5F39\u6750\u8D28"
+  - "\u5B50\u5F39\u6DF1\u5EA6"
+  - "\u88AB\u53D1\u5C04\u5B50\u5F39\u9700\u8981\u643A\u5E26\u7684\u5BF9\u8C61"
+  - "\u643A\u5E26\u5B50\u5F39\u4E0E\u53D1\u5C04\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u4E00\u81F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u53D1\u5C04\u6B21\u6570"
+  - "\u643A\u5E26\u5B50\u5F39\u4F5C\u4E3A\u5B50\u7EA7\u5B50\u5F39\u8DDF\u968F\u7236\u7EA7\u5B50\u5F39"
+  - "\u7236\u7EA7\u5B50\u5F39\u9500\u6BC1\u4E0D\u9500\u6BC1\u5B50\u7EA7\u5B50\u5F39"
+  - "\u5B50\u5F39\u6700\u5927\u4F7F\u7528\u65F6\u95F4"
+  - "\u5B50\u5F39\u56FE\u50CF\u7EC4\u5E8F\u53F7"
+  - "\u51CF\u5C11\u5B50\u5F39\u9500\u6BC1\u53EF\u80FD\u6027"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u5B50\u5F39\u5916\u89C2"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u5B50\u5F39\u9500\u6BC1\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u4F7F\u7528\u9ED8\u8BA4\u96C6\u5408"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B\u64AD\u653E\u95F4\u9694"
+  - CustomSprite
+  - CreatingCustomSprite
+  - BulletColor
+  - BrokenBulletColor
+  - CreateBulletColor
+  - "\u5B50\u5F39\u7F29\u653E"
+  - "\u542F\u7528\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u542F\u7528\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u51FA\u5C4F\u9500\u6BC1\u5B50\u5F39"
+  - "\u5141\u8BB8\u7ED9\u5B50\u5F39\u4F7F\u7528\u529B\u573A"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u529B\u573A\u5BF9\u8C61"
+  - "\u5171\u4EAB\u53D1\u5C04\u5668"
+  - "\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u4E0D\u5173\u95ED\u53D1\u5C04\u5668"
+  - "\u4F7F\u53D1\u5C04\u7684\u5B50\u5F39\u5E94\u7528\u89E6\u53D1\u5668"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u89E6\u53D1\u5668\u5BF9\u8C61"
+  - "\u5141\u8BB8\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6"
+  - "\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6\u7684\u8303\u56F4"
+  - "\u5DF2\u7ECF\u5B9E\u73B0\u64E6\u5F39"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u56DE\u6EDA"
+  - "\u4F5C\u4E3A\u654C\u4EBA\u53D1\u5C04\u5668(\u5DF2\u7ECF\u542F\u7528)"
+  - "\u968F\u5BF9\u8C61\u65CB\u8F6C\u5EA6\u8C03\u6574\u53D1\u5C04\u89D2\u5EA6"
+  - "\u534A\u5F84\u65B9\u5411"
+  - "\u968F\u673A\u534A\u5F84\u65B9\u5411\u8303\u56F4"
+  - DefaultEnabled
+  - "\u56DE\u6EDA\u4E8B\u4EF6\u5728\u811A\u672C\u4E2D\u987A\u5E8F"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u4E34\u65F6\u5E03\u5C14\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u64AD\u653E\u58F0\u97F3"
+  - "\u58F0\u6E90"
+  - "\u64AD\u653E\u58F0\u97F3\u95F4\u9694"
+  - "\u5C04\u51FB\u6DF7\u4E71\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u8BFB\u53D6\u901F\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u5FAA\u73AF"
+  - "\u8BA1\u7B97\u8D1D\u585E\u5C14\u66F2\u7EBF\u5207\u7EBF"
+  - "\u5B50\u5F39\u56FE\u50CFX\u8F74\u53CD\u8F6C"
+  - "\u5B50\u5F39\u56FE\u50CFY\u8F74\u53CD\u8F6C"
+  - ShotAtPlayer
+  - "\u5B50\u5F39\u643A\u5E26\u5BF9\u8C61\u9700\u8981\u65CB\u8F6C\u5750\u6807\u7CFB"
+  - "\u5B50\u5F39\u66F2\u7EBF\u4E8B\u4EF6\u5EF6\u8FDF\u6267\u884C\u65F6\u95F4"
+  - "\u968F\u673A\u53D1\u5C04\u5468\u671F\u8303\u56F4"
+  - "\u542F\u7528\u968F\u673A\u53D1\u5C04\u5468\u671F"
+  - thisTransform
+  - BulletBase
+  - trackDataInfoRemaining
+  - bulletIndexChecking
+  - CopySign
+  - ShotIndex
+  - ShotBullet
+  - ShootSubBullet
+  - MasterBulletObject
+  - XMLPath
+  - XmlDocumentary
+  - Key
+  - BezierPointTrack
+  - _BezierController
+  - TotalFrame
+  - _Masterbullet
+  - ShootingOrginalData
+  - "\u7528\u81EA\u8EAB\u7EC4\u4EF6\u66F4\u65B0"
+  CalculateCircle: 0
+  selfIncreasing: 0
+  OrderIndex: 0
+  OrderCurveIndex: 0
+  OrderCurveIndexX: 1
+  OrderCurveIndexY: 2
+  OrderCurveIndexR: 3
+  OrderCurveIndexG: 4
+  OrderCurveIndexB: 5
+  OrderCurveIndexA: 6
+--- !u!1 &4232447692027665701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4232447692027665706}
+  - component: {fileID: 4232447692027665704}
+  - component: {fileID: 4232447692027665707}
+  m_Layer: 0
+  m_Name: Charge (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4232447692027665706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447692027665701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.09353034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4232447692201609302}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4232447692027665704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447692027665701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2691613b9eb91a246986ed29a8022eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateWithSelfComponent: 1
+  Canceled: 0
+  GlobalSpeedPercent: 1
+  UseShootingEvent: 1
+  UseShootingDestroy: 1
+  UseShootingUsing: 1
+  UseShootingFinishAllShotTask: 1
+  UseBulletEventWhenBulletCreate: 1
+  UseBulletEventWhenBulletDestroy: 1
+  UseBulletEventWhenBulletRestoreMainLevel: 1
+  UseBulletEventOnDestroyingPlayer: 1
+  UseBulletEvent: 1
+  CaluateDelayToPercent: 1
+  XmlShooting: 
+  ignoreSCExpression: 0
+  IgnorePlot: 0
+  InvaildDestroy: 0
+  UseThread: 0
+  Note: "\u8981\u63CF\u8FF0\u8FD9\u4E2A\u53D1\u5C04\u5668\uFF0C\u8BF7\u5728\u8FD9\u91CC\u7559\u4E0B\u6CE8\u91CA\u3002"
+  BulletTag: 
+  Orginal: {x: 0, y: 0}
+  PositionIncrement: {x: 0, y: 0}
+  UseRandomOffset: 0
+  XOffset: 1
+  YOffset: 1
+  useEllipse: 0
+  keepRegularEllipse: 1
+  ellipseSize: {x: 1, y: 1}
+  ellipseScale: 0
+  ellipseRotation: 0
+  Radius: 2
+  RadiusIncrement: 0
+  UseRandomRadius: 0
+  RadiusOffset: 5
+  ShootingSpeed: 1
+  ShootingAcceleratedSpeed: 0
+  MoveDirection: 0
+  MoveDirectionOffset: 0
+  MoveShooting: 0
+  CanShoot: 1
+  Way: 1
+  SpecialBounsShoot: 0
+  Delay: 0
+  UseRandomWay: 0
+  WayOffset: 3
+  Timer: 2
+  Range: 360
+  Angle: 70.01933
+  MaxAngle: 360
+  MinAngle: -360
+  AngleIncreament: 0
+  UseRandomAngle: 1
+  AngleOffset: 360
+  MaxFrame: 24
+  Reusable: 0
+  FollowPlayer: 0
+  firstLine: 0
+  middleIndex: 1
+  lineIndex: 0
+  DisallowInverse: 0
+  ChangeBulletRotationSmoothly: 0
+  ChangeInverseRotation: 0
+  BulletRotationSmoothlyPrecent: 0.05
+  RotationSmoothType: 1
+  BulletRotation: 0
+  BulletTargetRotation: 0
+  AimToPlayer: 0
+  UseRandomBulletRotation: 0
+  BulletRotationOffset: 1
+  BulletAcceleratedRotation: 0
+  Speed: -5.8
+  BulletTargetSpeed: 0
+  SpeedIncreament: 0
+  ChangeSpeedSmoothly: 0
+  ChangeSpeedPrecent: 0.05
+  SpeedSmoothType: 1
+  RandomSpeed: 0
+  SingleWayRandomSpeed: 0
+  MaxSpeed: 8
+  MinSpeed: -8
+  SpeedOffset: 1
+  AcceleratedSpeed: 0
+  RandomAcceleratedSpeed: 0
+  AcceleratedSpeedOffset: 1
+  UseDynamicsCollision: 1
+  NoCollisionWhenCreateAnimationPlaying: 1
+  CreateAnimationSpeed: 1
+  BulletCollision: 2
+  NoCollisionWhenAlphaLow: 0
+  UseCustomCollisionGroup: 0
+  CustomCollisionGroup: {fileID: 0}
+  SquareLength: {x: 0, y: 0}
+  CollisionRadius: 0.24883202
+  UseAlphaWithDepth: 0
+  minDepth: 0
+  maxDepth: 0.5
+  BulletBreakingAnimationName: BulletBreak1
+  BulletCreatingAnimationName: BulletCreate
+  NoCreateAnimation: 1
+  CreateAnimationIndex: 0
+  NoDestroyAnimation: 0
+  DestroyAnimationIndex: 0
+  TwistedRotation: 0
+  InverseRotation: 1
+  useTrails: 0
+  TrailLength: 20
+  TrailUpdate: 1
+  MaterialIndex: 1
+  BulletDepth: 0
+  BulletShootingObject: {fileID: 0}
+  FollowAngle: 0
+  ShootingShotMaxTime: -1
+  MakeSubBullet: 0
+  DonDestroyIfMasterDestroy: 0
+  MaxLiveFrame: 35
+  SpriteIndex: 0
+  DonDestroy: 0
+  UseCustomSprite: 1
+  UseBulletAnimation: 0
+  BulletSpritePerFrame: []
+  DestroyAnimSprites: []
+  useDefaultSprite: 0
+  WaitingTime: 3
+  CustomSprite: {fileID: 21300252, guid: 26f67eb0f5869ed42ab8f1bbfd614b95, type: 3}
+  CreatingCustomSprite: {fileID: 21300018, guid: e0d9ad3715a425d42bfb5d0b4863e733,
+    type: 3}
+  BulletColor: {r: 1, g: 1, b: 1, a: 0.266}
+  BrokenBulletColor: {r: 1, g: 1, b: 1, a: 1}
+  CreateBulletColor: {r: 1, g: 1, b: 1, a: 0.603}
+  Scale: {x: 1.2, y: 1.2}
+  EnabledGlobalOffset: 0
+  GlobalOffset: {x: 0, y: 0}
+  EnabledAcceleratedGlobalOffset: 0
+  AcceleratedGlobalOffset: {x: 0, y: 0}
+  DestroyWhenDonRender: 1
+  EnableForForce: 0
+  ForceObject: []
+  Share: 0
+  Continue: 0
+  ApplyTrigger: 0
+  TriggerList: []
+  AvoidPlayer: 1
+  AvoidRange: 0.3
+  Graze: 0
+  rollBack: 0
+  EnemyShooting: 0
+  followRotation: 1
+  RadiusDirection: 0
+  RandomRadiusDirection: 360
+  DefaultEnabled: 0
+  order: 1
+  TempValue: []
+  TempValueIncrease: []
+  TempValueBool: 
+  PlayerSound: 0
+  Sound: []
+  IntervalSoundTime: 4
+  ShotMess: 0
+  ReadPointTrackSpeed: 0
+  LoopTrack: 0
+  CalculateAngle: 1
+  FilpX: 0
+  FilpY: 0
+  ShotAtPlayer: 0
+  FollowObjectWithSameAngle: 0
+  delayRunTime: 0
+  RandomTimer: 3
+  EnableRandomTimer: 0
+  displayer: 0
+  thisTransform: {fileID: 0}
+  BulletBase: {fileID: 0}
+  trackDataInfoRemaining:
+    animationCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    calculateFrame: 1
+    targetPos: {x: 0, y: 0, z: 0}
+    regularPattern: 0
+  bulletIndexChecking: 0
+  CopySign: 0
+  ShotIndex: 765
+  ShotBullet:
+  - {fileID: 0}
+  ShootSubBullet: 0
+  MasterBulletObject: {fileID: 0}
+  XMLPath: 
+  BezierPointTrack: []
+  _BezierController: {fileID: 0}
+  TotalFrame: 0
+  _Masterbullet: {fileID: 0}
+  ShootingOrginalData: {fileID: 4232447692027665704}
+--- !u!114 &4232447692027665707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447692027665701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf3f6369dd820e4b829531454bd32c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  TargetShooting:
+  - {fileID: 4232447692027665704}
+  autoGet: 1
+  autoGetBullet: 0
+  Note: "\uFF08\u4E8E\u6B64\u5904\u8F93\u5165\u6CE8\u89E3\uFF09"
+  ForOnlyOne: 0
+  Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 100
+      value: 1200
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  CurveX:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  CurveY:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Red:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Green:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Blue:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Alpha:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isVector2: 0
+  isVector4: 0
+  EnableRelection: 1
+  simpleSetting: 0
+  ParmIndex: 53
+  caluateToFrame: 1
+  ShootingTime: 0
+  Intend: {fileID: 0}
+  CurveChange: []
+  RandomKeySettings: []
+  groupStrings: []
+  frameSetting: []
+  Name:
+  - "\u4F5C\u4E3A\u654C\u4EBA\u79FB\u52A8\u5668\u4F7F\u7528"
+  - "\u76EE\u7684\u654C\u4EBA"
+  - "\u4F7F\u7528\u534F\u7A0B\u4E8B\u4EF6"
+  - "\u53EF\u590D\u7528\u5B50\u5F39"
+  - "\u51CF\u4F4E\u5B50\u5F39\u9500\u6BC1\u53EF\u80FD\u6027"
+  - "\u6D89\u53CA\u5168\u5C40\u901F\u5EA6"
+  - "\u4E8E\u7279\u522B\u60C5\u51B5\u6682\u505C\u8FD0\u52A8"
+  - "\u5B50\u5F39Tag"
+  - "\u5B50\u5F39\u8FD0\u52A8\u901F\u5EA6"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6"
+  - "\u8F68\u8FF9\u957F\u5EA6"
+  - "\u8F68\u8FF9\u5237\u65B0\u901F\u5EA6"
+  - "\u5E73\u6ED1\u6539\u53D8\u5B50\u5F39\u901F\u5EA6"
+  - "\u5B50\u5F39\u901F\u5EA6\u63D2\u503C\u901F\u5EA6"
+  - "\u901F\u5EA6\u63D2\u503C\u65B9\u5F0F"
+  - AcceleratedSpeedDirectionNow
+  - "\u5168\u5C40\u52A0\u901F\u5EA6\u65B9\u5411"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411"
+  - "\u5B50\u5F39\u89D2\u901F\u5EA6"
+  - "\u5E73\u6ED1\u6539\u53D8\u89D2\u901F\u5EA6"
+  - "\u89D2\u901F\u5EA6\u63D2\u503C\u901F\u5EA6"
+  - "\u89D2\u901F\u5EA6\u63D2\u503C\u65B9\u5F0F"
+  - "\u78B0\u649E\u534A\u5F84"
+  - SpriteIndex
+  - "\u5B50\u5F39\u4F7F\u7528\u5BFF\u547D"
+  - "\u5B50\u5F39\u5E74\u9F84"
+  - "\u5DF2\u7ECF\u64E6\u5F39"
+  - "\u65F6\u523B\u7784\u51C6\u73A9\u5BB6"
+  - "\u4E0D\u8FDB\u884C\u9500\u6BC1"
+  - "\u4F7F\u7528\u8F68\u8FF9"
+  - BulletPos
+  - "\u4F7F\u7528\u5B50\u5F39"
+  - BulletShooting
+  - BulletIndex
+  - BulletSprite
+  - BulletSpriteRenderer
+  - TriggerList
+  - BrokenBulletColor
+  - BulletColor
+  - BulletSpriteController
+  - UseCollision
+  - UseCustomCollisionGroup
+  - CustomCollisionGroupMainController
+  - Trail
+  - TrailShooting
+  - CustomCollisionGroup
+  - BulletCollision
+  - SquareLength
+  - Scale
+  - trackData
+  - BulletBreakingAnimationName
+  - TwistedRotation
+  - InverseRotation
+  - InverseRotateDirection
+  - DestroyWhenDontRender
+  - NoDestroyAnimation
+  - NoCollisionWhenCreateAnimationPlaying
+  - NoCollisionWhenAlphaLow
+  - UseCustomAnimation
+  - EnabledAcceleratedGlobalOffset
+  - EnabledGlobalOffset
+  - animationController
+  - ChangeInverseRotation
+  - DonDestroyIfMasterDestroy
+  - BulletFramesSprites
+  - UseForce
+  - UseAlphaWithDepth
+  - delayBulletEventRunTime
+  - minDepth
+  - maxDepth
+  - ForceObject
+  - nextFramewaitTime
+  - ID
+  - BarrageBatch
+  - CreateAnimationPlayed
+  - ReadPointTrackSpeed
+  - Pos_X
+  - Pos_Y
+  - BezierPointTrack
+  - FilpX
+  - FilpY
+  - SingleParmCurve
+  - AnimationControl
+  - TargetSpeed
+  - TargetRotation
+  - Parent
+  - AsSubBullet
+  - SubBullet
+  - ShootingRef
+  - PlayerCharacter
+  - Player
+  - Zero
+  - OtherObject
+  - DestroyAnimSprites
+  - trackInfoSign
+  - DestroyMode
+  - countingTime
+  - FollowObjectWithSameAngle
+  - CommandList
+  - trackLerpBegin
+  - trackCount
+  - OriSpd
+  - originalPatternPos
+  - inTrigger
+  - BulletTransform
+  - EnableBulletEvent
+  - shootingIndex
+  - TempValueInt
+  - TempValueFloat
+  - TempValueBool
+  - UnitScale
+  - EnableFollow
+  - EnableTrail
+  ShootingName:
+  - "\u65E0\u5F3A\u5236\u53D1\u5C04\u8981\u6C42\uFF0C\u4E0D\u53D1\u5C04\u5B50\u5F39"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u901F\u5EA6\u63A7\u5236\u767E\u5206\u6BD4"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u64AD\u653E\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u88AB\u9500\u6BC1\u65F6\u662F\u5426\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u4F7F\u7528\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u5B8C\u6210\u5168\u90E8\u53D1\u5C04\u4EFB\u52A1\u65F6\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u521B\u5EFA\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u88AB\u9500\u6BC1\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u6062\u590D\u4E3B\u5C42\u7EA7\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u51FB\u4E2D\u73A9\u5BB6\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u8FD0\u52A8\u65F6\u4E8B\u4EF6"
+  - "\u8BA1\u7B97\u5EF6\u8FDF\u65F6\u95F4\u5230\u5355\u4F4D\u767E\u5206\u6BD4"
+  - "\u4F7F\u7528XML\u6570\u636E\u6587\u4EF6\u50A8\u5B58\u53D1\u5C04\u5668\u6570\u636E"
+  - "\u5FFD\u7565\u58F0\u660E\u7B26\u5361\u65F6\u95F4\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u5FFD\u7565\u5267\u60C5\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u9664\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u6D88\u5F39\u5176\u4F59\u60C5\u51B5\u4E0D\u6D88\u5F39"
+  - "\u4F7F\u7528\u534F\u540C\u4E8B\u4EF6"
+  - Note
+  - BulletTag
+  - "\u53D1\u5C04\u5668\u53D1\u5C04\u4E2D\u5FC3\u539F\u70B9"
+  - "\u4F4D\u7F6E\u539F\u70B9\u81EA\u589E\u503C(\u5DF2\u88AB\u5F03\u7528\u53C2\u6570)"
+  - "\u5141\u8BB8\u968F\u673A\u539F\u70B9"
+  - "\u539F\u70B9X\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u539F\u70B9Y\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u5141\u8BB8\u4F7F\u7528\u692D\u5706"
+  - "\u4FDD\u6301\u692D\u5706\u89C4\u6574(\u4E0D\u518D\u4F7F\u7528)"
+  - "\u692D\u5706\u957F\u77ED\u8F74\u5411\u91CF"
+  - "\u692D\u5706\u653E\u5927\u500D\u6570"
+  - "\u692D\u5706\u65CB\u8F6C\u5EA6\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5706\u5F62\u5F39\u5E55\u4F7F\u7528\u968F\u673A\u534A\u5F84\u53C2\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u968F\u673A\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u52A0\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411\u968F\u673A\u504F\u79FB"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u8FDB\u884C\u79FB\u52A8"
+  - CanShoot
+  - "\u5F39\u5E55\u53D1\u5C04\u6761\u6570"
+  - "\u989D\u5916\u53D1\u5C04\u6B21\u6570"
+  - "\u5EF6\u8FDF\u53D1\u5C04\u65F6\u95F4"
+  - "\u5141\u8BB8\u5F39\u5E55\u4EE5\u968F\u673A\u6761\u6570\u53D1\u5C04"
+  - "\u5F39\u5E55\u968F\u673A\u6761\u6570\u8303\u56F4"
+  - "\u53D1\u5C04\u95F4\u9694"
+  - "\u53D1\u5C04\u8303\u56F4"
+  - "\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5927\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5C0F\u53D1\u5C04\u5EA6\u6570"
+  - "\u53D1\u5C04\u89D2\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u968F\u673A\u53D1\u5C04\u89D2\u5EA6"
+  - "\u968F\u673A\u53D1\u5C04\u89D2\u5EA6\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u4F7F\u7528\u5E27\u6570"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u590D\u7528"
+  - "\u81EA\u673A\u72D9\u5B50\u5F39"
+  - "\u628A\u7B2C\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6700\u4E2D\u592E\u7684\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6307\u5B9A\u7684\u6761\u5E8F\u53F7\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - DisallowInverse
+  - "\u5141\u8BB8\u5E73\u6ED1\u6539\u53D8\u5B50\u5F39\u901F\u5EA6\u65B9\u5411(\u8BF7\u4F7F\u7528BaseEvent)"
+  - "\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u767E\u5206\u6BD4"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u65B9\u5F0F"
+  - "\u5B50\u5F39\u671D\u5411"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u76EE\u6807\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u59CB\u7EC8\u671D\u5411\u73A9\u5BB6"
+  - "\u5141\u8BB8\u968F\u673A\u901F\u5EA6\u65B9\u5411"
+  - "\u968F\u673A\u901F\u5EA6\u65B9\u5411\u8303\u56F4\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u81EA\u589E\u503C"
+  - "\u5B50\u5F39\u8FD0\u52A8\u901F\u5EA6"
+  - "\u5B50\u5F39\u5E73\u6ED1\u901F\u5EA6\u76EE\u7684\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u5230\u67D0\u4E00\u4E2A\u503C"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u767E\u5206\u6BD4"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u65B9\u5F0F"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u5355\u8DEF\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u6700\u5927\u5B50\u5F39\u901F\u5EA6"
+  - "\u6700\u5C0F\u5B50\u5F39\u901F\u5EA6"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6\u8303\u56F4"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u968F\u673A\u52A0\u901F\u5EA6"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6\u968F\u673A\u8303\u56F4"
+  - "\u5141\u8BB8\u52A8\u6001\u78B0\u649E\u76D2"
+  - "\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u65F6\u65E0\u78B0\u649E"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u64AD\u653E\u901F\u5EA6"
+  - "\u5B50\u5F39\u78B0\u649E\u65B9\u5F0F"
+  - "\u900F\u660E\u5EA6\u8FC7\u4F4E\u4E0D\u4F7F\u7528\u5B50\u5F39\u78B0\u649E"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2"
+  - "\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2\u5BF9\u8C61"
+  - "\u78B0\u649E\u77E9\u5F62\u5BF9\u89D2\u7EBF\u5411\u91CF"
+  - "\u78B0\u649E\u5706\u5F62\u534A\u5F84"
+  - "\u5B50\u5F39\u900F\u660E\u5EA6\u968F\u6DF1\u5EA6\u53D8\u5316(\u5B9E\u9A8C)"
+  - "\u5B50\u5F39\u6700\u4F4E\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u6700\u9AD8\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u9500\u6BC1\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u5B50\u5F39\u521B\u5EFA\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u5E8F\u53F7"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u9500\u6BC1\u52A8\u753B"
+  - "\u5B50\u5F39\u9500\u6BC1\u52A8\u753B\u5E8F\u53F7"
+  - "\u5141\u8BB8\u5B50\u5F39\u626D\u66F2\u65CB\u8F6C"
+  - "\u5141\u8BB8\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5141\u8BB8\u62D6\u5C3E\u6548\u679C(\u8017\u8D39\u6027\u80FD)"
+  - "\u62D6\u5C3E\u957F\u5EA6"
+  - "\u62D6\u5C3E\u66F4\u65B0\u65F6\u95F4(\u8D8A\u77ED\u8D8A\u6E05\u695A)"
+  - "\u5B50\u5F39\u6750\u8D28"
+  - "\u5B50\u5F39\u6DF1\u5EA6"
+  - "\u88AB\u53D1\u5C04\u5B50\u5F39\u9700\u8981\u643A\u5E26\u7684\u5BF9\u8C61"
+  - "\u643A\u5E26\u5B50\u5F39\u4E0E\u53D1\u5C04\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u4E00\u81F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u53D1\u5C04\u6B21\u6570"
+  - "\u643A\u5E26\u5B50\u5F39\u4F5C\u4E3A\u5B50\u7EA7\u5B50\u5F39\u8DDF\u968F\u7236\u7EA7\u5B50\u5F39"
+  - "\u7236\u7EA7\u5B50\u5F39\u9500\u6BC1\u4E0D\u9500\u6BC1\u5B50\u7EA7\u5B50\u5F39"
+  - "\u5B50\u5F39\u6700\u5927\u4F7F\u7528\u65F6\u95F4"
+  - "\u5B50\u5F39\u56FE\u50CF\u7EC4\u5E8F\u53F7"
+  - "\u51CF\u5C11\u5B50\u5F39\u9500\u6BC1\u53EF\u80FD\u6027"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u5B50\u5F39\u5916\u89C2"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u5B50\u5F39\u9500\u6BC1\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u4F7F\u7528\u9ED8\u8BA4\u96C6\u5408"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B\u64AD\u653E\u95F4\u9694"
+  - CustomSprite
+  - CreatingCustomSprite
+  - BulletColor
+  - BrokenBulletColor
+  - CreateBulletColor
+  - "\u5B50\u5F39\u7F29\u653E"
+  - "\u542F\u7528\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u542F\u7528\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u51FA\u5C4F\u9500\u6BC1\u5B50\u5F39"
+  - "\u5141\u8BB8\u7ED9\u5B50\u5F39\u4F7F\u7528\u529B\u573A"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u529B\u573A\u5BF9\u8C61"
+  - "\u5171\u4EAB\u53D1\u5C04\u5668"
+  - "\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u4E0D\u5173\u95ED\u53D1\u5C04\u5668"
+  - "\u4F7F\u53D1\u5C04\u7684\u5B50\u5F39\u5E94\u7528\u89E6\u53D1\u5668"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u89E6\u53D1\u5668\u5BF9\u8C61"
+  - "\u5141\u8BB8\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6"
+  - "\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6\u7684\u8303\u56F4"
+  - "\u5DF2\u7ECF\u5B9E\u73B0\u64E6\u5F39"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u56DE\u6EDA"
+  - "\u4F5C\u4E3A\u654C\u4EBA\u53D1\u5C04\u5668(\u5DF2\u7ECF\u542F\u7528)"
+  - "\u968F\u5BF9\u8C61\u65CB\u8F6C\u5EA6\u8C03\u6574\u53D1\u5C04\u89D2\u5EA6"
+  - "\u534A\u5F84\u65B9\u5411"
+  - "\u968F\u673A\u534A\u5F84\u65B9\u5411\u8303\u56F4"
+  - DefaultEnabled
+  - "\u56DE\u6EDA\u4E8B\u4EF6\u5728\u811A\u672C\u4E2D\u987A\u5E8F"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u4E34\u65F6\u5E03\u5C14\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u64AD\u653E\u58F0\u97F3"
+  - "\u58F0\u6E90"
+  - "\u64AD\u653E\u58F0\u97F3\u95F4\u9694"
+  - "\u5C04\u51FB\u6DF7\u4E71\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u8BFB\u53D6\u901F\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u5FAA\u73AF"
+  - "\u8BA1\u7B97\u8D1D\u585E\u5C14\u66F2\u7EBF\u5207\u7EBF"
+  - "\u5B50\u5F39\u56FE\u50CFX\u8F74\u53CD\u8F6C"
+  - "\u5B50\u5F39\u56FE\u50CFY\u8F74\u53CD\u8F6C"
+  - ShotAtPlayer
+  - "\u5B50\u5F39\u643A\u5E26\u5BF9\u8C61\u9700\u8981\u65CB\u8F6C\u5750\u6807\u7CFB"
+  - "\u5B50\u5F39\u66F2\u7EBF\u4E8B\u4EF6\u5EF6\u8FDF\u6267\u884C\u65F6\u95F4"
+  - "\u968F\u673A\u53D1\u5C04\u5468\u671F\u8303\u56F4"
+  - "\u542F\u7528\u968F\u673A\u53D1\u5C04\u5468\u671F"
+  - BulletBase
+  - trackDataInfoRemaining
+  - bulletIndexChecking
+  - ShotIndex
+  - ShotBullet
+  - ShootSubBullet
+  - MasterBulletObject
+  - XMLPath
+  - XmlDocumentary
+  - Key
+  - BezierPointTrack
+  - _BezierController
+  - TotalFrame
+  - _Masterbullet
+  - ShootingOrginalData
+  - "\u65E0\u5F3A\u5236\u53D1\u5C04\u8981\u6C42\uFF0C\u4E0D\u53D1\u5C04\u5B50\u5F39"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u901F\u5EA6\u63A7\u5236\u767E\u5206\u6BD4"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u64AD\u653E\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u88AB\u9500\u6BC1\u65F6\u662F\u5426\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u4F7F\u7528\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u5B8C\u6210\u5168\u90E8\u53D1\u5C04\u4EFB\u52A1\u65F6\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u521B\u5EFA\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u88AB\u9500\u6BC1\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u6062\u590D\u4E3B\u5C42\u7EA7\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u51FB\u4E2D\u73A9\u5BB6\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u8FD0\u52A8\u65F6\u4E8B\u4EF6"
+  - "\u8BA1\u7B97\u5EF6\u8FDF\u65F6\u95F4\u5230\u5355\u4F4D\u767E\u5206\u6BD4"
+  - "\u4F7F\u7528XML\u6570\u636E\u6587\u4EF6\u50A8\u5B58\u53D1\u5C04\u5668\u6570\u636E"
+  - "\u5FFD\u7565\u58F0\u660E\u7B26\u5361\u65F6\u95F4\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u5FFD\u7565\u5267\u60C5\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u9664\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u6D88\u5F39\u5176\u4F59\u60C5\u51B5\u4E0D\u6D88\u5F39"
+  - "\u4F7F\u7528\u534F\u540C\u4E8B\u4EF6"
+  - Note
+  - BulletTag
+  - "\u53D1\u5C04\u5668\u53D1\u5C04\u4E2D\u5FC3\u539F\u70B9"
+  - "\u4F4D\u7F6E\u539F\u70B9\u81EA\u589E\u503C(\u5DF2\u88AB\u5F03\u7528\u53C2\u6570)"
+  - "\u5141\u8BB8\u968F\u673A\u539F\u70B9"
+  - "\u539F\u70B9X\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u539F\u70B9Y\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u5141\u8BB8\u4F7F\u7528\u692D\u5706"
+  - "\u4FDD\u6301\u692D\u5706\u89C4\u6574(\u4E0D\u518D\u4F7F\u7528)"
+  - "\u692D\u5706\u957F\u77ED\u8F74\u5411\u91CF"
+  - "\u692D\u5706\u653E\u5927\u500D\u6570"
+  - "\u692D\u5706\u65CB\u8F6C\u5EA6\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5706\u5F62\u5F39\u5E55\u4F7F\u7528\u968F\u673A\u534A\u5F84\u53C2\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u968F\u673A\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u52A0\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411\u968F\u673A\u504F\u79FB"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u8FDB\u884C\u79FB\u52A8"
+  - CanShoot
+  - "\u5F39\u5E55\u53D1\u5C04\u6761\u6570"
+  - "\u989D\u5916\u53D1\u5C04\u6B21\u6570"
+  - "\u5EF6\u8FDF\u53D1\u5C04\u65F6\u95F4"
+  - "\u5141\u8BB8\u5F39\u5E55\u4EE5\u968F\u673A\u6761\u6570\u53D1\u5C04"
+  - "\u5F39\u5E55\u968F\u673A\u6761\u6570\u8303\u56F4"
+  - "\u53D1\u5C04\u95F4\u9694"
+  - "\u53D1\u5C04\u8303\u56F4"
+  - "\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5927\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5C0F\u53D1\u5C04\u5EA6\u6570"
+  - "\u53D1\u5C04\u89D2\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u968F\u673A\u53D1\u5C04\u89D2\u5EA6"
+  - "\u968F\u673A\u53D1\u5C04\u89D2\u5EA6\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u4F7F\u7528\u5E27\u6570"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u590D\u7528"
+  - "\u81EA\u673A\u72D9\u5B50\u5F39"
+  - "\u628A\u7B2C\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6700\u4E2D\u592E\u7684\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6307\u5B9A\u7684\u6761\u5E8F\u53F7\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - DisallowInverse
+  - "\u5141\u8BB8\u5E73\u6ED1\u6539\u53D8\u5B50\u5F39\u901F\u5EA6\u65B9\u5411(\u8BF7\u4F7F\u7528BaseEvent)"
+  - "\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u767E\u5206\u6BD4"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u65B9\u5F0F"
+  - "\u5B50\u5F39\u671D\u5411"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u76EE\u6807\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u59CB\u7EC8\u671D\u5411\u73A9\u5BB6"
+  - "\u5141\u8BB8\u968F\u673A\u901F\u5EA6\u65B9\u5411"
+  - "\u968F\u673A\u901F\u5EA6\u65B9\u5411\u8303\u56F4\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u81EA\u589E\u503C"
+  - "\u5B50\u5F39\u8FD0\u52A8\u901F\u5EA6"
+  - "\u5B50\u5F39\u5E73\u6ED1\u901F\u5EA6\u76EE\u7684\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u5230\u67D0\u4E00\u4E2A\u503C"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u767E\u5206\u6BD4"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u65B9\u5F0F"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u5355\u8DEF\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u6700\u5927\u5B50\u5F39\u901F\u5EA6"
+  - "\u6700\u5C0F\u5B50\u5F39\u901F\u5EA6"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6\u8303\u56F4"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u968F\u673A\u52A0\u901F\u5EA6"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6\u968F\u673A\u8303\u56F4"
+  - "\u5141\u8BB8\u52A8\u6001\u78B0\u649E\u76D2"
+  - "\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u65F6\u65E0\u78B0\u649E"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u64AD\u653E\u901F\u5EA6"
+  - "\u5B50\u5F39\u78B0\u649E\u65B9\u5F0F"
+  - "\u900F\u660E\u5EA6\u8FC7\u4F4E\u4E0D\u4F7F\u7528\u5B50\u5F39\u78B0\u649E"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2"
+  - "\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2\u5BF9\u8C61"
+  - "\u78B0\u649E\u77E9\u5F62\u5BF9\u89D2\u7EBF\u5411\u91CF"
+  - "\u78B0\u649E\u5706\u5F62\u534A\u5F84"
+  - "\u5B50\u5F39\u900F\u660E\u5EA6\u968F\u6DF1\u5EA6\u53D8\u5316(\u5B9E\u9A8C)"
+  - "\u5B50\u5F39\u6700\u4F4E\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u6700\u9AD8\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u9500\u6BC1\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u5B50\u5F39\u521B\u5EFA\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u5E8F\u53F7"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u9500\u6BC1\u52A8\u753B"
+  - "\u5B50\u5F39\u9500\u6BC1\u52A8\u753B\u5E8F\u53F7"
+  - "\u5141\u8BB8\u5B50\u5F39\u626D\u66F2\u65CB\u8F6C"
+  - "\u5141\u8BB8\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5141\u8BB8\u62D6\u5C3E\u6548\u679C(\u8017\u8D39\u6027\u80FD)"
+  - "\u62D6\u5C3E\u957F\u5EA6"
+  - "\u62D6\u5C3E\u66F4\u65B0\u65F6\u95F4(\u8D8A\u77ED\u8D8A\u6E05\u695A)"
+  - "\u5B50\u5F39\u6750\u8D28"
+  - "\u5B50\u5F39\u6DF1\u5EA6"
+  - "\u88AB\u53D1\u5C04\u5B50\u5F39\u9700\u8981\u643A\u5E26\u7684\u5BF9\u8C61"
+  - "\u643A\u5E26\u5B50\u5F39\u4E0E\u53D1\u5C04\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u4E00\u81F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u53D1\u5C04\u6B21\u6570"
+  - "\u643A\u5E26\u5B50\u5F39\u4F5C\u4E3A\u5B50\u7EA7\u5B50\u5F39\u8DDF\u968F\u7236\u7EA7\u5B50\u5F39"
+  - "\u7236\u7EA7\u5B50\u5F39\u9500\u6BC1\u4E0D\u9500\u6BC1\u5B50\u7EA7\u5B50\u5F39"
+  - "\u5B50\u5F39\u6700\u5927\u4F7F\u7528\u65F6\u95F4"
+  - "\u5B50\u5F39\u56FE\u50CF\u7EC4\u5E8F\u53F7"
+  - "\u51CF\u5C11\u5B50\u5F39\u9500\u6BC1\u53EF\u80FD\u6027"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u5B50\u5F39\u5916\u89C2"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u5B50\u5F39\u9500\u6BC1\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u4F7F\u7528\u9ED8\u8BA4\u96C6\u5408"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B\u64AD\u653E\u95F4\u9694"
+  - CustomSprite
+  - CreatingCustomSprite
+  - BulletColor
+  - BrokenBulletColor
+  - CreateBulletColor
+  - "\u5B50\u5F39\u7F29\u653E"
+  - "\u542F\u7528\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u542F\u7528\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u51FA\u5C4F\u9500\u6BC1\u5B50\u5F39"
+  - "\u5141\u8BB8\u7ED9\u5B50\u5F39\u4F7F\u7528\u529B\u573A"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u529B\u573A\u5BF9\u8C61"
+  - "\u5171\u4EAB\u53D1\u5C04\u5668"
+  - "\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u4E0D\u5173\u95ED\u53D1\u5C04\u5668"
+  - "\u4F7F\u53D1\u5C04\u7684\u5B50\u5F39\u5E94\u7528\u89E6\u53D1\u5668"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u89E6\u53D1\u5668\u5BF9\u8C61"
+  - "\u5141\u8BB8\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6"
+  - "\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6\u7684\u8303\u56F4"
+  - "\u5DF2\u7ECF\u5B9E\u73B0\u64E6\u5F39"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u56DE\u6EDA"
+  - "\u4F5C\u4E3A\u654C\u4EBA\u53D1\u5C04\u5668(\u5DF2\u7ECF\u542F\u7528)"
+  - "\u968F\u5BF9\u8C61\u65CB\u8F6C\u5EA6\u8C03\u6574\u53D1\u5C04\u89D2\u5EA6"
+  - "\u534A\u5F84\u65B9\u5411"
+  - "\u968F\u673A\u534A\u5F84\u65B9\u5411\u8303\u56F4"
+  - DefaultEnabled
+  - "\u56DE\u6EDA\u4E8B\u4EF6\u5728\u811A\u672C\u4E2D\u987A\u5E8F"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u4E34\u65F6\u5E03\u5C14\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u64AD\u653E\u58F0\u97F3"
+  - "\u58F0\u6E90"
+  - "\u64AD\u653E\u58F0\u97F3\u95F4\u9694"
+  - "\u5C04\u51FB\u6DF7\u4E71\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u8BFB\u53D6\u901F\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u5FAA\u73AF"
+  - "\u8BA1\u7B97\u8D1D\u585E\u5C14\u66F2\u7EBF\u5207\u7EBF"
+  - "\u5B50\u5F39\u56FE\u50CFX\u8F74\u53CD\u8F6C"
+  - "\u5B50\u5F39\u56FE\u50CFY\u8F74\u53CD\u8F6C"
+  - ShotAtPlayer
+  - "\u5B50\u5F39\u643A\u5E26\u5BF9\u8C61\u9700\u8981\u65CB\u8F6C\u5750\u6807\u7CFB"
+  - "\u5B50\u5F39\u66F2\u7EBF\u4E8B\u4EF6\u5EF6\u8FDF\u6267\u884C\u65F6\u95F4"
+  - "\u968F\u673A\u53D1\u5C04\u5468\u671F\u8303\u56F4"
+  - "\u542F\u7528\u968F\u673A\u53D1\u5C04\u5468\u671F"
+  - thisTransform
+  - BulletBase
+  - trackDataInfoRemaining
+  - bulletIndexChecking
+  - CopySign
+  - ShotIndex
+  - ShotBullet
+  - ShootSubBullet
+  - MasterBulletObject
+  - XMLPath
+  - XmlDocumentary
+  - Key
+  - BezierPointTrack
+  - _BezierController
+  - TotalFrame
+  - _Masterbullet
+  - ShootingOrginalData
+  - "\u7528\u81EA\u8EAB\u7EC4\u4EF6\u66F4\u65B0"
+  CalculateCircle: 0
+  selfIncreasing: 0
+  OrderIndex: 0
+  OrderCurveIndex: 0
+  OrderCurveIndexX: 1
+  OrderCurveIndexY: 2
+  OrderCurveIndexR: 3
+  OrderCurveIndexG: 4
+  OrderCurveIndexB: 5
+  OrderCurveIndexA: 6
+--- !u!1 &4232447692201609296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4232447692201609302}
+  - component: {fileID: 4232447692201609297}
+  m_Layer: 0
+  m_Name: EnemyCharge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4232447692201609302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447692201609296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.09353034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4232447692027665706}
+  - {fileID: 4232447692545181858}
+  - {fileID: 4232447690997939450}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4232447692201609297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447692201609296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33cf06f90e934b649b5ac08aaf20e969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4232447692545182557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4232447692545181858}
+  - component: {fileID: 4232447692545181856}
+  - component: {fileID: 4232447692545181859}
+  m_Layer: 0
+  m_Name: Charge (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4232447692545181858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447692545182557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.09353034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4232447692201609302}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4232447692545181856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447692545182557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2691613b9eb91a246986ed29a8022eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateWithSelfComponent: 1
+  Canceled: 0
+  GlobalSpeedPercent: 1
+  UseShootingEvent: 1
+  UseShootingDestroy: 1
+  UseShootingUsing: 1
+  UseShootingFinishAllShotTask: 1
+  UseBulletEventWhenBulletCreate: 1
+  UseBulletEventWhenBulletDestroy: 1
+  UseBulletEventWhenBulletRestoreMainLevel: 1
+  UseBulletEventOnDestroyingPlayer: 1
+  UseBulletEvent: 1
+  CaluateDelayToPercent: 1
+  XmlShooting: 
+  ignoreSCExpression: 0
+  IgnorePlot: 0
+  InvaildDestroy: 0
+  UseThread: 0
+  Note: "\u8981\u63CF\u8FF0\u8FD9\u4E2A\u53D1\u5C04\u5668\uFF0C\u8BF7\u5728\u8FD9\u91CC\u7559\u4E0B\u6CE8\u91CA\u3002"
+  BulletTag: 
+  Orginal: {x: 0, y: 0}
+  PositionIncrement: {x: 0, y: 0}
+  UseRandomOffset: 0
+  XOffset: 1
+  YOffset: 1
+  useEllipse: 0
+  keepRegularEllipse: 1
+  ellipseSize: {x: 1, y: 1}
+  ellipseScale: 0
+  ellipseRotation: 0
+  Radius: 2
+  RadiusIncrement: 0
+  UseRandomRadius: 0
+  RadiusOffset: 5
+  ShootingSpeed: 1
+  ShootingAcceleratedSpeed: 0
+  MoveDirection: 0
+  MoveDirectionOffset: 0
+  MoveShooting: 0
+  CanShoot: 1
+  Way: 1
+  SpecialBounsShoot: 0
+  Delay: 0
+  UseRandomWay: 0
+  WayOffset: 3
+  Timer: 2
+  Range: 360
+  Angle: 14.422104
+  MaxAngle: 360
+  MinAngle: -360
+  AngleIncreament: 0
+  UseRandomAngle: 1
+  AngleOffset: 360
+  MaxFrame: 24
+  Reusable: 0
+  FollowPlayer: 0
+  firstLine: 0
+  middleIndex: 1
+  lineIndex: 0
+  DisallowInverse: 0
+  ChangeBulletRotationSmoothly: 0
+  ChangeInverseRotation: 0
+  BulletRotationSmoothlyPrecent: 0.05
+  RotationSmoothType: 1
+  BulletRotation: 0
+  BulletTargetRotation: 0
+  AimToPlayer: 0
+  UseRandomBulletRotation: 0
+  BulletRotationOffset: 1
+  BulletAcceleratedRotation: 0
+  Speed: -5.8
+  BulletTargetSpeed: 0
+  SpeedIncreament: 0
+  ChangeSpeedSmoothly: 0
+  ChangeSpeedPrecent: 0.05
+  SpeedSmoothType: 1
+  RandomSpeed: 0
+  SingleWayRandomSpeed: 0
+  MaxSpeed: 8
+  MinSpeed: -8
+  SpeedOffset: 1
+  AcceleratedSpeed: 0
+  RandomAcceleratedSpeed: 0
+  AcceleratedSpeedOffset: 1
+  UseDynamicsCollision: 1
+  NoCollisionWhenCreateAnimationPlaying: 1
+  CreateAnimationSpeed: 1
+  BulletCollision: 2
+  NoCollisionWhenAlphaLow: 0
+  UseCustomCollisionGroup: 0
+  CustomCollisionGroup: {fileID: 0}
+  SquareLength: {x: 0, y: 0}
+  CollisionRadius: 0.46099195
+  UseAlphaWithDepth: 0
+  minDepth: 0
+  maxDepth: 0.5
+  BulletBreakingAnimationName: BulletBreak1
+  BulletCreatingAnimationName: BulletCreate
+  NoCreateAnimation: 1
+  CreateAnimationIndex: 0
+  NoDestroyAnimation: 0
+  DestroyAnimationIndex: 0
+  TwistedRotation: 0
+  InverseRotation: 1
+  useTrails: 0
+  TrailLength: 20
+  TrailUpdate: 1
+  MaterialIndex: 1
+  BulletDepth: 0
+  BulletShootingObject: {fileID: 0}
+  FollowAngle: 0
+  ShootingShotMaxTime: -1
+  MakeSubBullet: 0
+  DonDestroyIfMasterDestroy: 0
+  MaxLiveFrame: 35
+  SpriteIndex: 0
+  DonDestroy: 0
+  UseCustomSprite: 1
+  UseBulletAnimation: 0
+  BulletSpritePerFrame: []
+  DestroyAnimSprites: []
+  useDefaultSprite: 0
+  WaitingTime: 3
+  CustomSprite: {fileID: 21300252, guid: 26f67eb0f5869ed42ab8f1bbfd614b95, type: 3}
+  CreatingCustomSprite: {fileID: 21300018, guid: e0d9ad3715a425d42bfb5d0b4863e733,
+    type: 3}
+  BulletColor: {r: 1, g: 1, b: 1, a: 0.491}
+  BrokenBulletColor: {r: 1, g: 1, b: 1, a: 1}
+  CreateBulletColor: {r: 1, g: 1, b: 1, a: 0.603}
+  Scale: {x: 1.4, y: 1.4}
+  EnabledGlobalOffset: 0
+  GlobalOffset: {x: 0, y: 0}
+  EnabledAcceleratedGlobalOffset: 0
+  AcceleratedGlobalOffset: {x: 0, y: 0}
+  DestroyWhenDonRender: 1
+  EnableForForce: 0
+  ForceObject: []
+  Share: 0
+  Continue: 0
+  ApplyTrigger: 0
+  TriggerList: []
+  AvoidPlayer: 1
+  AvoidRange: 0.3
+  Graze: 0
+  rollBack: 0
+  EnemyShooting: 0
+  followRotation: 1
+  RadiusDirection: 0
+  RandomRadiusDirection: 360
+  DefaultEnabled: 0
+  order: 1
+  TempValue: []
+  TempValueIncrease: []
+  TempValueBool: 
+  PlayerSound: 0
+  Sound: []
+  IntervalSoundTime: 4
+  ShotMess: 0
+  ReadPointTrackSpeed: 0
+  LoopTrack: 0
+  CalculateAngle: 1
+  FilpX: 0
+  FilpY: 0
+  ShotAtPlayer: 0
+  FollowObjectWithSameAngle: 0
+  delayRunTime: 0
+  RandomTimer: 3
+  EnableRandomTimer: 0
+  displayer: 0
+  thisTransform: {fileID: 0}
+  BulletBase: {fileID: 0}
+  trackDataInfoRemaining:
+    animationCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    calculateFrame: 1
+    targetPos: {x: 0, y: 0, z: 0}
+    regularPattern: 0
+  bulletIndexChecking: 0
+  CopySign: 0
+  ShotIndex: 765
+  ShotBullet:
+  - {fileID: 0}
+  ShootSubBullet: 0
+  MasterBulletObject: {fileID: 0}
+  XMLPath: 
+  BezierPointTrack: []
+  _BezierController: {fileID: 0}
+  TotalFrame: 0
+  _Masterbullet: {fileID: 0}
+  ShootingOrginalData: {fileID: 4232447692545181856}
+--- !u!114 &4232447692545181859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232447692545182557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf3f6369dd820e4b829531454bd32c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  TargetShooting:
+  - {fileID: 4232447692545181856}
+  autoGet: 1
+  autoGetBullet: 0
+  Note: "\uFF08\u4E8E\u6B64\u5904\u8F93\u5165\u6CE8\u89E3\uFF09"
+  ForOnlyOne: 0
+  Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 100
+      value: 1200
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  CurveX:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  CurveY:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Red:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Green:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Blue:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Alpha:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isVector2: 0
+  isVector4: 0
+  EnableRelection: 1
+  simpleSetting: 0
+  ParmIndex: 53
+  caluateToFrame: 1
+  ShootingTime: 0
+  Intend: {fileID: 0}
+  CurveChange: []
+  RandomKeySettings: []
+  groupStrings: []
+  frameSetting: []
+  Name:
+  - "\u4F5C\u4E3A\u654C\u4EBA\u79FB\u52A8\u5668\u4F7F\u7528"
+  - "\u76EE\u7684\u654C\u4EBA"
+  - "\u4F7F\u7528\u534F\u7A0B\u4E8B\u4EF6"
+  - "\u53EF\u590D\u7528\u5B50\u5F39"
+  - "\u51CF\u4F4E\u5B50\u5F39\u9500\u6BC1\u53EF\u80FD\u6027"
+  - "\u6D89\u53CA\u5168\u5C40\u901F\u5EA6"
+  - "\u4E8E\u7279\u522B\u60C5\u51B5\u6682\u505C\u8FD0\u52A8"
+  - "\u5B50\u5F39Tag"
+  - "\u5B50\u5F39\u8FD0\u52A8\u901F\u5EA6"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6"
+  - "\u8F68\u8FF9\u957F\u5EA6"
+  - "\u8F68\u8FF9\u5237\u65B0\u901F\u5EA6"
+  - "\u5E73\u6ED1\u6539\u53D8\u5B50\u5F39\u901F\u5EA6"
+  - "\u5B50\u5F39\u901F\u5EA6\u63D2\u503C\u901F\u5EA6"
+  - "\u901F\u5EA6\u63D2\u503C\u65B9\u5F0F"
+  - AcceleratedSpeedDirectionNow
+  - "\u5168\u5C40\u52A0\u901F\u5EA6\u65B9\u5411"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411"
+  - "\u5B50\u5F39\u89D2\u901F\u5EA6"
+  - "\u5E73\u6ED1\u6539\u53D8\u89D2\u901F\u5EA6"
+  - "\u89D2\u901F\u5EA6\u63D2\u503C\u901F\u5EA6"
+  - "\u89D2\u901F\u5EA6\u63D2\u503C\u65B9\u5F0F"
+  - "\u78B0\u649E\u534A\u5F84"
+  - SpriteIndex
+  - "\u5B50\u5F39\u4F7F\u7528\u5BFF\u547D"
+  - "\u5B50\u5F39\u5E74\u9F84"
+  - "\u5DF2\u7ECF\u64E6\u5F39"
+  - "\u65F6\u523B\u7784\u51C6\u73A9\u5BB6"
+  - "\u4E0D\u8FDB\u884C\u9500\u6BC1"
+  - "\u4F7F\u7528\u8F68\u8FF9"
+  - BulletPos
+  - "\u4F7F\u7528\u5B50\u5F39"
+  - BulletShooting
+  - BulletIndex
+  - BulletSprite
+  - BulletSpriteRenderer
+  - TriggerList
+  - BrokenBulletColor
+  - BulletColor
+  - BulletSpriteController
+  - UseCollision
+  - UseCustomCollisionGroup
+  - CustomCollisionGroupMainController
+  - Trail
+  - TrailShooting
+  - CustomCollisionGroup
+  - BulletCollision
+  - SquareLength
+  - Scale
+  - trackData
+  - BulletBreakingAnimationName
+  - TwistedRotation
+  - InverseRotation
+  - InverseRotateDirection
+  - DestroyWhenDontRender
+  - NoDestroyAnimation
+  - NoCollisionWhenCreateAnimationPlaying
+  - NoCollisionWhenAlphaLow
+  - UseCustomAnimation
+  - EnabledAcceleratedGlobalOffset
+  - EnabledGlobalOffset
+  - animationController
+  - ChangeInverseRotation
+  - DonDestroyIfMasterDestroy
+  - BulletFramesSprites
+  - UseForce
+  - UseAlphaWithDepth
+  - delayBulletEventRunTime
+  - minDepth
+  - maxDepth
+  - ForceObject
+  - nextFramewaitTime
+  - ID
+  - BarrageBatch
+  - CreateAnimationPlayed
+  - ReadPointTrackSpeed
+  - Pos_X
+  - Pos_Y
+  - BezierPointTrack
+  - FilpX
+  - FilpY
+  - SingleParmCurve
+  - AnimationControl
+  - TargetSpeed
+  - TargetRotation
+  - Parent
+  - AsSubBullet
+  - SubBullet
+  - ShootingRef
+  - PlayerCharacter
+  - Player
+  - Zero
+  - OtherObject
+  - DestroyAnimSprites
+  - trackInfoSign
+  - DestroyMode
+  - countingTime
+  - FollowObjectWithSameAngle
+  - CommandList
+  - trackLerpBegin
+  - trackCount
+  - OriSpd
+  - originalPatternPos
+  - inTrigger
+  - BulletTransform
+  - EnableBulletEvent
+  - shootingIndex
+  - TempValueInt
+  - TempValueFloat
+  - TempValueBool
+  - UnitScale
+  - EnableFollow
+  - EnableTrail
+  ShootingName:
+  - "\u65E0\u5F3A\u5236\u53D1\u5C04\u8981\u6C42\uFF0C\u4E0D\u53D1\u5C04\u5B50\u5F39"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u901F\u5EA6\u63A7\u5236\u767E\u5206\u6BD4"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u64AD\u653E\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u88AB\u9500\u6BC1\u65F6\u662F\u5426\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u4F7F\u7528\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u5B8C\u6210\u5168\u90E8\u53D1\u5C04\u4EFB\u52A1\u65F6\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u521B\u5EFA\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u88AB\u9500\u6BC1\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u6062\u590D\u4E3B\u5C42\u7EA7\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u51FB\u4E2D\u73A9\u5BB6\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u8FD0\u52A8\u65F6\u4E8B\u4EF6"
+  - "\u8BA1\u7B97\u5EF6\u8FDF\u65F6\u95F4\u5230\u5355\u4F4D\u767E\u5206\u6BD4"
+  - "\u4F7F\u7528XML\u6570\u636E\u6587\u4EF6\u50A8\u5B58\u53D1\u5C04\u5668\u6570\u636E"
+  - "\u5FFD\u7565\u58F0\u660E\u7B26\u5361\u65F6\u95F4\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u5FFD\u7565\u5267\u60C5\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u9664\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u6D88\u5F39\u5176\u4F59\u60C5\u51B5\u4E0D\u6D88\u5F39"
+  - "\u4F7F\u7528\u534F\u540C\u4E8B\u4EF6"
+  - Note
+  - BulletTag
+  - "\u53D1\u5C04\u5668\u53D1\u5C04\u4E2D\u5FC3\u539F\u70B9"
+  - "\u4F4D\u7F6E\u539F\u70B9\u81EA\u589E\u503C(\u5DF2\u88AB\u5F03\u7528\u53C2\u6570)"
+  - "\u5141\u8BB8\u968F\u673A\u539F\u70B9"
+  - "\u539F\u70B9X\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u539F\u70B9Y\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u5141\u8BB8\u4F7F\u7528\u692D\u5706"
+  - "\u4FDD\u6301\u692D\u5706\u89C4\u6574(\u4E0D\u518D\u4F7F\u7528)"
+  - "\u692D\u5706\u957F\u77ED\u8F74\u5411\u91CF"
+  - "\u692D\u5706\u653E\u5927\u500D\u6570"
+  - "\u692D\u5706\u65CB\u8F6C\u5EA6\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5706\u5F62\u5F39\u5E55\u4F7F\u7528\u968F\u673A\u534A\u5F84\u53C2\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u968F\u673A\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u52A0\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411\u968F\u673A\u504F\u79FB"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u8FDB\u884C\u79FB\u52A8"
+  - CanShoot
+  - "\u5F39\u5E55\u53D1\u5C04\u6761\u6570"
+  - "\u989D\u5916\u53D1\u5C04\u6B21\u6570"
+  - "\u5EF6\u8FDF\u53D1\u5C04\u65F6\u95F4"
+  - "\u5141\u8BB8\u5F39\u5E55\u4EE5\u968F\u673A\u6761\u6570\u53D1\u5C04"
+  - "\u5F39\u5E55\u968F\u673A\u6761\u6570\u8303\u56F4"
+  - "\u53D1\u5C04\u95F4\u9694"
+  - "\u53D1\u5C04\u8303\u56F4"
+  - "\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5927\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5C0F\u53D1\u5C04\u5EA6\u6570"
+  - "\u53D1\u5C04\u89D2\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u968F\u673A\u53D1\u5C04\u89D2\u5EA6"
+  - "\u968F\u673A\u53D1\u5C04\u89D2\u5EA6\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u4F7F\u7528\u5E27\u6570"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u590D\u7528"
+  - "\u81EA\u673A\u72D9\u5B50\u5F39"
+  - "\u628A\u7B2C\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6700\u4E2D\u592E\u7684\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6307\u5B9A\u7684\u6761\u5E8F\u53F7\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - DisallowInverse
+  - "\u5141\u8BB8\u5E73\u6ED1\u6539\u53D8\u5B50\u5F39\u901F\u5EA6\u65B9\u5411(\u8BF7\u4F7F\u7528BaseEvent)"
+  - "\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u767E\u5206\u6BD4"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u65B9\u5F0F"
+  - "\u5B50\u5F39\u671D\u5411"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u76EE\u6807\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u59CB\u7EC8\u671D\u5411\u73A9\u5BB6"
+  - "\u5141\u8BB8\u968F\u673A\u901F\u5EA6\u65B9\u5411"
+  - "\u968F\u673A\u901F\u5EA6\u65B9\u5411\u8303\u56F4\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u81EA\u589E\u503C"
+  - "\u5B50\u5F39\u8FD0\u52A8\u901F\u5EA6"
+  - "\u5B50\u5F39\u5E73\u6ED1\u901F\u5EA6\u76EE\u7684\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u5230\u67D0\u4E00\u4E2A\u503C"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u767E\u5206\u6BD4"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u65B9\u5F0F"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u5355\u8DEF\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u6700\u5927\u5B50\u5F39\u901F\u5EA6"
+  - "\u6700\u5C0F\u5B50\u5F39\u901F\u5EA6"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6\u8303\u56F4"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u968F\u673A\u52A0\u901F\u5EA6"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6\u968F\u673A\u8303\u56F4"
+  - "\u5141\u8BB8\u52A8\u6001\u78B0\u649E\u76D2"
+  - "\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u65F6\u65E0\u78B0\u649E"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u64AD\u653E\u901F\u5EA6"
+  - "\u5B50\u5F39\u78B0\u649E\u65B9\u5F0F"
+  - "\u900F\u660E\u5EA6\u8FC7\u4F4E\u4E0D\u4F7F\u7528\u5B50\u5F39\u78B0\u649E"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2"
+  - "\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2\u5BF9\u8C61"
+  - "\u78B0\u649E\u77E9\u5F62\u5BF9\u89D2\u7EBF\u5411\u91CF"
+  - "\u78B0\u649E\u5706\u5F62\u534A\u5F84"
+  - "\u5B50\u5F39\u900F\u660E\u5EA6\u968F\u6DF1\u5EA6\u53D8\u5316(\u5B9E\u9A8C)"
+  - "\u5B50\u5F39\u6700\u4F4E\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u6700\u9AD8\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u9500\u6BC1\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u5B50\u5F39\u521B\u5EFA\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u5E8F\u53F7"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u9500\u6BC1\u52A8\u753B"
+  - "\u5B50\u5F39\u9500\u6BC1\u52A8\u753B\u5E8F\u53F7"
+  - "\u5141\u8BB8\u5B50\u5F39\u626D\u66F2\u65CB\u8F6C"
+  - "\u5141\u8BB8\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5141\u8BB8\u62D6\u5C3E\u6548\u679C(\u8017\u8D39\u6027\u80FD)"
+  - "\u62D6\u5C3E\u957F\u5EA6"
+  - "\u62D6\u5C3E\u66F4\u65B0\u65F6\u95F4(\u8D8A\u77ED\u8D8A\u6E05\u695A)"
+  - "\u5B50\u5F39\u6750\u8D28"
+  - "\u5B50\u5F39\u6DF1\u5EA6"
+  - "\u88AB\u53D1\u5C04\u5B50\u5F39\u9700\u8981\u643A\u5E26\u7684\u5BF9\u8C61"
+  - "\u643A\u5E26\u5B50\u5F39\u4E0E\u53D1\u5C04\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u4E00\u81F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u53D1\u5C04\u6B21\u6570"
+  - "\u643A\u5E26\u5B50\u5F39\u4F5C\u4E3A\u5B50\u7EA7\u5B50\u5F39\u8DDF\u968F\u7236\u7EA7\u5B50\u5F39"
+  - "\u7236\u7EA7\u5B50\u5F39\u9500\u6BC1\u4E0D\u9500\u6BC1\u5B50\u7EA7\u5B50\u5F39"
+  - "\u5B50\u5F39\u6700\u5927\u4F7F\u7528\u65F6\u95F4"
+  - "\u5B50\u5F39\u56FE\u50CF\u7EC4\u5E8F\u53F7"
+  - "\u51CF\u5C11\u5B50\u5F39\u9500\u6BC1\u53EF\u80FD\u6027"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u5B50\u5F39\u5916\u89C2"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u5B50\u5F39\u9500\u6BC1\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u4F7F\u7528\u9ED8\u8BA4\u96C6\u5408"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B\u64AD\u653E\u95F4\u9694"
+  - CustomSprite
+  - CreatingCustomSprite
+  - BulletColor
+  - BrokenBulletColor
+  - CreateBulletColor
+  - "\u5B50\u5F39\u7F29\u653E"
+  - "\u542F\u7528\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u542F\u7528\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u51FA\u5C4F\u9500\u6BC1\u5B50\u5F39"
+  - "\u5141\u8BB8\u7ED9\u5B50\u5F39\u4F7F\u7528\u529B\u573A"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u529B\u573A\u5BF9\u8C61"
+  - "\u5171\u4EAB\u53D1\u5C04\u5668"
+  - "\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u4E0D\u5173\u95ED\u53D1\u5C04\u5668"
+  - "\u4F7F\u53D1\u5C04\u7684\u5B50\u5F39\u5E94\u7528\u89E6\u53D1\u5668"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u89E6\u53D1\u5668\u5BF9\u8C61"
+  - "\u5141\u8BB8\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6"
+  - "\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6\u7684\u8303\u56F4"
+  - "\u5DF2\u7ECF\u5B9E\u73B0\u64E6\u5F39"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u56DE\u6EDA"
+  - "\u4F5C\u4E3A\u654C\u4EBA\u53D1\u5C04\u5668(\u5DF2\u7ECF\u542F\u7528)"
+  - "\u968F\u5BF9\u8C61\u65CB\u8F6C\u5EA6\u8C03\u6574\u53D1\u5C04\u89D2\u5EA6"
+  - "\u534A\u5F84\u65B9\u5411"
+  - "\u968F\u673A\u534A\u5F84\u65B9\u5411\u8303\u56F4"
+  - DefaultEnabled
+  - "\u56DE\u6EDA\u4E8B\u4EF6\u5728\u811A\u672C\u4E2D\u987A\u5E8F"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u4E34\u65F6\u5E03\u5C14\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u64AD\u653E\u58F0\u97F3"
+  - "\u58F0\u6E90"
+  - "\u64AD\u653E\u58F0\u97F3\u95F4\u9694"
+  - "\u5C04\u51FB\u6DF7\u4E71\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u8BFB\u53D6\u901F\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u5FAA\u73AF"
+  - "\u8BA1\u7B97\u8D1D\u585E\u5C14\u66F2\u7EBF\u5207\u7EBF"
+  - "\u5B50\u5F39\u56FE\u50CFX\u8F74\u53CD\u8F6C"
+  - "\u5B50\u5F39\u56FE\u50CFY\u8F74\u53CD\u8F6C"
+  - ShotAtPlayer
+  - "\u5B50\u5F39\u643A\u5E26\u5BF9\u8C61\u9700\u8981\u65CB\u8F6C\u5750\u6807\u7CFB"
+  - "\u5B50\u5F39\u66F2\u7EBF\u4E8B\u4EF6\u5EF6\u8FDF\u6267\u884C\u65F6\u95F4"
+  - "\u968F\u673A\u53D1\u5C04\u5468\u671F\u8303\u56F4"
+  - "\u542F\u7528\u968F\u673A\u53D1\u5C04\u5468\u671F"
+  - BulletBase
+  - trackDataInfoRemaining
+  - bulletIndexChecking
+  - ShotIndex
+  - ShotBullet
+  - ShootSubBullet
+  - MasterBulletObject
+  - XMLPath
+  - XmlDocumentary
+  - Key
+  - BezierPointTrack
+  - _BezierController
+  - TotalFrame
+  - _Masterbullet
+  - ShootingOrginalData
+  - "\u65E0\u5F3A\u5236\u53D1\u5C04\u8981\u6C42\uFF0C\u4E0D\u53D1\u5C04\u5B50\u5F39"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u901F\u5EA6\u63A7\u5236\u767E\u5206\u6BD4"
+  - "\u53D1\u5C04\u5668\u64AD\u653E\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u64AD\u653E\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u88AB\u9500\u6BC1\u65F6\u662F\u5426\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u4F7F\u7528\u65F6\u662F\u5426\u4F7F\u7528\u88AB\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u53D1\u5C04\u5668\u5B8C\u6210\u5168\u90E8\u53D1\u5C04\u4EFB\u52A1\u65F6\u4F7F\u7528\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u521B\u5EFA\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u88AB\u9500\u6BC1\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u6062\u590D\u4E3B\u5C42\u7EA7\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u51FB\u4E2D\u73A9\u5BB6\u4E8B\u4EF6"
+  - "\u5E94\u7528\u5B50\u5F39\u8FD0\u52A8\u65F6\u4E8B\u4EF6"
+  - "\u8BA1\u7B97\u5EF6\u8FDF\u65F6\u95F4\u5230\u5355\u4F4D\u767E\u5206\u6BD4"
+  - "\u4F7F\u7528XML\u6570\u636E\u6587\u4EF6\u50A8\u5B58\u53D1\u5C04\u5668\u6570\u636E"
+  - "\u5FFD\u7565\u58F0\u660E\u7B26\u5361\u65F6\u95F4\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u5FFD\u7565\u5267\u60C5\u7EE7\u7EED\u53D1\u5C04\u5B50\u5F39"
+  - "\u9664\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u6D88\u5F39\u5176\u4F59\u60C5\u51B5\u4E0D\u6D88\u5F39"
+  - "\u4F7F\u7528\u534F\u540C\u4E8B\u4EF6"
+  - Note
+  - BulletTag
+  - "\u53D1\u5C04\u5668\u53D1\u5C04\u4E2D\u5FC3\u539F\u70B9"
+  - "\u4F4D\u7F6E\u539F\u70B9\u81EA\u589E\u503C(\u5DF2\u88AB\u5F03\u7528\u53C2\u6570)"
+  - "\u5141\u8BB8\u968F\u673A\u539F\u70B9"
+  - "\u539F\u70B9X\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u539F\u70B9Y\u8F74\u968F\u673A\u504F\u79FB\u503C"
+  - "\u5141\u8BB8\u4F7F\u7528\u692D\u5706"
+  - "\u4FDD\u6301\u692D\u5706\u89C4\u6574(\u4E0D\u518D\u4F7F\u7528)"
+  - "\u692D\u5706\u957F\u77ED\u8F74\u5411\u91CF"
+  - "\u692D\u5706\u653E\u5927\u500D\u6570"
+  - "\u692D\u5706\u65CB\u8F6C\u5EA6\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5706\u5F62\u5F39\u5E55\u4F7F\u7528\u968F\u673A\u534A\u5F84\u53C2\u6570"
+  - "\u5706\u5F62\u5F39\u5E55\u534A\u5F84\u968F\u673A\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u52A0\u901F\u5EA6"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411"
+  - "\u53D1\u5C04\u5668\u79FB\u52A8\u65B9\u5411\u968F\u673A\u504F\u79FB"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u8FDB\u884C\u79FB\u52A8"
+  - CanShoot
+  - "\u5F39\u5E55\u53D1\u5C04\u6761\u6570"
+  - "\u989D\u5916\u53D1\u5C04\u6B21\u6570"
+  - "\u5EF6\u8FDF\u53D1\u5C04\u65F6\u95F4"
+  - "\u5141\u8BB8\u5F39\u5E55\u4EE5\u968F\u673A\u6761\u6570\u53D1\u5C04"
+  - "\u5F39\u5E55\u968F\u673A\u6761\u6570\u8303\u56F4"
+  - "\u53D1\u5C04\u95F4\u9694"
+  - "\u53D1\u5C04\u8303\u56F4"
+  - "\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5927\u53D1\u5C04\u5EA6\u6570"
+  - "\u6700\u5C0F\u53D1\u5C04\u5EA6\u6570"
+  - "\u53D1\u5C04\u89D2\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u968F\u673A\u53D1\u5C04\u89D2\u5EA6"
+  - "\u968F\u673A\u53D1\u5C04\u89D2\u5EA6\u8303\u56F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u4F7F\u7528\u5E27\u6570"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u590D\u7528"
+  - "\u81EA\u673A\u72D9\u5B50\u5F39"
+  - "\u628A\u7B2C\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6700\u4E2D\u592E\u7684\u4E00\u6761\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - "\u628A\u6307\u5B9A\u7684\u6761\u5E8F\u53F7\u5F39\u5E55\u7784\u51C6\u81EA\u673A"
+  - DisallowInverse
+  - "\u5141\u8BB8\u5E73\u6ED1\u6539\u53D8\u5B50\u5F39\u901F\u5EA6\u65B9\u5411(\u8BF7\u4F7F\u7528BaseEvent)"
+  - "\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u767E\u5206\u6BD4"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u6539\u53D8\u65B9\u5F0F"
+  - "\u5B50\u5F39\u671D\u5411"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u5E73\u6ED1\u76EE\u6807\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u59CB\u7EC8\u671D\u5411\u73A9\u5BB6"
+  - "\u5141\u8BB8\u968F\u673A\u901F\u5EA6\u65B9\u5411"
+  - "\u968F\u673A\u901F\u5EA6\u65B9\u5411\u8303\u56F4\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u81EA\u589E\u503C"
+  - "\u5B50\u5F39\u8FD0\u52A8\u901F\u5EA6"
+  - "\u5B50\u5F39\u5E73\u6ED1\u901F\u5EA6\u76EE\u7684\u503C"
+  - "\u5B50\u5F39\u901F\u5EA6\u81EA\u589E\u503C"
+  - "\u5141\u8BB8\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u5230\u67D0\u4E00\u4E2A\u503C"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u767E\u5206\u6BD4"
+  - "\u5E73\u6ED1\u5B50\u5F39\u901F\u5EA6\u65B9\u5F0F"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u5355\u8DEF\u5B50\u5F39\u968F\u673A\u901F\u5EA6"
+  - "\u6700\u5927\u5B50\u5F39\u901F\u5EA6"
+  - "\u6700\u5C0F\u5B50\u5F39\u901F\u5EA6"
+  - "\u5B50\u5F39\u968F\u673A\u901F\u5EA6\u8303\u56F4"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u968F\u673A\u52A0\u901F\u5EA6"
+  - "\u5B50\u5F39\u8FD0\u52A8\u52A0\u901F\u5EA6\u968F\u673A\u8303\u56F4"
+  - "\u5141\u8BB8\u52A8\u6001\u78B0\u649E\u76D2"
+  - "\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u65F6\u65E0\u78B0\u649E"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u64AD\u653E\u901F\u5EA6"
+  - "\u5B50\u5F39\u78B0\u649E\u65B9\u5F0F"
+  - "\u900F\u660E\u5EA6\u8FC7\u4F4E\u4E0D\u4F7F\u7528\u5B50\u5F39\u78B0\u649E"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2"
+  - "\u81EA\u5B9A\u4E49\u78B0\u649E\u76D2\u5BF9\u8C61"
+  - "\u78B0\u649E\u77E9\u5F62\u5BF9\u89D2\u7EBF\u5411\u91CF"
+  - "\u78B0\u649E\u5706\u5F62\u534A\u5F84"
+  - "\u5B50\u5F39\u900F\u660E\u5EA6\u968F\u6DF1\u5EA6\u53D8\u5316(\u5B9E\u9A8C)"
+  - "\u5B50\u5F39\u6700\u4F4E\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u6700\u9AD8\u6DF1\u5EA6"
+  - "\u5B50\u5F39\u9500\u6BC1\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u5B50\u5F39\u521B\u5EFA\u65F6\u64AD\u653E\u52A8\u753B\u540D\u79F0"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u521B\u5EFA\u52A8\u753B"
+  - "\u5B50\u5F39\u521B\u5EFA\u52A8\u753B\u5E8F\u53F7"
+  - "\u4E0D\u64AD\u653E\u5B50\u5F39\u9500\u6BC1\u52A8\u753B"
+  - "\u5B50\u5F39\u9500\u6BC1\u52A8\u753B\u5E8F\u53F7"
+  - "\u5141\u8BB8\u5B50\u5F39\u626D\u66F2\u65CB\u8F6C"
+  - "\u5141\u8BB8\u5B50\u5F39\u671D\u5411\u4E0D\u53D7\u901F\u5EA6\u65B9\u5411\u5F71\u54CD"
+  - "\u5141\u8BB8\u62D6\u5C3E\u6548\u679C(\u8017\u8D39\u6027\u80FD)"
+  - "\u62D6\u5C3E\u957F\u5EA6"
+  - "\u62D6\u5C3E\u66F4\u65B0\u65F6\u95F4(\u8D8A\u77ED\u8D8A\u6E05\u695A)"
+  - "\u5B50\u5F39\u6750\u8D28"
+  - "\u5B50\u5F39\u6DF1\u5EA6"
+  - "\u88AB\u53D1\u5C04\u5B50\u5F39\u9700\u8981\u643A\u5E26\u7684\u5BF9\u8C61"
+  - "\u643A\u5E26\u5B50\u5F39\u4E0E\u53D1\u5C04\u5B50\u5F39\u901F\u5EA6\u65B9\u5411\u4E00\u81F4"
+  - "\u53D1\u5C04\u5668\u6700\u5927\u53D1\u5C04\u6B21\u6570"
+  - "\u643A\u5E26\u5B50\u5F39\u4F5C\u4E3A\u5B50\u7EA7\u5B50\u5F39\u8DDF\u968F\u7236\u7EA7\u5B50\u5F39"
+  - "\u7236\u7EA7\u5B50\u5F39\u9500\u6BC1\u4E0D\u9500\u6BC1\u5B50\u7EA7\u5B50\u5F39"
+  - "\u5B50\u5F39\u6700\u5927\u4F7F\u7528\u65F6\u95F4"
+  - "\u5B50\u5F39\u56FE\u50CF\u7EC4\u5E8F\u53F7"
+  - "\u51CF\u5C11\u5B50\u5F39\u9500\u6BC1\u53EF\u80FD\u6027"
+  - "\u5141\u8BB8\u81EA\u5B9A\u4E49\u5B50\u5F39\u5916\u89C2"
+  - "\u5141\u8BB8\u4F7F\u7528\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u5B50\u5F39\u9500\u6BC1\u5E8F\u5217\u5E27\u96C6\u5408"
+  - "\u4F7F\u7528\u9ED8\u8BA4\u96C6\u5408"
+  - "\u5B50\u5F39\u5E8F\u5217\u5E27\u52A8\u753B\u64AD\u653E\u95F4\u9694"
+  - CustomSprite
+  - CreatingCustomSprite
+  - BulletColor
+  - BrokenBulletColor
+  - CreateBulletColor
+  - "\u5B50\u5F39\u7F29\u653E"
+  - "\u542F\u7528\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u5B50\u5F39\u7684\u5168\u5C40\u504F\u79FB"
+  - "\u542F\u7528\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u5B50\u5F39\u5168\u5C40\u52A0\u901F\u504F\u79FB"
+  - "\u51FA\u5C4F\u9500\u6BC1\u5B50\u5F39"
+  - "\u5141\u8BB8\u7ED9\u5B50\u5F39\u4F7F\u7528\u529B\u573A"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u529B\u573A\u5BF9\u8C61"
+  - "\u5171\u4EAB\u53D1\u5C04\u5668"
+  - "\u7B26\u5361\u88AB\u51FB\u7834\u65F6\u4E0D\u5173\u95ED\u53D1\u5C04\u5668"
+  - "\u4F7F\u53D1\u5C04\u7684\u5B50\u5F39\u5E94\u7528\u89E6\u53D1\u5668"
+  - "\u5141\u8BB8\u5F71\u54CD\u8BE5\u5B50\u5F39\u7684\u89E6\u53D1\u5668\u5BF9\u8C61"
+  - "\u5141\u8BB8\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6"
+  - "\u521B\u5EFA\u5B50\u5F39\u65F6\u907F\u5F00\u73A9\u5BB6\u7684\u8303\u56F4"
+  - "\u5DF2\u7ECF\u5B9E\u73B0\u64E6\u5F39"
+  - "\u5141\u8BB8\u53D1\u5C04\u5668\u56DE\u6EDA"
+  - "\u4F5C\u4E3A\u654C\u4EBA\u53D1\u5C04\u5668(\u5DF2\u7ECF\u542F\u7528)"
+  - "\u968F\u5BF9\u8C61\u65CB\u8F6C\u5EA6\u8C03\u6574\u53D1\u5C04\u89D2\u5EA6"
+  - "\u534A\u5F84\u65B9\u5411"
+  - "\u968F\u673A\u534A\u5F84\u65B9\u5411\u8303\u56F4"
+  - DefaultEnabled
+  - "\u56DE\u6EDA\u4E8B\u4EF6\u5728\u811A\u672C\u4E2D\u987A\u5E8F"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF"
+  - "\u4E34\u65F6\u6D6E\u70B9\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u4E34\u65F6\u5E03\u5C14\u53D8\u91CF\u81EA\u589E\u503C"
+  - "\u64AD\u653E\u58F0\u97F3"
+  - "\u58F0\u6E90"
+  - "\u64AD\u653E\u58F0\u97F3\u95F4\u9694"
+  - "\u5C04\u51FB\u6DF7\u4E71\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u8BFB\u53D6\u901F\u5EA6"
+  - "\u8D1D\u585E\u5C14\u66F2\u7EBF\u8F68\u8FF9\u5FAA\u73AF"
+  - "\u8BA1\u7B97\u8D1D\u585E\u5C14\u66F2\u7EBF\u5207\u7EBF"
+  - "\u5B50\u5F39\u56FE\u50CFX\u8F74\u53CD\u8F6C"
+  - "\u5B50\u5F39\u56FE\u50CFY\u8F74\u53CD\u8F6C"
+  - ShotAtPlayer
+  - "\u5B50\u5F39\u643A\u5E26\u5BF9\u8C61\u9700\u8981\u65CB\u8F6C\u5750\u6807\u7CFB"
+  - "\u5B50\u5F39\u66F2\u7EBF\u4E8B\u4EF6\u5EF6\u8FDF\u6267\u884C\u65F6\u95F4"
+  - "\u968F\u673A\u53D1\u5C04\u5468\u671F\u8303\u56F4"
+  - "\u542F\u7528\u968F\u673A\u53D1\u5C04\u5468\u671F"
+  - thisTransform
+  - BulletBase
+  - trackDataInfoRemaining
+  - bulletIndexChecking
+  - CopySign
+  - ShotIndex
+  - ShotBullet
+  - ShootSubBullet
+  - MasterBulletObject
+  - XMLPath
+  - XmlDocumentary
+  - Key
+  - BezierPointTrack
+  - _BezierController
+  - TotalFrame
+  - _Masterbullet
+  - ShootingOrginalData
+  - "\u7528\u81EA\u8EAB\u7EC4\u4EF6\u66F4\u65B0"
+  CalculateCircle: 0
+  selfIncreasing: 0
+  OrderIndex: 0
+  OrderCurveIndex: 0
+  OrderCurveIndexX: 1
+  OrderCurveIndexY: 2
+  OrderCurveIndexR: 3
+  OrderCurveIndexG: 4
+  OrderCurveIndexB: 5
+  OrderCurveIndexA: 6

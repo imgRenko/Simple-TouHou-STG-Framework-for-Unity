@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5974732670592035411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801d12963838b744db90ae5627d4b14e, type: 3}
+  m_Name: "\u4ECE\u53E6\u4E00\u4E2A\u8868\u83B7\u53D6\u53D8\u91CF"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -472, y: 24}
+  ports:
+    keys:
+    - "\u8F93\u51FA\u503C"
+    values:
+    - _fieldName: "\u8F93\u51FA\u503C"
+      _node: {fileID: -5974732670592035411}
+      _typeQualifiedName: Anything, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u8F93\u5165"
+        node: {fileID: -3763877310815547573}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 0.47058824, g: 0.11372549, b: 0.11372549, a: 1}
+  NodeName: "\u4ECE\u53E6\u4E00\u4E2A\u8868\u83B7\u53D6\u53D8\u91CF"
+  "STG\u89E6\u53D1\u4E8B\u4EF6\u8868": {fileID: 11400000, guid: 9bc03547933f07049b31199f497e38f1,
+    type: 2}
+  "\u53D8\u91CF\u540D\u79F0": "\u5B50\u5F39\u901F\u5EA6\u968F\u673A"
+--- !u!114 &-3763877310815547573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a708a7b97d89c9240ad70b121f29f388, type: 3}
+  m_Name: "\u6570\u7EC4\u8BFB\u53D6"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -152, y: 56}
+  ports:
+    keys:
+    - "\u6570\u636E\u5E8F\u53F7"
+    - "\u8F93\u5165"
+    - "\u8F93\u51FA"
+    values:
+    - _fieldName: "\u6570\u636E\u5E8F\u53F7"
+      _node: {fileID: -3763877310815547573}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u7ED3\u679C"
+        node: {fileID: 7518127278445980204}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u8F93\u5165"
+      _node: {fileID: -3763877310815547573}
+      _typeQualifiedName: System.Collections.Generic.List`1[[System.Single, mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib,
+        Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u8F93\u51FA\u503C"
+        node: {fileID: -5974732670592035411}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: "\u8F93\u51FA"
+      _node: {fileID: -3763877310815547573}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u76EE\u7684\u503C"
+        node: {fileID: 8739899610585509174}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  TintColor: {r: 0.47058824, g: 0.11372549, b: 0.11372549, a: 1}
+  NodeName: "\u6570\u7EC4\u8BFB\u53D6"
+  "\u53D8\u91CF\u7C7B\u578B": 0
+  "\u6570\u636E\u5E8F\u53F7": -108
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86f9904051ceea4598448bf8bcb8fd5, type: 3}
+  m_Name: New STG Trigger Graph 1
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1734367720677363669}
+  - {fileID: 8739899610585509174}
+  - {fileID: -5974732670592035411}
+  - {fileID: -3763877310815547573}
+  - {fileID: 7518127278445980204}
+  Path: Assets/Plugins/Xnode/BulletEvent/New STG Trigger Graph 1.asset
+--- !u!114 &1734367720677363669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae14660e5b5db8e4a82c3a1ad2f3a433, type: 3}
+  m_Name: "\u53D1\u5C04\u5668\u5904\u7406\u6BCF\u6761\u5B50\u5F39\u65F6"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -425.19507, y: -329.68655}
+  ports:
+    keys:
+    - "\u53D1\u5C04\u5668"
+    - "\u4E0B\u4E00\u6B65"
+    - "\u5B50\u5F39"
+    values:
+    - _fieldName: "\u53D1\u5C04\u5668"
+      _node: {fileID: 1734367720677363669}
+      _typeQualifiedName: Shooting, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u53D1\u5C04\u5668"
+        node: {fileID: 8739899610585509174}
+        reroutePoints: []
+      - fieldName: "\u53D1\u5C04\u5668"
+        node: {fileID: 7518127278445980204}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u4E0B\u4E00\u6B65"
+      _node: {fileID: 1734367720677363669}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8FDB\u5165\u8282\u70B9"
+        node: {fileID: 8739899610585509174}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5B50\u5F39"
+      _node: {fileID: 1734367720677363669}
+      _typeQualifiedName: Bullet, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: "\u53D1\u5C04\u5668\u5904\u7406\u6BCF\u6761\u5B50\u5F39\u65F6"
+  "\u53D1\u5C04\u5668": {fileID: 0}
+  "\u5B50\u5F39": {fileID: 0}
+--- !u!114 &7518127278445980204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe86104c928f8348b42b45d95780a40, type: 3}
+  m_Name: "\u83B7\u53D6\u53D1\u5C04\u5668\u6574\u6570\u4FE1\u606F"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -136, y: -136}
+  ports:
+    keys:
+    - "\u53D1\u5C04\u5668"
+    - "\u7ED3\u679C"
+    values:
+    - _fieldName: "\u53D1\u5C04\u5668"
+      _node: {fileID: 7518127278445980204}
+      _typeQualifiedName: Shooting, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u53D1\u5C04\u5668"
+        node: {fileID: 1734367720677363669}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u7ED3\u679C"
+      _node: {fileID: 7518127278445980204}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u6570\u636E\u5E8F\u53F7"
+        node: {fileID: -3763877310815547573}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 0.47058824, g: 0.11372549, b: 0.11372549, a: 1}
+  NodeName: "\u83B7\u53D6\u53D1\u5C04\u5668\u6574\u6570\u4FE1\u606F"
+  "\u53D1\u5C04\u5668": {fileID: 0}
+  "\u7ED3\u679C": 0
+  "\u53D1\u5C04\u5668\u5C5E\u6027": 15
+--- !u!114 &8739899610585509174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df7d2cb94a07e364fb32dc1eb2c665e2, type: 3}
+  m_Name: "\u8BBE\u7F6E\u53D1\u5C04\u5668\u6D6E\u70B9\u6570\u4FE1\u606F"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: 232, y: -344}
+  ports:
+    keys:
+    - "\u8FDB\u5165\u8282\u70B9"
+    - "\u76EE\u7684\u503C"
+    - "\u53D1\u5C04\u5668"
+    - "\u9000\u51FA\u8282\u70B9"
+    values:
+    - _fieldName: "\u8FDB\u5165\u8282\u70B9"
+      _node: {fileID: 8739899610585509174}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u4E0B\u4E00\u6B65"
+        node: {fileID: 1734367720677363669}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u76EE\u7684\u503C"
+      _node: {fileID: 8739899610585509174}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u8F93\u51FA"
+        node: {fileID: -3763877310815547573}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u53D1\u5C04\u5668"
+      _node: {fileID: 8739899610585509174}
+      _typeQualifiedName: Shooting, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u53D1\u5C04\u5668"
+        node: {fileID: 1734367720677363669}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u9000\u51FA\u8282\u70B9"
+      _node: {fileID: 8739899610585509174}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 0.47058824, g: 0.11372549, b: 0.11372549, a: 1}
+  NodeName: "\u8BBE\u7F6E\u53D1\u5C04\u5668\u6D6E\u70B9\u6570\u4FE1\u606F"
+  "\u76EE\u7684\u503C": 3.9214294
+  "\u53D1\u5C04\u5668": {fileID: 0}
+  "\u53D1\u5C04\u5668\u5C5E\u6027": 25

@@ -1,0 +1,6149 @@
+fileFormatVersion: 2
+guid: 26f67eb0f5869ed42ab8f1bbfd614b95
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: HDBarrage_0
+  - first:
+      213: 21300002
+    second: HDBarrage_1
+  - first:
+      213: 21300004
+    second: HDBarrage_2
+  - first:
+      213: 21300006
+    second: HDBarrage_3
+  - first:
+      213: 21300008
+    second: HDBarrage_4
+  - first:
+      213: 21300010
+    second: HDBarrage_5
+  - first:
+      213: 21300012
+    second: HDBarrage_6
+  - first:
+      213: 21300014
+    second: HDBarrage_7
+  - first:
+      213: 21300016
+    second: HDBarrage_8
+  - first:
+      213: 21300018
+    second: HDBarrage_9
+  - first:
+      213: 21300020
+    second: HDBarrage_10
+  - first:
+      213: 21300022
+    second: HDBarrage_11
+  - first:
+      213: 21300024
+    second: HDBarrage_12
+  - first:
+      213: 21300026
+    second: HDBarrage_13
+  - first:
+      213: 21300028
+    second: HDBarrage_14
+  - first:
+      213: 21300030
+    second: HDBarrage_15
+  - first:
+      213: 21300032
+    second: HDBarrage_16
+  - first:
+      213: 21300034
+    second: HDBarrage_17
+  - first:
+      213: 21300036
+    second: HDBarrage_18
+  - first:
+      213: 21300038
+    second: HDBarrage_19
+  - first:
+      213: 21300040
+    second: HDBarrage_20
+  - first:
+      213: 21300042
+    second: HDBarrage_21
+  - first:
+      213: 21300044
+    second: HDBarrage_22
+  - first:
+      213: 21300046
+    second: HDBarrage_23
+  - first:
+      213: 21300048
+    second: HDBarrage_24
+  - first:
+      213: 21300050
+    second: HDBarrage_25
+  - first:
+      213: 21300052
+    second: HDBarrage_26
+  - first:
+      213: 21300054
+    second: HDBarrage_27
+  - first:
+      213: 21300056
+    second: HDBarrage_28
+  - first:
+      213: 21300058
+    second: HDBarrage_29
+  - first:
+      213: 21300060
+    second: HDBarrage_30
+  - first:
+      213: 21300062
+    second: HDBarrage_31
+  - first:
+      213: 21300064
+    second: HDBarrage_32
+  - first:
+      213: 21300066
+    second: HDBarrage_33
+  - first:
+      213: 21300068
+    second: HDBarrage_34
+  - first:
+      213: 21300070
+    second: HDBarrage_35
+  - first:
+      213: 21300072
+    second: HDBarrage_36
+  - first:
+      213: 21300074
+    second: HDBarrage_37
+  - first:
+      213: 21300076
+    second: HDBarrage_38
+  - first:
+      213: 21300078
+    second: HDBarrage_39
+  - first:
+      213: 21300080
+    second: HDBarrage_40
+  - first:
+      213: 21300082
+    second: HDBarrage_41
+  - first:
+      213: 21300084
+    second: HDBarrage_42
+  - first:
+      213: 21300086
+    second: HDBarrage_43
+  - first:
+      213: 21300088
+    second: HDBarrage_44
+  - first:
+      213: 21300090
+    second: HDBarrage_45
+  - first:
+      213: 21300092
+    second: HDBarrage_46
+  - first:
+      213: 21300094
+    second: HDBarrage_47
+  - first:
+      213: 21300096
+    second: HDBarrage_48
+  - first:
+      213: 21300098
+    second: HDBarrage_49
+  - first:
+      213: 21300100
+    second: HDBarrage_50
+  - first:
+      213: 21300102
+    second: HDBarrage_51
+  - first:
+      213: 21300104
+    second: HDBarrage_52
+  - first:
+      213: 21300106
+    second: HDBarrage_53
+  - first:
+      213: 21300108
+    second: HDBarrage_54
+  - first:
+      213: 21300110
+    second: HDBarrage_55
+  - first:
+      213: 21300112
+    second: HDBarrage_56
+  - first:
+      213: 21300114
+    second: HDBarrage_57
+  - first:
+      213: 21300116
+    second: HDBarrage_58
+  - first:
+      213: 21300118
+    second: HDBarrage_59
+  - first:
+      213: 21300120
+    second: HDBarrage_60
+  - first:
+      213: 21300122
+    second: HDBarrage_61
+  - first:
+      213: 21300124
+    second: HDBarrage_62
+  - first:
+      213: 21300126
+    second: HDBarrage_63
+  - first:
+      213: 21300128
+    second: HDBarrage_64
+  - first:
+      213: 21300130
+    second: HDBarrage_65
+  - first:
+      213: 21300132
+    second: HDBarrage_66
+  - first:
+      213: 21300134
+    second: HDBarrage_67
+  - first:
+      213: 21300136
+    second: HDBarrage_68
+  - first:
+      213: 21300138
+    second: HDBarrage_69
+  - first:
+      213: 21300140
+    second: HDBarrage_70
+  - first:
+      213: 21300142
+    second: HDBarrage_71
+  - first:
+      213: 21300144
+    second: HDBarrage_72
+  - first:
+      213: 21300146
+    second: HDBarrage_73
+  - first:
+      213: 21300148
+    second: HDBarrage_74
+  - first:
+      213: 21300150
+    second: HDBarrage_75
+  - first:
+      213: 21300152
+    second: HDBarrage_76
+  - first:
+      213: 21300154
+    second: HDBarrage_77
+  - first:
+      213: 21300156
+    second: HDBarrage_78
+  - first:
+      213: 21300158
+    second: HDBarrage_79
+  - first:
+      213: 21300160
+    second: HDBarrage_80
+  - first:
+      213: 21300162
+    second: HDBarrage_81
+  - first:
+      213: 21300164
+    second: HDBarrage_82
+  - first:
+      213: 21300166
+    second: HDBarrage_83
+  - first:
+      213: 21300168
+    second: HDBarrage_84
+  - first:
+      213: 21300170
+    second: HDBarrage_85
+  - first:
+      213: 21300172
+    second: HDBarrage_86
+  - first:
+      213: 21300174
+    second: HDBarrage_87
+  - first:
+      213: 21300176
+    second: HDBarrage_88
+  - first:
+      213: 21300178
+    second: HDBarrage_89
+  - first:
+      213: 21300180
+    second: HDBarrage_90
+  - first:
+      213: 21300182
+    second: HDBarrage_91
+  - first:
+      213: 21300184
+    second: HDBarrage_92
+  - first:
+      213: 21300186
+    second: HDBarrage_93
+  - first:
+      213: 21300188
+    second: HDBarrage_94
+  - first:
+      213: 21300190
+    second: HDBarrage_95
+  - first:
+      213: 21300192
+    second: HDBarrage_96
+  - first:
+      213: 21300194
+    second: HDBarrage_97
+  - first:
+      213: 21300196
+    second: HDBarrage_98
+  - first:
+      213: 21300198
+    second: HDBarrage_99
+  - first:
+      213: 21300200
+    second: HDBarrage_100
+  - first:
+      213: 21300202
+    second: HDBarrage_101
+  - first:
+      213: 21300204
+    second: HDBarrage_102
+  - first:
+      213: 21300206
+    second: HDBarrage_103
+  - first:
+      213: 21300208
+    second: HDBarrage_104
+  - first:
+      213: 21300210
+    second: HDBarrage_105
+  - first:
+      213: 21300212
+    second: HDBarrage_106
+  - first:
+      213: 21300214
+    second: HDBarrage_107
+  - first:
+      213: 21300216
+    second: HDBarrage_108
+  - first:
+      213: 21300218
+    second: HDBarrage_109
+  - first:
+      213: 21300220
+    second: HDBarrage_110
+  - first:
+      213: 21300222
+    second: HDBarrage_111
+  - first:
+      213: 21300224
+    second: HDBarrage_112
+  - first:
+      213: 21300226
+    second: HDBarrage_113
+  - first:
+      213: 21300228
+    second: HDBarrage_114
+  - first:
+      213: 21300230
+    second: HDBarrage_115
+  - first:
+      213: 21300232
+    second: HDBarrage_116
+  - first:
+      213: 21300234
+    second: HDBarrage_117
+  - first:
+      213: 21300236
+    second: HDBarrage_118
+  - first:
+      213: 21300238
+    second: HDBarrage_119
+  - first:
+      213: 21300240
+    second: HDBarrage_120
+  - first:
+      213: 21300242
+    second: HDBarrage_121
+  - first:
+      213: 21300244
+    second: HDBarrage_122
+  - first:
+      213: 21300246
+    second: HDBarrage_123
+  - first:
+      213: 21300248
+    second: HDBarrage_124
+  - first:
+      213: 21300250
+    second: HDBarrage_125
+  - first:
+      213: 21300252
+    second: HDBarrage_126
+  - first:
+      213: 21300254
+    second: HDBarrage_127
+  - first:
+      213: 21300256
+    second: HDBarrage_128
+  - first:
+      213: 21300258
+    second: HDBarrage_129
+  - first:
+      213: 21300260
+    second: HDBarrage_130
+  - first:
+      213: 21300262
+    second: HDBarrage_131
+  - first:
+      213: 21300264
+    second: HDBarrage_132
+  - first:
+      213: 21300266
+    second: HDBarrage_133
+  - first:
+      213: 21300268
+    second: HDBarrage_134
+  - first:
+      213: 21300270
+    second: HDBarrage_135
+  - first:
+      213: 21300272
+    second: HDBarrage_136
+  - first:
+      213: 21300274
+    second: HDBarrage_137
+  - first:
+      213: 21300276
+    second: HDBarrage_138
+  - first:
+      213: 21300278
+    second: HDBarrage_139
+  - first:
+      213: 21300280
+    second: HDBarrage_140
+  - first:
+      213: 21300282
+    second: HDBarrage_141
+  - first:
+      213: 21300284
+    second: HDBarrage_142
+  - first:
+      213: 21300286
+    second: HDBarrage_143
+  - first:
+      213: 21300288
+    second: HDBarrage_144
+  - first:
+      213: 21300290
+    second: HDBarrage_145
+  - first:
+      213: 21300292
+    second: HDBarrage_146
+  - first:
+      213: 21300294
+    second: HDBarrage_147
+  - first:
+      213: 21300296
+    second: HDBarrage_148
+  - first:
+      213: 21300298
+    second: HDBarrage_149
+  - first:
+      213: 21300300
+    second: HDBarrage_150
+  - first:
+      213: 21300302
+    second: HDBarrage_151
+  - first:
+      213: 21300304
+    second: HDBarrage_152
+  - first:
+      213: 21300306
+    second: HDBarrage_153
+  - first:
+      213: 21300308
+    second: HDBarrage_154
+  - first:
+      213: 21300310
+    second: HDBarrage_155
+  - first:
+      213: 21300312
+    second: HDBarrage_156
+  - first:
+      213: 21300314
+    second: HDBarrage_157
+  - first:
+      213: 21300316
+    second: HDBarrage_158
+  - first:
+      213: 21300318
+    second: HDBarrage_159
+  - first:
+      213: 21300320
+    second: HDBarrage_160
+  - first:
+      213: 21300322
+    second: HDBarrage_161
+  - first:
+      213: 21300324
+    second: HDBarrage_162
+  - first:
+      213: 21300326
+    second: HDBarrage_163
+  - first:
+      213: 21300328
+    second: HDBarrage_164
+  - first:
+      213: 21300330
+    second: HDBarrage_165
+  - first:
+      213: 21300332
+    second: HDBarrage_166
+  - first:
+      213: 21300334
+    second: HDBarrage_167
+  - first:
+      213: 21300336
+    second: HDBarrage_168
+  - first:
+      213: 21300338
+    second: HDBarrage_169
+  - first:
+      213: 21300340
+    second: HDBarrage_170
+  - first:
+      213: 21300342
+    second: HDBarrage_171
+  - first:
+      213: 21300344
+    second: HDBarrage_172
+  - first:
+      213: 21300346
+    second: HDBarrage_173
+  - first:
+      213: 21300348
+    second: HDBarrage_174
+  - first:
+      213: 21300350
+    second: HDBarrage_175
+  - first:
+      213: 21300352
+    second: HDBarrage_176
+  - first:
+      213: 21300354
+    second: HDBarrage_177
+  - first:
+      213: 21300356
+    second: HDBarrage_178
+  - first:
+      213: 21300358
+    second: HDBarrage_179
+  - first:
+      213: 21300360
+    second: HDBarrage_180
+  - first:
+      213: 21300362
+    second: HDBarrage_181
+  - first:
+      213: 21300364
+    second: HDBarrage_182
+  - first:
+      213: 21300366
+    second: HDBarrage_183
+  - first:
+      213: 21300368
+    second: HDBarrage_184
+  - first:
+      213: 21300370
+    second: HDBarrage_185
+  - first:
+      213: 21300372
+    second: HDBarrage_186
+  - first:
+      213: 21300374
+    second: HDBarrage_187
+  - first:
+      213: 21300376
+    second: HDBarrage_188
+  - first:
+      213: 21300378
+    second: HDBarrage_189
+  - first:
+      213: 21300380
+    second: HDBarrage_190
+  - first:
+      213: 21300382
+    second: HDBarrage_191
+  - first:
+      213: 21300384
+    second: HDBarrage_192
+  - first:
+      213: 21300386
+    second: HDBarrage_193
+  - first:
+      213: 21300388
+    second: HDBarrage_194
+  - first:
+      213: 21300390
+    second: HDBarrage_195
+  - first:
+      213: 21300392
+    second: HDBarrage_196
+  - first:
+      213: 21300394
+    second: HDBarrage_197
+  - first:
+      213: 21300396
+    second: HDBarrage_198
+  - first:
+      213: 21300398
+    second: HDBarrage_199
+  - first:
+      213: 21300400
+    second: HDBarrage_200
+  - first:
+      213: 21300402
+    second: HDBarrage_201
+  - first:
+      213: 21300404
+    second: HDBarrage_202
+  - first:
+      213: 21300406
+    second: HDBarrage_203
+  - first:
+      213: 21300408
+    second: HDBarrage_204
+  - first:
+      213: 21300410
+    second: HDBarrage_205
+  - first:
+      213: 21300412
+    second: HDBarrage_206
+  - first:
+      213: 21300414
+    second: HDBarrage_207
+  - first:
+      213: 21300416
+    second: HDBarrage_208
+  - first:
+      213: 21300418
+    second: HDBarrage_209
+  - first:
+      213: 21300420
+    second: HDBarrage_210
+  - first:
+      213: 21300422
+    second: HDBarrage_211
+  - first:
+      213: 21300424
+    second: HDBarrage_212
+  - first:
+      213: 21300426
+    second: HDBarrage_213
+  - first:
+      213: 21300428
+    second: HDBarrage_214
+  - first:
+      213: 21300430
+    second: HDBarrage_215
+  - first:
+      213: 21300432
+    second: HDBarrage_216
+  - first:
+      213: 21300434
+    second: HDBarrage_217
+  - first:
+      213: 21300436
+    second: HDBarrage_218
+  - first:
+      213: 21300438
+    second: HDBarrage_219
+  - first:
+      213: 21300440
+    second: HDBarrage_220
+  - first:
+      213: 21300442
+    second: HDBarrage_221
+  - first:
+      213: 21300444
+    second: HDBarrage_222
+  - first:
+      213: 3641567804746012615
+    second: HDBarrage_0
+  - first:
+      213: 7707967196433764079
+    second: HDBarrage_1
+  - first:
+      213: 4059892678101605475
+    second: HDBarrage_2
+  - first:
+      213: 1926397724256213327
+    second: HDBarrage_3
+  - first:
+      213: -3136718409218939965
+    second: HDBarrage_4
+  - first:
+      213: -5766900518825406773
+    second: HDBarrage_5
+  - first:
+      213: -7212510296540665759
+    second: HDBarrage_6
+  - first:
+      213: 2595603491755668320
+    second: HDBarrage_7
+  - first:
+      213: -5930812695644425991
+    second: HDBarrage_8
+  - first:
+      213: -4659354048466777555
+    second: HDBarrage_9
+  - first:
+      213: -8030260010861112024
+    second: HDBarrage_10
+  - first:
+      213: -1870388202021541451
+    second: HDBarrage_11
+  - first:
+      213: -6645618530465953609
+    second: HDBarrage_12
+  - first:
+      213: -861480225163291375
+    second: HDBarrage_13
+  - first:
+      213: -1010446142134682598
+    second: HDBarrage_14
+  - first:
+      213: -5159754764283599705
+    second: HDBarrage_15
+  - first:
+      213: -4760042947499076853
+    second: HDBarrage_16
+  - first:
+      213: 4795461491411889361
+    second: HDBarrage_17
+  - first:
+      213: -2804075497412815600
+    second: HDBarrage_18
+  - first:
+      213: -6031911417246228375
+    second: HDBarrage_19
+  - first:
+      213: -1873169755543712148
+    second: HDBarrage_20
+  - first:
+      213: 1561164344687127885
+    second: HDBarrage_21
+  - first:
+      213: 2919348894725121516
+    second: HDBarrage_22
+  - first:
+      213: -2127659222381299670
+    second: HDBarrage_23
+  - first:
+      213: -6218763309497144390
+    second: HDBarrage_24
+  - first:
+      213: -7926112190397685217
+    second: HDBarrage_25
+  - first:
+      213: -4371368137755994851
+    second: HDBarrage_26
+  - first:
+      213: 3957539804895735770
+    second: HDBarrage_27
+  - first:
+      213: -7725698115175356003
+    second: HDBarrage_28
+  - first:
+      213: -1015589457597830747
+    second: HDBarrage_29
+  - first:
+      213: -5348059427415707576
+    second: HDBarrage_30
+  - first:
+      213: -612737503637770822
+    second: HDBarrage_31
+  - first:
+      213: 8934232345533968803
+    second: HDBarrage_32
+  - first:
+      213: 7920667721512228630
+    second: HDBarrage_33
+  - first:
+      213: -6223584022280915584
+    second: HDBarrage_34
+  - first:
+      213: 4815240693156075647
+    second: HDBarrage_35
+  - first:
+      213: -5060306443440003766
+    second: HDBarrage_36
+  - first:
+      213: -3685876813816886625
+    second: HDBarrage_37
+  - first:
+      213: -2962959162405838482
+    second: HDBarrage_38
+  - first:
+      213: -4830341781239604926
+    second: HDBarrage_39
+  - first:
+      213: -2607026601414350441
+    second: HDBarrage_40
+  - first:
+      213: 8610845496142852558
+    second: HDBarrage_41
+  - first:
+      213: 8104900115323349798
+    second: HDBarrage_42
+  - first:
+      213: 8550737403254032384
+    second: HDBarrage_43
+  - first:
+      213: 8738567012423883976
+    second: HDBarrage_44
+  - first:
+      213: -3146637155728089941
+    second: HDBarrage_45
+  - first:
+      213: 2985743479465218346
+    second: HDBarrage_46
+  - first:
+      213: 8346189473330246850
+    second: HDBarrage_47
+  - first:
+      213: -3375372629115597707
+    second: HDBarrage_48
+  - first:
+      213: -4075925167590216972
+    second: HDBarrage_49
+  - first:
+      213: -4654007223787665274
+    second: HDBarrage_50
+  - first:
+      213: 1156389544338430880
+    second: HDBarrage_51
+  - first:
+      213: -2799817040798927702
+    second: HDBarrage_52
+  - first:
+      213: -607801419661912470
+    second: HDBarrage_53
+  - first:
+      213: -4256186524298405113
+    second: HDBarrage_54
+  - first:
+      213: -7238159950806290608
+    second: HDBarrage_55
+  - first:
+      213: 307061623246981662
+    second: HDBarrage_56
+  - first:
+      213: 7114452409576008576
+    second: HDBarrage_57
+  - first:
+      213: -165297466959108472
+    second: HDBarrage_58
+  - first:
+      213: 3878139886593563651
+    second: HDBarrage_59
+  - first:
+      213: 1151475269451103936
+    second: HDBarrage_60
+  - first:
+      213: 6984979817144288783
+    second: HDBarrage_61
+  - first:
+      213: 2605786002404003184
+    second: HDBarrage_62
+  - first:
+      213: -7413674003339699695
+    second: HDBarrage_63
+  - first:
+      213: 5387237072534250629
+    second: HDBarrage_64
+  - first:
+      213: -9206735171631046337
+    second: HDBarrage_65
+  - first:
+      213: 3931896422290796006
+    second: HDBarrage_66
+  - first:
+      213: 3273321952936277323
+    second: HDBarrage_67
+  - first:
+      213: -2696735607836087114
+    second: HDBarrage_68
+  - first:
+      213: -7829696053649599157
+    second: HDBarrage_69
+  - first:
+      213: 2798649269729025541
+    second: HDBarrage_70
+  - first:
+      213: -2985270675167345433
+    second: HDBarrage_71
+  - first:
+      213: -4044048890155335086
+    second: HDBarrage_72
+  - first:
+      213: -3273054391651894961
+    second: HDBarrage_73
+  - first:
+      213: -2477496601949848568
+    second: HDBarrage_74
+  - first:
+      213: 5873708730129290285
+    second: HDBarrage_75
+  - first:
+      213: 1978021757625825266
+    second: HDBarrage_76
+  - first:
+      213: -6809108916845462665
+    second: HDBarrage_77
+  - first:
+      213: -2230475973352210217
+    second: HDBarrage_78
+  - first:
+      213: -4805473490252471854
+    second: HDBarrage_79
+  - first:
+      213: -4928864707876603632
+    second: HDBarrage_80
+  - first:
+      213: -463128996471593783
+    second: HDBarrage_81
+  - first:
+      213: -6798371595836215941
+    second: HDBarrage_82
+  - first:
+      213: -959556003901518870
+    second: HDBarrage_83
+  - first:
+      213: -377600512337139019
+    second: HDBarrage_84
+  - first:
+      213: -6531223297873899865
+    second: HDBarrage_85
+  - first:
+      213: -6677203492417273713
+    second: HDBarrage_86
+  - first:
+      213: -1325227274796708339
+    second: HDBarrage_87
+  - first:
+      213: -6478325786793246682
+    second: HDBarrage_88
+  - first:
+      213: 4394407150912817772
+    second: HDBarrage_89
+  - first:
+      213: -4155675284570821953
+    second: HDBarrage_90
+  - first:
+      213: -3113036672796220038
+    second: HDBarrage_91
+  - first:
+      213: 4242472877461734738
+    second: HDBarrage_92
+  - first:
+      213: 410399585301180196
+    second: HDBarrage_93
+  - first:
+      213: 5999421824411101937
+    second: HDBarrage_94
+  - first:
+      213: -6918908179865655385
+    second: HDBarrage_95
+  - first:
+      213: -4135629266950919010
+    second: HDBarrage_96
+  - first:
+      213: 6701151608049221829
+    second: HDBarrage_97
+  - first:
+      213: 2785751650643085624
+    second: HDBarrage_98
+  - first:
+      213: -8157438585343225807
+    second: HDBarrage_99
+  - first:
+      213: 1271799091021865290
+    second: HDBarrage_100
+  - first:
+      213: 6502760576651438041
+    second: HDBarrage_101
+  - first:
+      213: 4220475950683928489
+    second: HDBarrage_102
+  - first:
+      213: 3321226281447483383
+    second: HDBarrage_103
+  - first:
+      213: 5964176623800865006
+    second: HDBarrage_104
+  - first:
+      213: 3328078270126045495
+    second: HDBarrage_105
+  - first:
+      213: -8920002859404847956
+    second: HDBarrage_106
+  - first:
+      213: -3322640011852140492
+    second: HDBarrage_107
+  - first:
+      213: 2125387625811116692
+    second: HDBarrage_108
+  - first:
+      213: 6342742371765842095
+    second: HDBarrage_109
+  - first:
+      213: -668783212096375593
+    second: HDBarrage_110
+  - first:
+      213: -9000751333197129460
+    second: HDBarrage_111
+  - first:
+      213: -939098163928675307
+    second: HDBarrage_112
+  - first:
+      213: -8101509090808154019
+    second: HDBarrage_113
+  - first:
+      213: -6123669099120219195
+    second: HDBarrage_114
+  - first:
+      213: -7588054754428155269
+    second: HDBarrage_115
+  - first:
+      213: 4811572278627496338
+    second: HDBarrage_116
+  - first:
+      213: -7790026165254517285
+    second: HDBarrage_117
+  - first:
+      213: 4203981037321149511
+    second: HDBarrage_118
+  - first:
+      213: -3529914121359597314
+    second: HDBarrage_119
+  - first:
+      213: 3606157128211468410
+    second: HDBarrage_120
+  - first:
+      213: -4682837790487342320
+    second: HDBarrage_121
+  - first:
+      213: 4981722398227668869
+    second: HDBarrage_122
+  - first:
+      213: -6551359907718577033
+    second: HDBarrage_123
+  - first:
+      213: -2408292158027267984
+    second: HDBarrage_124
+  - first:
+      213: 3361224570929183717
+    second: HDBarrage_125
+  - first:
+      213: -7204997132089735075
+    second: HDBarrage_126
+  - first:
+      213: -7213920333447018112
+    second: HDBarrage_127
+  - first:
+      213: -4141542909788768457
+    second: HDBarrage_128
+  - first:
+      213: 1697134331539127873
+    second: HDBarrage_129
+  - first:
+      213: 5098153511668649117
+    second: HDBarrage_130
+  - first:
+      213: -2129144566300411949
+    second: HDBarrage_131
+  - first:
+      213: -7358876870716044338
+    second: HDBarrage_132
+  - first:
+      213: 4787910747207789950
+    second: HDBarrage_133
+  - first:
+      213: 9016369922078685084
+    second: HDBarrage_134
+  - first:
+      213: 4506289530894195859
+    second: HDBarrage_135
+  - first:
+      213: -6553593690485786553
+    second: HDBarrage_136
+  - first:
+      213: -2031726221618659931
+    second: HDBarrage_137
+  - first:
+      213: -3132405194670400180
+    second: HDBarrage_138
+  - first:
+      213: 218144845449917232
+    second: HDBarrage_139
+  - first:
+      213: 7243271190548569871
+    second: HDBarrage_140
+  - first:
+      213: 3977758020705122094
+    second: HDBarrage_141
+  - first:
+      213: -3325486874045206340
+    second: HDBarrage_142
+  - first:
+      213: -2224373123950913163
+    second: HDBarrage_143
+  - first:
+      213: -4524188436511532317
+    second: HDBarrage_144
+  - first:
+      213: -6599948071680233496
+    second: HDBarrage_145
+  - first:
+      213: -3960721501735681588
+    second: HDBarrage_146
+  - first:
+      213: 1409362190879377491
+    second: HDBarrage_147
+  - first:
+      213: -6420587683341649283
+    second: HDBarrage_148
+  - first:
+      213: 1598968617403172677
+    second: HDBarrage_149
+  - first:
+      213: 8424197050181865038
+    second: HDBarrage_150
+  - first:
+      213: 8680339198391129518
+    second: HDBarrage_151
+  - first:
+      213: -4778053460175177137
+    second: HDBarrage_152
+  - first:
+      213: 5304088366556205527
+    second: HDBarrage_153
+  - first:
+      213: 7401328655732682671
+    second: HDBarrage_154
+  - first:
+      213: 5159253694873807525
+    second: HDBarrage_155
+  - first:
+      213: -370364616258897092
+    second: HDBarrage_156
+  - first:
+      213: -8245385757734724459
+    second: HDBarrage_157
+  - first:
+      213: -7180005227978112640
+    second: HDBarrage_158
+  - first:
+      213: 5684730508137280500
+    second: HDBarrage_159
+  - first:
+      213: -4673414469531884279
+    second: HDBarrage_160
+  - first:
+      213: -31164658493350870
+    second: HDBarrage_161
+  - first:
+      213: -1072892374782981341
+    second: HDBarrage_162
+  - first:
+      213: -2787721949100834878
+    second: HDBarrage_163
+  - first:
+      213: 723486305727857537
+    second: HDBarrage_164
+  - first:
+      213: 2665211267905165949
+    second: HDBarrage_165
+  - first:
+      213: -5901306279793369747
+    second: HDBarrage_166
+  - first:
+      213: 6855424978959828509
+    second: HDBarrage_167
+  - first:
+      213: 3966154065442985682
+    second: HDBarrage_168
+  - first:
+      213: 4928769477319539352
+    second: HDBarrage_169
+  - first:
+      213: -7538951792233058104
+    second: HDBarrage_170
+  - first:
+      213: -2083830308029831887
+    second: HDBarrage_171
+  - first:
+      213: 1791343105955818946
+    second: HDBarrage_172
+  - first:
+      213: 8889392249915218841
+    second: HDBarrage_173
+  - first:
+      213: 5864720077097154443
+    second: HDBarrage_174
+  - first:
+      213: 4015973844283790681
+    second: HDBarrage_175
+  - first:
+      213: -5371963537918901194
+    second: HDBarrage_176
+  - first:
+      213: 183855300262372889
+    second: HDBarrage_177
+  - first:
+      213: 8624815763949791413
+    second: HDBarrage_178
+  - first:
+      213: 3790678232032704194
+    second: HDBarrage_179
+  - first:
+      213: -4288224224089407353
+    second: HDBarrage_180
+  - first:
+      213: -1105267124053923193
+    second: HDBarrage_181
+  - first:
+      213: -71630866063622683
+    second: HDBarrage_182
+  - first:
+      213: 4988767187369598706
+    second: HDBarrage_183
+  - first:
+      213: 3460570673587438239
+    second: HDBarrage_184
+  - first:
+      213: -8103223837496755863
+    second: HDBarrage_185
+  - first:
+      213: -2966178679571383706
+    second: HDBarrage_186
+  - first:
+      213: 7512912162529969647
+    second: HDBarrage_187
+  - first:
+      213: -7526224016044830438
+    second: HDBarrage_188
+  - first:
+      213: 278357800082264743
+    second: HDBarrage_189
+  - first:
+      213: 8120768039906370004
+    second: HDBarrage_190
+  - first:
+      213: 5742052658791056899
+    second: HDBarrage_191
+  - first:
+      213: 3654460345760221414
+    second: HDBarrage_192
+  - first:
+      213: -5367581096719518769
+    second: HDBarrage_193
+  - first:
+      213: -5718211229131441582
+    second: HDBarrage_194
+  - first:
+      213: 8530352735964668235
+    second: HDBarrage_195
+  - first:
+      213: 4674965221613090274
+    second: HDBarrage_196
+  - first:
+      213: 688056973824659209
+    second: HDBarrage_197
+  - first:
+      213: -2228949725774017861
+    second: HDBarrage_198
+  - first:
+      213: -8676167210283776971
+    second: HDBarrage_199
+  - first:
+      213: -656924129464441741
+    second: HDBarrage_200
+  - first:
+      213: 8251483008822910715
+    second: HDBarrage_201
+  - first:
+      213: 6445006322850222276
+    second: HDBarrage_202
+  - first:
+      213: -3309481689492096000
+    second: HDBarrage_203
+  - first:
+      213: -629439021087740326
+    second: HDBarrage_204
+  - first:
+      213: -8740960581714213039
+    second: HDBarrage_205
+  - first:
+      213: 772226787267107485
+    second: HDBarrage_206
+  - first:
+      213: -500775062778035661
+    second: HDBarrage_207
+  - first:
+      213: 8101041714736705594
+    second: HDBarrage_208
+  - first:
+      213: 6637963832387821
+    second: HDBarrage_209
+  - first:
+      213: -590899090732946578
+    second: HDBarrage_210
+  - first:
+      213: -1447938439546822731
+    second: HDBarrage_211
+  - first:
+      213: -640873144129833379
+    second: HDBarrage_212
+  - first:
+      213: 2408681212879469984
+    second: HDBarrage_213
+  - first:
+      213: -793744873720976402
+    second: HDBarrage_214
+  - first:
+      213: -892383446560411864
+    second: HDBarrage_215
+  - first:
+      213: -796873751826099741
+    second: HDBarrage_216
+  - first:
+      213: -2047723359095158708
+    second: HDBarrage_217
+  - first:
+      213: -9050565689381441689
+    second: HDBarrage_218
+  - first:
+      213: -825028052169541803
+    second: HDBarrage_219
+  - first:
+      213: -3712422927582907220
+    second: HDBarrage_220
+  - first:
+      213: 7612788740577847205
+    second: HDBarrage_221
+  - first:
+      213: 5996664287815750722
+    second: HDBarrage_222
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HDBarrage_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1556
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c79263ef92798230800000000000000
+      internalID: 3641567804746012615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1556
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee4ccb935338fa60800000000000000
+      internalID: 7707967196433764079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1556
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c947861e2a75830800000000000000
+      internalID: 4059892678101605475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1556
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4999621680fbba10800000000000000
+      internalID: 1926397724256213327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1556
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3a312d9332874d0800000000000000
+      internalID: -3136718409218939965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_5
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1556
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce4560588ad7ffa0800000000000000
+      internalID: -5766900518825406773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1556
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168a8db491408eb90800000000000000
+      internalID: -7212510296540665759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_7
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1556
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0633cd7af9f650420800000000000000
+      internalID: 2595603491755668320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1554
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0bcbea64581bda0800000000000000
+      internalID: -5930812695644425991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1554
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a0c52ed26a65fb0800000000000000
+      internalID: -4659354048466777555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_10
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1554
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8255996f019ce8090800000000000000
+      internalID: -8030260010861112024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_11
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1554
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9ac6a07db0b06e0800000000000000
+      internalID: -1870388202021541451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_12
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1554
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8c2d2182506c3a0800000000000000
+      internalID: -6645618530465953609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_13
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1554
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1155e1eac486b04f0800000000000000
+      internalID: -861480225163291375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_14
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1554
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cf569569c2af1f0800000000000000
+      internalID: -1010446142134682598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_15
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1554
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a42fb2216ed468b0800000000000000
+      internalID: -5159754764283599705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_16
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1526
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03d6b6b82ee0fdb0800000000000000
+      internalID: -4760042947499076853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_17
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1516
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcaba9a1d6ec8240800000000000000
+      internalID: 4795461491411889361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1508
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0151555113ce519d0800000000000000
+      internalID: -2804075497412815600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_19
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1508
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9606a6246885a4ca0800000000000000
+      internalID: -6031911417246228375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1508
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ecfc4280a2106e0800000000000000
+      internalID: -1873169755543712148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_21
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1508
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4de41933be5aa510800000000000000
+      internalID: 1561164344687127885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_22
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1508
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce525853a5c938820800000000000000
+      internalID: 2919348894725121516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_23
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1508
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28f0e6c5390972e0800000000000000
+      internalID: -2127659222381299670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_24
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1508
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abba03be7b382b9a0800000000000000
+      internalID: -6218763309497144390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_25
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1508
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12e37905fac00290800000000000000
+      internalID: -7926112190397685217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_26
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1506
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15d796d6d7c553c0800000000000000
+      internalID: -4371368137755994851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_27
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1506
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf674f0c710ce630800000000000000
+      internalID: 3957539804895735770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_28
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1506
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99611b2f7ec8c490800000000000000
+      internalID: -7725698115175356003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_29
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1506
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9ef36e4c6e7e1f0800000000000000
+      internalID: -1015589457597830747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_30
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1506
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84035373940e7c5b0800000000000000
+      internalID: -5348059427415707576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_31
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1506
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd6c13ac7e1f77f0800000000000000
+      internalID: -612737503637770822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_32
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 1506
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a17b509bf4ccfb70800000000000000
+      internalID: 8934232345533968803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_33
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1506
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61793a4c35ddbed60800000000000000
+      internalID: 7920667721512228630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_34
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1446
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08536224e4361a9a0800000000000000
+      internalID: -6223584022280915584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_35
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1468
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78d29fe5eb23d240800000000000000
+      internalID: 4815240693156075647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_36
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1468
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a456320b91e26c9b0800000000000000
+      internalID: -5060306443440003766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_37
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1468
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a8892019229dcc0800000000000000
+      internalID: -3685876813816886625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_38
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1468
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61afc8175471e6d0800000000000000
+      internalID: -2962959162405838482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_39
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1468
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2495c710ebd27fcb0800000000000000
+      internalID: -4830341781239604926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_40
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1468
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79924be5e1bf1dbd0800000000000000
+      internalID: -2607026601414350441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_41
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1468
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1fd554b5edf7770800000000000000
+      internalID: 8610845496142852558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_42
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1468
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62beed996b36a7070800000000000000
+      internalID: 8104900115323349798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_43
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1448
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0084a905d525aa670800000000000000
+      internalID: 8550737403254032384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_44
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1448
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccd87d1660a54970800000000000000
+      internalID: 8738567012423883976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_45
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1448
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac18cfad26e454d0800000000000000
+      internalID: -3146637155728089941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_46
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1448
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2196fb10ed7f6920800000000000000
+      internalID: 2985743479465218346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_47
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1448
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c434f12b1f93d370800000000000000
+      internalID: 8346189473330246850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_48
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1448
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c0df03a744821d0800000000000000
+      internalID: -3375372629115597707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_49
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1448
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fae5beb7a76f67c0800000000000000
+      internalID: -4075925167590216972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_50
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1448
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688c8048615a96fb0800000000000000
+      internalID: -4654007223787665274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_51
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1416
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab944ce9225c0010800000000000000
+      internalID: 1156389544338430880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_52
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1446
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa438174c3d0529d0800000000000000
+      internalID: -2799817040798927702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_53
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1446
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66d21f34d7a097f0800000000000000
+      internalID: -607801419661912470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_54
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1446
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b936908ecfee4c0800000000000000
+      internalID: -4256186524298405113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_55
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1446
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f6bb8cfd3ec8b90800000000000000
+      internalID: -7238159950806290608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_56
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1446
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a8ac16be6e24400800000000000000
+      internalID: 307061623246981662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_57
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1446
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b2334c5cc9bb260800000000000000
+      internalID: 7114452409576008576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_58
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1446
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88661af54deb4bdf0800000000000000
+      internalID: -165297466959108472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_59
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1446
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cdea9fdabe1d530800000000000000
+      internalID: 3878139886593563651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_60
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1400
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ceb74328acdaff00800000000000000
+      internalID: 1151475269451103936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_61
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1400
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06882cb222afe060800000000000000
+      internalID: 6984979817144288783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_62
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1400
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dc9f9209c992420800000000000000
+      internalID: 2605786002404003184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_63
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1400
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a9366f5c65d1990800000000000000
+      internalID: -7413674003339699695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_64
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1400
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584283d139f43ca40800000000000000
+      internalID: 5387237072534250629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_65
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1400
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3126d9042b1b3080800000000000000
+      internalID: -9206735171631046337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_66
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1400
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eda548c6f6e09630800000000000000
+      internalID: 3931896422290796006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_67
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1400
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45314039fc2d6d20800000000000000
+      internalID: 3273321952936277323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_68
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1406
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc68c9a045439ad0800000000000000
+      internalID: -2696735607836087114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_69
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1406
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4510f63ce4575390800000000000000
+      internalID: -7829696053649599157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_70
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1406
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50eda15deacc6d620800000000000000
+      internalID: 2798649269729025541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_71
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1406
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4824833203296d0800000000000000
+      internalID: -2985270675167345433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_72
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1406
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2528affe5f6a0e7c0800000000000000
+      internalID: -4044048890155335086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_73
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1406
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f497e074f56c392d0800000000000000
+      internalID: -3273054391651894961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_74
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1406
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cba8487f92e9dd0800000000000000
+      internalID: -2477496601949848568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_75
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1406
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24977548fa938150800000000000000
+      internalID: 5873708730129290285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_76
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1360
+        width: 69
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7f74dfe48537b10800000000000000
+      internalID: 1978021757625825266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_77
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1348
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b3b7e248f2181a0800000000000000
+      internalID: -6809108916845462665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_78
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1348
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d04c487be1cb01e0800000000000000
+      internalID: -2230475973352210217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_79
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1348
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1e1f332578f4db0800000000000000
+      internalID: -4805473490252471854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_80
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1348
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0193e0599a7299bb0800000000000000
+      internalID: -4928864707876603632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_81
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1348
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4a028a1a2a299f0800000000000000
+      internalID: -463128996471593783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_82
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1348
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7da31b8d0557a1a0800000000000000
+      internalID: -6798371595836215941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_83
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1348
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb4b5df5e8fea2f0800000000000000
+      internalID: -959556003901518870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_84
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1348
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5baa32ba55e72caf0800000000000000
+      internalID: -377600512337139019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_85
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1370
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae8875b30f6c55a0800000000000000
+      internalID: -6531223297873899865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_86
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1370
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80887d0dcec553a0800000000000000
+      internalID: -6677203492417273713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_87
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1370
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e451f90d8db9de0800000000000000
+      internalID: -1325227274796708339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_88
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1370
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6208fe2450d5816a0800000000000000
+      internalID: -6478325786793246682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_89
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1370
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a489c65021cfc30800000000000000
+      internalID: 4394407150912817772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_90
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1370
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba294da8531456c0800000000000000
+      internalID: -4155675284570821953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_91
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1370
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75a731c3a54cc4d0800000000000000
+      internalID: -3113036672796220038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_92
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1370
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255065eba9a40ea30800000000000000
+      internalID: 4242472877461734738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_93
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1318
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f28d99f3802b500800000000000000
+      internalID: 410399585301180196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_94
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1340
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1faefbdec5a324350800000000000000
+      internalID: 5999421824411101937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_95
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1340
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a720991ba91bff90800000000000000
+      internalID: -6918908179865655385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_96
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1340
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c6eacd71b4b96c0800000000000000
+      internalID: -4135629266950919010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_97
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1340
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0cfcf12e54ffc50800000000000000
+      internalID: 6701151608049221829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_98
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1340
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8390a01ed5af8a620800000000000000
+      internalID: 2785751650643085624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_99
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1340
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1305d8b93d4face80800000000000000
+      internalID: -8157438585343225807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_100
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1340
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41e506f88656a110800000000000000
+      internalID: 1271799091021865290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_101
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 1340
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d729b69a427e3a50800000000000000
+      internalID: 6502760576651438041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_102
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1298
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7389f1484229a30800000000000000
+      internalID: 4220475950683928489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_103
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1298
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f76e54d4bd571e20800000000000000
+      internalID: 3321226281447483383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_104
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1298
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0d65f2a0305c250800000000000000
+      internalID: 5964176623800865006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_105
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1298
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7393f83cd85bf2e20800000000000000
+      internalID: 3328078270126045495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_106
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1298
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca494b9d8a8c53480800000000000000
+      internalID: -8920002859404847956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_107
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1298
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430bd09638c93e1d0800000000000000
+      internalID: -3322640011852140492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_108
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1298
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4928b7ee8c4ee7d10800000000000000
+      internalID: 2125387625811116692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_109
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1298
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0fbe2f492f50850800000000000000
+      internalID: 6342742371765842095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_110
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d43043463108b6f0800000000000000
+      internalID: -668783212096375593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_111
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c095929b958e61380800000000000000
+      internalID: -9000751333197129460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_112
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c4fc90237a7f2f0800000000000000
+      internalID: -939098163928675307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_113
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5838c1d768a19f80800000000000000
+      internalID: -8101509090808154019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_114
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb27e0266b540ba0800000000000000
+      internalID: -6123669099120219195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_115
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a88127760d1b690800000000000000
+      internalID: -7588054754428155269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_116
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29175be9e7326c240800000000000000
+      internalID: 4811572278627496338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_117
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1302
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd810dd97444e390800000000000000
+      internalID: -7790026165254517285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_118
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1299
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c5104da7a875a30800000000000000
+      internalID: 4203981037321149511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_119
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1299
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0e9b41fc9330fc0800000000000000
+      internalID: -3529914121359597314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_120
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1298
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7099474dc4ab0230800000000000000
+      internalID: 3606157128211468410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_121
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1216
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0131a3d17d7330fb0800000000000000
+      internalID: -4682837790487342320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_122
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1216
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f97fb7022a22540800000000000000
+      internalID: 4981722398227668869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_123
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1216
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774c2b0efd4e415a0800000000000000
+      internalID: -6551359907718577033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_124
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1216
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0700d6dba07049ed0800000000000000
+      internalID: -2408292158027267984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_125
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1216
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb7c8050f775ae20800000000000000
+      internalID: 3361224570929183717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_126
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1216
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5845163845b20c90800000000000000
+      internalID: -7204997132089735075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_127
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1216
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0894cee7da103eb90800000000000000
+      internalID: -7213920333447018112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_128
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1216
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737b0089aa84686c0800000000000000
+      internalID: -4141542909788768457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_129
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1220
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e7287ceae6d8710800000000000000
+      internalID: 1697134331539127873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_130
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1117
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c8b619b9740c640800000000000000
+      internalID: 5098153511668649117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_131
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1117
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7f5323c42c372e0800000000000000
+      internalID: -2129144566300411949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_132
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1117
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbc12f997400e990800000000000000
+      internalID: -7358876870716044338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_133
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1117
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d68970573127240800000000000000
+      internalID: 4787910747207789950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_134
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1117
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9734016ca4902d70800000000000000
+      internalID: 9016369922078685084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_135
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1117
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c9208f37e898e30800000000000000
+      internalID: 4506289530894195859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_136
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1117
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7487a5cc245fc05a0800000000000000
+      internalID: -6553593690485786553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_137
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1117
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adb29714cbddc3e0800000000000000
+      internalID: -2031726221618659931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_138
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1124
+        width: 60
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d151752167784d0800000000000000
+      internalID: -3132405194670400180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_139
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1007
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033ff96c491070300800000000000000
+      internalID: 218144845449917232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_140
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1007
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fd77475c4458460800000000000000
+      internalID: 7243271190548569871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_141
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1007
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27f69248d5d33730800000000000000
+      internalID: 3977758020705122094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_142
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1007
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0bf47ae4f79d1d0800000000000000
+      internalID: -3325486874045206340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_143
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1007
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579daf2dd607121e0800000000000000
+      internalID: -2224373123950913163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_144
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1007
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eadcc0569ad631c0800000000000000
+      internalID: -4524188436511532317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_145
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1007
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efa97362364864a0800000000000000
+      internalID: -6599948071680233496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_146
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1007
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc10bca67c0b809c0800000000000000
+      internalID: -3960721501735681588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_147
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 898
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3584b3b027f0f8310800000000000000
+      internalID: 1409362190879377491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_148
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 898
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a3c2d058d75e6a0800000000000000
+      internalID: -6420587683341649283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_149
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 898
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547405f5c7da03610800000000000000
+      internalID: 1598968617403172677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_150
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 898
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ecbf57592c8e470800000000000000
+      internalID: 8424197050181865038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_151
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 898
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea59002b282c67870800000000000000
+      internalID: 8680339198391129518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_152
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 898
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4abe6471b1f0bdb0800000000000000
+      internalID: -4778053460175177137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_153
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 898
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d15dd16448eb9940800000000000000
+      internalID: 5304088366556205527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_154
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 898
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafaddec23dc6b660800000000000000
+      internalID: 7401328655732682671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_155
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 814
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa231d86e9599740800000000000000
+      internalID: 5159253694873807525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_156
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 818
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bb38208533cdaf0800000000000000
+      internalID: -370364616258897092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_157
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 818
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c182ad651829d80800000000000000
+      internalID: -8245385757734724459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_158
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 818
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081cae4594f7b5c90800000000000000
+      internalID: -7180005227978112640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_159
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 818
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f33955374834ee40800000000000000
+      internalID: 5684730508137280500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_160
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 818
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905a16ffc42b42fb0800000000000000
+      internalID: -4673414469531884279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_161
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 818
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c15f088e7419ff0800000000000000
+      internalID: -31164658493350870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_162
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 818
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bc5dec1125c11f0800000000000000
+      internalID: -1072892374782981341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_163
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 818
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cff84348a50059d0800000000000000
+      internalID: -2787721949100834878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_164
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 846
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183c4cc36f65a0a00800000000000000
+      internalID: 723486305727857537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_165
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 846
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a1bdaf68bbcf420800000000000000
+      internalID: 2665211267905165949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_166
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 846
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d522a74395a1ea0800000000000000
+      internalID: -5901306279793369747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_167
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 846
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d168d3f52bc532f50800000000000000
+      internalID: 6855424978959828509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_168
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 846
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d65333eb1c9a0730800000000000000
+      internalID: 3966154065442985682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_169
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 846
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a3b63d9b1866440800000000000000
+      internalID: 4928769477319539352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_170
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 846
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0772db943406790800000000000000
+      internalID: -7538951792233058104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_171
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 846
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13560bd106fb413e0800000000000000
+      internalID: -2083830308029831887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_172
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 737
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd675d50112cd810800000000000000
+      internalID: 1791343105955818946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_173
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 737
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b9e4d37277d5b70800000000000000
+      internalID: 8889392249915218841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_174
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 737
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b873a7666dba36150800000000000000
+      internalID: 5864720077097154443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_175
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 737
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9559bcf0fea9bb730800000000000000
+      internalID: 4015973844283790681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_176
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 737
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6344ef7cf93f275b0800000000000000
+      internalID: -5371963537918901194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_177
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 737
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9162636eb6f2d8200800000000000000
+      internalID: 183855300262372889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_178
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 737
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8aa67bd3081b770800000000000000
+      internalID: 8624815763949791413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_179
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 737
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c67d16a4c13b9430800000000000000
+      internalID: 3790678232032704194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_180
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 737
+        width: 99
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7800de5c9ca2d74c0800000000000000
+      internalID: -4288224224089407353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_181
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 660
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a29d8186d49a0f0800000000000000
+      internalID: -1105267124053923193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_182
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 660
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edf2595b14810ff0800000000000000
+      internalID: -71630866063622683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_183
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 660
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe1a464359ab3540800000000000000
+      internalID: 4988767187369598706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_184
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 660
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92405751ba660030800000000000000
+      internalID: 3460570673587438239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_185
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 660
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969378e3ad09b8f80800000000000000
+      internalID: -8103223837496755863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_186
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 660
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a7fc7d43406d6d0800000000000000
+      internalID: -2966178679571383706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_187
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 660
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe58f448ec9334860800000000000000
+      internalID: 7512912162529969647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_188
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 660
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1152af022b7d8790800000000000000
+      internalID: -7526224016044830438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_189
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 687
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2dc52c1fcecd300800000000000000
+      internalID: 278357800082264743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_190
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 687
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1e6f1b183c2b070800000000000000
+      internalID: 8120768039906370004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_191
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 687
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30604d0787edfaf40800000000000000
+      internalID: 5742052658791056899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_192
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 687
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e80ac2825047b230800000000000000
+      internalID: 3654460345760221414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_193
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 687
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc37ee26e658285b0800000000000000
+      internalID: -5367581096719518769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_194
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 687
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a78f8fe25d4a0b0800000000000000
+      internalID: -5718211229131441582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_195
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 687
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41a4fb1e96e16670800000000000000
+      internalID: 8530352735964668235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_196
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 687
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5bd8b9910d0e040800000000000000
+      internalID: 4674965221613090274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_197
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 521
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f8c061c287c8900800000000000000
+      internalID: 688056973824659209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_198
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 520
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba090da80e2111e0800000000000000
+      internalID: -2228949725774017861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_199
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 522
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534c42bf3ef089780800000000000000
+      internalID: -8676167210283776971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_200
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 522
+        width: 127
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374a3ea1cf222e6f0800000000000000
+      internalID: -656924129464441741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_201
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 520
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe9f0b0418238270800000000000000
+      internalID: 8251483008822910715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_202
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 519
+        width: 126
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c052a08a13417950800000000000000
+      internalID: 6445006322850222276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_203
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 160
+        width: 258
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cf92310fb5212d0800000000000000
+      internalID: -3309481689492096000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_204
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 438
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5eab449b88c347f0800000000000000
+      internalID: -629439021087740326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_205
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 438
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1578b3b99aed1b680800000000000000
+      internalID: -8740960581714213039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_206
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 438
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ad81deb2087ba00800000000000000
+      internalID: 772226787267107485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_207
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 438
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332cdbecbb3ec09f0800000000000000
+      internalID: -500775062778035661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_208
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 438
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30b085b48eac6070800000000000000
+      internalID: 8101041714736705594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_209
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 438
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8e2446135971000800000000000000
+      internalID: 6637963832387821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_210
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 463
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6be2ce5864bcc7f0800000000000000
+      internalID: -590899090732946578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_211
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 463
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf9d2629a3e7ebe0800000000000000
+      internalID: -1447938439546822731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_212
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 463
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56bd0a55492b17f0800000000000000
+      internalID: -640873144129833379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_213
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 463
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad76d62dca5d6120800000000000000
+      internalID: 2408681212879469984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_214
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 463
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebe2972e3d0cf4f0800000000000000
+      internalID: -793744873720976402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_215
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 463
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fe350cbfd9d93f0800000000000000
+      internalID: -892383446560411864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_216
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 463
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e192937b8fe0f4f0800000000000000
+      internalID: -796873751826099741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_217
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 315
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c480dd644760593e0800000000000000
+      internalID: -2047723359095158708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_218
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 315
+        width: 117
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fa41c157ee56280800000000000000
+      internalID: -9050565689381441689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_219
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 314
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557b3b49b59ec84f0800000000000000
+      internalID: -825028052169541803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_220
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 232
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4b7614403da7cc0800000000000000
+      internalID: -3712422927582907220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_221
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 232
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a76c38760f06a960800000000000000
+      internalID: 7612788740577847205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HDBarrage_222
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 232
+        width: 81
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2445788e56e683350800000000000000
+      internalID: 5996664287815750722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9b26b81f38c73414e9cda294578793cb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

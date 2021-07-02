@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 23064c18e1a69c54ab87fa7e77893909
+timeCreated: 1497366496
+licenseType: Pro
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 32
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Exotc350 DmBd BT
+  fontNames:
+  - Exotc350 DmBd BT
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 1
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

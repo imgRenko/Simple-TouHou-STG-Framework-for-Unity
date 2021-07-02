@@ -1,0 +1,1734 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1278480013933649220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278480013933649223}
+  m_Layer: 0
+  m_Name: ShootingObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278480013933649223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480013933649220}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1278480015153509103}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1278480014149745586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1441964274189714, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278480014149745588}
+  - component: {fileID: 1278480014149745591}
+  - component: {fileID: 1278480014149745589}
+  m_Layer: 0
+  m_Name: MovementSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278480014149745588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4054702608433324, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480014149745586}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1278480015291272421}
+  m_Father: {fileID: 1278480015506772304}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1278480014149745591
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 212977633512300488, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480014149745586}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4ca30dd22442dcc4cb205f6a9bd4a69c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.64, y: 0.64}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &1278480014149745589
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 95396826838745536, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480014149745586}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 078feb87142a1e247981a5748cb4f0af, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1278480014547342172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278480014547342175}
+  m_Layer: 0
+  m_Name: BossTemplate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278480014547342175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480014547342172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1278480014564114323}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1278480014564114334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1424407820354394, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278480014564114323}
+  - component: {fileID: 1278480014564114320}
+  - component: {fileID: 1278480014564114321}
+  - component: {fileID: 1278480014564114322}
+  m_Layer: 0
+  m_Name: Boss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278480014564114323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4735046970804718, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480014564114334}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1278480015506772304}
+  m_Father: {fileID: 1278480014547342175}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1278480014564114320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114086440271819468, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480014564114334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d07a55480a617b1408cd763cc9f4ce8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Movement: {fileID: 1278480014564114321}
+  Used: 0
+  Target: {fileID: 1278480015506772310}
+  AnimationControl: {fileID: 1278480014149745589}
+  ShootingObject: {fileID: 0}
+  ShootingList: []
+  ClipFileIndex: 0
+  EnemyStateNow: 1
+--- !u!114 &1278480014564114321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114700972343589450, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480014564114334}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaccc71c2dd79a43a20d2f745eedbe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateWithSelfComponent: 1
+  MaxLiveFrame: 200
+  AsEnemyMovement: 1
+  Character: {fileID: 1278480015506772310}
+  UseThread: 1
+  Reusable: 0
+  noDestroy: 0
+  UseGlobalSpeed: 1
+  StopOnSpecialSituation: 0
+  Tag: 
+  Speed: 1
+  AcceleratedSpeed: 0
+  TrailLength: 20
+  TrailUpdate: 1
+  ChangeSpeedSmoothly: 0
+  ChangeSpeedPercentage: 0.05
+  SpeedSmoothType: 1
+  AcceleratedSpeedDirectionNow: {x: 0, y: 0}
+  AcceleratedSpeedDirectionPer: {x: 0, y: 0}
+  Rotation: 0
+  AcceleratedRotation: 0
+  ChangeRotationSmoothly: 0
+  ChangeRotationPercentage: 0.05
+  RotationSmoothType: 1
+  Radius: 0.01
+  SpriteIndex: 0
+  TotalLiveFrame: 0
+  Grazed: 0
+  AimToPlayer: 0
+  DonDestroy: 0
+  showTrails: 0
+  BulletPos: {x: 0, y: 0}
+  Use: 0
+  bulletTrackProducts: []
+  BulletShooting: []
+  BulletIndex: -1
+  BulletSprite: {fileID: 0}
+  BulletSpriteRenderer: {fileID: 1278480014149745591}
+  TriggerList: []
+  BrokenBulletColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  BulletColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  BulletSpriteController: {fileID: 1278480014149745586}
+  UseCollision: 0
+  UseCustomCollisionGroup: 0
+  CustomCollisionGroupMainController: {fileID: 0}
+  Trail: {fileID: 0}
+  TrailShooting: {fileID: 0}
+  CustomCollisionGroup: []
+  BulletCollision: 1
+  SquareLength: {x: 0.1, y: 0.1}
+  Scale: {x: 0, y: 0}
+  trackData:
+    animationCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    calculateFrame: 1
+    targetPos: {x: 0, y: 0, z: 0}
+    regularPattern: 0
+  BulletBreakingAnimationName: BulletBreak
+  StaticBullet: 0
+  StayCollision: 0
+  StayBulletEvent: 0
+  ScaleUpdate: 0
+  RotationUpdate: 0
+  StayAnimPlayer: 0
+  StayTrigger: 0
+  UseForceComponent: 0
+  UseTriggerComponent: 0
+  TwistedRotation: 0
+  InverseRotation: 1
+  InverseRotateDirection: 0
+  DestroyWhenDontRender: 0
+  NoDestroyAnimation: 0
+  NoCollisionWhenCreateAnimationPlaying: 0
+  NoCollisionWhenAlphaLow: 0
+  UseCustomAnimation: 0
+  EnabledAcceleratedGlobalOffset: 0
+  EnabledGlobalOffset: 0
+  animationController: {fileID: 0}
+  ChangeInverseRotation: 0
+  DonDestroyIfMasterDestroy: 0
+  BulletFramesSprites: []
+  UseForce: 0
+  UseAlphaWithDepth: 0
+  delayBulletEventRunTime: 0
+  UseSimpleEvent: 0
+  minDepth: 0
+  maxDepth: 0
+  ForceObject: []
+  nextFramewaitTime: 3
+  ID: 0
+  BarrageBatch: 0
+  CreateAnimationPlayed: 0
+  ReadPointTrackSpeed: 0
+  Pos_X: 0
+  Pos_Y: 0
+  BezierPointTrack: {fileID: 0}
+  FilpX: 0
+  FilpY: 0
+  SingleParmCurve: []
+  AnimationControl: {fileID: 1278480014149745589}
+  TargetSpeed: 0
+  TargetRotation: 0
+  Parent: {fileID: 0}
+  AsSubBullet: 0
+  SubBullet: []
+  ShootingRef: []
+  PlayerCharacter: {fileID: 0}
+  Player: {fileID: 0}
+  Zero: {x: 0, y: 0}
+  OtherObject: {fileID: 0}
+  DestroyAnimSprites: []
+  trackInfoSign: 
+  DestroyMode: 0
+  countingTime: 0
+  FollowObjectWithSameAngle: 0
+  CommandList: []
+  trackLerpBegin: 0
+  trackCount: 0
+  OriSpd: 0
+  originalPatternPos: {x: 0, y: 0, z: 0}
+  inTrigger: 
+  inStayTrigger: []
+  enterTimeTrigger: 
+  BulletTransform: {fileID: 0}
+  SpriteTransform: {fileID: 0}
+  EnableBulletEvent: 0
+  defSpeed: {x: 0, y: 0}
+  shootingIndex: 0
+  globalSpd: 1
+  EnableFollow: 0
+  EnableTrail: 0
+  SubTrail: 0
+--- !u!114 &1278480014564114322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480014564114334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5685b36910d7d924bac1b33ab38a4439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Progress: 0
+  maxFrame: 200
+  Circle: 1
+  ResetPoint: 1
+  resetInSpellExpressing: 1
+  resetPoint: {x: 0, y: 0}
+  frameSetting: []
+--- !u!1 &1278480015060773616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278480015060773619}
+  - component: {fileID: 1278480015060773620}
+  - component: {fileID: 1278480015060773621}
+  m_Layer: 0
+  m_Name: ShotPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278480015060773619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015060773616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1278480015291272421}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1278480015060773620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015060773616}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2691613b9eb91a246986ed29a8022eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateWithSelfComponent: 1
+  MaxLiveFrame: 30
+  Canceled: 0
+  GlobalSpeedPercent: 1
+  UseShootingEvent: 1
+  UseShootingDestroy: 1
+  UseShootingUsing: 1
+  UseShootingFinishAllShotTask: 1
+  UseBulletEventWhenBulletCreate: 1
+  UseBulletEventWhenBulletDestroy: 1
+  UseBulletEventWhenBulletRestoreMainLevel: 1
+  UseBulletEventOnDestroyingPlayer: 1
+  UseBulletEvent: 1
+  CaluateDelayToPercent: 0
+  XmlShooting: 
+  ignoreSCExpression: 0
+  IgnorePlot: 0
+  InvaildDestroy: 0
+  UseThread: 0
+  Note: "\u73A9\u5BB6\u8FC7\u4E8E\u63A5\u8FD1\u65F6\uFF0C\u53D1\u5C04\u901F\u5EA6\u5FEB\u7684\u5F39\u5E55"
+  BulletTag: 
+  Orginal: {x: 0, y: 0}
+  PositionIncrement: {x: 0, y: 0}
+  UseRandomOffset: 0
+  XOffset: 1
+  YOffset: 1
+  useEllipse: 0
+  keepRegularEllipse: 1
+  ellipseSize: {x: 1, y: 1}
+  ellipseScale: 0
+  ellipseRotation: 0
+  Radius: 0
+  RadiusIncrement: 0
+  UseRandomRadius: 0
+  RadiusOffset: 5
+  ShootingSpeed: 1
+  ShootingAcceleratedSpeed: 0
+  MoveDirection: 0
+  RotationSpeed: 0
+  MoveShooting: 0
+  CanShoot: 1
+  Way: 5
+  SpecialBounsShoot: 0
+  Delay: 0
+  UseRandomWay: 0
+  WayOffset: 3
+  Timer: 10
+  Range: 360
+  Angle: 0
+  MaxAngle: 720
+  MinAngle: -720
+  AngleIncreament: 0
+  UseRandomAngle: 0
+  AngleOffset: 1
+  Reusable: 0
+  FollowPlayer: 1
+  firstLine: 0
+  middleIndex: 1
+  lineIndex: 0
+  DisallowInverse: 0
+  ChangeBulletRotationSmoothly: 0
+  ChangeInverseRotation: 0
+  BulletRotationSmoothlyPrecent: 0.05
+  RotationSmoothType: 1
+  BulletRotation: 0
+  BulletTargetRotation: 0
+  AimToPlayer: 0
+  UseRandomBulletRotation: 0
+  BulletRotationOffset: 1
+  BulletAcceleratedRotation: 0
+  Speed: 5
+  BulletTargetSpeed: 0
+  SpeedIncreament: 0
+  ChangeSpeedSmoothly: 0
+  ChangeSpeedPrecent: 0.05
+  SpeedSmoothType: 1
+  RandomSpeed: 0
+  SingleWayRandomSpeed: 0
+  MaxSpeed: 5
+  MinSpeed: 0
+  SpeedOffset: 1
+  AcceleratedSpeed: 0
+  RandomAcceleratedSpeed: 0
+  AcceleratedSpeedOffset: 1
+  UseDynamicsCollision: 1
+  NoCollisionWhenCreateAnimationPlaying: 1
+  CreateAnimationSpeed: 1
+  BulletCollision: 1
+  NoCollisionWhenAlphaLow: 0
+  UseCustomCollisionGroup: 0
+  CustomCollisionGroup: {fileID: 0}
+  SquareLength: {x: 0, y: 0}
+  CollisionRadius: 0.078
+  UseAlphaWithDepth: 0
+  minDepth: 0
+  maxDepth: 0.5
+  BulletBreakingAnimationName: BulletBreak
+  BulletCreatingAnimationName: BulletCreate
+  NoCreateAnimation: 0
+  CreateAnimationIndex: 0
+  NoDestroyAnimation: 0
+  DestroyAnimationIndex: 0
+  TwistedRotation: 0
+  InverseRotation: 0
+  useTrails: 0
+  TrailLength: 20
+  TrailUpdate: 1
+  MaterialIndex: 0
+  BulletDepth: 0
+  BulletShootingObject: {fileID: 0}
+  FollowAngle: 0
+  ShootingShotMaxTime: -1
+  MakeSubBullet: 0
+  DonDestroyIfMasterDestroy: 0
+  BulletLiveFrame: 200
+  SpriteIndex: 0
+  DonDestroy: 0
+  UseCustomSprite: 1
+  UseBulletAnimation: 0
+  BulletSpritePerFrame: []
+  DestroyAnimSprites: []
+  useDefaultSprite: 1
+  WaitingTime: 3
+  CustomSprite: {fileID: 21300260, guid: 26f67eb0f5869ed42ab8f1bbfd614b95, type: 3}
+  CreatingCustomSprite: {fileID: 21300098, guid: 12b8049f3e69cc440bd5388cfda0a32c,
+    type: 3}
+  BulletColor: {r: 1, g: 1, b: 1, a: 1}
+  BrokenBulletColor: {r: 1, g: 1, b: 1, a: 1}
+  CreateBulletColor: {r: 1, g: 1, b: 1, a: 1}
+  Scale: {x: 1, y: 1}
+  EnabledGlobalOffset: 0
+  GlobalOffset: {x: 0, y: 0}
+  EnabledAcceleratedGlobalOffset: 0
+  AcceleratedGlobalOffset: {x: 0, y: 0}
+  DestroyWhenDonRender: 1
+  EnableForForce: 0
+  ForceObject: []
+  Share: 0
+  StaticBullet: 0
+  StayCollision: 0
+  StayBulletEvent: 0
+  ScaleUpdate: 0
+  RotationUpdate: 0
+  StayAnimPlayer: 0
+  StayTrigger: 0
+  Continue: 0
+  ApplyTrigger: 0
+  TriggerList: []
+  AvoidPlayer: 0
+  AvoidRange: 0.3
+  Graze: 0
+  rollBack: 0
+  EnemyShooting: 0
+  followRotation: 1
+  RadiusDirection: 0
+  RandomRadiusDirection: 0
+  DefaultEnabled: 1
+  order: 1
+  PlayerSound: 0
+  Sound: []
+  IntervalSoundTime: 4
+  ShotMess: 0
+  ReadPointTrackSpeed: 0
+  LoopTrack: 0
+  CalculateAngle: 1
+  FilpX: 0
+  FilpY: 0
+  ShotAtPlayer: 0
+  FollowObjectWithSameAngle: 0
+  RotatorInAsix: 0
+  delayRunTime: 0
+  RandomMaxTimer: 3
+  RandomMinTimer: 3
+  EnableRandomTimer: 0
+  EnableEnemyShot: 0
+  StopWhenDisable: 0
+  EnemyHP: 100
+  ShootingObject: {fileID: 0}
+  AnimationIndex: 0
+  BounsScoreNumber: 3
+  BounsPowerNumber: 4
+  BounsFullPowerNumber: 0
+  BounsLivePieceNumber: 0
+  displayer: 0
+  thisTransform: {fileID: 0}
+  BulletBase: {fileID: 0}
+  trackDataInfoRemaining:
+    animationCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    calculateFrame: 1
+    targetPos: {x: 0, y: 0, z: 0}
+    regularPattern: 0
+  bulletIndexChecking: 0
+  CopySign: 0
+  ShotIndex: 0
+  ShotBullet: []
+  ShootSubBullet: 0
+  MasterBulletObject: {fileID: 0}
+  XMLPath: 
+  BezierPointTrack: []
+  _BezierController: {fileID: 0}
+  TotalFrame: 0
+  _Masterbullet: {fileID: 0}
+  ShootingOrginalData: {fileID: 0}
+--- !u!114 &1278480015060773621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015060773616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ff975ce6678bbc4db271249dc8a2493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  TargetShooting: []
+  autoGet: 1
+  Note: "\uFF08\u4E8E\u6B64\u5904\u8F93\u5165\u6CE8\u89E3\uFF09"
+  ForOnlyOne: 0
+  ChangeBulletColor: 1
+--- !u!1 &1278480015153509100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278480015153509103}
+  - component: {fileID: 1278480015153509102}
+  - component: {fileID: 1278480015153509089}
+  m_Layer: 0
+  m_Name: SpellCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278480015153509103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015153509100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1278480013933649223}
+  m_Father: {fileID: 1278480015506772304}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1278480015153509102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015153509100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a26f8240b19b68a41a77f4d052b9de7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateWithSelfComponent: 1
+  MaxLiveFrame: 200
+  Character: {fileID: 1278480015506772310}
+  Credentials:
+    DataList: []
+  TimerScript: {fileID: 0}
+  BOSSHP: {fileID: 0}
+  SpellCardBG: {fileID: 0}
+  DynamicPictureObject: {fileID: 0}
+  Use: 0
+  ShowTip: 1
+  spellRecord: 1
+  DonDestroyBullets: 0
+  DonDestroySpell: 0
+  NoTimeLimit: 0
+  nextSpell: 1
+  resetShootingDestroyingBullets: 0
+  TimeSpell: 0
+  UseHP: 1
+  UseTimer: 1
+  ShowAnimation: 1
+  HideDefaultBackGround: 0
+  Time: 45
+  MixSecond: 0
+  MaxHP: 500
+  ResetTime: 300
+  nextSpellCardWaitingTime: 0
+  SpellCardUsingTime: 0
+  ResetTotalFrame: 0
+  maxFrame: 0
+  animationIndex: 0
+  SpellIndex: 0
+  MaxBouns: 20000
+  MinBouns: 0
+  ScoreBounsNumber: 24
+  PowerBounsNumber: 5
+  LiveBounsNumber: 0
+  XmlfileName: FirstSpellCard.xml
+  Name: "Tip Name\u300CThe First Spell Card Name\u300D"
+  CharacterSprite: {fileID: 21300000, guid: 424e3b32d6755d44da60f23718ac7a10, type: 3}
+  ResetShooting: []
+  ShootingObject:
+  - {fileID: 1278480013933649220}
+  ChangeRoadSign: 1
+  UseEnemyPositonSign: 1
+  ObjectDisactive: 1
+  enableThen: 1
+  resetBeforeSpellCard: 1
+  resetReuse: 1
+  resetPoint: {x: 0, y: 1}
+  maxMovementFrame: 200
+  frameSetting:
+  - Frame: 100
+    moveType: 1
+    XOffset: 1.2
+    YOffset: 1.3
+    TargetPoint: {x: 0, y: 0}
+    RunTime: 45
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    enemyMoveType: 2
+    Used: 0
+  EnemyPositionSign: {fileID: 0}
+--- !u!114 &1278480015153509089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015153509100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1291f2cd49679f34fbd1f238c2e71e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetSpellCard: {fileID: 0}
+  Note: "\uFF08\u4E8E\u6B64\u5904\u8F93\u5165\u6CE8\u89E3\uFF09"
+  Display: 0
+--- !u!1 &1278480015291272418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278480015291272421}
+  - component: {fileID: 1278480015291272423}
+  - component: {fileID: 1278480015291272420}
+  m_Layer: 0
+  m_Name: Guard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278480015291272421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015291272418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -24.81}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1278480015060773619}
+  m_Father: {fileID: 1278480014149745588}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1278480015291272423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015291272418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9de01924e3c52124ab8adf66be2808f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateWithSelfComponent: 1
+  MaxLiveFrame: 35
+  Use: 1
+  checkPlayer: 1
+  Type: 1
+  loopStartEvent: 1
+  AllowStayEvent: 1
+  CheckExtraBullet: 0
+  ExtraBulletTag: 
+  Radius: 0.9
+  SquareLength: {x: 0, y: 0}
+  AuxiliaryLinesStart: {fileID: 0}
+  AuxiliaryLinesEnd: {fileID: 0}
+  TriggerSpeed: 0
+  TriggerAcceleratedSpeed: 0
+  TriggerAccelerRotation: 0
+  reusable: 1
+  TotalLiveFrame: 0
+  OnceTime: 0
+  CheckVailed: 1
+  MaxUseTime: -1
+  GlobalPositionOffset: {x: 0, y: 0}
+  Extra: []
+  masterBullet: {fileID: 0}
+  bulletChecker: 0
+  PlayerStayTime: 0
+  PlayerEnterTime: 0
+--- !u!114 &1278480015291272420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015291272418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98fb3e808385d934b8aaad9923143d13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  TargetTrigger: {fileID: 0}
+  Note: "\uFF08\u4E8E\u6B64\u5904\u8F93\u5165\u6CE8\u89E3\uFF09"
+  shoot: {fileID: 1278480015060773620}
+  shottimer: 5
+--- !u!1 &1278480015506772305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1362589575249032, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1278480015506772304}
+  - component: {fileID: 1278480015506772310}
+  - component: {fileID: 1278480015506772311}
+  - component: {fileID: 1278480015506772308}
+  - component: {fileID: 1278480015506772309}
+  - component: {fileID: 1278480015506772306}
+  - component: {fileID: 1278480015506772296}
+  m_Layer: 0
+  m_Name: BossData_Data
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278480015506772304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4125605781984478, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015506772305}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1278480014149745588}
+  - {fileID: 1278480015153509103}
+  - {fileID: 7258638434167308566}
+  - {fileID: 5614620538435957408}
+  m_Father: {fileID: 1278480014564114323}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1278480015506772310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114184522629282904, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015506772305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57919825d8792f43b0da75eb9df0c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateWithSelfComponent: 1
+  MaxLiveFrame: 200
+  HP: 24
+  MaxHP: 24
+  MovePoint: {x: 0, y: 0}
+  ID: 0
+  Moving: 0
+  ToRight: 0
+  MoveType: 0
+  Speed: 0.05
+  FilpX: 0
+  Name: Shameimaru Aya
+  PictrueMaskDisplay: 1
+  PictrueMaskOffset: {x: 60, y: 0}
+  Normal: {fileID: 21300000, guid: dec391d5283ace343935be1520f5de2a, type: 3}
+  Deadly: {fileID: 21300000, guid: 0cf603287630370478a94be2938566e9, type: 3}
+  Break: {fileID: 21300000, guid: 57554e24ca639034fb56aa2c17b8c47c, type: 3}
+  CanDestroyPlayer: 1
+  isBoss: 1
+  DamageSound: {fileID: 1278480015506772308}
+  SpellCardSound: {fileID: 1278480015506772309}
+  ObjectPoolRef: {fileID: 0}
+  SpriteRender: {fileID: 1278480014149745591}
+  AnimationController: {fileID: 1278480014149745589}
+  destroyWhenOutScreen: 0
+  BulletControled: 0
+  UseDamageSound: 1
+  BounsScoreNumber: 3
+  BounsPowerNumber: 4
+  BounsFullPowerNumber: 0
+  BounsLivePieceNumber: 0
+  NobodyNoDamage: 0
+  ControlAnimSpeed: 1
+  expressingSpellNoBody: 0
+  RunTime: 45
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  TempValue: []
+  TempValueIncrease: []
+  TempValueBool: 
+  isGone: 0
+  CanDestroy: 0
+  UseBarragesWhenGameStart: 1
+  SpellCardList: []
+  SpellCardListIndex: 
+  enemyState: {fileID: 0}
+--- !u!50 &1278480015506772311
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 50850092479277390, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015506772305}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!82 &1278480015506772308
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 82528668862805418, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015506772305}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243131003721503536, guid: 4cc25e5b6b28c8a48ae72e0a5607651f,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 42639461d7320ef4ba2e79c875bb222f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0.6034674
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!82 &1278480015506772309
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 82748159511840866, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015506772305}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243131003721503536, guid: 4cc25e5b6b28c8a48ae72e0a5607651f,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 8d1ac8150663b024682e3f9fe78b66c0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 1
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1.7704062
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!61 &1278480015506772306
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 61280590762663434, guid: 2a5b5ff3b6300da409386a59ad6de3c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015506772305}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.88}
+  m_EdgeRadius: 0
+--- !u!114 &1278480015506772296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278480015506772305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7f9b56966b4074d99d5f68bd8ab1c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EasyRanklist: []
+  NormalRanklist: []
+  HardRanklist: []
+  LunaticRanklist: []
+--- !u!1 &4713447175253618372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1066452096289117841}
+  m_Layer: 0
+  m_Name: ShootingObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1066452096289117841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4713447175253618372}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5614620538435957408}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6300604012176046904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7258638434167308566}
+  - component: {fileID: 8918058367358207022}
+  m_Layer: 0
+  m_Name: NextSpellCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7258638434167308566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300604012176046904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1075969307866580595}
+  m_Father: {fileID: 1278480015506772304}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8918058367358207022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300604012176046904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a26f8240b19b68a41a77f4d052b9de7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateWithSelfComponent: 1
+  MaxLiveFrame: 200
+  Character: {fileID: 1278480015506772310}
+  Credentials:
+    DataList: []
+  TimerScript: {fileID: 0}
+  BOSSHP: {fileID: 0}
+  SpellCardBG: {fileID: 0}
+  DynamicPictureObject: {fileID: 0}
+  Use: 0
+  ShowTip: 1
+  spellRecord: 1
+  DonDestroyBullets: 0
+  DonDestroySpell: 0
+  NoTimeLimit: 0
+  nextSpell: 1
+  resetShootingDestroyingBullets: 0
+  TimeSpell: 0
+  UseHP: 1
+  UseTimer: 1
+  ShowAnimation: 1
+  HideDefaultBackGround: 0
+  Time: 45
+  MixSecond: 0
+  MaxHP: 500
+  ResetTime: 300
+  nextSpellCardWaitingTime: 0
+  SpellCardUsingTime: 0
+  ResetTotalFrame: 0
+  maxFrame: 0
+  animationIndex: 0
+  SpellIndex: 1
+  MaxBouns: 20000
+  MinBouns: 0
+  ScoreBounsNumber: 24
+  PowerBounsNumber: 5
+  LiveBounsNumber: 0
+  XmlfileName: NextSpellCard.xml
+  Name: "Tip Name\u300CNext Spell Card Name\u300D"
+  CharacterSprite: {fileID: 21300000, guid: 424e3b32d6755d44da60f23718ac7a10, type: 3}
+  ResetShooting: []
+  ShootingObject:
+  - {fileID: 8419266715992515512}
+  ChangeRoadSign: 1
+  UseEnemyPositonSign: 1
+  ObjectDisactive: 1
+  enableThen: 1
+  resetBeforeSpellCard: 1
+  resetReuse: 1
+  resetPoint: {x: 0, y: 1}
+  maxMovementFrame: 200
+  frameSetting:
+  - Frame: 100
+    moveType: 1
+    XOffset: 1.2
+    YOffset: 1.3
+    TargetPoint: {x: 0, y: 0}
+    RunTime: 45
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    enemyMoveType: 2
+    Used: 0
+  EnemyPositionSign: {fileID: 0}
+--- !u!1 &6431670860065109076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5614620538435957408}
+  - component: {fileID: 42027192721035280}
+  - component: {fileID: 7941438527623476118}
+  - component: {fileID: 752334869228536988}
+  m_Layer: 0
+  m_Name: 'LastSpellCard '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5614620538435957408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6431670860065109076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1066452096289117841}
+  m_Father: {fileID: 1278480015506772304}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &42027192721035280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6431670860065109076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a26f8240b19b68a41a77f4d052b9de7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UpdateWithSelfComponent: 1
+  MaxLiveFrame: 200
+  Character: {fileID: 1278480015506772310}
+  Credentials:
+    DataList: []
+  TimerScript: {fileID: 0}
+  BOSSHP: {fileID: 0}
+  SpellCardBG: {fileID: 0}
+  DynamicPictureObject: {fileID: 0}
+  Use: 0
+  ShowTip: 1
+  spellRecord: 1
+  DonDestroyBullets: 0
+  DonDestroySpell: 0
+  NoTimeLimit: 0
+  nextSpell: 1
+  resetShootingDestroyingBullets: 0
+  TimeSpell: 0
+  UseHP: 1
+  UseTimer: 1
+  ShowAnimation: 1
+  HideDefaultBackGround: 0
+  Time: 45
+  MixSecond: 0
+  MaxHP: 500
+  ResetTime: 300
+  nextSpellCardWaitingTime: 0
+  SpellCardUsingTime: 0
+  ResetTotalFrame: 0
+  maxFrame: 0
+  animationIndex: 0
+  SpellIndex: 2
+  MaxBouns: 20000
+  MinBouns: 0
+  ScoreBounsNumber: 24
+  PowerBounsNumber: 5
+  LiveBounsNumber: 0
+  XmlfileName: LastSpellCard.xml
+  Name: "Tip Name\u300CLast Spell Card Name\u300D"
+  CharacterSprite: {fileID: 21300000, guid: 424e3b32d6755d44da60f23718ac7a10, type: 3}
+  ResetShooting: []
+  ShootingObject:
+  - {fileID: 4713447175253618372}
+  ChangeRoadSign: 1
+  UseEnemyPositonSign: 1
+  ObjectDisactive: 1
+  enableThen: 1
+  resetBeforeSpellCard: 1
+  resetReuse: 1
+  resetPoint: {x: 0, y: 1}
+  maxMovementFrame: 200
+  frameSetting:
+  - Frame: 100
+    moveType: 1
+    XOffset: 1.2
+    YOffset: 1.3
+    TargetPoint: {x: 0, y: 0}
+    RunTime: 45
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    enemyMoveType: 2
+    Used: 0
+  EnemyPositionSign: {fileID: 0}
+--- !u!114 &7941438527623476118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6431670860065109076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5f98840549a324997dfc727d867d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetSpellCard: {fileID: 0}
+  Note: "\uFF08\u4E8E\u6B64\u5904\u8F93\u5165\u6CE8\u89E3\uFF09"
+  Broken: {fileID: 752334869228536988}
+--- !u!82 &752334869228536988
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6431670860065109076}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243131003721503536, guid: 4cc25e5b6b28c8a48ae72e0a5607651f,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 6e3e7de4d759ede45881be18e3cbccb8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &8419266715992515512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1075969307866580595}
+  m_Layer: 0
+  m_Name: ShootingObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1075969307866580595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8419266715992515512}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7258638434167308566}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

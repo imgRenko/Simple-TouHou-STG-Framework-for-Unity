@@ -1,0 +1,25 @@
+该文件夹存放事件脚本，这些事件脚本是STG游戏里极其的重要部分，利用它来制作及其复杂华丽的效果。
+一般情况下，事件脚本都会拥有以下的声明
+    public bool ForOnlyOne = false;
+    void Start ()
+    {
+        Target = GetComponents<EventType> ();
+        if ( ForOnlyOne )
+        {
+            Target[0].FunctionObjectA += FunctionA;
+            Target[0].FunctionObjectB += FunctionB;
+            Target[0].FunctionObjectC += FunctionC;
+        }
+        else
+        {
+            for ( int i = 0; i != Target.Length; ++i )
+            {
+           Target[i].FunctionObjectA += FunctionA;
+            Target[i].FunctionObjectB += FunctionB;
+            Target[i.FunctionObjectC += FunctionC;
+            }
+        }
+    }
+在这段声明中，Target访问一个游戏对象里所有的组件，并获得所有符合条件的对象，
+如果forOnlyOne选中，将该事件脚本里被重载的事件函数赋值给第一个被Target找到的符合条件的游戏对象的Event对象里边，并交给相应的类去处理。如果forOnlyOne没有被选中将该事件脚本里被重载的事件函数赋值给所有被Target找到的符合条件的游戏对象的Event对象里边，并交给相应的类去处理。
+（该功能的补充说明见Barrage文件夹里的“关于该文件夹.txt”）

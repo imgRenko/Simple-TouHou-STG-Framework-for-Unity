@@ -1,0 +1,1548 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7515204855804782438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 129f4f84d2b2fbd41a9caf12b3c7fe38, type: 3}
+  m_Name: "\u751F\u6210\u8F68\u9053\u4FE1\u606F"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -824, y: -104}
+  ports:
+    keys:
+    - "\u8F93\u51FA"
+    values:
+    - _fieldName: "\u8F93\u51FA"
+      _node: {fileID: -7515204855804782438}
+      _typeQualifiedName: BulletTrackProduct, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8F68\u9053\u4FE1\u606F"
+        node: {fileID: -3267541671832575604}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u8F68\u9053\u4FE1\u606F":
+    condition1: 0
+    Method1: 2
+    Const1: 35
+    onlyCondition1: 1
+    condition2: 0
+    Method2: 0
+    Const2: 0
+    curveMethod: 0
+    And: 0
+    valueOperator: 0
+    changeTime: 90
+    operationMaxTime: 0
+    conditionIncreament: 0
+    conditionIncrementInterval: 0
+    calcateCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 4
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    boolValue: 0
+    keyRandomIndex: 0
+    RandomRange: 1
+    Arrvage: 0
+    toPlayer: 0
+    changeToValue: 0
+    valueName: 
+    graphValue: 0
+    globalValueName: 
+  "\u8F93\u51FA":
+    condition1: 0
+    Method1: 0
+    Const1: 0
+    onlyCondition1: 1
+    condition2: 0
+    Method2: 0
+    Const2: 0
+    curveMethod: 0
+    And: 0
+    valueOperator: 0
+    changeTime: 0
+    operationMaxTime: 0
+    conditionIncreament: 0
+    conditionIncrementInterval: 0
+    calcateCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    boolValue: 0
+    keyRandomIndex: 0
+    RandomRange: 1
+    Arrvage: 0
+    toPlayer: 0
+    changeToValue: 0
+    valueName: 
+    graphValue: 0
+    globalValueName: 
+--- !u!114 &-6299927392075294020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9714b30d45b474649b2b2b3323c12b6d, type: 3}
+  m_Name: "\u6570\u7EC4\u5220\u6539\u64CD\u4F5C"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -728, y: -1192}
+  ports:
+    keys:
+    - "\u8FDB\u5165\u8282\u70B9"
+    - "\u9000\u51FA\u8282\u70B9"
+    - "\u5BF9\u5E94\u503C"
+    - "\u8F93\u5165"
+    - "\u8F93\u51FA"
+    values:
+    - _fieldName: "\u8FDB\u5165\u8282\u70B9"
+      _node: {fileID: -6299927392075294020}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u9000\u51FA\u8282\u70B9"
+        node: {fileID: 8354969748806700820}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u9000\u51FA\u8282\u70B9"
+      _node: {fileID: -6299927392075294020}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8FDB\u5165\u8282\u70B9"
+        node: {fileID: 164296863290055379}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5BF9\u5E94\u503C"
+      _node: {fileID: -6299927392075294020}
+      _typeQualifiedName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8F93\u51FA"
+        node: {fileID: -1549808463087693333}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: "\u8F93\u5165"
+      _node: {fileID: -6299927392075294020}
+      _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.Sprite,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u53D8\u91CF\u503C"
+        node: {fileID: 8354969748806700820}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: "\u8F93\u51FA"
+      _node: {fileID: -6299927392075294020}
+      _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.Sprite,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u8F93\u5165"
+        node: {fileID: 164296863290055379}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  TintColor: {r: 0.39607844, g: 0.16078432, b: 0.16078432, a: 1}
+  NodeName: 
+  "\u53D8\u91CF\u7C7B\u578B": 19
+  "\u64CD\u4F5C": 0
+--- !u!114 &-5591942792976564900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc72a0f17e29114ca5f079aeac39568, type: 3}
+  m_Name: "\u7EB9\u7406\u5E38\u91CF"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -728, y: -968}
+  ports:
+    keys:
+    - "\u8F93\u51FA"
+    values:
+    - _fieldName: "\u8F93\u51FA"
+      _node: {fileID: -5591942792976564900}
+      _typeQualifiedName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u5BF9\u5E94\u503C"
+        node: {fileID: 164296863290055379}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u5E38\u91CF\u521D\u59CB\u503C": {fileID: 21300174, guid: 26f67eb0f5869ed42ab8f1bbfd614b95,
+    type: 3}
+  "\u8F93\u51FA": {fileID: 0}
+--- !u!114 &-4579689177791040707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dfd924dc28f6014589ae917e51a4b33, type: 3}
+  m_Name: "\u8BBE\u7F6E\u5B50\u5F39\u7CBE\u7075\u7EB9\u7406\u4FE1\u606F"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000, guid: 9a470c8b8c2e92b4ca73362c72eceeac, type: 2}
+  position: {x: -152, y: -904}
+  ports:
+    keys:
+    - "\u8FDB\u5165\u8282\u70B9"
+    - "\u76EE\u7684\u503C"
+    - "\u5B50\u5F39"
+    - "\u9000\u51FA\u8282\u70B9"
+    values:
+    - _fieldName: "\u8FDB\u5165\u8282\u70B9"
+      _node: {fileID: -4579689177791040707}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u4E0B\u4E00\u6B65"
+        node: {fileID: -4059033346238774282}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u76EE\u7684\u503C"
+      _node: {fileID: -4579689177791040707}
+      _typeQualifiedName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8F93\u51FA"
+        node: {fileID: 7949923892828777501}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5B50\u5F39"
+      _node: {fileID: -4579689177791040707}
+      _typeQualifiedName: Bullet, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u5B50\u5F39"
+        node: {fileID: -4059033346238774282}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u9000\u51FA\u8282\u70B9"
+      _node: {fileID: -4579689177791040707}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8FDB\u5165\u8282\u70B9"
+        node: {fileID: 7401588402887100044}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 0.39607844, g: 0.16078432, b: 0.16078432, a: 1}
+  NodeName: 
+  "\u76EE\u7684\u503C": {fileID: 21300174, guid: 26f67eb0f5869ed42ab8f1bbfd614b95,
+    type: 3}
+  "\u5B50\u5F39": {fileID: 0}
+--- !u!114 &-4059033346238774282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae14660e5b5db8e4a82c3a1ad2f3a433, type: 3}
+  m_Name: "\u53D1\u5C04\u5668\u5904\u7406\u6BCF\u6761\u5B50\u5F39\u65F6"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -840, y: -568}
+  ports:
+    keys:
+    - "\u4E0B\u4E00\u6B65"
+    - "\u53D1\u5C04\u5668"
+    - "\u5B50\u5F39"
+    values:
+    - _fieldName: "\u4E0B\u4E00\u6B65"
+      _node: {fileID: -4059033346238774282}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8FDB\u5165\u8282\u70B9"
+        node: {fileID: -4579689177791040707}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u53D1\u5C04\u5668"
+      _node: {fileID: -4059033346238774282}
+      _typeQualifiedName: Shooting, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u53D1\u5C04\u5668"
+        node: {fileID: -2267210110560393414}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5B50\u5F39"
+      _node: {fileID: -4059033346238774282}
+      _typeQualifiedName: Bullet, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u5B50\u5F39"
+        node: {fileID: 7401588402887100044}
+        reroutePoints: []
+      - fieldName: "\u5B50\u5F39"
+        node: {fileID: -4579689177791040707}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u53D1\u5C04\u5668": {fileID: 0}
+  "\u5B50\u5F39": {fileID: 0}
+--- !u!114 &-3267541671832575604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4fcb80b4357c6243850c5248656382b, type: 3}
+  m_Name: "\u58F0\u660E\u5B50\u5F39\u8F68\u9053\u6570\u636E"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -216, y: -200}
+  ports:
+    keys:
+    - "\u8FDB\u5165\u8282\u70B9"
+    - "\u5B50\u5F39"
+    - "\u8F68\u9053\u4FE1\u606F"
+    - "\u66F2\u7EBF"
+    - "\u5E38\u65701"
+    - "\u5E38\u65702"
+    - "\u76EE\u7684\u503C"
+    - "\u53D8\u5316\u65F6\u95F4"
+    - "\u968F\u673A\u8303\u56F4"
+    - "\u8981\u968F\u673A\u5173\u952E\u5E27\u5E8F\u53F7"
+    - "\u4F7F\u7528\u6B21\u6570"
+    - "\u9000\u51FA\u8282\u70B9"
+    values:
+    - _fieldName: "\u8FDB\u5165\u8282\u70B9"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u4E0B\u4E00\u6B65"
+        node: {fileID: 5885952696087935626}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5B50\u5F39"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: Bullet, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u5B50\u5F39"
+        node: {fileID: 5885952696087935626}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u8F68\u9053\u4FE1\u606F"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: BulletTrackProduct, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8F93\u51FA"
+        node: {fileID: -7515204855804782438}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u66F2\u7EBF"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: UnityEngine.AnimationCurve, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5E38\u65701"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5E38\u65702"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u76EE\u7684\u503C"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u53D8\u5316\u65F6\u95F4"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u968F\u673A\u8303\u56F4"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u8981\u968F\u673A\u5173\u952E\u5E27\u5E8F\u53F7"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u4F7F\u7528\u6B21\u6570"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u9000\u51FA\u8282\u70B9"
+      _node: {fileID: -3267541671832575604}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u5B50\u5F39": {fileID: 0}
+  "\u8F68\u9053\u4FE1\u606F":
+    condition1: 0
+    Method1: 0
+    Const1: 0
+    onlyCondition1: 1
+    condition2: 0
+    Method2: 0
+    Const2: 0
+    curveMethod: 0
+    And: 0
+    valueOperator: 0
+    changeTime: 0
+    operationMaxTime: 0
+    conditionIncreament: 0
+    conditionIncrementInterval: 0
+    calcateCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    boolValue: 0
+    keyRandomIndex: 0
+    RandomRange: 1
+    Arrvage: 0
+    toPlayer: 0
+    changeToValue: 0
+    valueName: 
+    graphValue: 0
+    globalValueName: 
+  "\u5141\u8BB8\u4FEE\u6539\u90E8\u5206\u6570\u636E": 0
+  "\u66F2\u7EBF":
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  "\u5E38\u65701": 0
+  "\u5E38\u65702": 0
+  "\u76EE\u7684\u503C": 0
+  "\u53D8\u5316\u65F6\u95F4": 0
+  "\u968F\u673A\u8303\u56F4": 0
+  "\u8981\u968F\u673A\u5173\u952E\u5E27\u5E8F\u53F7": 0
+  "\u4F7F\u7528\u6B21\u6570": 0
+--- !u!114 &-3230768776592090966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f006b8e24682ed84e9844d8e095c05c8, type: 3}
+  m_Name: "\u6574\u6570\u8F6C\u6D6E\u70B9"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -200, y: -488}
+  ports:
+    keys:
+    - "\u6574\u6570"
+    - "\u6D6E\u70B9"
+    values:
+    - _fieldName: "\u6574\u6570"
+      _node: {fileID: -3230768776592090966}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u7ED3\u679C"
+        node: {fileID: -2267210110560393414}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u6D6E\u70B9"
+      _node: {fileID: -3230768776592090966}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u81EA\u53D8\u91CF"
+        node: {fileID: 1903361217068877891}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u6574\u6570": -108
+  "\u6D6E\u70B9": -108
+--- !u!114 &-2267210110560393414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe86104c928f8348b42b45d95780a40, type: 3}
+  m_Name: "\u83B7\u53D6\u53D1\u5C04\u5668\u6574\u6570\u4FE1\u606F"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -520, y: -424}
+  ports:
+    keys:
+    - "\u53D1\u5C04\u5668"
+    - "\u7ED3\u679C"
+    values:
+    - _fieldName: "\u53D1\u5C04\u5668"
+      _node: {fileID: -2267210110560393414}
+      _typeQualifiedName: Shooting, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u53D1\u5C04\u5668"
+        node: {fileID: -4059033346238774282}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u7ED3\u679C"
+      _node: {fileID: -2267210110560393414}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u6574\u6570"
+        node: {fileID: -3230768776592090966}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 0.39607844, g: 0.16078432, b: 0.16078432, a: 1}
+  NodeName: 
+  "\u53D1\u5C04\u5668": {fileID: 0}
+  "\u7ED3\u679C": -108
+  "\u53D1\u5C04\u5668\u5C5E\u6027": 15
+--- !u!114 &-1549808463087693333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc72a0f17e29114ca5f079aeac39568, type: 3}
+  m_Name: "\u7EB9\u7406\u5E38\u91CF"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -1128, y: -968}
+  ports:
+    keys:
+    - "\u8F93\u51FA"
+    values:
+    - _fieldName: "\u8F93\u51FA"
+      _node: {fileID: -1549808463087693333}
+      _typeQualifiedName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u5BF9\u5E94\u503C"
+        node: {fileID: -6299927392075294020}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u5E38\u91CF\u521D\u59CB\u503C": {fileID: 21300170, guid: 26f67eb0f5869ed42ab8f1bbfd614b95,
+    type: 3}
+  "\u8F93\u51FA": {fileID: 0}
+--- !u!114 &-1046024412475258505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e582221d9404a4439519d38cffdde85, type: 3}
+  m_Name: "\u751F\u6210\u66F2\u7EBF"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -200, y: -376}
+  ports:
+    keys:
+    - "\u8F93\u51FA"
+    values:
+    - _fieldName: "\u8F93\u51FA"
+      _node: {fileID: -1046024412475258505}
+      _typeQualifiedName: UnityEngine.AnimationCurve, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u66F2\u7EBF"
+        node: {fileID: 1903361217068877891}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u66F2\u7EBF":
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.07395172
+      value: -3.5045676
+      inSlope: 0.07822196
+      outSlope: 0.07822196
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.024709301
+    - serializedVersion: 3
+      time: 21.157547
+      value: 4.6592083
+      inSlope: 0.0026499059
+      outSlope: 0.0026499059
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 27.770813
+      value: -3.0908957
+      inSlope: -0.47286683
+      outSlope: -0.47286683
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 41.961525
+      value: 1.5136399
+      inSlope: -0.016739676
+      outSlope: -0.016739676
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 50.878494
+      value: -5.1809673
+      inSlope: 0.022150906
+      outSlope: 0.022150906
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  "\u8F93\u51FA":
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86f9904051ceea4598448bf8bcb8fd5, type: 3}
+  m_Name: SimpleIn
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 5885952696087935626}
+  - {fileID: -3267541671832575604}
+  - {fileID: -7515204855804782438}
+  - {fileID: -4059033346238774282}
+  - {fileID: -1046024412475258505}
+  - {fileID: 1903361217068877891}
+  - {fileID: -2267210110560393414}
+  - {fileID: -3230768776592090966}
+  - {fileID: 7401588402887100044}
+  - {fileID: 7689151831208100203}
+  - {fileID: 8354969748806700820}
+  - {fileID: 6204461343235170330}
+  - {fileID: -6299927392075294020}
+  - {fileID: 164296863290055379}
+  - {fileID: -4579689177791040707}
+  - {fileID: 7949923892828777501}
+  - {fileID: 8255074673579480369}
+  - {fileID: 3179676308311548183}
+  - {fileID: -1549808463087693333}
+  - {fileID: -5591942792976564900}
+  Path: Assets/Resources/XnodeGraph/AyaBarrage/SimpleIn.asset
+  Name: "THUnitySTG \u53EF\u89C6\u5316\u811A\u672C"
+--- !u!114 &164296863290055379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9714b30d45b474649b2b2b3323c12b6d, type: 3}
+  m_Name: "\u6570\u7EC4\u5220\u6539\u64CD\u4F5C"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -328, y: -1192}
+  ports:
+    keys:
+    - "\u8FDB\u5165\u8282\u70B9"
+    - "\u9000\u51FA\u8282\u70B9"
+    - "\u8F93\u5165"
+    - "\u5BF9\u5E94\u503C"
+    - "\u8F93\u51FA"
+    values:
+    - _fieldName: "\u8FDB\u5165\u8282\u70B9"
+      _node: {fileID: 164296863290055379}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u9000\u51FA\u8282\u70B9"
+        node: {fileID: -6299927392075294020}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u9000\u51FA\u8282\u70B9"
+      _node: {fileID: 164296863290055379}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u8F93\u5165"
+      _node: {fileID: 164296863290055379}
+      _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.Sprite,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u8F93\u51FA"
+        node: {fileID: -6299927392075294020}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: "\u5BF9\u5E94\u503C"
+      _node: {fileID: 164296863290055379}
+      _typeQualifiedName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8F93\u51FA"
+        node: {fileID: -5591942792976564900}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: "\u8F93\u51FA"
+      _node: {fileID: 164296863290055379}
+      _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.Sprite,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  TintColor: {r: 0.39607844, g: 0.16078432, b: 0.16078432, a: 1}
+  NodeName: 
+  "\u53D8\u91CF\u7C7B\u578B": 19
+  "\u64CD\u4F5C": 0
+--- !u!114 &1903361217068877891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82c30b3ed12c484489fdce52b3dc3b95, type: 3}
+  m_Name: "\u66F2\u7EBF\u8BA1\u7B97"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: 88, y: -424}
+  ports:
+    keys:
+    - "\u81EA\u53D8\u91CF"
+    - "\u66F2\u7EBF"
+    - "\u8BA1\u7B97\u7ED3\u679C"
+    values:
+    - _fieldName: "\u81EA\u53D8\u91CF"
+      _node: {fileID: 1903361217068877891}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u6D6E\u70B9"
+        node: {fileID: -3230768776592090966}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u66F2\u7EBF"
+      _node: {fileID: 1903361217068877891}
+      _typeQualifiedName: UnityEngine.AnimationCurve, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8F93\u51FA"
+        node: {fileID: -1046024412475258505}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u8BA1\u7B97\u7ED3\u679C"
+      _node: {fileID: 1903361217068877891}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u76EE\u7684\u503C"
+        node: {fileID: 7401588402887100044}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u81EA\u53D8\u91CF": 44
+  "\u66F2\u7EBF":
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.07395172
+      value: -3.5045676
+      inSlope: 0.07822196
+      outSlope: 0.07822196
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.024709301
+    - serializedVersion: 3
+      time: 21.157547
+      value: 4.6592083
+      inSlope: 0.0026499059
+      outSlope: 0.0026499059
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 27.770813
+      value: -3.0908957
+      inSlope: -0.47286683
+      outSlope: -0.47286683
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 41.961525
+      value: 1.5136399
+      inSlope: -0.016739676
+      outSlope: -0.016739676
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 50.878494
+      value: -5.1809673
+      inSlope: 0.022150906
+      outSlope: 0.022150906
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  "\u8BA1\u7B97\u7ED3\u679C": 0.59573805
+--- !u!114 &3179676308311548183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed196741941bf2e48b461963b3145151, type: 3}
+  m_Name: "\u6D6E\u70B9\u8F6C\u6574\u6570"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -936, y: -776}
+  ports:
+    keys:
+    - "\u6D6E\u70B9"
+    - "\u6574\u6570"
+    values:
+    - _fieldName: "\u6D6E\u70B9"
+      _node: {fileID: 3179676308311548183}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u968F\u673A\u6570\u7ED3\u679C"
+        node: {fileID: 8255074673579480369}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u6574\u6570"
+      _node: {fileID: 3179676308311548183}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u6570\u636E\u5E8F\u53F7"
+        node: {fileID: 7949923892828777501}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u6D6E\u70B9": 1.4258118
+  "\u6574\u6570": 1
+--- !u!114 &5885952696087935626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5873a2d68e1ef0241ab302579aab31d3, type: 3}
+  m_Name: "\u5B50\u5F39\u542F\u7528\u65F6\u4E8B\u4EF6"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -824, y: -200}
+  ports:
+    keys:
+    - "\u4E0B\u4E00\u6B65"
+    - "\u5B50\u5F39"
+    values:
+    - _fieldName: "\u4E0B\u4E00\u6B65"
+      _node: {fileID: 5885952696087935626}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8FDB\u5165\u8282\u70B9"
+        node: {fileID: -3267541671832575604}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5B50\u5F39"
+      _node: {fileID: 5885952696087935626}
+      _typeQualifiedName: Bullet, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u5B50\u5F39"
+        node: {fileID: -3267541671832575604}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 0.40392157, g: 0.40392157, b: 0.40392157, a: 1}
+  NodeName: 
+  "\u5B50\u5F39": {fileID: 0}
+--- !u!114 &6204461343235170330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4ba26d221526245b634435bde8ca6d, type: 3}
+  m_Name: "\u53D1\u5C04\u5668\u521D\u59CB\u5316\u65F6"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000, guid: 9a470c8b8c2e92b4ca73362c72eceeac, type: 2}
+  position: {x: -1448, y: -1128}
+  ports:
+    keys:
+    - "\u4E0B\u4E00\u6B65"
+    - "\u53D1\u5C04\u5668"
+    values:
+    - _fieldName: "\u4E0B\u4E00\u6B65"
+      _node: {fileID: 6204461343235170330}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8FDB\u5165\u8282\u70B9"
+        node: {fileID: 8354969748806700820}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u53D1\u5C04\u5668"
+      _node: {fileID: 6204461343235170330}
+      _typeQualifiedName: Shooting, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u53D1\u5C04\u5668": {fileID: 0}
+--- !u!114 &7401588402887100044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3811de0d40f5d1742b07027d2bfaa7af, type: 3}
+  m_Name: "\u8BBE\u7F6E\u5B50\u5F39\u6D6E\u70B9\u6570\u4FE1\u606F"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: 344, y: -648}
+  ports:
+    keys:
+    - "\u8FDB\u5165\u8282\u70B9"
+    - "\u76EE\u7684\u503C"
+    - "\u5B50\u5F39"
+    - "\u9000\u51FA\u8282\u70B9"
+    values:
+    - _fieldName: "\u8FDB\u5165\u8282\u70B9"
+      _node: {fileID: 7401588402887100044}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u9000\u51FA\u8282\u70B9"
+        node: {fileID: -4579689177791040707}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u76EE\u7684\u503C"
+      _node: {fileID: 7401588402887100044}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u8BA1\u7B97\u7ED3\u679C"
+        node: {fileID: 1903361217068877891}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5B50\u5F39"
+      _node: {fileID: 7401588402887100044}
+      _typeQualifiedName: Bullet, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: "\u5B50\u5F39"
+        node: {fileID: -4059033346238774282}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u9000\u51FA\u8282\u70B9"
+      _node: {fileID: 7401588402887100044}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 0.39607844, g: 0.16078432, b: 0.16078432, a: 1}
+  NodeName: 
+  "\u76EE\u7684\u503C": 0.59573805
+  "\u5B50\u5F39": {fileID: 0}
+  "\u5B50\u5F39\u5C5E\u6027": 0
+--- !u!114 &7689151831208100203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37d8bce466b68a7408e04cbcfeddd69d, type: 3}
+  m_Name: "\u5B50\u5F39\u5237\u65B0\u65F6\u4E8B\u4EF6"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: 24, y: -184}
+  ports:
+    keys:
+    - "\u4E0B\u4E00\u6B65"
+    - "\u5B50\u5F39"
+    - "\u5B50\u5F39\u5E74\u9F84"
+    values:
+    - _fieldName: "\u4E0B\u4E00\u6B65"
+      _node: {fileID: 7689151831208100203}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5B50\u5F39"
+      _node: {fileID: 7689151831208100203}
+      _typeQualifiedName: Bullet, Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u5B50\u5F39\u5E74\u9F84"
+      _node: {fileID: 7689151831208100203}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 0.40392157, g: 0.40392157, b: 0.40392157, a: 1}
+  NodeName: 
+  "\u5B50\u5F39": {fileID: 0}
+  "\u5B50\u5F39\u5E74\u9F84": 0
+--- !u!114 &7949923892828777501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a708a7b97d89c9240ad70b121f29f388, type: 3}
+  m_Name: "\u6570\u7EC4\u8BFB\u53D6"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -616, y: -792}
+  ports:
+    keys:
+    - "\u6570\u636E\u5E8F\u53F7"
+    - "\u8F93\u5165"
+    - "\u8F93\u51FA"
+    values:
+    - _fieldName: "\u6570\u636E\u5E8F\u53F7"
+      _node: {fileID: 7949923892828777501}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u6574\u6570"
+        node: {fileID: 3179676308311548183}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u8F93\u5165"
+      _node: {fileID: 7949923892828777501}
+      _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.Sprite,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u53D8\u91CF\u503C"
+        node: {fileID: 8354969748806700820}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: "\u8F93\u51FA"
+      _node: {fileID: 7949923892828777501}
+      _typeQualifiedName: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u76EE\u7684\u503C"
+        node: {fileID: -4579689177791040707}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  TintColor: {r: 0.39607844, g: 0.16078432, b: 0.16078432, a: 1}
+  NodeName: 
+  "\u53D8\u91CF\u7C7B\u578B": 19
+  "\u6570\u636E\u5E8F\u53F7": 1
+--- !u!114 &8255074673579480369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad4c887b3cf3624287b4ac2d2c4844f, type: 3}
+  m_Name: "\u968F\u673A\u6570"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -1240, y: -776}
+  ports:
+    keys:
+    - "\u6700\u5C0F\u968F\u673A\u6570\u503C"
+    - "\u6700\u5927\u968F\u673A\u6570\u503C"
+    - "\u968F\u673A\u6570\u7ED3\u679C"
+    values:
+    - _fieldName: "\u6700\u5C0F\u968F\u673A\u6570\u503C"
+      _node: {fileID: 8255074673579480369}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u6700\u5927\u968F\u673A\u6570\u503C"
+      _node: {fileID: 8255074673579480369}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u968F\u673A\u6570\u7ED3\u679C"
+      _node: {fileID: 8255074673579480369}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u6D6E\u70B9"
+        node: {fileID: 3179676308311548183}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  TintColor: {r: 1, g: 1, b: 1, a: 1}
+  NodeName: 
+  "\u6700\u5C0F\u968F\u673A\u6570\u503C": 0
+  "\u6700\u5927\u968F\u673A\u6570\u503C": 2
+  "\u968F\u673A\u6570\u7ED3\u679C": 0
+--- !u!114 &8354969748806700820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47082d2b866e6b45b13fe13b7de2791, type: 3}
+  m_Name: "\u6570\u7EC4"
+  m_EditorClassIdentifier: 
+  "\u5173\u95ED\u9519\u8BEF\u4FE1\u606F": 0
+  Info: 
+  Error: 0
+  graph: {fileID: 11400000}
+  position: {x: -1128, y: -1192}
+  ports:
+    keys:
+    - "\u8FDB\u5165\u8282\u70B9"
+    - "\u9000\u51FA\u8282\u70B9"
+    - "\u521D\u59CB\u5316\u6570\u7EC4"
+    - "\u53D8\u91CF\u503C"
+    values:
+    - _fieldName: "\u8FDB\u5165\u8282\u70B9"
+      _node: {fileID: 8354969748806700820}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u4E0B\u4E00\u6B65"
+        node: {fileID: 6204461343235170330}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u9000\u51FA\u8282\u70B9"
+      _node: {fileID: 8354969748806700820}
+      _typeQualifiedName: FunctionProgress, Assembly-CSharp-firstpass, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: "\u8FDB\u5165\u8282\u70B9"
+        node: {fileID: -6299927392075294020}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: "\u521D\u59CB\u5316\u6570\u7EC4"
+      _node: {fileID: 8354969748806700820}
+      _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.Sprite,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: "\u53D8\u91CF\u503C"
+      _node: {fileID: 8354969748806700820}
+      _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.Sprite,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: "\u8F93\u5165"
+        node: {fileID: 7949923892828777501}
+        reroutePoints: []
+      - fieldName: "\u8F93\u5165"
+        node: {fileID: -6299927392075294020}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  TintColor: {r: 0.39607844, g: 0.16078432, b: 0.16078432, a: 1}
+  NodeName: 
+  "\u540D\u79F0": Random
+  "\u53D8\u91CF\u7C7B\u578B": 19
+  floatList: []
+  doubleList: []
+  shortList: 
+  boolList: 
+  intList: 
+  stringList: []
+  longList: 
+  Vector3List: []
+  colorList: []
+  bulletLocomotion: []
+  shootingLocomotion: []
+  Characters: []
+  Triggers: []
+  Beziers: []
+  Patterns: []
+  Forces: []
+  Enemys: []
+  Sprites: []
+  Shootings: []
+  WrittensNew: []
+  dialogSys: []
+  stageControl: []
+  splCar: []
+  animators: []
+  audiosource: []
+  links: []
+  NodeIndex: 10

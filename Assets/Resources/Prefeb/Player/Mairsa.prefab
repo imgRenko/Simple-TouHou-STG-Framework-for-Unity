@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7841937126655596364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1033243739551882, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930553853840864, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930553853840864, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930553853840864, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930553853840864, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930553853840864, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930553853840864, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930553853840864, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930553853840864, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114162136364660124, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: ObjectPool
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114162136364660124, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: Normal
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a284fdef057567469d63cd033e85569,
+        type: 3}
+    - target: {fileID: 114162136364660124, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: Deadly
+      value: 
+      objectReference: {fileID: 21300000, guid: 5329fa1a4bdb004438d1ed9e75ccc3e4,
+        type: 3}
+    - target: {fileID: 114162136364660124, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: Break
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a21b17246199494c92648ae78be9197,
+        type: 3}
+    - target: {fileID: 114162136364660124, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: Speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114162136364660124, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: PictrueMaskOffset.x
+      value: 15.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114162136364660124, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: Invincible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114677984208106274, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: PlayerBulletBased
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114677984208106274, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: FollowPlayerBulletBased
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114677984208106274, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: NormalSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114677984208106274, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: RapidSpeed
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 212144717443352030, guid: 1ecdc04e8c4403542acecceffc354067,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3835719594668472011, guid: 4eeb63d540e81694ab70166248033cc4,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 114622773572878526, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 1ecdc04e8c4403542acecceffc354067, type: 3}

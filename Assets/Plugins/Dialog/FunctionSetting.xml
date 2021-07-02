@@ -1,0 +1,4 @@
+<TuoHuoSTG_DialogSystem_Setting>
+	<Background Function = "ChangeBackground"/>
+</TuoHuoSTG_DialogSystem_Setting>
+<!-此处的信息十分重要，一旦丢失，游戏的剧情系统将无法运行。DEBUG时使用->

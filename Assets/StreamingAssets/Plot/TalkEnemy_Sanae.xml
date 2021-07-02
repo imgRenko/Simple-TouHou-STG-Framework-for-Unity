@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Story>
+  <StoryText>
+     	<Text1 name ="梅莉" value ="........"/>
+     	<Text2 name ="梅莉" value ="一看到我就打过来追着我，到底想干吗哇。"/>
+    	<Text3 name ="早苗" value ="你这家伙终于说话了吗。还有你到底是谁啊？穿着这么像外界的人类。"/>
+    	<Text4 name ="早苗" value ="果然这一次的异变和外界的人类有点关系呀！"/>
+    	<Text5 name ="梅莉" value ="嗯？！异变？什么东西？"/>
+    	<Text6 name ="早苗" value ="就是幻想乡时间混乱的问题啊！这不是异变是什么，我跑这么深处在这里就碰到你一个人，你一定就是异变的元凶！"/>
+    	<Text7 name ="梅莉" value ="原来如此，其实呢，我是为了排除像你这样的侵入者而来的。"/>
+    	<Text8 name ="早苗" value ="哈？"/>
+    	<Text9 name ="梅莉" value ="你知道吗？用不了多久，不、整个世界的时间就要消失了。"/>
+    	<Text10 name ="早苗" value ="这样？让时间消失干什么？"/>
+    	<Text11 name ="梅莉" value ="那个人承诺过，只要帮助她，就能保全两个人的性命。"/>
+    	<Text12 name ="早苗" value ="两人？"/>
+    	<Text13 name ="梅莉" value ="嗯嗯，我还有另外一个人。我们从那个人那里获得了能力。"/>
+    	<Text14 name ="梅莉" value ="另一个人负责术士的辅助，而我负责周边的安全警备。"/>
+    	<Text15 name ="早苗" value ="真的傻，你这家伙。"/>
+    	<Text16 name ="梅莉" value ="为什么这么说？"/>
+    	<Text17 name ="早苗" value ="如果时间消失的话，你那无聊的契约也就自然而然地消灭了吧？"/>
+	<Text18 name ="梅莉" value ="如果大家消失的话，那个人能把消失本身也消除掉。"/>
+	<Text19 name ="梅莉" value ="像这样近乎自杀的行动，并不是那个人的行事风格。"/>
+	<Text20 name ="早苗" value ="这样嘛，原来如此。"/>
+	<Text21 name ="梅莉" value ="..........."/>
+	<Text22 name ="梅莉" value ="到这里都明白的话，是不是你该回去了呢？"/>
+	<Text23 name ="早苗" value ="话说，你有感觉到这里的气温是不是很低"/>
+	<Text24 name ="梅莉" value ="没有哟，早苗。"/>
+	<Text25 name ="早苗" value ="！！！！"/>
+	<Text26 name ="梅莉" value ="你在说什么呢？如果不管怎么样你都不离去的话，那么我就强行送客了！"/>
+	<Text27 name ="梅莉" value ="我的名字叫玛艾露贝莉·赫恩。在这个外界一个冥暗的街市里经营着一个神秘俱乐部，如果你输掉的话，欢迎做客！"/>
+	<Text28 name ="早苗" value ="把自我介绍留在最后，简直和Falcom的游戏一模一样呢！"/>
+	<Text29 name ="早苗" value ="不过呢，你就是一个普普通通的人类，被利用是正常的。"/>
+	<Text30 name ="早苗" value ="那么，玛艾露贝莉·赫恩，开始吧。"/>
+  </StoryText>
+  <Num>
+    	<Num name ="ALLTalkStep" value ="29"/>
+  </Num>
+</Story>

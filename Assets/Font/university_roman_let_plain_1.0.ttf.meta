@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4f1e735dc6538c54aadd4dbb05ba5e59
+timeCreated: 1497366498
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: University Roman LET
+  fontNames:
+  - University Roman LET
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

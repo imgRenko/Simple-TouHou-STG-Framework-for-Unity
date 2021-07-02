@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 86cf62ab389f0bc448d87845583f61af
+timeCreated: 1497366500
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Stone Serif SC ITC TT
+  fontNames:
+  - Stone Serif SC ITC TT
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

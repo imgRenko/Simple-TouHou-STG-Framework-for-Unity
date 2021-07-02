@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>  
+<TuoHuoSTGConfigSetting>
+    <Environment ScreenWidth = "1760" ScreenHeight = "990" FullScreen = "False"/>
+    <GraphicsQuality Level = "2"/> 
+    <InputConfig Submit = "z" Canceled =  "x" 
+                            Horizontal = "right" Vertical = "up" 
+                            Slow = "left shift"/>
+    <Title Title = "TuoHuoSTG Example."/>
+    <Sound Volume = "1" />
+</TuoHuoSTGConfigSetting>
