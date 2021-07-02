@@ -22,9 +22,9 @@
 [imgRenko Blog STG框架使用教程](https://imgrenko.gitee.io/2021/03/12/TouHouSTGFrameWorkTutorials/)，此页面将说明此框架的使用方法，<font size = 1>(但是还没写完………………)</font>
 
 # 使用的一些插件
-1.[Siccity - xNode](https://github.com/Siccity/xNode)  
-2.Odin Inspector  
-3.Live2D Cubism SDK  
+* 1. [Siccity - xNode](https://github.com/Siccity/xNode)  
+* 2. Odin Inspector  
+* 3. Live2D Cubism SDK  
 
 # 注意事项
 此框架从2016年起便立项，屎山代码警告。
