@@ -20,15 +20,15 @@ public class ObjectPool : MonoBehaviour
     public EnemyState EnemyBased;
     public bool UseJob = true;
     public int JobBatch = 1;
-  //  [HideInInspector]
+    [HideInInspector]
     public Queue<Bullet> BulletList = new Queue<Bullet>();
-   // [HideInInspector]
+    [HideInInspector]
     public List<Bullet> BulletList_State = new List<Bullet>();
-   // [HideInInspector]
+    [HideInInspector]
     public List<Bouns> BounsList = new List<Bouns>();
-   // [HideInInspector]
+    [HideInInspector]
     public List<EnemyState> EnemyList = new List<EnemyState>();
-   // [HideInInspector]
+    [HideInInspector]
     public List<PlayerBullet> PlayerBulletList = new List<PlayerBullet>();
     public List<TriggerReceiver> ExtraCheckingTse = new List<TriggerReceiver>();
     public static List<TriggerReceiver> ExtraChecking = new List<TriggerReceiver>();
