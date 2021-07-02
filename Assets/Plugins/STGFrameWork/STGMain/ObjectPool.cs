@@ -3,10 +3,7 @@ using System.Collections;
 using UnityEngine;
 using System.Linq;
 using Unity.Collections;
-// ---------------------- 对象池 （ObjectPool） ----------------------
-// 对象池技术限制内存输出，对需要不断创建对象的STG，具有良好的性能优化效果
-// 2015 年 Kutaka
-// ------------------------------------------------------------------
+
 [AddComponentMenu("东方STG框架/框架核心/对象池")]
 public class ObjectPool : MonoBehaviour
 {
