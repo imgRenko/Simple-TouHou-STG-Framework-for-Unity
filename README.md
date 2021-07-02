@@ -1,7 +1,7 @@
 [![standard-readme compliant](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) [![standard-readme compliant](https://img.shields.io/badge/license-MIT-informational.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) [![standard-readme compliant](https://img.shields.io/badge/FrameworkVer-9.87-yellow.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) [![standard-readme compliant](https://img.shields.io/badge/UnityRequire-2019.4.11fLTS-yellow.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 
-此原生框架带有一定的素材缺失，请使用自己的美术资源进行补全。
+此原生框架带有一定的素材缺失（除了可以公开使用的素材以外），请使用自己的美术资源进行补全。
 
 # 框架简介
 个人用STG框架。  
