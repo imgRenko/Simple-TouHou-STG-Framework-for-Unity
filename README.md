@@ -14,12 +14,12 @@ Several functions are missing: video, music room system and laser shooting.
 # How to use this framework
 [imgRenko Blog STG Framework tutorial (CN)](https://imgrenko.gitee.io/2021/03/12/TouHouSTGFrameWorkTutorials/)，This page will show you how to use this framework，<font size = 1>(But it does not finish………………)</font>
 
-# 使用的一些插件
+# Some plug-ins used
 * 1. [Siccity - xNode](https://github.com/Siccity/xNode)  
 * 2. Odin Inspector  
 * 3. Live2D Cubism SDK  
 
-# Some plug-ins used
+# Image
 ![image](https://imgrenko.gitee.io/img/ReadMeImage/xNode.png)
 ![image](https://imgrenko.gitee.io/img/ReadMeImage/1.png)
 ![image](https://imgrenko.gitee.io/img/ReadMeImage/2.png)
