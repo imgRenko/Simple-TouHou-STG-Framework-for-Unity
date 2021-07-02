@@ -19,6 +19,10 @@ Several functions are missing: video, music room system and laser shooting.
 * 2. Odin Inspector  
 * 3. Live2D Cubism SDK  
 
+# Other Application?
+If you need to use the live 2D model in this framework, you can use the live 2D animation editor to modify motions of model more easily（ This software is suitable for independent teams)
+[imgRenko Blog Live2D Animation Editor (CN)](https://imgrenko.gitee.io/2020/09/16/Live2DAnimationEditor/)
+
 # Image
 ![image](https://imgrenko.gitee.io/img/ReadMeImage/xNode.png)
 ![image](https://imgrenko.gitee.io/img/ReadMeImage/1.png)
