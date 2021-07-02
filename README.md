@@ -27,7 +27,9 @@
 * 3. Live2D Cubism SDK  
 
 # 框架截图
-![image](https://github.com/imgRenko/Screen-Art-THSTG-Framework-for-Unity/blob/main/ReadMeImage/xNode.png)
+![image](https://imgrenko.gitee.io/img/ReadMeImage/xNode.png)
+![image](https://imgrenko.gitee.io/img/ReadMeImage/1.png)
+![image](https://imgrenko.gitee.io/img/ReadMeImage/2.png)
 
 # 注意事项
 此框架从2016年起便立项，屎山代码警告。
