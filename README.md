@@ -22,6 +22,7 @@ Several functions are missing: video, music room system and laser shooting.
 # Other Application?
 If you need to use the live 2D model in this framework, you can use the live 2D animation editor to modify motions of model more easily（ This software is suitable for independent teams)
 [imgRenko Blog Live2D Animation Editor (CN)](https://imgrenko.gitee.io/2020/09/16/Live2DAnimationEditor/)
+When you use the visual script of this framework, you can open this application faster from the live2d node
 
 # Image
 ![image](https://imgrenko.gitee.io/img/ReadMeImage/xNode.png)
