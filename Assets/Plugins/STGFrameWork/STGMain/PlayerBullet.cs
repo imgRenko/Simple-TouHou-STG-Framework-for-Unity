@@ -70,13 +70,14 @@ public class PlayerBullet : MonoBehaviour
         else
         {
 
-            if (TotalLiveFrame > MaxLiveFrame)
-            {
-                Disabled();
-
-            }
+           
             transformObject.Translate(Vector3.up * Speed * Global.GlobalSpeed, Space.Self);
             transformObject.eulerAngles = new Vector3 (0, 0, Mathf.Lerp (gameObject.transform.eulerAngles.z,0,0.05f * Global.GlobalSpeed));
+        }
+        if (TotalLiveFrame > MaxLiveFrame)
+        {
+            Disabled();
+
         }
     }
 

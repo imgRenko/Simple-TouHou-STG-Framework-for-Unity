@@ -20,15 +20,15 @@ public class ObjectPool : MonoBehaviour
     public EnemyState EnemyBased;
     public bool UseJob = true;
     public int JobBatch = 1;
-    [HideInInspector]
+  //  [HideInInspector]
     public Queue<Bullet> BulletList = new Queue<Bullet>();
-    [HideInInspector]
+   // [HideInInspector]
     public List<Bullet> BulletList_State = new List<Bullet>();
-    [HideInInspector]
+   // [HideInInspector]
     public List<Bouns> BounsList = new List<Bouns>();
-    [HideInInspector]
+   // [HideInInspector]
     public List<EnemyState> EnemyList = new List<EnemyState>();
-    [HideInInspector]
+   // [HideInInspector]
     public List<PlayerBullet> PlayerBulletList = new List<PlayerBullet>();
     public List<TriggerReceiver> ExtraCheckingTse = new List<TriggerReceiver>();
     public static List<TriggerReceiver> ExtraChecking = new List<TriggerReceiver>();
@@ -36,24 +36,33 @@ public class ObjectPool : MonoBehaviour
     //int index = 0;
     // Use this for initialization
     // 此部分在编辑器模式不适用，在玩家在打包游戏后游玩的过程中，用于减少玩家读取时间。
+    T CreateObj<T>( bool Chlid, string Name,GameObject based, float z = 0)
+    {
+        GameObject New = Instantiate(based);
+        New.name = Name;
+        New.SetActive(true);
+        New.gameObject.transform.position = new Vector3(999, 999,z);
+
+        New.transform.parent = based.transform.parent;
+        T c;
+        if (!Chlid)
+            c = New.GetComponent<T>();
+        else
+            c = New.GetComponentInChildren<T>(true);
+        return c;
+    }
+    
+
     IEnumerator InitFrameBullet() {
         // 一帧30个子弹
         for (int p = 0; p != MaxBulletNumber / 10; ++p)
         {
             for (int i = 0; i != 10; ++i)
             {
-
-                GameObject New = Instantiate(BulletBased);
-
-                New.SetActive(true);
-                New.gameObject.transform.position = new Vector2(999, 999);
-
-                New.transform.parent = BulletBased.transform.parent;
-                Bullet c = New.GetComponent<Bullet>();
-
+                Bullet c = CreateObj<Bullet>( false, "Bullet" + p * 30 + i.ToString(), BulletBased);
+                c.ID = p * 5 + i;
                 c.Use = false;
-                c.ID = i;
-                New.name = "Bullet" + p*30+i.ToString();
+
                 Global.GameObjectPool_A.BulletList.Enqueue(c);
                 Global.GameObjectPool_A.BulletList_State.Add(c);
 
@@ -68,17 +77,9 @@ public class ObjectPool : MonoBehaviour
         {
             for (int i = 0; i != 5; ++i)
             {
-                GameObject New = Instantiate(BounsBased);
-                //  New.tag = "Chlid";
-                Transform trans = New.transform;
-                Vector3 Position = trans.position;
-                Position.z = 0 - (0.1f * p*5+i);
-                trans.position = Position;
+                Bouns c = CreateObj<Bouns>(true, "Bouns" +p*5+i.ToString(), BounsBased, 0 - (0.1f * i));
+                Global.GameObjectPool_A.BounsList.Add(c);
 
-                New.SetActive(false);
-                trans.parent = BounsBased.transform.parent;
-                New.name = "Bouns" + p*5+i.ToString();
-                Global.GameObjectPool_A.BounsList.Add(New.GetComponentInChildren<Bouns>());
             }
             yield return new WaitForEndOfFrame();
         }
@@ -90,38 +91,54 @@ public class ObjectPool : MonoBehaviour
         {
             for (int i = 0; i != 10; ++i)
             {
-                GameObject New = Instantiate(PlayerBulletBased);
-                Transform trans = New.transform;
-                //   New.tag = "Chlid";
-                Vector3 Position = trans.position;
-                New.SetActive(true);
-                trans.position = Position;
-                trans.parent = PlayerBulletBased.transform.parent;
-                New.name = "PlayerBullet" + i.ToString();
+                PlayerBullet c = CreateObj<PlayerBullet>(false, "PlayerBullet" + p*10 + i.ToString(), PlayerBulletBased);
 
-                Global.GameObjectPool_A.PlayerBulletList.Add(New.GetComponent<PlayerBullet>());
+
+                Global.GameObjectPool_A.PlayerBulletList.Add(c);
             }
             yield return new WaitForEndOfFrame();
         }
     }
     void Start()
     {
-        StartCoroutine(InitFrameBullet());
+#if UNITY_EDITOR
+        for (int i = 0; i != MaxBulletNumber; ++i)
+        {
+
+            Bullet c = CreateObj<Bullet>( false, "Bullet" + i.ToString(),BulletBased);
+            c.ID = i;
+            c.Use = false;
+            Global.GameObjectPool_A.BulletList.Enqueue(c);
+            Global.GameObjectPool_A.BulletList_State.Add(c);
+
+        }
+        for (int i = 0; i != PlayerBulletNumbet; ++i)
+        {
+            PlayerBullet c = CreateObj<PlayerBullet>(false, "PlayerBullet" + i.ToString(), PlayerBulletBased);
+
+            Global.GameObjectPool_A.PlayerBulletList.Add(c);
+
+        }
+        for (int i = 0; i != BounsNumber; ++i)
+        {
+            Bouns c = CreateObj<Bouns>(true, "Bouns" + i.ToString(), BounsBased, 0 - (0.1f * i));
+
+    
+         
+            Global.GameObjectPool_A.BounsList.Add(c);
+        }
+
+#else
+         StartCoroutine(InitFrameBullet());
 
         StartCoroutine(InitBouns());
         StartCoroutine(InitBullet());
-
+#endif
         for (int i = 0; i != EnemyNumber; ++i)
         {
-            GameObject New = Instantiate(EnemyBased.gameObject);
-            Transform trans = New.transform;
-         //   New.tag = "Chlid";
-            Vector3 Position = trans.position;
-            trans.position = Position;
-            New.SetActive(false);
-            trans.parent = EnemyBased.transform.parent;
-            New.name = "Enemy" + i.ToString();
-            Global.GameObjectPool_A.EnemyList.Add(New.GetComponent<EnemyState>());
+            EnemyState c = CreateObj<EnemyState>(true, "Enemy" + i.ToString(), EnemyBased.gameObject);
+            c.gameObject.SetActive(false);
+            Global.GameObjectPool_A.EnemyList.Add(c);
 
         }
        
