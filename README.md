@@ -1,8 +1,10 @@
 [![standard-readme compliant](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) [![standard-readme compliant](https://img.shields.io/badge/license-MIT-informational.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) [![standard-readme compliant](https://img.shields.io/badge/FrameworkVer-8.97-yellow.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) [![standard-readme compliant](https://img.shields.io/badge/UnityRequire-2019.4.1fLTS-yellow.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
+
 此原生框架带有一定的素材缺失，请使用自己的美术资源进行补全。
 
 # 框架简介
+个人用STG框架。
 此框架如其名，这是一款用于制作东方STG同人游戏的程序框架。
 此框架提供了一些工具，让制作者得以更加便捷地在Unity制作自己喜欢的STG弹幕。
 目前此框架尚未完善，需要一定时间去完善其中的功能。（龟速摸鱼中……）
