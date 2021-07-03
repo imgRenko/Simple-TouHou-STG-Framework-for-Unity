@@ -8,7 +8,7 @@ public class AdditionalProperty
     public float Property;
     public float acceleratedProperty;
     public Vector2 randomVector;
-
+    
     private void DoRandom() {
         if (randomVector != Vector2.zero)
         Property = Random.Range(randomVector.x, randomVector.y);
@@ -69,6 +69,8 @@ public class LazerShooting : STGComponent
 
     public float rotationRange = 360;
 
+    public AdditionalProperty Angle;
+
     public float LazerColliderRadius = 0.1f;
 
     [FoldoutGroup("总体控制", expanded: false)]
@@ -100,14 +102,14 @@ public class LazerShooting : STGComponent
     
 
     public void Shot() {
-        if (Way < 0)
+        if (Way < 0 || Global.PlayerCharacterScript.DestroyingBullet)
             return;
         for (int i = 0; i != Way; ++i)
         {
             LazerMovement Lazer = Global.GameObjectPool_A.ApplyLazerMovement();
             LazerMovementInfo Info = lazerMovementInfo.Clone();
             
-            Info.Rotation = rotationRange / Way * i;
+            Info.Rotation = rotationRange / Way * i + Angle.Property;
             Lazer.transform.position = this.transform.position;
             Lazer.RefleshTrail();
             Lazer.movementInfo = Info;
@@ -129,6 +131,8 @@ public class LazerShooting : STGComponent
         if (Global.GamePause || Global.WrttienSystem) { return; }
 
         // 处理自运动
+
+        Angle.DoUpdate();
 
         if (totalFrames > MaxLiveFrame)
             enabled = false;

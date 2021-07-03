@@ -5,6 +5,7 @@ using UnityEngine;
 public class LazerCollider {
     public float Radius = 0.1f;
     public Vector2 Postion;
+    public bool Graze = false;
 }
 
 public class LazerMovement : MonoBehaviour
@@ -20,6 +21,8 @@ public class LazerMovement : MonoBehaviour
     private float trailLength;
 
     private bool Use = false;
+
+    private bool stopCalc = false;
 
     private LineRenderer trailRenderer;
 
@@ -54,14 +57,18 @@ public class LazerMovement : MonoBehaviour
         trailRenderer.positionCount = 0;
         trailRenderer.SetPositions(Postions.ToArray());
     }
-    public void Unoccupie()
+    private void Unoccupied()
     {
-
         thisTransform.position = new Vector3(999, 999, 0);
         RefleshTrail();
         Use = false;
-
+        stopCalc = false;
     }
+
+    public void UnoccupieLazer() {
+        stopCalc = true;
+    }
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -86,12 +93,15 @@ public class LazerMovement : MonoBehaviour
     {
         if (Global.GamePause || Global.WrttienSystem || !Use) { return; }
 
+        if (Global.PlayerCharacterScript.DestroyingBullet)
+            Unoccupied();
 
+        bool finishCalc = totalFrames > MaxLiveFrame || stopCalc;
 
         if (totalFrames % 2 == 0)
         {
             Vector3 lazerPos = thisTransform.position;
-            if (totalFrames <= MaxLiveFrame)
+            if (!finishCalc)
                 Postions.Add(lazerPos);
 
             if (totalFrames > trailLength * 60 && Postions.Count != 0)
@@ -104,14 +114,13 @@ public class LazerMovement : MonoBehaviour
                     if (Vector2.Distance(a.Postion, Postions[0]) > a.Radius )
                     {
                         lazerColliders.RemoveAt(0);
-
                     }
                 }
             }
 
-            if (Postions.Count == 0 && totalFrames > MaxLiveFrame)
+            if (Postions.Count == 0 && finishCalc)
             {
-                Unoccupie();
+                Unoccupied();
                 return;
             }
 
@@ -122,7 +131,6 @@ public class LazerMovement : MonoBehaviour
                 if (Vector2.Distance(a.Postion, lazerPos) > a.Radius)
                 {
                     AddLazerCollider(lazerPos, LazerColliderRadius);
-
                 }
             }
             else
@@ -137,18 +145,25 @@ public class LazerMovement : MonoBehaviour
 
         // 检查玩家是否碰到激光
         foreach (var Collider in lazerColliders) {
+
             Vector2 charPos = Global.PlayerObject.transform.position;
             Character Player = Global.PlayerCharacterScript;
-            if (Vector2.Distance(Collider.Postion, charPos) > Collider.Radius )
+            float radiusTotal = Collider.Radius + Player.Radius;
+
+            if (Vector2.Distance(Collider.Postion, charPos) < radiusTotal)
             {
                 Player.Die();
-
+            }
+            if (!Collider.Graze && Vector2.Distance(Collider.Postion, charPos) < radiusTotal + 0.4f )
+            {
+                Player.Controller.UseGrazedEvent();
+                Collider.Graze = true;
             }
         }
 
 
         totalFrames += Global.GlobalSpeed;
-        if (totalFrames <= MaxLiveFrame)
+        if (!finishCalc)
             thisTransform.Translate(movementInfo.DoUpdate(), Space.World);
 
     }
