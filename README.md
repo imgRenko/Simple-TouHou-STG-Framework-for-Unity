@@ -8,7 +8,7 @@ A STG framework for personal use.
 This framework, as the name suggests, is a framework that you can make a THSTG game easily.
 This framework provides some tools for you to make your favorite STG barrage in unity more easily.
 At present, this framework is not perfect, it needs some time to improve its functions（Take it easy!)
-Several functions are missing: video, music room system and laser shooting.
+Several functions are missing: video, music room system.
 
 
 # How to use this framework
