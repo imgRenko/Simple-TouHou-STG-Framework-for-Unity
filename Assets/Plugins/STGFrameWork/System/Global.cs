@@ -92,6 +92,7 @@ public class Global : MonoBehaviour
     static public List<int> GlobalValue_int = new List<int>();
     static public List<float> GlobalValue_float = new List<float>();
     static public List<StageControl> StageList_A = new List<StageControl>();
+    static public Character PlayerCharacterScript;
     /// <summary>
     /// 在UNITY運行遊戲的性能瓶頸下的彈幕，可以依據這個參數來修改子彈的移動速度。例如UNITY下面測試是30幀數，彈幕測試時覺得舒服，可以調整此參數使子彈在獨立EXE運行的時候的速度減半，以免造成調試困難。
     /// 
@@ -248,6 +249,7 @@ public class Global : MonoBehaviour
         BGM = BGM_A;
         DestroySprites = DestroySprites_A;
         GameBg = Bg_A;
+
         BossMask = BossMask_A;
         PlayerMask = PlayerMask_A;
         RadioClipNormal = RadioClipNormal_A;
@@ -290,6 +292,7 @@ public class Global : MonoBehaviour
         PlayerPicture = PlayerPicture_A;
         bossHP = defaultBOSSHP;
         MissCount = 0;
+      
         BasicBullet = Global.GameObjectPool_A.BulletBased.GetComponent<Bullet>();
     }
 

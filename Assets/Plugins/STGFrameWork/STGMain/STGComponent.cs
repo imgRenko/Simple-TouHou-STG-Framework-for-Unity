@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+
 /// <summary>
 /// 除了Bullet类，此类是触发器、力场、敌人、发射器、激光、玩家、玩家子弹的基类，代表这些类是STG组件
 /// </summary>

@@ -281,6 +281,7 @@ public class Character : MonoBehaviour
         ObjectPool = GameObject.Find("GameAction").GetComponent<ObjectPool>();
         Global.PlayerMask.Offset = PictrueMaskOffset;
         Global.PlayerMask.Set(CharacterName, Normal);
+        Global.PlayerCharacterScript = this;
        
     }
     public void WritePlayerData2XML(bool success = false, string XmlfileName = "PlayerData.xml")
