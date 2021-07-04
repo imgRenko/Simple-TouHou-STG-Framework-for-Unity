@@ -110,7 +110,9 @@ namespace 变量
 				case 数组.ValueType.旧版剧情系统:
 					return GetInputValue<List<WrittenControlNew>>("输入")[数据序号]; 
 				case 数组.ValueType.符卡系统:
-					return GetInputValue<List<SpellCard>>("输入")[数据序号]; ;
+					return GetInputValue<List<SpellCard>>("输入")[数据序号];
+				case 数组.ValueType.游戏对象:
+					return GetInputValue<List<GameObject>>("输入")[数据序号];
 			}
 			return null;
 		}

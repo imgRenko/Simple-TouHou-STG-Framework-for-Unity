@@ -244,6 +244,42 @@ public class Trigger : STGComponent
 
         }
     }
+    void TriggerEvent(bool Result, int i)
+    {
+
+        if (Result == true && !Extra.Contains(ObjectPool.ExtraChecking[i]) && Use == true)
+        {
+            Debug.Log(Result);
+            Extra.Add(ObjectPool.ExtraChecking[i]);
+
+
+            OnBulletEnterIntoTrigger(ObjectPool.ExtraChecking[i].bullet, masterBullet);
+           
+            if (OnceTime)
+            {
+                Use = false;
+            }
+        }
+        if (Result && Use == true)
+        {
+
+            UseStayEvent(ObjectPool.ExtraChecking[i].bullet, masterBullet);
+          
+        }
+        if (Result == false && Extra.Contains(ObjectPool.ExtraChecking[i]) && Use == true)
+        {
+            Extra.Remove(ObjectPool.ExtraChecking[i]);
+
+            OnBulletExitFromTrigger(ObjectPool.ExtraChecking[i].bullet, masterBullet);
+     
+            if (OnceTime)
+            {
+                Use = false;
+            }
+        }
+
+    }
+
     public void CheckExtra()
     {
         // 去除无效元素
@@ -268,38 +304,7 @@ public class Trigger : STGComponent
             if (Type == Trigger.TriggerType.Box)
             {
                 bool Result = Bullet.Intersection(gameObject.transform.position, SquareLength, ObjectPool.ExtraChecking[i].bullet.gameObject.transform.position, Radius);
-                if (Result == true && !Extra.Contains(ObjectPool.ExtraChecking[i]) && Use == true)
-                {
-                    Debug.Log(Result);
-                    Extra.Add(ObjectPool.ExtraChecking[i]);
-
-
-                    OnBulletEnterIntoTrigger(ObjectPool.ExtraChecking[i].bullet, masterBullet);
-                    //Debug.Log("Extra Out!");
-                    if (OnceTime)
-                    {
-                        Use = false;
-                    }
-                }
-                if (Result && Use == true)
-                {
-
-                    UseStayEvent(ObjectPool.ExtraChecking[i].bullet, masterBullet);
-                    // Debug.Log("Extra Stay!");
-                }
-                if (Result == false && Extra.Contains(ObjectPool.ExtraChecking[i]) && Use == true)
-                {
-                    Extra.Remove(ObjectPool.ExtraChecking[i]);
-
-                    OnBulletExitFromTrigger(ObjectPool.ExtraChecking[i].bullet, masterBullet);
-                    // Debug.Log("Extra In!");
-                    if (OnceTime)
-                    {
-                        Use = false;
-                    }
-                }
-
-                //inTrigger[i] = Result;
+                TriggerEvent(Result, i);
             }
             if (Type == Trigger.TriggerType.Circle)
             {
@@ -307,79 +312,16 @@ public class Trigger : STGComponent
 
                 float a = Radius + ObjectPool.ExtraChecking[i].bullet.Radius;
                 bool Result = (a > t);
-                if (Result == true && !Extra.Contains(ObjectPool.ExtraChecking[i]) && Use == true)
-                {
-                    Extra.Add(ObjectPool.ExtraChecking[i]);
-                    OnBulletEnterIntoTrigger(ObjectPool.ExtraChecking[i].bullet, masterBullet);
-                 
-
-                    if (OnceTime)
-                    {
-                        Use = false;
-                    }
-
-                }
-                if (Result && Use == true)
-                {
-
-                    UseStayEvent(ObjectPool.ExtraChecking[i].bullet, masterBullet);
-
-                }
-                if (Result == false && Extra.Contains(ObjectPool.ExtraChecking[i]) && Use == true)
-                {
-
-                    Extra.Remove(ObjectPool.ExtraChecking[i]);
-                    OnBulletExitFromTrigger(ObjectPool.ExtraChecking[i].bullet, masterBullet);
-
-                    if (OnceTime)
-                    {
-                        Use = false;
-                    }
-
-                }
-
-                //inTrigger[i] = Result;
+                TriggerEvent(Result, i);
             }
             if (Type == Trigger.TriggerType.Line)
             {
 
-                float t = Vector2.Dot(AuxiliaryLinesEnd.transform.position - ObjectPool.ExtraChecking[i].transform.position, (AuxiliaryLinesEnd.transform.position - AuxiliaryLinesStart.transform.position));
-                float ang = Mathf.Abs(Vector2.Angle(AuxiliaryLinesEnd.transform.position - ObjectPool.ExtraChecking[i].transform.position, (AuxiliaryLinesEnd.transform.position - AuxiliaryLinesStart.transform.position)));
-                float final = t * Mathf.Tan(ang * Mathf.Deg2Rad);
-
-                float a = Radius + ObjectPool.ExtraChecking[i].bullet.Radius;
-                bool Result = (a > final);
-                if (Result == true && !Extra.Contains(ObjectPool.ExtraChecking[i]) && Use == true)
-                {
-                    Extra.Add(ObjectPool.ExtraChecking[i]);
-
-                    OnBulletEnterIntoTrigger(ObjectPool.ExtraChecking[i].bullet, masterBullet);
-
-                    if (OnceTime)
-                    {
-                        Use = false;
-                    }
-
-                }
-                if (Result && Use == true)
-                {
-
-                    UseStayEvent(ObjectPool.ExtraChecking[i].bullet, masterBullet);
-
-                }
-                if (Result == false && Extra.Contains(ObjectPool.ExtraChecking[i]) && Use == true)
-                {
-                    Extra.Remove(ObjectPool.ExtraChecking[i]);
-                    OnBulletExitFromTrigger(ObjectPool.ExtraChecking[i].bullet, masterBullet);
-
-                    if (OnceTime)
-                    {
-                        Use = false;
-                    }
-
-                }
-
-                //inTrigger[i] = Result;
+                Vector2 pos = ObjectPool.ExtraChecking[i].bullet.BulletTransform.position;
+                Vector2 start = AuxiliaryLinesStart.transform.position;
+                Vector2 end = AuxiliaryLinesEnd.transform.position;
+                bool Result = Math2D.IsCircleIntersectLineSeg(pos.x, pos.y, Radius, start.x, start.y, end.x, end.y);
+                TriggerEvent(Result, i);
             }
         }
     }

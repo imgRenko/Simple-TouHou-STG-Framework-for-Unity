@@ -55,9 +55,9 @@ namespace 变量
 					break;
 				case ValueType.激光:
 					if (不声明数组)
-						AddDynamicInput(typeof(LazerShooting), ConnectionType.Override, TypeConstraint.None, "输入");
+						AddDynamicInput(typeof(LaserShooting), ConnectionType.Override, TypeConstraint.None, "输入");
 					else
-						AddDynamicInput(typeof(List<LazerShooting>), ConnectionType.Override, TypeConstraint.None, "输入");
+						AddDynamicInput(typeof(List<LaserShooting>), ConnectionType.Override, TypeConstraint.None, "输入");
 
 					break;
 				case ValueType.发射器:
@@ -194,21 +194,21 @@ namespace 变量
 					if (不声明数组)
 					{
 						if (component.tempLazerPairs.ContainsKey(变量名称) == false)
-							component.tempLazerPairs.Add(变量名称, (LazerShooting)GetValue);
+							component.tempLazerPairs.Add(变量名称, (LaserShooting)GetValue);
 						else
 						{
 							component.tempLazerPairs.Remove(变量名称);
-							component.tempLazerPairs.Add(变量名称, (LazerShooting)GetValue);
+							component.tempLazerPairs.Add(变量名称, (LaserShooting)GetValue);
 						}
 					}
 					else
 					{
 						if (component.tempLazerLists.ContainsKey(变量名称) == false)
-							component.tempLazerLists.Add(变量名称, (List<LazerShooting>)GetValue);
+							component.tempLazerLists.Add(变量名称, (List<LaserShooting>)GetValue);
 						else
 						{
 							component.tempLazerLists.Remove(变量名称);
-							component.tempLazerLists.Add(变量名称, (List<LazerShooting>)GetValue);
+							component.tempLazerLists.Add(变量名称, (List<LaserShooting>)GetValue);
 						}
 					}
 

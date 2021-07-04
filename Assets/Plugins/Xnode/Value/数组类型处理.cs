@@ -92,7 +92,9 @@ namespace 变量
 				case 数组.ValueType.符卡系统:
 					AddDynamicOutput(typeof(List<SpellCard>), ConnectionType.Multiple, TypeConstraint.None, a);
 					break;
-
+				case 数组.ValueType.游戏对象:
+					AddDynamicOutput(typeof(List<GameObject>), ConnectionType.Multiple, TypeConstraint.None, a);
+					break;
 
 			}
 
@@ -182,7 +184,9 @@ namespace 变量
 				case 数组.ValueType.符卡系统:
 					AddDynamicOutput(typeof(SpellCard), ConnectionType.Multiple, TypeConstraint.None, a);
 					break;
-
+				case 数组.ValueType.游戏对象:
+					AddDynamicOutput(typeof(GameObject), ConnectionType.Multiple, TypeConstraint.None, a);
+					break;
 
 			}
 
@@ -272,6 +276,9 @@ namespace 变量
 				case 数组.ValueType.符卡系统:
 					AddDynamicInput(typeof(List<SpellCard>), ConnectionType.Multiple, TypeConstraint.None, a);
 					break;
+				case 数组.ValueType.游戏对象:
+					AddDynamicInput(typeof(List<GameObject>), ConnectionType.Multiple, TypeConstraint.None, a);
+					break;
 			}
 
 		}
@@ -358,6 +365,9 @@ namespace 变量
 					break;
 				case 数组.ValueType.符卡系统:
 					AddDynamicInput(typeof(SpellCard), ConnectionType.Multiple, TypeConstraint.None, a);
+					break;
+				case 数组.ValueType.游戏对象:
+					AddDynamicInput(typeof(GameObject), ConnectionType.Multiple, TypeConstraint.None, a);
 					break;
 			}
 

@@ -231,7 +231,7 @@ public class BulletTrackProduct
             {
                 changeToValue = false;
                 graphValue = false;
-                PlayerAngle = bullet.GetPlayerAngle();
+                PlayerAngle = bullet.GetAimToPlayerObjectRotation();
                 //Debug.Log(PlayerAngle);
                 defRotate = bullet.Rotation;
                 if (RandomRange != 0)
@@ -1057,6 +1057,40 @@ public class Bullet : STGComponent
             }
         
     }
+    void TriggerEvent(Trigger trigger,bool Result,int i) {
+        if (Result == true && inTrigger[i] == false && trigger.Use == true)
+        {
+
+            inTrigger[i] = true;
+            enterTimeTrigger[i]++;
+            if (trigger.MaxUseTime == -1 || enterTimeTrigger[i] < trigger.MaxUseTime)
+                trigger.OnBulletEnterIntoTrigger(this, null, inStayTrigger[i], enterTimeTrigger[i]);
+            if (trigger.OnceTime)
+            {
+                trigger.Use = false;
+
+            }
+            inStayTrigger[i] = 0;
+
+        }
+        if (Result && trigger.Use == true)
+        {
+            if (trigger.MaxUseTime == -1 || enterTimeTrigger[i] < trigger.MaxUseTime)
+                trigger.UseStayEvent(this, inStayTrigger[i], enterTimeTrigger[i]);
+            inStayTrigger[i]++;
+        }
+        if (Result == false && inTrigger[i] == true && trigger.Use == true)
+        {
+            inTrigger[i] = false;
+            if (trigger.MaxUseTime == -1 || enterTimeTrigger[i] < trigger.MaxUseTime)
+                trigger.OnBulletExitFromTrigger(this, null, inStayTrigger[i], enterTimeTrigger[i]);
+            inStayTrigger[i] = 0;
+            if (trigger.OnceTime)
+            {
+                trigger.Use = false;
+            }
+        }
+    }
     void CheckTrigger()
     {
 
@@ -1067,43 +1101,7 @@ public class Bullet : STGComponent
             if (trigger.Type == Trigger.TriggerType.Box)
             {
                 bool Result = Intersection(BulletTransform.position, trigger.SquareLength, trigger.gameObject.transform.position, Radius);
-                if (Result == true && inTrigger[i] == false && trigger.Use == true)
-                {
-                   // Debug.Log(Result);
-                    inTrigger[i] = true;
-                    enterTimeTrigger[i]++;
-                    if (trigger.MaxUseTime == -1 || enterTimeTrigger[i] < trigger.MaxUseTime)
-                    {
-                        
-                        trigger.OnBulletEnterIntoTrigger(this, null, inStayTrigger[i], enterTimeTrigger[i]);
-                    }
-                    if (trigger.OnceTime)
-                    {
-                        trigger.Use = false;
-
-                    }
-                    inStayTrigger[i] = 0;
-
-                }
-                if (Result && trigger.Use == true)
-                {
-                    if (trigger.MaxUseTime == -1 || enterTimeTrigger[i] < trigger.MaxUseTime)
-                        trigger.UseStayEvent(this, inStayTrigger[i], enterTimeTrigger[i]);
-                    inStayTrigger[i]++;
-                }
-                if (Result == false && inTrigger[i] == true && trigger.Use == true)
-                {
-                    inTrigger[i] = false;
-                    if (trigger.MaxUseTime == -1 || enterTimeTrigger[i] < trigger.MaxUseTime)
-                        trigger.OnBulletExitFromTrigger(this, null, inStayTrigger[i], enterTimeTrigger[i]);
-
-                    inStayTrigger[i] = 0;
-                    if (trigger.OnceTime)
-                    {
-                        trigger.Use = false;
-
-                    }
-                }
+                TriggerEvent(trigger, Result, i);
 
                 //inTrigger[i] = Result;
             }
@@ -1111,38 +1109,15 @@ public class Bullet : STGComponent
             {
 
                 bool Result = Radius + trigger.Radius > Vector2.Distance(BulletTransform.position, trigger.gameObject.transform.position);
-                if (Result == true && inTrigger[i] == false && trigger.Use == true)
-                {
-
-                    inTrigger[i] = true;
-                    enterTimeTrigger[i]++;
-                    if (trigger.MaxUseTime == -1 || enterTimeTrigger[i] < trigger.MaxUseTime)
-                        trigger.OnBulletEnterIntoTrigger(this, null, inStayTrigger[i], enterTimeTrigger[i]);
-                    if (trigger.OnceTime)
-                    {
-                        trigger.Use = false;
-
-                    }
-                    inStayTrigger[i] = 0;
-
-                }
-                if (Result && trigger.Use == true)
-                {
-                    if (trigger.MaxUseTime == -1 || enterTimeTrigger[i] < trigger.MaxUseTime)
-                        trigger.UseStayEvent(this, inStayTrigger[i], enterTimeTrigger[i]);
-                    inStayTrigger[i]++;
-                }
-                if (Result == false && inTrigger[i] == true && trigger.Use == true)
-                {
-                    inTrigger[i] = false;
-                    if (trigger.MaxUseTime == -1 || enterTimeTrigger[i] < trigger.MaxUseTime)
-                        trigger.OnBulletExitFromTrigger(this, null, inStayTrigger[i], enterTimeTrigger[i]);
-                    inStayTrigger[i] = 0;
-                    if (trigger.OnceTime)
-                    {
-                        trigger.Use = false;
-                    }
-                }
+                TriggerEvent(trigger, Result, i);
+            }
+            if (trigger.Type == Trigger.TriggerType.Line)
+            {
+                Vector2 pos = BulletTransform.position;
+                Vector2 start = trigger.AuxiliaryLinesStart.transform.position;
+                Vector2 end = trigger.AuxiliaryLinesEnd.transform.position;
+                bool Result = Math2D.IsCircleIntersectLineSeg(pos.x,pos.y,Radius,start.x,start.y ,end.x,end.y);
+                TriggerEvent(trigger, Result, i);
 
             }
 
@@ -1505,7 +1480,7 @@ public class Bullet : STGComponent
                     Speed = OriSpd * Vector2.Distance(pos, (Vector2)BulletTransform.position);
                 else
                     Speed = OriSpd;
-                Rotation = Bullet.GetAimToTargetRotation(pos, (Vector2)BulletTransform.position);
+                Rotation = Math2D.GetAimToTargetRotation(pos, (Vector2)BulletTransform.position);
                
                 trackLerpBegin = false;
             }
@@ -1800,57 +1775,22 @@ public class Bullet : STGComponent
     /// </summary>
     public void AimToPlayerObject()
     {
-        Transform bulletTransform = BulletTransform;
-        Transform playerTransform = PlayerCharacter.Controller.gameObject.transform;
-        if (Vector2.Distance(bulletTransform.position, PlayerCharacter.Controller.transform.position) < 0.1f)
-            Rotation = 0;
-        if (bulletTransform.position.x < playerTransform.position.x && bulletTransform.position.y < playerTransform.position.y)
-            Rotation = 270 + Mathf.Rad2Deg * Mathf.Atan((playerTransform.position.y - bulletTransform.position.y) / (playerTransform.position.x - bulletTransform.position.x));
-        if (bulletTransform.position.x < playerTransform.position.x && bulletTransform.position.y > playerTransform.position.y)
-            Rotation = 180 + 90 - Mathf.Rad2Deg * Mathf.Atan((bulletTransform.position.y - playerTransform.position.y) / (playerTransform.position.x - bulletTransform.position.x));
-        if (bulletTransform.position.x > playerTransform.position.x && bulletTransform.position.y > playerTransform.position.y)
-            Rotation = 90 + Mathf.Rad2Deg * Mathf.Atan((bulletTransform.position.y - playerTransform.position.y) / (bulletTransform.position.x - playerTransform.position.x));
-        if (bulletTransform.position.x > playerTransform.position.x && bulletTransform.position.y < playerTransform.position.y)
-            Rotation = 90 - Mathf.Rad2Deg * Mathf.Atan((playerTransform.position.y - bulletTransform.position.y) / (bulletTransform.position.x - playerTransform.position.x));
-      
-    }
-    public float GetPlayerAngle()
-    {
-        float Rotation=0;
-        Transform bulletTransform = BulletTransform;
-        Transform playerTransform = PlayerCharacter.Controller.gameObject.transform;
-        if (Vector2.Distance(bulletTransform.position, PlayerCharacter.Controller.transform.position) < 0.1f)
-            Rotation = 0;
-        if (bulletTransform.position.x < playerTransform.position.x && bulletTransform.position.y < playerTransform.position.y)
-            Rotation = 270 + Mathf.Rad2Deg * Mathf.Atan((playerTransform.position.y - bulletTransform.position.y) / (playerTransform.position.x - bulletTransform.position.x));
-        if (bulletTransform.position.x < playerTransform.position.x && bulletTransform.position.y > playerTransform.position.y)
-            Rotation = 180 + 90 - Mathf.Rad2Deg * Mathf.Atan((bulletTransform.position.y - playerTransform.position.y) / (playerTransform.position.x - bulletTransform.position.x));
-        if (bulletTransform.position.x > playerTransform.position.x && bulletTransform.position.y > playerTransform.position.y)
-            Rotation = 90 + Mathf.Rad2Deg * Mathf.Atan((bulletTransform.position.y - playerTransform.position.y) / (bulletTransform.position.x - playerTransform.position.x));
-        if (bulletTransform.position.x > playerTransform.position.x && bulletTransform.position.y < playerTransform.position.y)
-            Rotation = 90 - Mathf.Rad2Deg * Mathf.Atan((playerTransform.position.y - bulletTransform.position.y) / (bulletTransform.position.x - playerTransform.position.x));
+        Rotation= Math2D.GetAimToTargetRotation(BulletTransform.position, PlayerCharacter.Controller.gameObject.transform.position);
 
-        return Rotation;
     }
     /// <summary>
     /// 得到子弹瞄准玩家后的旋转值
     /// </summary>
     /// <returns>返回的是浮点数的角度 返回值 属于 [0,360)</returns>
-    public float GetAimToObjectRotation()
+    public float GetAimToPlayerObjectRotation()
     {
-        Transform playerTransform = PlayerCharacter.Controller.gameObject.transform;
-        if (Vector2.Distance(BulletTransform.position, PlayerCharacter.Controller.transform.position) < 0.1f)
-            return 0;
-        if (BulletTransform.position.x < playerTransform.position.x && BulletTransform.position.y < playerTransform.position.y)
-            Rotation = 270 + Mathf.Rad2Deg * Mathf.Atan((playerTransform.position.y - BulletTransform.position.y) / (playerTransform.position.x - BulletTransform.position.x));
-        if (BulletTransform.position.x < playerTransform.position.x && BulletTransform.position.y > playerTransform.position.y)
-            Rotation = 180 + 90 - Mathf.Rad2Deg * Mathf.Atan((BulletTransform.position.y - playerTransform.position.y) / (playerTransform.position.x - BulletTransform.position.x));
-        if (BulletTransform.position.x > playerTransform.position.x && BulletTransform.position.y > playerTransform.position.y)
-            Rotation = 90 + Mathf.Rad2Deg * Mathf.Atan((BulletTransform.position.y - playerTransform.position.y) / (BulletTransform.position.x - playerTransform.position.x));
-        if (BulletTransform.position.x > playerTransform.position.x && BulletTransform.position.y < playerTransform.position.y)
-            Rotation = 90 - Mathf.Rad2Deg * Mathf.Atan((playerTransform.position.y - BulletTransform.position.y) / (BulletTransform.position.x - playerTransform.position.x));
-        return Rotation;
+       
+        return Math2D.GetAimToTargetRotation(BulletTransform.position, PlayerCharacter.Controller.gameObject.transform.position);
     }
+   
+}
+public static class Math2D {
+
     public static float GetAimToObjectRotation(GameObject Target, GameObject Orginal)
     {
         float angle = 0;
@@ -1877,4 +1817,41 @@ public class Bullet : STGComponent
             angle = 90 - Mathf.Rad2Deg * Mathf.Atan((Orginal.y - Target.y) / (Target.x - Orginal.x));
         return angle;
     }
+    public static bool IsCircleIntersectLineSeg(float x, float y, float r, float x1, float y1, float x2, float y2)
+    {
+        float vx1 = x - x1;
+        float vy1 = y - y1;
+        float vx2 = x2 - x1;
+        float vy2 = y2 - y1;
+
+        bool dc = Mathf.Abs(vx2) > 0.00001f || Mathf.Abs(vy2) > 0.00001f;
+        if (!dc)
+            return false;
+        float len = Mathf.Sqrt(vx2 * vx2 + vy2 * vy2);
+        vx2 /= len;
+        vy2 /= len;
+
+
+        float u = vx1 * vx2 + vy1 * vy2;
+
+        float x0 = 0f;
+        float y0 = 0f;
+        if (u <= 0)
+        {
+            x0 = x1;
+            y0 = y1;
+        }
+        else if (u >= len)
+        {
+            x0 = x2;
+            y0 = y2;
+        }
+        else
+        {
+            x0 = x1 + vx2 * u;
+            y0 = y1 + vy2 * u;
+        }
+        return (x - x0) * (x - x0) + (y - y0) * (y - y0) <= r * r;
+    }
+
 }

@@ -189,7 +189,7 @@ public class EnemyShooting : Shooting  {
                 continue;
             if (FollowPlayer)
             {
-                Angle = Bullet.GetAimToObjectRotation(gameObject, Global.PlayerObject);
+                Angle = Math2D.GetAimToObjectRotation(gameObject, Global.PlayerObject);
                 if (Way % 2 == 0)
                     Angle = Angle + addRotation / 2;
                 if (middleIndex)
@@ -216,7 +216,7 @@ public class EnemyShooting : Shooting  {
                 _positon.y += ellipseSize.y * (1 + Radius) * Mathf.Sin(newBullet.Rotation * Mathf.Deg2Rad);
                 _positon = Quaternion.Euler(0, 0, thisTransform.rotation.eulerAngles.z + ellipseRotation) * _positon;
                 _positon.Scale(new Vector3(ellipseScale + 1, ellipseScale + 1, 1));
-                newBullet.Rotation = Bullet.GetAimToTargetRotation((Vector2)postion, (Vector2)_positon) + RadiusDirection + Random.Range(-RandomRadiusDirection, RandomRadiusDirection) - Angle;
+                newBullet.Rotation = Math2D.GetAimToTargetRotation((Vector2)postion, (Vector2)_positon) + RadiusDirection + Random.Range(-RandomRadiusDirection, RandomRadiusDirection) - Angle;
                 newBullet.TargetRotation = newBullet.Rotation;
                 newBullet.BulletTransform.position = _positon;
                 newBullet.Speed = (Speed + i * SpeedIncreament) * Vector2.Distance(_orginal, _positon);

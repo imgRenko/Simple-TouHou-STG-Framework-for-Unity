@@ -118,6 +118,38 @@ public class Character : MonoBehaviour
         SoundSource[index].clip = EffectSound[index];
         AudioQueue.Play(SoundSource[index]);
     }
+    void TriggerEvent(Trigger trigger,bool Result,int i) {
+        if (Result && trigger.Use == true)
+        {
+            trigger.PlayerStayTime++;
+            trigger.UseStayEvent(null, trigger.PlayerStayTime, trigger.PlayerEnterTime);
+            Debug.Log("Stay");
+        }
+        if (Result == false && inTrigger[i] == true && trigger.Use == true)
+        {
+            trigger.OnBulletExitFromTrigger(null, null, trigger.PlayerStayTime, trigger.PlayerEnterTime);
+            trigger.PlayerStayTime = 0;
+            if (trigger.OnceTime)
+            {
+                trigger.Use = false;
+
+            }
+            Debug.Log("Exit");
+        }
+        if (Result == true && inTrigger[i] == false && trigger.Use == true)
+        {
+            trigger.PlayerEnterTime++;
+            trigger.OnBulletEnterIntoTrigger(null, null, trigger.PlayerStayTime, trigger.PlayerEnterTime);
+
+            if (trigger.OnceTime)
+            {
+                trigger.Use = false;
+            }
+            Debug.Log("Enter");
+        }
+        inTrigger[i] = Result;
+
+    }
     void Update()
     {
         if (Global.GamePause || Global.isGameover)
@@ -154,114 +186,30 @@ public class Character : MonoBehaviour
         #region  检测触发器
         if (Trigger.TriggerList.Count != 0)
         {
+         
             for (int i = 0; i != Trigger.TriggerList.Count; ++i)
             {
-                if (Trigger.TriggerList[i] == null) continue;
-                if (Trigger.TriggerList[i].Type == Trigger.TriggerType.Box)
+                Trigger trigger = Trigger.TriggerList[i];
+                if (trigger == null) continue;
+                if (trigger.Type == Trigger.TriggerType.Box)
                 {
-                    bool Result = Bullet.Intersection(gameObject.transform.position, Trigger.TriggerList[i].SquareLength, Trigger.TriggerList[i].gameObject.transform.position, Radius);
+                    bool Result = Bullet.Intersection(gameObject.transform.position, trigger.SquareLength, trigger.gameObject.transform.position, Radius);
+                    TriggerEvent(trigger, Result, i);
 
-                    if (Result && Trigger.TriggerList[i].Use == true)
-                    {
-                        Trigger.TriggerList[i].PlayerStayTime++;
-                        Trigger.TriggerList[i].UseStayEvent(null, Trigger.TriggerList[i].PlayerStayTime, Trigger.TriggerList[i].PlayerEnterTime);
-                        Debug.Log("Stay");
-                    }
-                    if (Result == false && inTrigger[i] == true && Trigger.TriggerList[i].Use == true)
-                    {
-                        Trigger.TriggerList[i].OnBulletExitFromTrigger(null, null, Trigger.TriggerList[i].PlayerStayTime, Trigger.TriggerList[i].PlayerEnterTime);
-                        Trigger.TriggerList[i].PlayerStayTime = 0;
-                        if (Trigger.TriggerList[i].OnceTime)
-                        {
-                            Trigger.TriggerList[i].Use = false;
-
-                        }
-                        Debug.Log("Exit");
-                    }
-                    if (Result == true && inTrigger[i] == false && Trigger.TriggerList[i].Use == true)
-                    {
-                        Trigger.TriggerList[i].PlayerEnterTime++;
-                        Trigger.TriggerList[i].OnBulletEnterIntoTrigger(null, null, Trigger.TriggerList[i].PlayerStayTime, Trigger.TriggerList[i].PlayerEnterTime);
-
-                        if (Trigger.TriggerList[i].OnceTime)
-                        {
-                            Trigger.TriggerList[i].Use = false;
-                        }
-                        Debug.Log("Enter");
-                    }
-                    inTrigger[i] = Result;
                 }
-                if (Trigger.TriggerList[i].Type == Trigger.TriggerType.Circle)
+                if (trigger.Type == Trigger.TriggerType.Circle)
                 {
 
-                    bool Result = Radius + Trigger.TriggerList[i].Radius > Vector2.Distance(gameObject.transform.position, Trigger.TriggerList[i].gameObject.transform.position);
-                    if (Result && Trigger.TriggerList[i].Use == true)
-                    {
-                        Trigger.TriggerList[i].PlayerStayTime++;
-                        Trigger.TriggerList[i].UseStayEvent(null, Trigger.TriggerList[i].PlayerStayTime, Trigger.TriggerList[i].PlayerEnterTime);
-                        Debug.Log("Stay");
-                    }
-                    if (Result == false && (inTrigger[i] == true) && Trigger.TriggerList[i].Use == true)
-                    {
-                        
-                        Trigger.TriggerList[i].OnBulletExitFromTrigger(null,null, Trigger.TriggerList[i].PlayerStayTime, Trigger.TriggerList[i].PlayerEnterTime);
-                        Trigger.TriggerList[i].PlayerStayTime = 0;
-                        if (Trigger.TriggerList[i].OnceTime)
-                        {
-                            Trigger.TriggerList[i].Use = false;
-                        }
-                        Debug.Log("Exit");
-                    }
-                    if (Result == true && inTrigger[i] == false && Trigger.TriggerList[i].Use == true)
-                    {
-                        Trigger.TriggerList[i].PlayerEnterTime++;
-                        Trigger.TriggerList[i].OnBulletEnterIntoTrigger(null, null, Trigger.TriggerList[i].PlayerStayTime, Trigger.TriggerList[i].PlayerEnterTime);
-
-                        if (Trigger.TriggerList[i].OnceTime)
-                        {
-                            Trigger.TriggerList[i].Use = false;
-                        }
-                        Debug.Log("Enter");
-                    }
-                    inTrigger[i] = Result;
+                    bool Result = Radius + trigger.Radius > Vector2.Distance(gameObject.transform.position, trigger.gameObject.transform.position);
+                    TriggerEvent(trigger, Result, i);
                 }
-                if (Trigger.TriggerList[i].Type == Trigger.TriggerType.Line)
+                if (trigger.Type == Trigger.TriggerType.Line)
                 {
-                    float t = Vector2.Dot(Trigger.TriggerList[i].AuxiliaryLinesEnd.transform.position - transform.position,
-                        (Trigger.TriggerList[i].AuxiliaryLinesEnd.transform.position - Trigger.TriggerList[i].AuxiliaryLinesStart.transform.position));
-                    float ang = Mathf.Abs(Vector2.Angle(Trigger.TriggerList[i].AuxiliaryLinesEnd.transform.position - transform.position,
-                        (Trigger.TriggerList[i].AuxiliaryLinesEnd.transform.position - Trigger.TriggerList[i].AuxiliaryLinesStart.transform.position)));
-                    float final = t * Mathf.Tan(ang * Mathf.Deg2Rad);
-                    bool Result = Radius + Trigger.TriggerList[i].Radius > final;
-
-                    if (Result && Trigger.TriggerList[i].Use == true)
-                    {
-                        Trigger.TriggerList[i].PlayerStayTime++;
-                        Trigger.TriggerList[i].UseStayEvent(null, Trigger.TriggerList[i].PlayerStayTime, Trigger.TriggerList[i].PlayerEnterTime);
-
-                    }
-                    if (Result == false && inTrigger[i] == true && Trigger.TriggerList[i].Use == true)
-                    {
-                        inTrigger[i] = false;
-                     
-                        Trigger.TriggerList[i].OnBulletExitFromTrigger(null, null, Trigger.TriggerList[i].PlayerStayTime, Trigger.TriggerList[i].PlayerEnterTime);
-                        Trigger.TriggerList[i].PlayerStayTime = 0;
-                        if (Trigger.TriggerList[i].OnceTime)
-                        {
-                            Trigger.TriggerList[i].Use = false;
-                        }
-                    }
-                    if (Result == true && inTrigger[i] == false && Trigger.TriggerList[i].Use == true)
-                    {
-                        Trigger.TriggerList[i].PlayerEnterTime++;
-                        Trigger.TriggerList[i].OnBulletEnterIntoTrigger(null, null, Trigger.TriggerList[i].PlayerStayTime, Trigger.TriggerList[i].PlayerEnterTime); 
-                        inTrigger[i] = true;
-                        if (Trigger.TriggerList[i].OnceTime)
-                        {
-                            Trigger.TriggerList[i].Use = false;
-                        }
-                    }
-                    //inTrigger[i] = Result;
+                    Vector2 playerPos = transform.position;
+                    Vector2 start = trigger.AuxiliaryLinesStart.transform.position;
+                    Vector2 end = trigger.AuxiliaryLinesEnd.transform.position;
+                    bool Result = Math2D.IsCircleIntersectLineSeg(playerPos.x,playerPos.y, Radius, start.x, start.y, end.x, end.y);
+                    TriggerEvent(trigger, Result, i);
                 }
             }
         }

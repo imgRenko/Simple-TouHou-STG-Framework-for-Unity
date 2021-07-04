@@ -14,12 +14,14 @@ public class ObjectPool : MonoBehaviour
     public int BounsNumber = 300;
     public int EnemyNumber = 45;
     public int PlayerBulletNumbet = 45;
-    public int LazerAmount = 50;
+    public int LaserAmount = 50;
     public GameObject BulletBased;     // 子弹的原型。 
     public GameObject BounsBased;     // 奖励的原型。 
     public GameObject PlayerBulletBased;
-    public GameObject LazerBased;
+    public GameObject LaserBased;
+    public GameObject FollowLaserBased;
     public EnemyState EnemyBased;
+
     public bool UseJob = true;
     public int JobBatch = 1;
     [HideInInspector]
@@ -31,10 +33,11 @@ public class ObjectPool : MonoBehaviour
     [HideInInspector]
     public List<EnemyState> EnemyList = new List<EnemyState>();
     [HideInInspector]
-    public List<LazerMovement> LazerMovementList = new List<LazerMovement>();
+    public List<LaserMovement> LaserMovementList = new List<LaserMovement>();
     [HideInInspector]
     public List<PlayerBullet> PlayerBulletList = new List<PlayerBullet>();
     public List<TriggerReceiver> ExtraCheckingTse = new List<TriggerReceiver>();
+    public List<FollowLaserProcessor> FollowLaserProcessorList = new List<FollowLaserProcessor>();
     public static List<TriggerReceiver> ExtraChecking = new List<TriggerReceiver>();
 
     //int index = 0;
@@ -101,20 +104,33 @@ public class ObjectPool : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
     }
-    IEnumerator InitLazer()
+    IEnumerator InitLaser()
     {
 
-        for (int p = 0; p != LazerAmount / 5; ++p)
+        for (int p = 0; p != LaserAmount / 5; ++p)
         {
             for (int i = 0; i != 5; ++i)
             {
-                LazerMovement c = CreateObj<LazerMovement>(false, "LazerMovement" + p*5+i.ToString(), LazerBased);
-                Global.GameObjectPool_A.LazerMovementList.Add(c);
+                LaserMovement c = CreateObj<LaserMovement>(false, "LaserMovement" + p*5+i.ToString(), LaserBased);
+                Global.GameObjectPool_A.LaserMovementList.Add(c);
             }
             yield return new WaitForEndOfFrame();
         }
     }
 
+    IEnumerator InitFollowLaser()
+    {
+
+        for (int p = 0; p != LaserAmount / 5; ++p)
+        {
+            for (int i = 0; i != 5; ++i)
+            {
+                FollowLaserProcessor c = CreateObj<FollowLaserProcessor>(false, "FollowLaserInfo" + p * 5 + i.ToString(), FollowLaserBased);
+                Global.GameObjectPool_A.FollowLaserProcessorList.Add(c);
+            }
+            yield return new WaitForEndOfFrame();
+        }
+    }
     void Start()
     {
 #if UNITY_EDITOR
@@ -136,17 +152,25 @@ public class ObjectPool : MonoBehaviour
             Bouns c = CreateObj<Bouns>(true, "Bouns" + i.ToString(), BounsBased, 0 - (0.1f * i));
             Global.GameObjectPool_A.BounsList.Add(c);
         }
-        for (int i = 0; i != PlayerBulletNumbet; ++i)
+        for (int i = 0; i != LaserAmount; ++i)
         {
-            LazerMovement c = CreateObj<LazerMovement>(false, "LazerMovement" + i.ToString(), LazerBased);
+            LaserMovement c = CreateObj<LaserMovement>(false, "LaserMovement" + i.ToString(), LaserBased);
 
-            Global.GameObjectPool_A.LazerMovementList.Add(c);
+            Global.GameObjectPool_A.LaserMovementList.Add(c);
         }
+        for (int i = 0; i != LaserAmount; ++i)
+        {
+            FollowLaserProcessor c = CreateObj<FollowLaserProcessor>(false, "FollowLaserInfo" + i.ToString(), FollowLaserBased);
+            Global.GameObjectPool_A.FollowLaserProcessorList.Add(c);
+        }
+
 
 #else
         StartCoroutine(InitFrameBullet());
         StartCoroutine(InitBouns());
         StartCoroutine(InitBullet());
+           StartCoroutine(InitLaser());
+                 StartCoroutine(InitFollowLaser());
 #endif
         for (int i = 0; i != EnemyNumber; ++i)
         {
@@ -190,15 +214,15 @@ public class ObjectPool : MonoBehaviour
         }
         return null;
     }
-    public LazerMovement ApplyLazerMovement()
+    public LaserMovement ApplyLaserMovement()
     {
-        for (int i = 0; i != LazerMovementList.Count; ++i)
+        for (int i = 0; i != LaserMovementList.Count; ++i)
         {
-            if (LazerMovementList[i] == null)
+            if (LaserMovementList[i] == null)
                 continue;
-            if (LazerMovementList[i].GetOccupiedState() == false)
+            if (LaserMovementList[i].GetOccupiedState() == false)
             {
-                return LazerMovementList[i];
+                return LaserMovementList[i];
             }
         }
         return null;
@@ -212,6 +236,19 @@ public class ObjectPool : MonoBehaviour
             if (PlayerBulletList[i].Used == false)
             {
                 return PlayerBulletList[i];
+            }
+        }
+        return null;
+    }
+    public FollowLaserProcessor ApplyFollowLaserProcessor()
+    {
+        for (int i = 0; i != FollowLaserProcessorList.Count; ++i)
+        {
+            if (FollowLaserProcessorList[i] == null)
+                continue;
+            if (FollowLaserProcessorList[i].Use == false)
+            {
+                return FollowLaserProcessorList[i];
             }
         }
         return null;

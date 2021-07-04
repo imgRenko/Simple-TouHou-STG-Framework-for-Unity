@@ -433,7 +433,7 @@ public class ShootingExtraShotEvent : ShootingEvent {
             case FrameSetting.Original.CURVE_VECTOR4:
                 return new Color(Red.Evaluate(t), Green.Evaluate(t), Blue.Evaluate(t), Alpha.Evaluate(t));
             case FrameSetting.Original.ANGLE_TO_PLAYER:
-                return Bullet.GetAimToObjectRotation(Target.gameObject, Global.PlayerObject);
+                return Math2D.GetAimToObjectRotation(Target.gameObject, Global.PlayerObject);
         }
         return 0;
     }

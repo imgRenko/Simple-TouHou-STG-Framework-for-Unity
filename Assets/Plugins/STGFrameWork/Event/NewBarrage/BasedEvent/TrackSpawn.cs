@@ -96,8 +96,9 @@ public class TrackSpawn : ShootingEvent {
                 //  if (re >= Target.ShotBullet.Count - 1)
                 //      re -= Target.ShotBullet.Count - 1;
                 bullet.trackData = trackUsingDatas[te];
-
-                bullet.originalPatternPos = Info.patternCenter;
+                
+                bullet.trackData.targetPos =  trackUsingDatas[te].targetPos;
+                 bullet.originalPatternPos = Info.patternCenter;
 
                 bullet.MoveTargetLerp();
 
@@ -127,6 +128,7 @@ public class TrackInfo {
     public List<TrackData> trackDatas = new List<TrackData>();
     public float UsingTime = 0;
     public bool AutoGetCenter = true;
+    public bool rotationInfluence;
     [HideIf("AutoGetCenter")]
     public Vector3 patternCenter;
 

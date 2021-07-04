@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Renko
-  productName: TouHou Project STG Framework for Unity, Example - version 9.82
+  productName: TouHou Project STG Framework for Unity, Example - version 9.89
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -131,7 +131,7 @@ PlayerSettings:
     16:10: 0
     16:9: 1
     Others: 0
-  bundleVersion: 8.92
+  bundleVersion: 9.89
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -175,9 +175,9 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.Renko.TouHouProjectSTGFrameworkforUnityExample-version9.82
+    Standalone: com.Renko.TouHouProjectSTGFrameworkforUnityExample-version9.89
   buildNumber:
-    Standalone: 9.82
+    Standalone: 9.89
     iPhone: 0
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19

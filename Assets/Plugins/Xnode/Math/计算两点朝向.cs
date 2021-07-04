@@ -21,7 +21,7 @@ namespace 数学
 		public override object GetValue(NodePort port)
 		{
 			
-			return Bullet.GetAimToTargetRotation(A, B); ; // Replace this
+			return Math2D.GetAimToTargetRotation(A, B); ; // Replace this
 		}
 	}
 }

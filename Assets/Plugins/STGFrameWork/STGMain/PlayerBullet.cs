@@ -59,7 +59,7 @@ public class PlayerBullet : MonoBehaviour
                 if (AttackNumber != -1)
                 {
                     transformObject.position = Vector3.Slerp(OriginalPos, Global.AllEnemy[AttackNumber].gameObject.transform.position, bulletCurve.Evaluate(TotalLiveFrame));
-                    transformObject.eulerAngles = new Vector3 (0, 0, Bullet.GetAimToObjectRotation (Global.AllEnemy[AttackNumber].gameObject, gameObject) - 180);
+                    transformObject.eulerAngles = new Vector3 (0, 0, Math2D.GetAimToObjectRotation (Global.AllEnemy[AttackNumber].gameObject, gameObject) - 180);
                 }
                 else
                     Follow = false;

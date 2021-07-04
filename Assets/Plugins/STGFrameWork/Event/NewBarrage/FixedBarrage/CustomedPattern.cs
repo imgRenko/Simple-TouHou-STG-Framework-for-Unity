@@ -449,7 +449,7 @@ public class CustomedPattern : SerializedMonoBehaviour
                                 Vector2 _t = r * new Vector2(directlyScale.x * (i - ShotPoint.x) * Xunit, directlyScale.y * (s - ShotPoint.y) * Yunit);
                                 _t = Quaternion.Euler(0, 0, _transform.eulerAngles.z) * _t; 
                                 Basement.Speed = Spd * Vector2.Distance(_t, (Vector2)_Basement_transform.position) * (SpdDistance+1);
-                                Basement.Angle = 180+Bullet.GetAimToTargetRotation(_t,(Vector2)_Basement_transform.position);
+                                Basement.Angle = 180+Math2D.GetAimToTargetRotation(_t,(Vector2)_Basement_transform.position);
                                 Basement.Shot(1, true, true, _transform.position.x + _t.x, _transform.position.y + _t.y,p);
                                 ++p;
                             }

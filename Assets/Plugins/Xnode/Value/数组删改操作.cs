@@ -469,6 +469,22 @@ namespace 变量
 							break;
 					};
 					break;
+				case 数组.ValueType.游戏对象:
+					List<GameObject> initG= GetInputValue<List<GameObject>>("输入");
+					r = initG;
+					switch (操作)
+					{
+						case Operation.删除:
+							initG.Remove(GetInputValue<GameObject>("对应值"));
+							break;
+						case Operation.增加:
+							initG.Add(GetInputValue<GameObject>("对应值"));
+							break;
+						case Operation.清空:
+							initG.Clear();
+							break;
+					};
+					break;
 			}
 			ConnectDo("退出节点");
 		}

@@ -30,7 +30,7 @@ namespace 变量
 			触发器 = 14,
 			贝塞尔曲线 = 15,
 			自绘图案 = 16,
-			
+			游戏对象 = 28,
 			力场= 18,
 			精灵纹理 = 19,
 			旧版剧情系统 = 20,
@@ -98,6 +98,8 @@ namespace 变量
 		[HideInInspector]
 		public List<Link> links = new List<Link>();
 		[HideInInspector]
+		public List<GameObject> gameObjects = new List<GameObject>();
+		[HideInInspector]
 		public int NodeIndex = 0;
 		[Output] public FunctionProgress 退出节点;
 		// Use this for initialization
@@ -124,7 +126,7 @@ namespace 变量
 			Shootings.Clear();
 			Sprites.Clear();
 			WrittensNew.Clear();
-
+			gameObjects.Clear();
 			NodeIndex = 0;
 			
 			foreach (var a in graph.nodes)
@@ -216,6 +218,9 @@ namespace 变量
 					return WrittensNew;
 				case 数组.ValueType.符卡系统:
 					return splCar;
+				case 数组.ValueType.游戏对象:
+					return gameObjects;
+
 			}
 			return null;
 		}
@@ -283,6 +288,8 @@ namespace 变量
 					 WrittensNew = (List<WrittenControlNew>)Obj; break;
 				case 数组.ValueType.符卡系统:
 					 splCar = (List<SpellCard>)Obj; break;
+				case 数组.ValueType.游戏对象:
+					gameObjects = (List<GameObject>)Obj; break;
 			}
 	
 		}

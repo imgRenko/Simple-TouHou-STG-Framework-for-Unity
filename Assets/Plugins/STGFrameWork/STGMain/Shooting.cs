@@ -691,22 +691,33 @@ public class Shooting : STGComponent
     [LabelText("启用随机发射周期")] 
     public bool EnableRandomTimer = false;
     [TitleGroup("敌人发射器", "勾选下方Enable选项启用之，启用后，将不再发射子弹而发射敌人", alignment: TitleAlignments.Centered, horizontalLine: true, boldTitle: true, indent: false)]
+    [LabelText("切换到发射敌人模式")]
     public bool EnableEnemyShot = false;
     [ShowIf("EnableEnemyShot")]
+    [LabelText("限制敌人停止移动")]
+    [Tooltip("如果想当敌人运动了x帧以后就停止运动，就勾选此项。x的值是子弹最大使用帧数时长")]
     public bool StopWhenDisable = false;
     [ShowIf("EnableEnemyShot")]
     public int EnemyHP = 100;
     [ShowIf("EnableEnemyShot")]
+    [LabelText("敌人搭载发射器对象")]
+    [Tooltip("如文")]
     public GameObject ShootingObject;
     [ShowIf("EnableEnemyShot")]
+    [LabelText("敌人动画序列号")]
+    [Tooltip("定义在Global类，可在场景编辑器前往GameAction对象处查看对应序列号，然后对应其序列号填入此处的值即可")]
     public int AnimationIndex = 0;
+    [LabelText("奖励点数量")]
     [ShowIf("EnableEnemyShot")]
     public int BounsScoreNumber = 3;
+    [LabelText("奖励Power点数量")]
     [ShowIf("EnableEnemyShot")]
     public int BounsPowerNumber = 4;
     [ShowIf("EnableEnemyShot")]
+    [LabelText("奖励FullPower数量")]
     public int BounsFullPowerNumber = 0;
     [ShowIf("EnableEnemyShot")]
+    [LabelText("奖励残机碎片数量")]
     public int BounsLivePieceNumber = 0;
 
 
@@ -1207,7 +1218,7 @@ public class Shooting : STGComponent
                 if (FollowPlayer)
                 {
 
-                    Angle = Bullet.GetAimToObjectRotation(gameObject, Global.PlayerObject);
+                    Angle = Math2D.GetAimToObjectRotation(gameObject, Global.PlayerObject);
                     if (Way % 2 == 0)
                         Angle = Angle + addRotation / 2;
                     if (middleIndex)
@@ -1242,7 +1253,7 @@ public class Shooting : STGComponent
                     _positon.y += ellipseSize.y * (1 + Radius) * Mathf.Sin(newBullet.Rotation * Mathf.Deg2Rad);
                     _positon = Quaternion.Euler(0, 0, thisTransform.rotation.eulerAngles.z + ellipseRotation) * _positon;
                     _positon.Scale(new Vector3(ellipseScale + 1, ellipseScale + 1, 1));
-                    newBullet.Rotation = Bullet.GetAimToTargetRotation((Vector2)postion, (Vector2)_positon) + RadiusDirection + Random.Range(-RandomRadiusDirection, RandomRadiusDirection) - Angle;
+                    newBullet.Rotation = Math2D.GetAimToTargetRotation((Vector2)postion, (Vector2)_positon) + RadiusDirection + Random.Range(-RandomRadiusDirection, RandomRadiusDirection) - Angle;
                     newBullet.TargetRotation = newBullet.Rotation;
                     newBullet.BulletTransform.position = _positon;
                     newBullet.Speed = (Speed + i * SpeedIncreament) * Vector2.Distance(_orginal, _positon);
@@ -1458,7 +1469,7 @@ public class Shooting : STGComponent
                     _positon.y += ellipseSize.y * (1 + Radius) * Mathf.Sin(newBullet.Rotation * Mathf.Deg2Rad);
                     _positon = Quaternion.Euler(0, 0, thisTransform.rotation.eulerAngles.z + ellipseRotation) * _positon;
                     _positon.Scale(new Vector3(ellipseScale + 1, ellipseScale + 1, 1));
-                    newBullet.Rotation = Bullet.GetAimToTargetRotation((Vector2)postion, (Vector2)_positon) + RadiusDirection + Random.Range(-RandomRadiusDirection, RandomRadiusDirection) - Angle;
+                    newBullet.Rotation = Math2D.GetAimToTargetRotation((Vector2)postion, (Vector2)_positon) + RadiusDirection + Random.Range(-RandomRadiusDirection, RandomRadiusDirection) - Angle;
                     newBullet.TargetRotation = newBullet.Rotation;
                     newBullet.BulletTransform.position = _positon;
                 }
@@ -1720,7 +1731,7 @@ public class Shooting : STGComponent
         if (RotationSpeed != 0)
             MoveDirection += RotationSpeed;
         if (ShotAtPlayer)
-            MoveDirection = Bullet.GetAimToObjectRotation(gameObject, Global.PlayerObject);
+            MoveDirection = Math2D.GetAimToObjectRotation(gameObject, Global.PlayerObject);
         gameObject.transform.eulerAngles = new Vector3(0, 0, MoveDirection);
     }
     private void ShotEvent()

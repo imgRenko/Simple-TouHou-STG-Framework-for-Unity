@@ -168,8 +168,8 @@ public class Force : STGComponent
             {
                 Global.PlayerObject.transform.Translate(
                     (Application.isEditor ? 1 : Global.GlobalBulletSpeed) * (Attractive
-                        ? RotateVector(GlobalVector, Bullet.GetAimToObjectRotation(this.gameObject, Global.PlayerObject)) * Global.GlobalSpeed * ForceStrength / 1000.0f
-                        : -RotateVector(GlobalVector, Bullet.GetAimToObjectRotation(this.gameObject, Global.PlayerObject)) * Global.GlobalSpeed * ForceStrength / 1000.0f)
+                        ? RotateVector(GlobalVector, Math2D.GetAimToObjectRotation(this.gameObject, Global.PlayerObject)) * Global.GlobalSpeed * ForceStrength / 1000.0f
+                        : -RotateVector(GlobalVector, Math2D.GetAimToObjectRotation(this.gameObject, Global.PlayerObject)) * Global.GlobalSpeed * ForceStrength / 1000.0f)
                         ,Space.World);
             }
 
@@ -196,9 +196,9 @@ public class Force : STGComponent
         if (a.Use == false) return;
 
         a.gameObject.transform.Translate((Application.isEditor ? 1 : Global.GlobalBulletSpeed) * (Attractive
-                ? RotateVector(GlobalVector, Bullet.GetAimToObjectRotation(this.gameObject, a.gameObject)) * Global.GlobalSpeed * ForceStrength /
+                ? RotateVector(GlobalVector, Math2D.GetAimToObjectRotation(this.gameObject, a.gameObject)) * Global.GlobalSpeed * ForceStrength /
                   1000
-                : -RotateVector(GlobalVector, Bullet.GetAimToObjectRotation(this.gameObject, a.gameObject)) * Global.GlobalSpeed * ForceStrength /
+                : -RotateVector(GlobalVector, Math2D.GetAimToObjectRotation(this.gameObject, a.gameObject)) * Global.GlobalSpeed * ForceStrength /
             1000),
             Space.World);
     }

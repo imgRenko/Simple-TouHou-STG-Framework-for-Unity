@@ -57,9 +57,9 @@ namespace 变量
 					break;
 				case ValueType.激光:
 					if (不声明数组)
-						AddDynamicOutput(typeof(LazerShooting), ConnectionType.Override, TypeConstraint.None, "输出");
+						AddDynamicOutput(typeof(LaserShooting), ConnectionType.Override, TypeConstraint.None, "输出");
 					else
-						AddDynamicOutput(typeof(List<LazerShooting>), ConnectionType.Override, TypeConstraint.None, "输出");
+						AddDynamicOutput(typeof(List<LaserShooting>), ConnectionType.Override, TypeConstraint.None, "输出");
 
 					break;
 				case ValueType.发射器:
@@ -194,8 +194,8 @@ namespace 变量
 					}
 					break;
 				case ValueType.激光:
-					LazerShooting rLazerShooting = null;
-					List<LazerShooting> raLazerShooting = new List<LazerShooting>();
+					LaserShooting rLazerShooting = null;
+					List<LaserShooting> raLazerShooting = new List<LaserShooting>();
 					if (不声明数组)
 					{
 						if (component.tempLazerPairs.ContainsKey(变量名称) == true)

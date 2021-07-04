@@ -41,7 +41,7 @@ public class STGComponent : MonoBehaviour
 
     public Dictionary<string, Enemy> tempEnemyPairs = new Dictionary<string, Enemy>();
 
-    public Dictionary<string, List<LazerShooting>> tempLazerLists = new Dictionary<string, List<LazerShooting>>();
+    public Dictionary<string, List<LaserShooting>> tempLazerLists = new Dictionary<string, List<LaserShooting>>();
 
     public Dictionary<string, List<int>> tempIntListPairs = new Dictionary<string, List<int>>();
 
@@ -57,7 +57,7 @@ public class STGComponent : MonoBehaviour
 
     public Dictionary<string, List<bool>> tempBoolListPairs = new Dictionary<string, List<bool>>();
 
-    public Dictionary<string, LazerShooting> tempLazerPairs = new Dictionary<string, LazerShooting>();
+    public Dictionary<string, LaserShooting> tempLazerPairs = new Dictionary<string, LaserShooting>();
 
     public Dictionary<string, List<Vector3>> tempVector3ListPairs = new Dictionary<string, List<Vector3>>();
 

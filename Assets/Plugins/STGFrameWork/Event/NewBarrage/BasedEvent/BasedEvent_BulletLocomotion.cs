@@ -765,7 +765,7 @@ public class BasedEvent_BulletLocomotion : BulletEvent
             case FrameSetting.Original.CURVE_A:
                 return Target.SingleParmCurve[OrderCurveIndexA].Evaluate(t);
             case FrameSetting.Original.ANGLE_TO_PLAYER:
-                return Bullet.GetAimToObjectRotation(Target.gameObject, Global.PlayerObject);
+                return Math2D.GetAimToObjectRotation(Target.gameObject, Global.PlayerObject);
 
         }
         return 0;
@@ -926,8 +926,8 @@ public class BasedEvent_BulletLocomotion : BulletEvent
                     case DynamicParmCurve.ConstValue.ANGLE_TO_PLAYER:
                         float raed = CurveType.keys[a.TargetKeyIndex].time;
                         CurveType.RemoveKey(a.TargetKeyIndex);
-                        CurveType.AddKey(raed, CalculateValue(Bullet.GetAimToObjectRotation(Target.gameObject, Global.PlayerObject) + a.AddValue + a.RandomResult ,a.methodInpand, a.method));
-                        Debug.Log(Bullet.GetAimToObjectRotation(Target.gameObject, Global.PlayerObject) + a.AddValue + a.RandomResult);
+                        CurveType.AddKey(raed, CalculateValue(Math2D.GetAimToObjectRotation(Target.gameObject, Global.PlayerObject) + a.AddValue + a.RandomResult ,a.methodInpand, a.method));
+                        Debug.Log(Math2D.GetAimToObjectRotation(Target.gameObject, Global.PlayerObject) + a.AddValue + a.RandomResult);
                         break;
 
                 }
