@@ -10,6 +10,9 @@ This framework provides some tools for you to make your favorite STG barrage in 
 At present, this framework is not perfect, it needs some time to improve its functions（Take it easy!)
 Several functions are missing: video, music room system.
 
+# Install
+Since the old version is not archived here, you can only get old version from others. Only new versions are available here. Clone this repo, and then create a new unity project to store the files you get from here according to the unity file structure. That's the first step.  
+The second step is to repair the missing art resource reference. After the missing art resource reference is repaired, the framework can be used normally.
 
 # How to use this framework
 [imgRenko Blog STG Framework tutorial (CN)](https://imgrenko.gitee.io/2021/03/12/TouHouSTGFrameWorkTutorials/)，This page will show you how to use this framework，<font size = 1>(But it does not finish………………)</font>
