@@ -34,4 +34,4 @@ When you use the visual script of this framework, you can open this application 
 ![image](https://github.com/imgRenko/Screen-Art-TH-STG-Framework-for-Unity/blob/main/ReadMeImage/2.png)
 
 # Notes
-This framework has been developed since 2016, some codes like a piece of shit.
+Some code is written casually, which does not guarantee the quality. If you think this framework is available, just modify it?
