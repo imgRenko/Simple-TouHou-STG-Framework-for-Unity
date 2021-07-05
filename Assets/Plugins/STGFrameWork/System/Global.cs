@@ -346,7 +346,7 @@ public class Global : MonoBehaviour
             Tip.AS.clip = Extend;
             Tip.SetTitle(Extend, "Extend!!");
             Character _char = PlayerObject.GetComponent<Character>();
-            if (PlayerLive >= 2)
+            if (PlayerLive >= 2 && Global.SpellCardNow != null)
                 PlayerMask.Set(_char.CharacterName, _char.Normal);
         }
         if (DEBUG_ChangeGlobalSpeed)

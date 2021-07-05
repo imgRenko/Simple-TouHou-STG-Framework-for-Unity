@@ -191,7 +191,7 @@ public class SpellCard : STGComponent
     private Animator SpellAnimator;
     private long _bouns = 0;
     private int LivesRemaining = 0;
-    private bool OnceUse = false;
+ private bool OnceUse = false;
     private float _Blend = 0;
     private static GameObject _dynamicPicObject = null;
     void Start()
@@ -250,12 +250,14 @@ public class SpellCard : STGComponent
             Global.SpellCardNow.Use = false;
             Global.SpellCardNow.SpellCardUsingTime = 0;
             Global.bossHP.InstallHPBar();
+            OnceUse = false;
         }
         if (TimeSpell)
             Global.isTimeSpell = true;
         else
             Global.isTimeSpell = false;
         MoveMethod _movement = Character.GetMovementController();
+
         if (_movement != null)
         {
             _movement.resetPoint = resetPoint;
@@ -377,6 +379,8 @@ public class SpellCard : STGComponent
         {
             Global.SpellCardExpressing = false;
         }
+        if (Global.isBossPictureShowing)
+        Global.PlayerMask.Set(Global.PlayerCharacterScript.CharacterName, Global.PlayerCharacterScript.Normal);
     }
     IEnumerator NextSpell()
     {
@@ -418,8 +422,11 @@ public class SpellCard : STGComponent
             if (TimerScript.gameObject.activeSelf)
                 TimerScript.gameObject.GetComponent<Animator>().Play("Timer_Disapproaching", 0, 0);
         var index = Character.SpellCardList.FindIndex((x) => x == this);
-        Character.SpellCardList.RemoveAt(index);
-        Character.SpellCardListIndex.RemoveAt(index);
+        if (index != -1)
+        {
+            Character.SpellCardList.RemoveAt(index);
+            Character.SpellCardListIndex.RemoveAt(index);
+        }
         if (Character.SpellCardListIndex.Count != 0)
         {
             if (BeforeNextSpellCard != null)
@@ -505,7 +512,7 @@ public class SpellCard : STGComponent
     }
     void Update()
     {
-        if (Use == false || Global.GamePause || Global.WrttienSystem)
+        if (Use == false || Global.GamePause || Global.WrttienSystem )
             return;
         SpellCardUsingTime += 1 * Global.GlobalSpeed;
         if (Global.PlayerLive_A > LivesRemaining)

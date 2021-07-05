@@ -252,6 +252,8 @@ public class Enemy : STGComponent
         Global.BossMask.Back();
         Global.BossPicture.PlayInFixedTime("BossSpriteBack", 0, 0);
         Global.ScoreAnimator.PlayInFixedTime("BossBattleBack", 0, 0);
+        Global.PlayerMask.Back();
+        Global.PlayerPicture.PlayInFixedTime("BossSpriteBack", 0, 0);
     }
     /// <summary>
     /// 当自己的子弹进入敌人的判定范围的时候。该函数将被有并且设定了Trigger为True的Collision2D游戏对象所触发

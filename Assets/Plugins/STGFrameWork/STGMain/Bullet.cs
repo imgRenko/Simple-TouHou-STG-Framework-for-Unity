@@ -1108,7 +1108,19 @@ public class Bullet : STGComponent
             if (trigger.Type == Trigger.TriggerType.Circle)
             {
 
-                bool Result = Radius + trigger.Radius > Vector2.Distance(BulletTransform.position, trigger.gameObject.transform.position);
+                bool Result = false;
+                if (UseCustomCollisionGroup == false)
+                    Result = Radius + trigger.Radius > Vector2.Distance(BulletTransform.position, trigger.gameObject.transform.position);
+                else {
+                   foreach(var Collider in CustomCollisionGroup) 
+                    { 
+                        if (Collider.Check())
+                        {
+                            Result = true;
+                            break;
+                        }
+                    }
+                }
                 TriggerEvent(trigger, Result, i);
             }
             if (trigger.Type == Trigger.TriggerType.Line)
@@ -1116,7 +1128,7 @@ public class Bullet : STGComponent
                 Vector2 pos = BulletTransform.position;
                 Vector2 start = trigger.AuxiliaryLinesStart.transform.position;
                 Vector2 end = trigger.AuxiliaryLinesEnd.transform.position;
-                bool Result = Math2D.IsCircleIntersectLineSeg(pos.x,pos.y,Radius,start.x,start.y ,end.x,end.y);
+                bool Result = Math2D.IsCircleIntersectLineSeg(pos.x, pos.y, Radius, start.x, start.y, end.x, end.y);
                 TriggerEvent(trigger, Result, i);
 
             }
@@ -1211,7 +1223,7 @@ public class Bullet : STGComponent
             globalSpd = 0;
             return;
         }
-        if (CreateAnimationPlayed == false && DestroyMode == false && AsEnemyMovement == false)
+        if ( CreateAnimationPlayed == false && DestroyMode == false && AsEnemyMovement == false)
                 BulletCreateAnimation(TotalLiveFrame, signedFrame + 12, this);
         if (StopOnSpecialSituation)
         {
@@ -1371,13 +1383,7 @@ public class Bullet : STGComponent
             if (UseThread)
                 StartCoroutine(BulletEventDelay(this));
         }
-        if (UseSimpleEvent)
-        {
-            foreach (var a in bulletTrackProducts)
-            {
-                a.UpdateValue();
-            }
-        }
+      
         if (AsEnemyMovement)
         {
             if (Character == null)
@@ -1441,6 +1447,13 @@ public class Bullet : STGComponent
     }
     public void UpdateState()
     {
+        if (UseSimpleEvent)
+        {
+            foreach (var a in bulletTrackProducts)
+            {
+                a.UpdateValue();
+            }
+        }
         //  rotate = Rotation;
         if (EnabledGlobalOffset)
             AcceleratedSpeedDirectionNow += AcceleratedSpeedDirectionPer /UnitScale* Global.GlobalSpeed * (isEditor ? 1 : Global.GlobalBulletSpeed);

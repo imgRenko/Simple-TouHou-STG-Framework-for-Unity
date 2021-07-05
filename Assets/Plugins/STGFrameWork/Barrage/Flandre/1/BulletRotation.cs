@@ -19,7 +19,7 @@ namespace STGBarrage.Flandre{
         public override void AfterShootingFinishedShooting(Shooting Target, Bullet bullet)
         {
             
-            bullet.UseSimpleTrack(trackData);
+  
             Timer.MinTime += 16;
         }
        

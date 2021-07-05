@@ -165,7 +165,6 @@ public class Shooting : STGComponent
     [LabelText("弹幕发射条数")]
     public int Way = 1;
     // Way数
-
     [Tooltip("这个变量可以让发射器多发射几次（同时发射），多用来制作速度差或其他类型的弹幕，它们是响应【当发射器发射时（AfterShootingFinishShooting）】的事件的")]
     [FoldoutGroup("发射器运动及发射属性/发射器发射属性", expanded: false)]
     [LabelText("额外发射次数")] 
@@ -357,7 +356,7 @@ public class Shooting : STGComponent
     [FoldoutGroup("子弹碰撞属性")]
     [LabelText("透明度过低不使用子弹碰撞")]
     public bool NoCollisionWhenAlphaLow = false;
-    [Tooltip("自定义碰撞，你可以用自定义碰撞制作其他具有特殊形状弹幕的碰撞盒。")]
+    [Tooltip("自定义碰撞，你可以用自定义碰撞制作其他具有特殊形状弹幕的碰撞盒。（注意！碰撞盒启用时，仍要使用触发器时，将子弹的碰撞方式设置为CIRCLE，否则触发器无法检测自定义碰撞盒）")]
     [FoldoutGroup("子弹碰撞属性")]
     [LabelText("允许自定义碰撞盒")]
     public bool UseCustomCollisionGroup = false;
@@ -723,7 +722,7 @@ public class Shooting : STGComponent
 
 
     [TitleGroup("轨迹描述功能", "", alignment: TitleAlignments.Centered, horizontalLine: true, boldTitle: true, indent: false)]
-    [InfoBox("一些情况可能导致轨迹位置偏移不准确，原因是某些参数必须要启动游戏以后才可以预测或计算。例如：发射角自增、子弹动态曲线等情况都是轨迹无法清楚计算的情况，这种情况下轨迹仅供参考")]
+    [InfoBox("一些情况可能导致轨迹位置偏移不准确，原因是某些参数必须要启动游戏以后才可以预测或计算。例如：发射角自增、子弹动态曲线等情况都是轨迹无法清楚计算的情况，这种情况下轨迹仅供参考。（仅限侦测子弹事件，发射器事件不受侦测，如果需要使用子弹简易轨迹，将其写入子弹事件组中。）")]
     [LabelText("轨迹时间点")]
     [SerializeField, SetProperty("Display")]
     private int displayer;
@@ -761,7 +760,7 @@ public class Shooting : STGComponent
     {
         ShootingTrackProductor t = this.gameObject.AddComponent<ShootingTrackProductor>();
         t.Tracker = this;
-        t.StartCaluating();
+        t.DoPlay();
     }
     [ButtonGroup]
     private void ShootingTrack()

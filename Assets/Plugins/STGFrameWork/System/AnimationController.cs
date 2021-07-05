@@ -71,6 +71,7 @@ public class AnimationController : MonoBehaviour
 
 	public void Break ()
 	{
+	
 		if (!Bull.AsEnemyMovement)
 		{
 			Global.GameObjectPool_A.BulletList.Enqueue(Bull);

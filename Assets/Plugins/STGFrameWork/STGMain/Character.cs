@@ -59,7 +59,8 @@ public class Character : MonoBehaviour
                     Global.GameOverScript_A.EnableGameOver();
             }
             isGone = true;
-            Global.PlayerMask.Set(CharacterName, Break);
+            if (Global.isBossPictureShowing)
+                 Global.PlayerMask.Set(CharacterName, Break);
             Global.SpellCard = 3;
             PlaySound(0, 0);
             DestroyingBullet = true;
@@ -176,7 +177,8 @@ public class Character : MonoBehaviour
             {
                 isGone = false;
                 DeadTime = 0;
-                Global.PlayerMask.Set(CharacterName, Global.PlayerLive_A > 1 ? Normal : Deadly);
+                if (Global.isBossPictureShowing)
+                    Global.PlayerMask.Set(CharacterName, Global.PlayerLive_A > 1 ? Normal : Deadly);
             }
         }
         if (gameObject.transform.position.y > CollectionAllBounsHeight)
@@ -228,7 +230,8 @@ public class Character : MonoBehaviour
         AnimationController = gameObject.GetComponent<Animator>();
         ObjectPool = GameObject.Find("GameAction").GetComponent<ObjectPool>();
         Global.PlayerMask.Offset = PictrueMaskOffset;
-        Global.PlayerMask.Set(CharacterName, Normal);
+        if (Global.isBossPictureShowing)
+            Global.PlayerMask.Set(CharacterName, Normal);
         Global.PlayerCharacterScript = this;
        
     }
