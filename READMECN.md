@@ -32,4 +32,4 @@
 ![image](https://github.com/imgRenko/Screen-Art-TH-STG-Framework-for-Unity/blob/main/ReadMeImage/2.png)
 
 # 注意事项
-此框架从2016年起便立项，屎山代码警告。
+一些代码是随便写的，不保证质量，如果你觉得这个框架可用，不如修改一下？
