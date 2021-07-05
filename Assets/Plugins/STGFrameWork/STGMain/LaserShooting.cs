@@ -73,6 +73,9 @@ public class LaserShooting : STGComponent
 
     public float laserColliderRadius = 0.1f;
 
+    [HideInInspector]
+    public List<LaserMovement> laserMovements = new List<LaserMovement>();
+
     [FoldoutGroup("总体控制", expanded: false)]
     [PreviewField(50, ObjectFieldAlignment.Left)]
     public Texture2D laserTexture;
@@ -81,6 +84,15 @@ public class LaserShooting : STGComponent
     public LaserMovementInfo laserMovementInfo, selfMovementInfo;
 
     private float intervalCount = 0;
+
+    public delegate void LaserShootingShotTask(LaserShooting laserShooting, LaserMovement laserMovement);
+
+    public delegate void LaserShootingEvent(LaserShooting laserShooting);
+
+    public event LaserShootingShotTask  AfterLaserShootingFinishedShooting;
+
+
+    public event LaserShootingEvent LaserShootingUsing, LaserShootingBeforeShooting, LaserShootingFinishShotTask;
 
 
     public LaserShooting() {
@@ -104,6 +116,9 @@ public class LaserShooting : STGComponent
     public void Shot() {
         if (Way < 0 || Global.PlayerCharacterScript.DestroyingBullet)
             return;
+        if (LaserShootingBeforeShooting != null)
+            LaserShootingBeforeShooting(this);
+        laserMovements.Clear();
         for (int i = 0; i != Way; ++i)
         {
             LaserMovement Laser = Global.GameObjectPool_A.ApplyLaserMovement();
@@ -116,7 +131,13 @@ public class LaserShooting : STGComponent
             Laser.MaxLiveFrame = laserMovementInfo.maxFrame;
             Laser.LaserColliderRadius = laserColliderRadius;
             Laser.OccupieLaser(laserTexture, Info.trailTime);
+            laserMovements.Add(Laser);
+            if (LaserShootingFinishShotTask != null)
+            AfterLaserShootingFinishedShooting(this, Laser);
+
         }
+        if (LaserShootingFinishShotTask != null)
+            LaserShootingFinishShotTask(this);
     }
 
     void Update()
@@ -140,6 +161,10 @@ public class LaserShooting : STGComponent
         totalFrames += Global.GlobalSpeed;
 
         transform.Translate(selfMovementInfo.DoUpdate(), Space.World);
+
+        if (LaserShootingUsing != null)
+            LaserShootingUsing(this);
+
 
         // 处理发射
 

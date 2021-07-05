@@ -18,13 +18,13 @@ namespace 流程控制
 		protected override void Init()
 		{
 			base.Init();
-			判断Port = GetPort("条件");
+			
 		}
 
 		public override void FunctionDo(string PortName,List<object> param = null) 
 		{
 
-			条件 = 判断Port.GetInputValue<bool>();
+			条件 = GetInputValue<bool>("条件", 条件);
 			//Debug.Log(条件);
 			if (条件)
 				ConnectDo("条件为True时", null);

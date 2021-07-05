@@ -39,7 +39,7 @@ public class BOSSHP : MonoBehaviour {
 
             if (!showAll)
             {
-                FrontImage.fillAmount = Mathf.LerpUnclamped(FrontImage.fillAmount, Boss.HP / Boss.MaxHP, 0.2f);
+                FrontImage.fillAmount = Mathf.Lerp(FrontImage.fillAmount, Boss.HP / Boss.MaxHP, 0.2f);
                 HPText.text = string.Format("{0}/{1}", (Boss.HP), Boss.MaxHP);
             }
             else

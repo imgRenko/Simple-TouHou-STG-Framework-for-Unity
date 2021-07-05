@@ -14,7 +14,7 @@ public class ShootingTrackProductor : MonoBehaviour
     void Cosplay()
     {
         trackFollower.transform.Translate(new Vector2(0, Tracker.Radius), Space.Self);
-        _temp.Speed = Tracker.Speed;
+       // _temp.Speed = Tracker.Speed;
         ///_temp.Rotation = Tracker.Angle;
         BulletEvent[] _l = GetComponents<BulletEvent>();
         foreach (BulletEvent a in _l)
@@ -23,7 +23,7 @@ public class ShootingTrackProductor : MonoBehaviour
             BulletEventWhenBulletCreate += a.OnBulletCreated;
             BulletEvent += a.OnBulletMoving;
         }
-        _temp.defSpeed = Vector2.up / 100 * Global.GlobalSpeed * Global.GlobalBulletSpeed;
+        _temp.defSpeed = Vector2.up / 100;
         Tracker.SetBulletState(_temp);
         if (BulletEventWhenBulletCreate != null)
             BulletEventWhenBulletCreate(_temp);
@@ -34,7 +34,7 @@ public class ShootingTrackProductor : MonoBehaviour
             _temp.TotalLiveFrame++;
 
             _temp.UpdateState();
-            displayer.trackPoint.Add(_temp.gameObject.transform.localPosition);
+            displayer.trackPoint.Add(_temp.gameObject.transform.position);
             float tempSpeed = _temp.Speed;
             if (tempSpeed > 0)
             {
@@ -72,10 +72,32 @@ public class ShootingTrackProductor : MonoBehaviour
         float addRotation = Tracker.Range / Tracker.Way;
         _temp.BulletIndex = index;
         trackFollower.transform.localPosition = Vector3.zero;
+        _temp.Speed = Tracker.Speed;
         // t.transform.eulerAngles = new Vector3(0, 0, index * addRotation);
-        _temp.Rotation = Tracker.Angle+(index +1)* addRotation+ Tracker.AngleIncreament *index; ;
-        Cosplay();
-       
+        _temp.Rotation = Tracker.Angle+(index +1)* addRotation+ Tracker.AngleIncreament *index;
+        Vector2 _positon = _temp.transform.position;
+        Vector2 original =  Tracker.transform.position;
+   
+
+        _temp.transform.localRotation = Quaternion.Euler(0, 0, _temp.Rotation);
+        if (!Tracker.useEllipse)
+            _temp.transform.Translate(Vector2.up * (Tracker.Radius + Tracker.RadiusIncrement * index), Space.Self);
+        else
+        {
+            _positon = Quaternion.AngleAxis(Tracker.ellipseRotation, original) * _positon;
+            _positon.x = Tracker.ellipseSize.x * (1 + Tracker.Radius) * Mathf.Cos(_temp.Rotation * Mathf.Deg2Rad);
+            _positon.y = Tracker.ellipseSize.y * (1 + Tracker.Radius) * Mathf.Sin(_temp.Rotation * Mathf.Deg2Rad);
+            _positon = Quaternion.Euler(0, 0, Tracker.transform.rotation.eulerAngles.z + Tracker.ellipseRotation) * _positon;
+            _positon.Scale(new Vector3(Tracker.ellipseScale + 1, Tracker.ellipseScale + 1, 1));
+            _temp.Rotation = Math2D.GetAimToTargetRotation((Vector2)original, (Vector2)original + _positon) + Tracker.RadiusDirection - Tracker.Angle;
+            _temp.TargetRotation = _temp.Rotation;
+            _temp.BulletTransform.position = _positon;
+            _temp.Speed = (Tracker.Speed + index * Tracker.SpeedIncreament) * Vector2.Distance(original, original + _positon);
+
+           
+
+        }
+         Cosplay();
     }
     public void DoPlay()
     {

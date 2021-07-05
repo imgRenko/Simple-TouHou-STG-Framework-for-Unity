@@ -1238,7 +1238,7 @@ public class Shooting : STGComponent
               
                 newBullet.ReadPointTrackSpeed = (int)ReadPointTrackSpeed;
                 //newBullet.InverseRotation = InverseRotation;
-                Vector3 _orginal = postion;
+                Vector3 _orginal = transform.position;
                 newBullet.Rotation = FinalAngle + (i + 1) * addRotation + Random.Range(-ShotMess, ShotMess);
                 if (ReadPointTrackSpeed != 0)
                     newBullet.BezierPointTrack = BezierCurveController;
@@ -1248,14 +1248,14 @@ public class Shooting : STGComponent
 
                     //Debug.Log("椭圆的发射角度是<b>" + (newBullet.Rotation).ToString() +"</b>");
                     _positon = Quaternion.AngleAxis(ellipseRotation, thisTransform.position) * _positon;
-                    _positon.x += ellipseSize.x * (1 + Radius) * Mathf.Cos(newBullet.Rotation * Mathf.Deg2Rad);
-                    _positon.y += ellipseSize.y * (1 + Radius) * Mathf.Sin(newBullet.Rotation * Mathf.Deg2Rad);
+                    _positon.x = ellipseSize.x * (1 + Radius) * Mathf.Cos(newBullet.Rotation * Mathf.Deg2Rad);
+                    _positon.y = ellipseSize.y * (1 + Radius) * Mathf.Sin(newBullet.Rotation * Mathf.Deg2Rad);
                     _positon = Quaternion.Euler(0, 0, thisTransform.rotation.eulerAngles.z + ellipseRotation) * _positon;
                     _positon.Scale(new Vector3(ellipseScale + 1, ellipseScale + 1, 1));
-                    newBullet.Rotation = Math2D.GetAimToTargetRotation((Vector2)postion, (Vector2)_positon) + RadiusDirection + Random.Range(-RandomRadiusDirection, RandomRadiusDirection) - Angle;
+                    newBullet.Rotation = Math2D.GetAimToTargetRotation((Vector2)postion, (Vector2)(_orginal+_positon)) + RadiusDirection + Random.Range(-RandomRadiusDirection, RandomRadiusDirection) - Angle;
                     newBullet.TargetRotation = newBullet.Rotation;
                     newBullet.BulletTransform.position = _positon;
-                    newBullet.Speed = (Speed + i * SpeedIncreament) * Vector2.Distance(_orginal, _positon);
+                    newBullet.Speed = (Speed + i * SpeedIncreament) * Vector2.Distance(_orginal, _orginal+ _positon);
                 }
 
 
