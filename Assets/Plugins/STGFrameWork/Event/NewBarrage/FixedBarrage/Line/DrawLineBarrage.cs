@@ -74,12 +74,12 @@ public class DrawLineBarrage : MonoBehaviour {
 
                         ShotPos = Vector2.Lerp(startPoint + _X + _Y, endPoint + _X + _Y, _Alpha);
 
-                        targetShooting.Shot(1, true, true, ShotPos.x, ShotPos.y);
+                        targetShooting.ShotOneBullet(ShotPos);
                     }
                 }
                 else {
                     ShotPos = Vector2.Lerp(startPoint + _X + _Y, endPoint + _X + _Y, UnityEngine.Random.Range(0, 1f));
-                    targetShooting.Shot(1, true, true, ShotPos.x, ShotPos.y);
+                    targetShooting.ShotOneBullet( ShotPos);
                 }
              }
 

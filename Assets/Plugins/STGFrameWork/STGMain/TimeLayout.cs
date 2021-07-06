@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 [AddComponentMenu("东方STG框架/弹幕设计/重要组件/时间图层")]
 public class TimeLayout : MonoBehaviour {
-	public List<STGComponent> CtrlComponents = new List<STGComponent>();
-	// Use this for initialization
-	void Start () {
-		
-	}
+	public float maxFrame = 200;
+
+	public float totalFrame = 0;
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Global.GamePause || Global.WrttienSystem)
+			totalFrame += Global.GlobalSpeed;
 	}
 }

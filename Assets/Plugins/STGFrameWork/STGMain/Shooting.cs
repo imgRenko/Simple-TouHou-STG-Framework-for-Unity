@@ -959,10 +959,34 @@ public class Shooting : STGComponent
         thisTransform = this.transform;
     }
     /// <summary>
+    /// 此函数用做残余弹幕设计器，制作死尸弹，子弹爆炸效果时通常使用。（使用此函数可以提高设计效率）此外你也可以往被复制的对象中加入激光发射器等其他物件，或将其他组件放入子级对象。要从对象本身获取什么对象，需要自己选择。
+    /// </summary>
+    /// <param name="obj"></param>
+    /// <returns></returns>
+    static public List<T> DresidualShooting<T>(GameObject Obj,Vector2 Where,float destroyTime,bool getFromChlid = false) {
+        GameObject gameObject = Instantiate(Obj);
+        gameObject.SetActive(true);
+        gameObject.transform.position = Where;
+        List<T> Shootings = new List<T>();
+        foreach (var s in !getFromChlid ? gameObject.GetComponents<T>() : gameObject.GetComponentsInChildren<T>(true)) {
+            Shootings.Add(s);
+        }
+        Destroy(gameObject, destroyTime);
+        return Shootings;
+    
+    }
+    /// <summary>
+    /// 以此发射器数据发射一粒子弹。
+    /// </summary>
+    public Bullet ShotOneBullet(Vector2 Pos) {
+       return Shot(1, true, true, Pos.x, Pos.y)[0];
+    }
+
+    /// <summary>
     /// 强行进行发射并恢复发射器性能，会将发射器啟用.并返回最后一次发射所生成的子弹（List类型）.你也可以指定位置并进行发射。
     /// </summary>
-    /// <param name="t">The english letter T means of the target of function .</param>
-    /// <param name="useDefault">If set to <c>true</c> use default.</param>
+    /// <param name="t">Target Shooting</param>
+    /// <param name="useDefault">Recover and set to default data.</param>
     static public List<Bullet> RecoverShooting(Shooting t, bool useDefault = false, bool forceshot = true,bool setPos = false,float x =0,float y=0,bool resetFrame = true)
     {
         if (Global.GamePause || Global.WrttienSystem)
@@ -1246,7 +1270,7 @@ public class Shooting : STGComponent
                 if (useEllipse)
                 {
 
-                    //Debug.Log("椭圆的发射角度是<b>" + (newBullet.Rotation).ToString() +"</b>");
+                   
                     _positon = Quaternion.AngleAxis(ellipseRotation, thisTransform.position) * _positon;
                     _positon.x = ellipseSize.x * (1 + Radius) * Mathf.Cos(newBullet.Rotation * Mathf.Deg2Rad);
                     _positon.y = ellipseSize.y * (1 + Radius) * Mathf.Sin(newBullet.Rotation * Mathf.Deg2Rad);
@@ -1462,13 +1486,13 @@ public class Shooting : STGComponent
                 if (useEllipse)
                 {
                     Vector3 _positon = postion;
-                    //Debug.Log("椭圆的发射角度是<b>" + (newBullet.Rotation).ToString() +"</b>");
+                    Vector3 _orginal = transform.position;
                     _positon = Quaternion.AngleAxis(ellipseRotation, thisTransform.position) * _positon;
-                    _positon.x += ellipseSize.x * (1 + Radius) * Mathf.Cos(newBullet.Rotation * Mathf.Deg2Rad);
-                    _positon.y += ellipseSize.y * (1 + Radius) * Mathf.Sin(newBullet.Rotation * Mathf.Deg2Rad);
+                    _positon.x = ellipseSize.x * (1 + Radius) * Mathf.Cos(newBullet.Rotation * Mathf.Deg2Rad);
+                    _positon.y = ellipseSize.y * (1 + Radius) * Mathf.Sin(newBullet.Rotation * Mathf.Deg2Rad);
                     _positon = Quaternion.Euler(0, 0, thisTransform.rotation.eulerAngles.z + ellipseRotation) * _positon;
                     _positon.Scale(new Vector3(ellipseScale + 1, ellipseScale + 1, 1));
-                    newBullet.Rotation = Math2D.GetAimToTargetRotation((Vector2)postion, (Vector2)_positon) + RadiusDirection + Random.Range(-RandomRadiusDirection, RandomRadiusDirection) - Angle;
+                    newBullet.Rotation = Math2D.GetAimToTargetRotation((Vector2)postion, (Vector2)(_orginal + _positon)) + RadiusDirection + Random.Range(-RandomRadiusDirection, RandomRadiusDirection) - Angle;
                     newBullet.TargetRotation = newBullet.Rotation;
                     newBullet.BulletTransform.position = _positon;
                 }

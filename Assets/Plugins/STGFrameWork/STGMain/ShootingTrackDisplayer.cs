@@ -6,6 +6,7 @@ public class ShootingTrackDisplayer : MonoBehaviour
 {
     public int Display = 0;
     public bool InfluenceByRotation = true;
+    [HideInInspector]
     public List<Vector3> trackPoint = new List<Vector3>();
     [HideInInspector]
     public List<Color32> colorSet = new List<Color32>();

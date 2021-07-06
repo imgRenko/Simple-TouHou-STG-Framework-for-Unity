@@ -28,7 +28,7 @@ namespace 基础事件.对象
 			触发器 = 14,
 			贝塞尔曲线 = 15,
 			自绘图案 = 16,
-			
+			时间图层=21,
 			力场 = 18,
 			精灵纹理渲染器 = 19,
 			弹幕连接器 = 20
@@ -420,6 +420,27 @@ namespace 基础事件.对象
 									r = (object) new List<Link>(游戏对象.GetComponentsInChildren<Link>());
 								else
 									r = (object) 游戏对象.GetComponentsInChildren<Link>()[第n个组件]; break;
+						}
+						break;
+					case ValueType.时间图层:
+						switch (操作方式)
+						{
+							case GetMethod.指定对象获取:
+								if (返回数组)
+									r = (object)new List<TimeLayout>(游戏对象.GetComponents<TimeLayout>());
+								else
+									r = (object)游戏对象.GetComponents<TimeLayout>()[第n个组件];
+								break;
+							case GetMethod.向上获取:
+								if (返回数组)
+									r = (object)new List<TimeLayout>(游戏对象.GetComponentsInParent<TimeLayout>());
+								else
+									r = (object)游戏对象.GetComponentsInParent<TimeLayout>()[第n个组件]; break;
+							case GetMethod.向下获取:
+								if (返回数组)
+									r = (object)new List<TimeLayout>(游戏对象.GetComponentsInChildren<TimeLayout>());
+								else
+									r = (object)游戏对象.GetComponentsInChildren<TimeLayout>()[第n个组件]; break;
 						}
 						break;
 				}

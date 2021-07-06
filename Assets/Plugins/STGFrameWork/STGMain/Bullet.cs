@@ -11,7 +11,7 @@ public class BulletTrackProduct
 {
     public enum Condition
     {
-        Frame,X, Y , None
+        Frame,X, Y ,LayerFrame, None
     }
     public enum Operation
     {
@@ -20,16 +20,18 @@ public class BulletTrackProduct
 
     public enum Operator
     {
-        Life, ScaleX, ScaleY, R, G, B, A, Direction, Rotation, Speed, AccSpeed, AccSpeedRotaion, ElliX, ElliY,Radius,BulletSprite,Trail,Invaild,
+        Life, ScaleX, ScaleY, R, G, B, A, Direction, Rotation, Speed, AccSpeed, AccSpeedRotaion, Radius,Trail,Invaild,
     }
     public enum CurveMethod
     {
         Replace,Add, Minus
     }
+    [LabelText("时间层")]
+    public TimeLayout timeLayout;
     [LabelText("第一判据")]
-    public Condition condition1;
+    public Condition condition1 = Condition.Frame;
     [LabelText("比较方式")]
-    public Operation Method1;
+    public Operation Method1 = Operation.Equal;
     [LabelText("判断常数1")]
     public float Const1;
     [LabelText("仅唯一判据")]
@@ -50,10 +52,10 @@ public class BulletTrackProduct
 
     public bool And;
     [LabelText("欲操作变量")]
-    public Operator valueOperator;
+    public Operator valueOperator = Operator.Speed;
   
     [LabelText("改变时间")]
-    public float changeTime = 1;
+    public float changeTime = 35;
     [LabelText("最大操作次数")]
     public int operationMaxTime;
 
@@ -65,7 +67,7 @@ public class BulletTrackProduct
     //仅在计算方式为Replace时，使用曲线;
     [ShowIf("curveMethod", CurveMethod.Replace)]
     [LabelText("运算用曲线")]
-    public AnimationCurve calcateCurve;
+    public AnimationCurve calcateCurve = AnimationCurve.EaseInOut(0,0,1,1);
    
     [LabelText("布尔值(如果参数为布尔值)")]
     public bool boolValue;
@@ -94,7 +96,9 @@ public class BulletTrackProduct
     [ShowIf("graphValue")]
     [LabelText("变量名")]
     public string globalValueName;
-
+    [ShowIf("graphValue")]
+    [LabelText("表格")]
+    public XNode.NodeGraph Graph;
     private float unitedArrvage = 0;
 
     private Bullet bullet;
@@ -142,7 +146,7 @@ public class BulletTrackProduct
         return false;
     }
 
-    private bool ConditionCalcate(Condition condition, Operation method)
+    private bool ConditionCalcate(Condition condition, Operation method,float Const)
     {
         bool boolCondition = false;
         switch (condition)
@@ -151,13 +155,16 @@ public class BulletTrackProduct
                 boolCondition = true;
                 break;
             case Condition.Frame:
-                boolCondition = isValueEnter(bullet.TotalLiveFrame, Const1, method);
+                boolCondition = isValueEnter(bullet.TotalLiveFrame, Const, method);
+                break;
+            case Condition.LayerFrame:
+                boolCondition = isValueEnter(timeLayout.totalFrame, Const, method);
                 break;
             case Condition.X:
-                boolCondition = isValueEnter(bullet.BulletTransform.position.x, Const1, method);
+                boolCondition = isValueEnter(bullet.BulletTransform.position.x, Const, method);
                 break;
             case Condition.Y:
-                boolCondition = isValueEnter(bullet.BulletTransform.position.y, Const1, method);
+                boolCondition = isValueEnter(bullet.BulletTransform.position.y, Const, method);
                 break;
         }
         return boolCondition;
@@ -183,15 +190,15 @@ public class BulletTrackProduct
         bool boolCondition1, boolCondition2;
         if (!onlyCondition1)
         {
-            boolCondition1 = ConditionCalcate(condition1, Method1);
-            boolCondition2 = ConditionCalcate(condition2, Method2);
+            boolCondition1 = ConditionCalcate(condition1, Method1,Const1);
+            boolCondition2 = ConditionCalcate(condition2, Method2,Const2);
 
             if (boolCondition1 && boolCondition2 && And) Do();
             if ((boolCondition1 || boolCondition2) && !And) Do();
         }
         else
         {
-            boolCondition1 = ConditionCalcate(condition1, Method1);
+            boolCondition1 = ConditionCalcate(condition1, Method1,Const1);
             if (boolCondition1) Do();
         }
     }
@@ -203,15 +210,7 @@ public class BulletTrackProduct
     private int executedCount = 0;
 
     private float defRotate = 0;
-
-    
-
-    private XNode.NodeGraph Graph;
-
-    public void SetGraph(XNode.NodeGraph graph) {
-        Graph = graph;
-    }
-        
+   
     private float PlayerAngle = 0;
 
     private float RandomInfo = 0;
@@ -366,7 +365,7 @@ public class BulletTrackProduct
 
         }
     }
-    public void ChangeValue(ref Color32 value, float percent,int axis)
+    public void ChangeValue(ref Color value, float percent,int axis)
     {
         float r = 0;
         switch (axis)
@@ -382,6 +381,7 @@ public class BulletTrackProduct
                 break;
             case 3:
                 r = (float)value.a;//
+              
                 break;
         }
        
@@ -400,18 +400,19 @@ public class BulletTrackProduct
         }
         switch (axis) {
             case 0:
-                value.r = (byte)r;
+                value.r = r;
                 break;
             case 1:
-                value.g = (byte)r;
+                value.g =r;
                 break;
             case 2:
-                value.b = (byte)r;
+                value.b = r;
                 break;
             case 3:
-                value.a = (byte)r;
+                value.a =r;
                 break;
         }
+        bullet.ChangeColor(value);
     }
     public void ChangeValue(ref Vector2 value, float percent, int axis)
     {
@@ -595,8 +596,8 @@ public class Bullet : STGComponent
     public Sprite BulletSprite;
     public SpriteRenderer BulletSpriteRenderer;
     public List<Trigger> TriggerList = new List<Trigger>();
-    public Color32 BrokenBulletColor = Color.white;
-    public Color32 BulletColor = Color.white;
+    public Color BrokenBulletColor = Color.white;
+    public Color BulletColor = Color.white;
     public GameObject BulletSpriteController;
     public bool UseCollision = false;
     public bool UseCustomCollisionGroup = false;
@@ -1230,6 +1231,7 @@ public class Bullet : STGComponent
             if (Global.WrttienSystem || Global.GamePause || Character.enemyState.Target.HP <= 0)
                 return;
         }
+       
         if (DestroyMode)
         {
             if (CreateAnimationPlayed == false && AsEnemyMovement == false)
@@ -1325,7 +1327,7 @@ public class Bullet : STGComponent
         {
             Color bulletColor = BulletSpriteRenderer.color;
             BulletSpriteRenderer.color = new Color(bulletColor.r, bulletColor.g, bulletColor.b,
-               (Mathf.Lerp(minDepth, maxDepth, (float)Mathf.Clamp(pos.z, minDepth, maxDepth)) - minDepth) / (maxDepth - minDepth) * 255);
+               (Mathf.Lerp(minDepth, maxDepth, (float)Mathf.Clamp(pos.z, minDepth, maxDepth)) - minDepth) / (maxDepth - minDepth));
         }
 
         if (EnableTrail)
@@ -1350,7 +1352,7 @@ public class Bullet : STGComponent
             CheckCollision(pos);
         }
         if (NoCollisionWhenAlphaLow)
-            UseCollision = !(NoCollisionWhenAlphaLow && (int)BulletColor.a <= 255 * 0.75);
+            UseCollision = !(NoCollisionWhenAlphaLow && BulletColor.a <= 0.75);
 
         if (UseTriggerComponent)
             CheckTrigger();

@@ -33,6 +33,8 @@ public class ShootingTrackProductor : MonoBehaviour
                 BulletEvent(_temp);
             _temp.TotalLiveFrame++;
 
+            if (_temp.TotalLiveFrame > _temp.MaxLiveFrame)
+                break;
             _temp.UpdateState();
             displayer.trackPoint.Add(_temp.gameObject.transform.position);
             float tempSpeed = _temp.Speed;

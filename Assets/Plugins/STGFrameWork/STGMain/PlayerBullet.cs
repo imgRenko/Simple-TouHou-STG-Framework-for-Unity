@@ -17,7 +17,8 @@ public class PlayerBullet : MonoBehaviour
     public bool Used;
     public Animator animControl;
     public static Vector3 defPos;
-   
+
+    private int selectedEnemy = 0;
     private void Awake()
     {
         transformObject = this.transform;
@@ -53,12 +54,18 @@ public class PlayerBullet : MonoBehaviour
                     if (Global.AllEnemy[i].HP != 0 && Global.AllEnemy[i].enemyState.EnemyStateNow == EnemyState.State.STATE_ALIVE)
                     {
                         AttackNumber = i;
+                        
                         break;
                     }
                 }
+                if (selectedEnemy != AttackNumber) {
+                    selectedEnemy = AttackNumber;
+                    OriginalPos = transform.position;
+                    TotalLiveFrame = 0;
+                }
                 if (AttackNumber != -1)
                 {
-                    transformObject.position = (Vector2)Vector3.Slerp(OriginalPos, Global.AllEnemy[AttackNumber].gameObject.transform.position, bulletCurve.Evaluate(TotalLiveFrame));
+                    transformObject.position = (Vector2)Vector3.Lerp(transform.position, Global.AllEnemy[AttackNumber].gameObject.transform.position,0.05f);
                     transformObject.eulerAngles = new Vector3 (0, 0, Math2D.GetAimToObjectRotation (Global.AllEnemy[AttackNumber].gameObject, gameObject) - 180);
                 }
                 else

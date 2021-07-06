@@ -8,7 +8,7 @@ using UnityScript.Scripting.Pipeline;
 public class ScriptAutoCreator : MonoBehaviour
 {
     public string Path;
-    public bool isForce;
+    public bool isLaserShooting;
     public bool Set;
     FieldInfo[] fInfo;//;
     FieldInfo fInfoSelected;
@@ -54,20 +54,20 @@ public class ScriptAutoCreator : MonoBehaviour
     public void Create()
     {
         string Using = "using System.Collections; \r\n using System.Collections.Generic;\r\n using UnityEngine; \r\n using XNode; \r\n";
-        string Namespace = "namespace 基础事件." + (isForce ? "力场 \r\n{" : "自机 \r\n{");
-        string Class = "public class " + (Set ? "设置" : "获取") + (isForce ? "力场" : "自机")+ GetInfo() + "信息:Node \r\n {";
+        string Namespace = "namespace 基础事件." + (isLaserShooting ? "激光 \r\n{" : "自机 \r\n{");
+        string Class = "public class " + (Set ? "设置" : "获取") + (isLaserShooting ? "激光" : "自机")+ GetInfo() + "信息:Node \r\n {";
         string EnterProgress = (Set ? "[Input] public FunctionProgress 进入节点;" : "");
         string TargetValue = (Set ? "[Input] public " + GetValueInfo() + " 目的值;" : "");
-        string port = "[Input] public " + (isForce ? "Force 力场; \r\n" : "Character 自机; \r\n");
+        string port = "[Input] public " + (isLaserShooting ? "LaserShooting 激光; \r\n" : "Character 自机; \r\n");
         string OuterProgress = (Set ? "[Output] public FunctionProgress 退出节点;\r\n" : "[Output] public " + GetValueInfo() + " 结果;\r\n");
-        string Enum = "public enum " + (isForce ? "ForceData { \r\n" : "CharacterEnumData { \r\n");
+        string Enum = "public enum " + (isLaserShooting ? "LaserShootingData { \r\n" : "CharacterEnumData { \r\n");
         List<string> att = new List<string>();
         List<FieldInfo> Field = new List<FieldInfo>();
         string EnumContent = "";
-        if (!isForce)
+        if (!isLaserShooting)
             fInfo = typeof(Character).GetFields();
         else
-            fInfo = typeof(Force).GetFields();
+            fInfo = typeof(LaserShooting).GetFields();
         foreach (var a in fInfo)
         {
          
@@ -122,10 +122,10 @@ public class ScriptAutoCreator : MonoBehaviour
 
 
 
-        EnumContent += "}\r\n" + (isForce ? "public ForceData 力场属性;\r\n" : "public CharacterEnumData 自机属性; \r\n");
+        EnumContent += "}\r\n" + (isLaserShooting ? "public LaserShootingData 激光属性;\r\n" : "public CharacterEnumData 自机属性; \r\n");
         string GetValue = (Set ? " public override void FunctionDo(string PortName,List<object> param = null) {\r\n" : "public override object GetValue(NodePort port) \r\n{");
         string FunctionContent = "";
-        if (!isForce)
+        if (!isLaserShooting)
         {
 
             if (!Set)
@@ -165,12 +165,12 @@ public class ScriptAutoCreator : MonoBehaviour
 
             if (!Set)
             {
-                FunctionContent += "力场 = GetInputValue<Force>(\"力场\", null);if (力场 == null){ return 0;} \r\n";
-                FunctionContent += "switch(力场属性) \r\n {";
+                FunctionContent += "激光 = GetInputValue<LaserShooting>(\"激光\", null);if (激光 == null){ return 0;} \r\n";
+                FunctionContent += "switch(激光属性) \r\n {";
                 for (int r = 0; r != Field.Count; ++r)
                 {
-                    FunctionContent += "case ForceData." + att[r] + ":" + "\r\n";
-                    FunctionContent += "结果=" + "力场." + Field[r].Name + ";\r\n";
+                    FunctionContent += "case LaserShootingData." + att[r] + ":" + "\r\n";
+                    FunctionContent += "结果=" + "激光." + Field[r].Name + ";\r\n";
                     FunctionContent += "break;\r\n";
                    
                 }
@@ -178,15 +178,15 @@ public class ScriptAutoCreator : MonoBehaviour
             }
             else
             {
-                FunctionContent += " 力场 = GetInputValue<Force>(\"力场\", null);if (力场 == null) return;目的值 = GetInputValue<" + GetValueInfo() + ">(\"目的值\", 目的值); ";
-                FunctionContent += "switch(力场属性) \r\n {";
+                FunctionContent += " 激光 = GetInputValue<LaserShooting>(\"激光\", null);if (激光 == null) return;目的值 = GetInputValue<" + GetValueInfo() + ">(\"目的值\", 目的值); ";
+                FunctionContent += "switch(激光属性) \r\n {";
                 for (int r = 0; r != Field.Count; ++r)
                 {
-                    FunctionContent += "case ForceData." + att[r] + ":" + "\r\n";
+                    FunctionContent += "case LaserShootingData." + att[r] + ":" + "\r\n";
                     if (GetValueInfo() == "float" && Field[r].FieldType == typeof(int))
-                        FunctionContent += "力场." + Field[r].Name + "=(int)目的值" + ";\r\n";
+                        FunctionContent += "激光." + Field[r].Name + "=(int)目的值" + ";\r\n";
                     else
-                        FunctionContent += "力场." + Field[r].Name + "=目的值" + ";\r\n";
+                        FunctionContent += "激光." + Field[r].Name + "=目的值" + ";\r\n";
                     FunctionContent += "break;\r\n";
                 }
                 FunctionContent += "} ConnectDo(\"退出节点\");}}}";
@@ -197,7 +197,7 @@ public class ScriptAutoCreator : MonoBehaviour
 
   
      
-        System.IO.File.WriteAllText((Path + (Set ? "设置" : "获取") + (isForce ? "力场" : "自机")+ GetInfo() + "信息"+".cs"), Using + Namespace + Class + EnterProgress + TargetValue + port + OuterProgress + Enum + EnumContent + GetValue + FunctionContent, System.Text.Encoding.UTF8);
+        System.IO.File.WriteAllText((Path + (Set ? "设置" : "获取") + (isLaserShooting ? "激光" : "自机")+ GetInfo() + "信息"+".cs"), Using + Namespace + Class + EnterProgress + TargetValue + port + OuterProgress + Enum + EnumContent + GetValue + FunctionContent, System.Text.Encoding.UTF8);
     }
     public string GetInfo()
     {
