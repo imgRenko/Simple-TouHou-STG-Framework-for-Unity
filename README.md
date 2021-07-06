@@ -4,12 +4,15 @@
 This original framework has some missing art assets (except for art assets that can be used publicly). Please use your own art resources to complete it.
 
 # Introduction
-A STG framework for personal use.  
+A Free and open-source STG framework.  
 This framework, as the name suggests, is a framework that you can make a THSTG game easily.
 This framework provides some tools for you to make your favorite STG barrage in unity more easily.
 At present, this framework is not perfect, it needs some time to improve its functions（Take it easy!)
 Several functions are missing: video, music room system.
 
+# Install
+Since the old version is not archived here, you can only get old version from others. Only new versions are available here. Clone this repo, and then create a new unity project to store the files you get from here according to the unity file structure. That's the first step.  
+The second step is to repair the missing art resource reference. After the missing art resource reference is repaired, the framework can be used normally.
 
 # How to use this framework
 [imgRenko Blog STG Framework tutorial (CN)](https://imgrenko.gitee.io/2021/03/12/TouHouSTGFrameWorkTutorials/)，This page will show you how to use this framework，<font size = 1>(But it does not finish………………)</font>
@@ -25,9 +28,13 @@ If you need to use the live 2D model in this framework, you can use the live 2D 
 When you use the visual script of this framework, you can open this application faster from the live2d node
 
 # Image
-![image](https://imgrenko.gitee.io/img/ReadMeImage/xNode.png)
-![image](https://imgrenko.gitee.io/img/ReadMeImage/1.png)
-![image](https://imgrenko.gitee.io/img/ReadMeImage/2.png)
+## Unity Editor - Bullet Track Viewer  
+![image](https://github.com/imgRenko/Screen-Art-TH-STG-Framework-for-Unity/blob/main/ReadMeImage/Track.png)
+## Unity Editor - Visual Script  
+![image](https://github.com/imgRenko/Screen-Art-TH-STG-Framework-for-Unity/blob/main/ReadMeImage/xNode.png)
+## Unity Runtime - Game View (Version 8.44)  
+![image](https://github.com/imgRenko/Screen-Art-TH-STG-Framework-for-Unity/blob/main/ReadMeImage/1.png)
+![image](https://github.com/imgRenko/Screen-Art-TH-STG-Framework-for-Unity/blob/main/ReadMeImage/2.png)
 
 # Notes
-This framework has been developed since 2016, some codes like a piece of shit.
+Some code is written casually, which does not guarantee the quality. If you think this framework is available, just modify it?

@@ -10,6 +10,9 @@
 目前此框架尚未完善，需要一定时间去完善其中的功能。（龟速摸鱼中……）  
 目前缺失几项功能：录像，音乐室系统。  
 
+# 安装
+由于此处不对旧版本存档，因此你只能从他人手中获取旧版本。此处只提供新版本。Clone此Repo，然后创建一个新的Unity工程，将你从此处获得到的文件按照Unity的文件结构存放好。以上是第一步。  
+第二步，修复丢失的美术资源引用。将美术资源引用修复完毕后，此框架即可正常使用。  
 
 # 如何使用这个框架
 [imgRenko Blog STG框架使用教程](https://imgrenko.gitee.io/2021/03/12/TouHouSTGFrameWorkTutorials/)，此页面将说明此框架的使用方法，<font size = 1>(但是还没写完………………)</font>
@@ -23,9 +26,13 @@
 * 3. Live2D Cubism SDK  
 
 # 框架截图
-![image](https://imgrenko.gitee.io/img/ReadMeImage/xNode.png)
-![image](https://imgrenko.gitee.io/img/ReadMeImage/1.png)
-![image](https://imgrenko.gitee.io/img/ReadMeImage/2.png)
+## 轨迹预测  
+![image](https://github.com/imgRenko/Screen-Art-TH-STG-Framework-for-Unity/blob/main/ReadMeImage/Track.png)
+## 可视化脚本  
+![image](https://github.com/imgRenko/Screen-Art-TH-STG-Framework-for-Unity/blob/main/ReadMeImage/xNode.png)
+## 游戏运行时（版本8.44）  
+![image](https://github.com/imgRenko/Screen-Art-TH-STG-Framework-for-Unity/blob/main/ReadMeImage/1.png)
+![image](https://github.com/imgRenko/Screen-Art-TH-STG-Framework-for-Unity/blob/main/ReadMeImage/2.png)
 
 # 注意事项
-此框架从2016年起便立项，屎山代码警告。
+一些代码是随便写的，不保证质量，如果你觉得这个框架可用，不如修改一下？
