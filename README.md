@@ -25,7 +25,12 @@ The second step is to repair the missing art resource reference. After the missi
 # Other Application?
 If you need to use the live 2D model in this framework, you can use the live 2D animation editor to modify motions of model more easily（ This software is suitable for independent teams)
 [imgRenko Blog Live2D Animation Editor (CN)](https://imgrenko.gitee.io/2020/09/16/Live2DAnimationEditor/)  
-When you use the visual script of this framework, you can open this application faster from the live2d node
+When you use the visual script of this framework, you can open this application faster from the live2d node.  
+
+## TODO Next
+Make mbg file be able to play in this framework.  
+Attention : MBG is the extention of application called Crazy Storm.  
+
 
 # Image
 ## Unity Editor - Bullet Track Viewer  
