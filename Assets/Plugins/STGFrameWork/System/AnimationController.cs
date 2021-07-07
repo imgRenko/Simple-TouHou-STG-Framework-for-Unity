@@ -91,7 +91,7 @@ public class AnimationController : MonoBehaviour
 		Bull.BulletSprite = null;
 		Bull.SpriteTransform.localScale = Vector3.one;
 		Bull.CreateAnimationPlayed = false;
-		Bull.noDestroy = false;
+		Bull.InvaildDestroy = false;
 		Bull.UseCustomAnimation = false;
 		Bull.nextFramewaitTime = 0;
 		Bull.Use = false;

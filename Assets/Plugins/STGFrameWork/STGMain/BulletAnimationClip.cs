@@ -27,7 +27,7 @@ public class BulletAnimationClip : MonoBehaviour
         if (curr >= end)
         {
           
-            bullet.DestroyBulletETC();
+            bullet.DestroyBulletRightNow();
             return;
         }
         float playFrameInterval = 3.0f;
@@ -37,7 +37,7 @@ public class BulletAnimationClip : MonoBehaviour
         else
         {
           
-            bullet.DestroyBulletETC();
+            bullet.DestroyBulletRightNow();
         }
 
     }

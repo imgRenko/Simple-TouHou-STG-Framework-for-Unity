@@ -69,7 +69,7 @@ namespace 基础事件.子弹
                     结果 = 子弹.Reusable;
                     break;
                 case BulletData.减低子弹销毁可能性:
-                    结果 = 子弹.noDestroy;
+                    结果 = 子弹.InvaildDestroy;
                     break;
                 case BulletData.涉及全局速度:
                     结果 = 子弹.UseGlobalSpeed;
@@ -160,9 +160,6 @@ namespace 基础事件.子弹
                     break;
                 case BulletData.FollowObjectWithSameAngle:
                     结果 = 子弹.FollowObjectWithSameAngle;
-                    break;
-                case BulletData.trackLerpBegin:
-                    结果 = 子弹.trackLerpBegin;
                     break;
                 case BulletData.EnableBulletEvent:
                     结果 = 子弹.EnableBulletEvent;

@@ -49,7 +49,7 @@ namespace 基础事件.子弹
 			r.Init(子弹);
 			
 			子弹.bulletTrackProducts.Add(r);
-			子弹.UseSimpleEvent = true;
+			子弹.EnableSimpleTrack = true;
 			ConnectDo("退出节点");
 
 		}

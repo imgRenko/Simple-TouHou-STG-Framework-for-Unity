@@ -20,9 +20,6 @@ namespace 基础事件.子弹
         {
             子弹 = GetInputValue<Bullet>("子弹"); if (子弹 == null) return; 目的值 = GetInputValue<GameObject>("目的值", 目的值); switch (子弹属性)
             {
-                case BulletData.BulletSpriteController:
-                    子弹.BulletSpriteController = 目的值;
-                    break;
                 case BulletData.CustomCollisionGroupMainController:
                     子弹.CustomCollisionGroupMainController = 目的值;
                     break;

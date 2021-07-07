@@ -275,12 +275,12 @@ public class ObjectPool : MonoBehaviour
         {
             if (NoCondition)
             {
-                if (BulletList_State[i].Use == false || BulletList_State[i].noDestroy == true)
+                if (BulletList_State[i].Use == false || BulletList_State[i].InvaildDestroy == true)
                     continue;
             }
             else
             {
-                if (BulletList_State[i].Use == false || BulletList_State[i].DonDestroy || BulletList_State[i].noDestroy == true)
+                if (BulletList_State[i].Use == false || BulletList_State[i].DonDestroy || BulletList_State[i].InvaildDestroy == true)
                     continue;
             }
             if (NoCondition)

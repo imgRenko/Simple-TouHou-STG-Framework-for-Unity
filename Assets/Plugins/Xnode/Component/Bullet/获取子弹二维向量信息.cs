@@ -39,9 +39,6 @@ namespace 基础事件.子弹
                 case BulletData.Scale:
                     结果 = 子弹.Scale;
                     break;
-                case BulletData.Zero:
-                    结果 = 子弹.Zero;
-                    break;
             }
             return 结果;
         }

@@ -32,7 +32,4 @@ break;
 case BulletData.Scale:
 子弹.Scale=目的值;
 break;
-case BulletData.Zero:
-子弹.Zero=目的值;
-break;
 } ConnectDo("退出节点");}}}

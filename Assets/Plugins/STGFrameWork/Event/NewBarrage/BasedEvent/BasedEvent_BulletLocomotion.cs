@@ -1358,7 +1358,7 @@ public class BasedEvent_BulletLocomotion : BulletEvent
                     Target.DestroyWhenDontRender = (bool)Value;
                     break;
                 case BulletChange.降低子弹销毁限制:
-                    Target.noDestroy = (bool)Value;
+                    Target.InvaildDestroy = (bool)Value;
                     break;
             }
         }

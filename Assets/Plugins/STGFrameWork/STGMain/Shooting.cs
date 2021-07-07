@@ -1434,7 +1434,7 @@ public class Shooting : STGComponent
                     if (Global.PlayerObject != null && Vector2.Distance(newBullet.BulletTransform.position, Global.PlayerObject.gameObject.transform.position) < AvoidRange)
                     {
                         newBullet.NoDestroyAnimation = true;
-                        newBullet.DestroyBulletETC();
+                        newBullet.DestroyBulletRightNow();
                         continue;
                     }
                 }
@@ -1608,7 +1608,7 @@ public class Shooting : STGComponent
         newBullet.TargetSpeed = BulletTargetSpeed;
         newBullet.TargetRotation = BulletTargetRotation;
         newBullet.TrailUpdate = TrailUpdate;
-        newBullet.SubTrail = useTrails;
+      //  newBullet.SubTrail = useTrails;
         newBullet.TrailLength = TrailLength;
         newBullet.FilpX = FilpX;
         newBullet.FilpY = FilpY;
@@ -1629,7 +1629,7 @@ public class Shooting : STGComponent
         newBullet.AcceleratedSpeedDirectionPer = AcceleratedGlobalOffset;
         newBullet.NoCollisionWhenCreateAnimationPlaying = NoCollisionWhenCreateAnimationPlaying;
         newBullet.NoDestroyAnimation = NoDestroyAnimation;
-        newBullet.noDestroy = InvaildDestroy;
+        newBullet.InvaildDestroy = InvaildDestroy;
         newBullet.TriggerList = TriggerList;
         newBullet.InverseRotateDirection = BulletRotation;
         newBullet.BulletColor = BulletColor;
@@ -1643,12 +1643,7 @@ public class Shooting : STGComponent
         newBullet.inTrigger.Clear();
         if (newBullet.showTrails && newBullet.TrailShooting != null)
             newBullet.TrailShooting.CustomSprite = CustomSprite;
-        for (int i = 0; i != newBullet.TriggerList.Count; ++i) {  
-            newBullet.inTrigger.Add(false);
-            newBullet.inStayTrigger.Add(0);
-            newBullet.enterTimeTrigger.Add(0);
-
-        }
+        newBullet.InitTriggerInfo();
     }
     /// <summary>
     /// 重置发射器的计数状态。

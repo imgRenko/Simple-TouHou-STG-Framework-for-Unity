@@ -68,7 +68,7 @@ public class STGComponent : MonoBehaviour
     public Dictionary<string, List<AnimationCurve>> tempCurveListPairs = new Dictionary<string, List<AnimationCurve>>();
     public Dictionary<string, AnimationCurve> tempCurvePairs = new Dictionary<string,AnimationCurve> ();
 
-    public void ClearAll() {
+    protected void ClearAll() {
         tempIntPairs.Clear();
         tempShootingPairs.Clear();
         tempTriggerPairs.Clear();

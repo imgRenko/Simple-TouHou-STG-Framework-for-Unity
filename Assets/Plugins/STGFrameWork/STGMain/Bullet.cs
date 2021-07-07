@@ -496,161 +496,287 @@ public class Bullet : STGComponent
 {
     // -------------------- public value for Unity -------------------------
     [FoldoutGroup("总体控制", expanded: false)]
-    [LabelText("作为敌人移动器使用")]
+    [Tooltip("作为敌人移动器使用")]
     public bool AsEnemyMovement = false;
     [FoldoutGroup("总体控制", expanded: false)]
-    [LabelText("目的敌人")]
+    [Tooltip("目的敌人")]
     [ShowIf("AsEnemyMovement")]
     public Enemy Character;
     [FoldoutGroup("总体控制", expanded: false)]
-    [LabelText("使用协程事件")]
+    [Tooltip("使用协程事件")]
     public bool UseThread = true;
     [FoldoutGroup("总体控制", expanded: false)]
-    [LabelText("可复用子弹")]
+    [Tooltip("可复用子弹")]
     public bool Reusable = false;
     [FoldoutGroup("总体控制", expanded: false)]
-    [LabelText("减低子弹销毁可能性")]
-    public bool noDestroy = false;
+    [Tooltip("减低子弹销毁可能性")]
+    public bool InvaildDestroy = false;
     [FoldoutGroup("总体控制", expanded: false)]
-    [LabelText("涉及全局速度")]
+    [Tooltip("涉及全局速度")]
     public bool UseGlobalSpeed = true;
     [FoldoutGroup("总体控制", expanded: false)]
-    [LabelText("于特别情况暂停运动")]
+    [Tooltip("于特别情况暂停运动")]
     public bool StopOnSpecialSituation;
     [FoldoutGroup("标记", expanded: false)]
-    [LabelText("子弹Tag")]
+    [Tooltip("子弹Tag")]
     [Multiline]
     public string Tag = "";
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("子弹运动速度")]
+    [Tooltip("子弹运动速度")]
     public float Speed = 1f;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("子弹运动加速度")]
+    [Tooltip("子弹运动加速度")]
     public float AcceleratedSpeed = 0f;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("轨迹长度")]
+    [Tooltip("轨迹长度")]
     public int TrailLength = 20;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("轨迹刷新速度")]
+    [Tooltip("拖尾刷新速度")]
     public float TrailUpdate = 1;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("平滑改变子弹速度")]
+    [Tooltip("平滑改变子弹速度")]
     public bool ChangeSpeedSmoothly = false;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("子弹速度插值速度")]
+    [Tooltip("子弹速度插值速度")]
     public float ChangeSpeedPercentage = 0.05f;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("速度插值方式")]
+    [Tooltip("速度插值方式")]
     public MoveCurves SpeedSmoothType = MoveCurves.Lerp;
     [HideInInspector]
     public Vector2 AcceleratedSpeedDirectionNow; // 目前的加速度方向
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("全局加速度方向")]
+    [Tooltip("全局加速度方向")]
     public Vector2 AcceleratedSpeedDirectionPer; //每秒更换的加速度方向。
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("子弹速度方向")]
+    [Tooltip("子弹速度方向")]
     public float Rotation = 0f; // 子彈旋轉方向，也會影響相關的旋轉方向。會影響EngleAngle的值
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("子弹角速度")]
+    [Tooltip("子弹角速度")]
     public float AcceleratedRotation = 0f;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("平滑改变角速度")]
+    [Tooltip("平滑改变角速度")]
     public bool ChangeRotationSmoothly = false;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("角速度插值速度")]
+    [Tooltip("角速度插值速度")]
     public float ChangeRotationPercentage = 0.05f;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("角速度插值方式")]
+    [Tooltip("角速度插值方式")]
     public MoveCurves RotationSmoothType = MoveCurves.Lerp;
-    [FoldoutGroup("运行状况", expanded: false)]
-    [LabelText("碰撞半径")]
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("碰撞半径")]
     public float Radius = 0.09f;
     [HideInInspector]
     public int SpriteIndex = 0;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("子弹年龄")]
+    [Tooltip("子弹年龄")]
     public float TotalLiveFrame = 0;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("已经擦弹")]
+    [Tooltip("已经擦弹")]
     public bool Grazed = false;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("时刻瞄准玩家")]
+    [Tooltip("时刻瞄准玩家")]
     public bool AimToPlayer = false;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("不进行销毁")]
+    [Tooltip("不进行销毁")]
     public bool DonDestroy = false;
     [FoldoutGroup("运动状况", expanded: false)]
-    [LabelText("使用轨迹")]
+    [Tooltip("使用轨迹")]
     public bool showTrails = false;
+    [HideInInspector]
     public Vector2 BulletPos;
     private Vector2 bulletPos;
     [FoldoutGroup("全局开关", expanded: false)]
-    [LabelText("使用子弹")]
+    [Tooltip("使用子弹")]
     public bool Use = false;
-
+    [FoldoutGroup("对象集", expanded: false)]
+    [Tooltip("简易子弹轨迹加工器")]
     public List<BulletTrackProduct> bulletTrackProducts = new List<BulletTrackProduct>();
-    
-    // public Shooting ParentShooting;
-    [Title("引用对象")]
+    [FoldoutGroup("对象集", expanded: false)]
+    [Tooltip("子弹携带对象发射器集合")]
     public Shooting[] BulletShooting; //子弹发射器。
+    [FoldoutGroup("标志信息", expanded: false)]
+    [Tooltip("子弹序列号")]
     public int BulletIndex = -1;
-    public Sprite BulletSprite;
+    [FoldoutGroup("对象重要引用", expanded: false)]
+ 
+    public Sprite BulletSprite
+    {
+        get { return BulletSprite; }
+        set { ChangeSprite(value); }
+
+    }
+    [FoldoutGroup("对象重要引用", expanded: false)]
+    [Tooltip("子弹渲染器")]
     public SpriteRenderer BulletSpriteRenderer;
+    [FoldoutGroup("对象集", expanded: false)]
+    [Tooltip("触发器集合")]
     public List<Trigger> TriggerList = new List<Trigger>();
+    [FoldoutGroup("标志信息", expanded: false)]
+    [Tooltip("子弹销毁颜色")]
     public Color BrokenBulletColor = Color.white;
+    [FoldoutGroup("标志信息", expanded: false)]
+    [Tooltip("子弹默认颜色")]
     public Color BulletColor = Color.white;
+    [FoldoutGroup("对象重要引用", expanded: false)]
+    [Tooltip("子弹渲染器对应对象")]
     public GameObject BulletSpriteController;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("启用碰撞")]
     public bool UseCollision = false;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("启用自定义碰撞器")]
     public bool UseCustomCollisionGroup = false;
+    [FoldoutGroup("对象重要引用", expanded: false)]
+    [Tooltip("自定义碰撞器对应对象")]
     public GameObject CustomCollisionGroupMainController;
+    [FoldoutGroup("对象重要引用", expanded: false)]
+    [Tooltip("拖尾渲染对象")]
     public GameObject Trail;
+    [FoldoutGroup("对象重要引用", expanded: false)]
+    [Tooltip("拖尾渲染发射器")]
     public Shooting TrailShooting;
+    [FoldoutGroup("对象集", expanded: false)]
+    [Tooltip("自定义碰撞器集合")]
     public CustomCollision[] CustomCollisionGroup;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("碰撞模式")]
     public CollisionType BulletCollision = CollisionType.CIRCLE;
+    [FoldoutGroup("标志信息", expanded: false)]
+    
     public enum MoveCurves { Line = 0, Lerp = 1 }
+    [FoldoutGroup("标志信息", expanded: false)]
+    [Tooltip("碰撞矩阵矢量")]
     public Vector2 SquareLength;
     //public Vector2 SquarePoint;
+    [FoldoutGroup("标志信息", expanded: false)]
+    [Tooltip("子弹缩放")]
     public Vector2 Scale;
+    [FoldoutGroup("对象重要引用", expanded: false)]
+    [Tooltip("形状形成追踪器")]
     public TrackData trackData;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("销毁动画名称")]
     public string BulletBreakingAnimationName = "BulletBreak";
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("静态子弹")]
     public bool StaticBullet;
-    public bool StayCollision; public bool StayBulletEvent;
-    public bool ScaleUpdate,RotationUpdate,StayAnimPlayer,StayTrigger;
+    [ShowIf("StaticBullet")]
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("静态子弹 - 处理碰撞")]
+    public bool StayCollision;
+    [ShowIf("StaticBullet")]
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("静态子弹 - 处理子弹事件")]
+    public bool StayBulletEvent;
+    [ShowIf("StaticBullet")]
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("静态子弹 - 处理缩放更新")]
+    public bool ScaleUpdate;
+    [ShowIf("StaticBullet")]
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("静态子弹 - 处理旋转更新")]
+    public bool RotationUpdate;
+    [ShowIf("StaticBullet")]
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("静态子弹 - 允许动画更新")]
+    public bool StayAnimPlayer;
+    [ShowIf("StaticBullet")]
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("静态子弹 - 处理触发器")]
+    public bool StayTrigger;
     public enum CollisionType { BOX = 0, CIRCLE = 1, NONE = 2 }
-    public bool UseForceComponent, UseTriggerComponent;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("使用力场组件")]
+    public bool UseForceComponent;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("使用触发器组件")]
+    public bool UseTriggerComponent;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("扭曲旋转计算")]
     public bool TwistedRotation = false;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("子弹图像不受速度方向影响")]
     public bool InverseRotation = false;
+    [ShowIf("InverseRotation")]
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("子弹图像旋转度")]
     public float InverseRotateDirection = 0;
+
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("出屏销毁")]
     public bool DestroyWhenDontRender = false;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("无销毁动画")]
     public bool NoDestroyAnimation;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("创建动画播放时无判定")]
     public bool NoCollisionWhenCreateAnimationPlaying = false;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("透明度低时无判定")]
     public bool NoCollisionWhenAlphaLow;
+[HideInInspector]
     public bool UseCustomAnimation;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("启动全局加速偏移")]
     public bool EnabledAcceleratedGlobalOffset;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("启动全局偏移")]
     public bool EnabledGlobalOffset;
-    public AnimationController animationController;
-    public bool ChangeInverseRotation = false;
-    public bool DonDestroyIfMasterDestroy = false;
-    public List<Sprite> BulletFramesSprites = new List<Sprite>();
-    public bool UseForce;
-    public bool UseAlphaWithDepth;
-    public float delayBulletEventRunTime = 0;
-    public bool UseSimpleEvent = false;
-    public float minDepth;
-    public float maxDepth;
-    public List<Force> ForceObject = new List<Force>();
-    public int nextFramewaitTime = 3;
-    public int ID = 0;
-    public int BarrageBatch = 0;
-    // --------------------------- temp value --------------------------------
-    public bool CreateAnimationPlayed = false;
-    public int ReadPointTrackSpeed;
     [HideInInspector]
-    public float Pos_X, Pos_Y;
+    public AnimationController animationController;
+    [HideInInspector]
+    public bool ChangeInverseRotation = false;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("不销毁当父级子弹销毁时")]
+    public bool DonDestroyIfMasterDestroy = false;
+    [FoldoutGroup("对象集", expanded: false)]
+    [Tooltip("子弹帧图像")]
+    public List<Sprite> BulletFramesSprites = new List<Sprite>();
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("使用力场")]
+    public bool UseForce;
+    [FoldoutGroup("对象集", expanded: false)]
+    [Tooltip("力场集合")]
+    public List<Force> ForceObject = new List<Force>();
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("深度与透明度挂钩")]
+    public bool UseAlphaWithDepth;
+    [ShowIf("UseAlphaWithDepth")]
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("最低深度")]
+    public float minDepth;
+    [ShowIf("UseAlphaWithDepth")]
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("最大深度")]
+    public float maxDepth;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("延迟子弹曲线事件执行时间")]
+    public float delayBulletEventRunTime = 0;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("启用简易轨迹")]
+    public bool EnableSimpleTrack = false;
+
+
+    [FoldoutGroup("总体控制", expanded: false)]
+    [Tooltip("启用简易轨迹")]
+    public int nextFramewaitTime = 3;
+    [FoldoutGroup("标志信息", expanded: false)]
+    [Tooltip("实例ID")]
+    public int ID = 0;
+    [FoldoutGroup("标志信息", expanded: false)]
+    [Tooltip("子弹批次")]
+    public int BarrageBatch = 0;
+   [HideInInspector]
+    public bool CreateAnimationPlayed = false;
+    [HideInInspector]
+    public int ReadPointTrackSpeed;
+
     [HideInInspector]
     public BezierDrawer BezierPointTrack;
+    [HideInInspector]
     public bool FilpX, FilpY;
     private bool isEditor;
+    [HideInInspector]
     public List<AnimationCurve> SingleParmCurve = new List<AnimationCurve>();
     float characterBulletDistance = 0;
 
@@ -667,60 +793,71 @@ public class Bullet : STGComponent
     public event Shooting.BulletDelegateDelay BulletEventOnDestroyingPlayerDelay;
 
   //  public Animator AnimationControl;
+    
     Vector3 RotationVector = Vector3.zero;
+    [HideInInspector]
     public float TargetSpeed = 0;
+    [HideInInspector]
     public float TargetRotation = 0;
+    [HideInInspector]
     public Transform Parent;
     [HideInInspector]
     public bool AsSubBullet;
     [HideInInspector]
-    public Bullet[] SubBullet;
+    private Bullet[] SubBullet;
+    [HideInInspector]
     public List<Shooting> ShootingRef = new List<Shooting>();
-    [Header("必填项")]
+   [HideInInspector]
     public Character PlayerCharacter;
+    [HideInInspector]
     public PlayerController Player;
-    public Vector2 Zero = Vector2.zero;
+    [HideInInspector]
     public GameObject OtherObject;
+    [FoldoutGroup("对象集", expanded: false)]
+    [LabelText("销毁动画序列帧")]
     public List<Sprite> DestroyAnimSprites = new List<Sprite>();
+    [HideInInspector]
     public List<bool> trackInfoSign = new List<bool>();
+    [HideInInspector]
     public bool DestroyMode = false;
-    public float countingTime = 0;
+    [HideInInspector]
+    private float countingTime = 0;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [LabelText("携带对象旋转度与子弹速度方向一致")]
     public bool FollowObjectWithSameAngle;
     [SerializeField]
+    [HideInInspector]
+    [LabelText("子弹曲线事件命令集")]
     public List<CommandController> CommandList = new List<CommandController>();
-    /*
-    public Vector2 velocity;
-    public Vector2 Velocity { 
-        get { return Velocity; }
-        set { velocity = value;
-            Speed = value.magnitude;
-            Rotation = (value.x >= (Quaternion.Euler(0,0,Rotation) * Vector2.up).x)
-            ? Vector2.Angle(Vector2.up,value) + 180:  Vector2.Angle(Vector2.up, value);
-            Debug.Log(Rotation.ToString());
-        }
-    }*/
+
     private int _Index;
     private float _timeCount;
     private float orginalSpeed, orginalRotation, BulletanimSpeed;
     private float _readTrack = 0;
-    public bool trackLerpBegin = false;
+    [HideInInspector]
+    private bool trackLerpBegin = false;
     private float trackLength = 0;
-    public float trackCount = 0;
+    [HideInInspector]
+    private float trackCount = 0;
     private float trackPercent = 0;
     private float RotationTemp = 0;
     private bool filpX, filpY;
 
     [HideInInspector]
     public float OriSpd = 0;
+    [HideInInspector]
     public Vector3 originalPatternPos;
     private Vector3 lerpPos;
-    public List<bool> inTrigger = new List<bool>();
-    public List<float> inStayTrigger = new List<float>();
-    public List<int> enterTimeTrigger = new List<int>();
-
+    public  List<bool> inTrigger = new List<bool>();
+    private List<float> inStayTrigger = new List<float>();
+    private List<int> enterTimeTrigger = new List<int>();
+    [HideInInspector]
     public Transform BulletTransform;
+    [HideInInspector]
     public Transform SpriteTransform;
+    [HideInInspector]
     public bool EnableBulletEvent;
+    [HideInInspector]
     public Vector2 defSpeed;
     [HideInInspector]
     public int shootingIndex = 0;
@@ -730,6 +867,9 @@ public class Bullet : STGComponent
     public const int UnitScale = 100;
     public enum EventList_Bullets { ONUSING = 1, ONDESTROYED = 2, ONRESTORE_MAINLEVEL = 3, ONMOVING = 4 }
     // --------------------------   Function --------------------------------- 
+    
+    [FoldoutGroup("总体控制", expanded: false)]
+    [LabelText("动画标记帧总数")]
     public float signedFrame = 0;
     public void ClearEventsList(EventList_Bullets t)
     {
@@ -756,7 +896,7 @@ public class Bullet : STGComponent
             a.Init(this);
             bulletTrackProducts.Add(a.Clone());
         }
-        UseSimpleEvent = true;
+        EnableSimpleTrack = true;
 
     }
     public void UseSimpleTrack(BulletTrackProduct product)
@@ -765,7 +905,7 @@ public class Bullet : STGComponent
         copy_product.Init(this);
         bulletTrackProducts.Add(copy_product);
 
-        UseSimpleEvent = true;
+        EnableSimpleTrack = true;
 
     }
     public void ClearAllEvent()
@@ -927,10 +1067,10 @@ public class Bullet : STGComponent
             trackLerpBegin = true;
         }
         else {
-            Debug.Log("TRUE");
+            Debug.LogError("Can not move target with lerp. Because of invailded track data");
            }
     }
-    public Vector3 CalcateLerpPos(float t)
+    private Vector3 CalcateLerpPos(float t)
     {
         if (trackData != null)
         {
@@ -975,6 +1115,7 @@ public class Bullet : STGComponent
         P1.Rotation = Vector2.SignedAngle(Vector2.up, re);
         //Debug.Log (P2);
     }
+
     public void Rebound(Bullet P1, Vector2 normal)
     {
 
@@ -1140,8 +1281,10 @@ public class Bullet : STGComponent
 
     }
     //  private float rotation = 0, rotate =0;
-
+    [HideInInspector]
     public bool EnableFollow = true;
+    [FoldoutGroup("总体控制", expanded: false)]
+    [LabelText("启动拖尾")]
     public bool EnableTrail;
     internal bool useDefaultSprite;
 
@@ -1150,6 +1293,8 @@ public class Bullet : STGComponent
     public bool LoopTrack { get; internal set; }
     public bool CalculateAngle { get; internal set; }
     public float RotatorInAsix { get; internal set; }
+    [System.Obsolete]
+    [HideInInspector]
     public bool SubTrail;
 
     public void DestroySubBullets()
@@ -1270,7 +1415,7 @@ public class Bullet : STGComponent
             if (DestroyAnimSprites.Count == 0)
             {
                 DestroySubBullets();
-                DestroyBulletETC();
+                DestroyBulletRightNow();
             }
             else
             {
@@ -1293,7 +1438,7 @@ public class Bullet : STGComponent
                     if (UseThread)
                         StartCoroutine(BulletEventDelay(this));
                 }
-                if (UseSimpleEvent)
+                if (EnableSimpleTrack)
                 {
                     foreach (var a in bulletTrackProducts)
                     {
@@ -1450,7 +1595,7 @@ public class Bullet : STGComponent
     }
     public void UpdateState()
     {
-        if (UseSimpleEvent)
+        if (EnableSimpleTrack)
         {
             foreach (var a in bulletTrackProducts)
             {
@@ -1643,11 +1788,20 @@ public class Bullet : STGComponent
     {
         return GetComponentsInChildren<Bullet>();
     }
+    public void InitTriggerInfo() {
+        for (int i = 0; i != TriggerList.Count; ++i)
+        {
+            inTrigger.Add(false);
+            inStayTrigger.Add(0);
+            enterTimeTrigger.Add(0);
+
+        }
+    }
     /// <summary>
     /// 销毁子弹的最终函数，将彻底销毁子弹，重置所有数据。间接由DestroyBullet调用，也可在某些特殊情形直接调用。
     /// </summary>
     /// <returns></returns>
-    public void DestroyBulletETC()
+    public void DestroyBulletRightNow()
     {
         BulletIndex = -1;
         DestroyMode = false;
@@ -1668,7 +1822,7 @@ public class Bullet : STGComponent
         SubBullet = A;
         ScaleUpdate = false;
         RotationUpdate = false;
-        SubTrail = false;
+       // SubTrail = false;
         StaticBullet = false;
         StayTrigger = false;
         StayCollision = false;
@@ -1684,7 +1838,7 @@ public class Bullet : STGComponent
         AcceleratedRotation = 0f;
         Radius = 0f;
         SpriteIndex = 0;
-        UseSimpleEvent = false;
+        EnableSimpleTrack = false;
         MaxLiveFrame = 200;
         delayBulletEventRunTime = 0;
         CreateAnimationPlayed = false;
@@ -1731,7 +1885,7 @@ public class Bullet : STGComponent
         Scale = Vector3.one;
         BulletSprite = null;
         CreateAnimationPlayed = false;
-        noDestroy = false;
+        InvaildDestroy = false;
         UseCustomAnimation = false;
         nextFramewaitTime = 0;
         Rotation = 0;
