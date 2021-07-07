@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using System.Runtime.CompilerServices;
+
 /// <summary>
 /// 可视化编程使用。在可视化编程中，本类可缩减节点数量，提高子弹刷新事件的执行效率。在子弹创建时事件使用它。为了更方便将CrazyStorm融合到本框架中，这一个类的操作方式与CS类似。
 /// </summary>
@@ -28,6 +29,7 @@ public class BulletTrackProduct
     }
     [LabelText("时间层")]
     public TimeLayout timeLayout;
+ 
     [LabelText("第一判据")]
     public Condition condition1 = Condition.Frame;
     [LabelText("比较方式")]
@@ -68,14 +70,17 @@ public class BulletTrackProduct
     [ShowIf("curveMethod", CurveMethod.Replace)]
     [LabelText("运算用曲线")]
     public AnimationCurve calcateCurve = AnimationCurve.EaseInOut(0,0,1,1);
-   
+
+    private AnimationCurve tempCurve;
+
     [LabelText("布尔值(如果参数为布尔值)")]
     public bool boolValue;
     [ShowIf("curveMethod", CurveMethod.Replace)]
  
     [LabelText("随机关键帧序号")]
     public int keyRandomIndex = 0;
-
+    [LabelText("整体随机")]
+    public bool entityRandom;
     [ShowIf("curveMethod", CurveMethod.Replace)]
     [LabelText("随机范围")]
     public float RandomRange = 0;
@@ -105,24 +110,31 @@ public class BulletTrackProduct
 
     private float tempArrvage;
 
-    
+
 
     public void Init(Bullet tarBullet)
     {
         bullet = tarBullet;
+        tempCurve = !entityRandom ? new AnimationCurve(calcateCurve.keys):calcateCurve;
         if (RandomRange != 0)
         {
+           
             if (toPlayer == false)
             {
-                float value = calcateCurve.keys[keyRandomIndex].value + Random.Range(-RandomRange, RandomRange);
-                float time = calcateCurve.keys[keyRandomIndex].time;
-                calcateCurve.RemoveKey(keyRandomIndex);
-                calcateCurve.AddKey(time, value);
+               
+
+
+
+                float value = tempCurve.keys[keyRandomIndex].value +  Random.Range(-RandomRange, RandomRange);
+                float time = tempCurve.keys[keyRandomIndex].time;
+                tempCurve.RemoveKey(keyRandomIndex);
+                tempCurve.AddKey(time, value);
             }
 
         }
         tempArrvage = Arrvage + Random.Range(-RandomRange, RandomRange);
         unitedArrvage = tempArrvage / changeTime;
+        
         Executed = false;
        
     }
@@ -222,11 +234,21 @@ public class BulletTrackProduct
             return;
         if (!Executed)
         {
-            tempArrvage = Arrvage + Random.Range(-RandomRange, RandomRange);
+            
+            if (RandomRange != 0)
+            {
+              
+                    RandomInfo = Random.Range(-RandomRange, RandomRange);
+                if (entityRandom)
+                    RandomInfo /= 10.0f;
+
+            }
+            tempArrvage = Arrvage + RandomInfo;
             unitedArrvage = tempArrvage / changeTime;
             executedTime = bullet.TotalLiveFrame;
             Executed = true;
             executedCount++;
+           
             if (toPlayer)
             {
                 changeToValue = false;
@@ -234,12 +256,7 @@ public class BulletTrackProduct
                 PlayerAngle = bullet.GetAimToPlayerObjectRotation();
                 //Debug.Log(PlayerAngle);
                 defRotate = bullet.Rotation;
-                if (RandomRange != 0)
-                {
-                    RandomInfo = Random.Range(-RandomRange, RandomRange);
-                    
-                   
-                }
+              
                 tempArrvage = PlayerAngle + RandomInfo;
                 unitedArrvage = tempArrvage / changeTime;
             }
@@ -248,16 +265,11 @@ public class BulletTrackProduct
                 graphValue = false;
                 float r = 0;
                 bullet.tempFloatPairs.TryGetValue(valueName, out r);
-                int length = calcateCurve.keys.Length;
-                float time = calcateCurve.keys[length - 1].time;
-                calcateCurve.RemoveKey(length - 1);
-                calcateCurve.AddKey(time, r);
-                if (RandomRange != 0)
-                {
-                    RandomInfo = Random.Range(-RandomRange, RandomRange);
-                   
-
-                }
+                int length = tempCurve.keys.Length;
+                float time = tempCurve.keys[length - 1].time;
+                tempCurve.RemoveKey(length - 1);
+                tempCurve.AddKey(time, r + RandomInfo);
+             
                 tempArrvage = r + RandomInfo;
                 unitedArrvage = tempArrvage / changeTime;
             }
@@ -269,19 +281,15 @@ public class BulletTrackProduct
                 int index = 0;
                 Graph.valueNode.TryGetValue(globalValueName, out index);
                 r = (float)Graph.nodes[index].GetOutputPort("变量值").GetOutputValue();
-                int length = calcateCurve.keys.Length;
-                float time = calcateCurve.keys[length - 1].time;
-                calcateCurve.RemoveKey(length - 1);
-                calcateCurve.AddKey(time, r);
-                if (RandomRange != 0)
-                {
-                    RandomInfo = Random.Range(-RandomRange, RandomRange);
-
-
-                }
+                int length = tempCurve.keys.Length;
+                float time = tempCurve.keys[length - 1].time;
+                tempCurve.RemoveKey(length - 1);
+                tempCurve.AddKey(time, r + RandomInfo);
+               
                 tempArrvage = r + RandomInfo;
                 unitedArrvage = tempArrvage / changeTime;
             }
+          
         }
 
         float a = bullet.TotalLiveFrame, b = executedTime, c = changeTime;
@@ -291,6 +299,7 @@ public class BulletTrackProduct
             Executed = false;
             return;
         }
+          
         switch (valueOperator)
         {
             case Operator.Direction:
@@ -350,10 +359,10 @@ public class BulletTrackProduct
         {
             case CurveMethod.Replace:
                 if (toPlayer == false)
-                    value = calcateCurve.Evaluate(percent);
+                    value = tempCurve.Evaluate(percent);
                 else
                 {
-                    value = Mathf.Lerp(defRotate, ((PlayerAngle + RandomInfo)), calcateCurve.Evaluate(percent));
+                    value = Mathf.Lerp(defRotate, ((PlayerAngle + RandomInfo)), tempCurve.Evaluate(percent));
                     //Debug.Log(percent);
                 }
                 break;
@@ -389,7 +398,7 @@ public class BulletTrackProduct
         switch (curveMethod)
         {
             case CurveMethod.Replace:
-                r = calcateCurve.Evaluate(percent);
+                r = tempCurve.Evaluate(percent);
                 break;
             case CurveMethod.Add:
                 r += unitedArrvage;
@@ -431,7 +440,7 @@ public class BulletTrackProduct
         switch (curveMethod)
         {
             case CurveMethod.Replace:
-                r = calcateCurve.Evaluate(percent);
+                r = tempCurve.Evaluate(percent);
                 break;
             case CurveMethod.Add:
                 r += unitedArrvage;
@@ -598,13 +607,9 @@ public class Bullet : STGComponent
     [Tooltip("子弹序列号")]
     public int BulletIndex = -1;
     [FoldoutGroup("对象重要引用", expanded: false)]
- 
-    public Sprite BulletSprite
-    {
-        get { return BulletSprite; }
-        set { ChangeSprite(value); }
 
-    }
+    public Sprite BulletSprite;
+    
     [FoldoutGroup("对象重要引用", expanded: false)]
     [Tooltip("子弹渲染器")]
     public SpriteRenderer BulletSpriteRenderer;
@@ -641,7 +646,7 @@ public class Bullet : STGComponent
     [FoldoutGroup("总体控制", expanded: false)]
     [Tooltip("碰撞模式")]
     public CollisionType BulletCollision = CollisionType.CIRCLE;
-    [FoldoutGroup("标志信息", expanded: false)]
+
     
     public enum MoveCurves { Line = 0, Lerp = 1 }
     [FoldoutGroup("标志信息", expanded: false)]
@@ -889,23 +894,24 @@ public class Bullet : STGComponent
         }
     }
     public void UseSimpleTrack(List<BulletTrackProduct> products) {
-      
-      
+        if (products.Count < 1)
+            return;     
         foreach (var a in products)
         {
-            a.Init(this);
-            bulletTrackProducts.Add(a.Clone());
+            bulletTrackProducts.Add(UseSimpleTrack(a));
         }
-        EnableSimpleTrack = true;
 
     }
-    public void UseSimpleTrack(BulletTrackProduct product)
+    
+    public BulletTrackProduct UseSimpleTrack(BulletTrackProduct product)
     {
         BulletTrackProduct copy_product = product.Clone();
+
         copy_product.Init(this);
         bulletTrackProducts.Add(copy_product);
 
         EnableSimpleTrack = true;
+        return copy_product;
 
     }
     public void ClearAllEvent()

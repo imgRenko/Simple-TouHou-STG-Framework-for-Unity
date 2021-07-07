@@ -66,6 +66,7 @@ public class STGComponent : MonoBehaviour
     public Dictionary<string, List<Enemy>> tempEnemyListPairs = new Dictionary<string, List<Enemy>>();
 
     public Dictionary<string, List<AnimationCurve>> tempCurveListPairs = new Dictionary<string, List<AnimationCurve>>();
+   
     public Dictionary<string, AnimationCurve> tempCurvePairs = new Dictionary<string,AnimationCurve> ();
 
     protected void ClearAll() {

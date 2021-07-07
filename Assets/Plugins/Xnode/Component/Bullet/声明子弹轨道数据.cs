@@ -45,11 +45,7 @@ namespace 基础事件.子弹
 				r.keyRandomIndex = 要随机关键帧序号;
 				r.operationMaxTime = 使用次数;
 			}
-	
-			r.Init(子弹);
-			
-			子弹.bulletTrackProducts.Add(r);
-			子弹.EnableSimpleTrack = true;
+			子弹.UseSimpleTrack(r);
 			ConnectDo("退出节点");
 
 		}
