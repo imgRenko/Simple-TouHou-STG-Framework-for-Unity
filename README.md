@@ -29,7 +29,7 @@ When you use the visual script of this framework, you can open this application 
 
 ## TODO Next
 Make MBG file be able to play in this framework.  
-Attention : MGB is the extention of application called Crazy Storm.  
+Attention : MGB is the extention of application called Crazy Storm. A visual barrage designer application  
 
 
 # Image
