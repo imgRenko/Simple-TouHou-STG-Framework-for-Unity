@@ -28,8 +28,8 @@ If you need to use the live 2D model in this framework, you can use the live 2D 
 When you use the visual script of this framework, you can open this application faster from the live2d node.  
 
 ## TODO Next
-Make mbg file be able to play in this framework.  
-Attention : MBG is the extention of application called Crazy Storm.  
+Make MBG file be able to play in this framework.  
+Attention : MGB is the extention of application called Crazy Storm.  
 
 
 # Image
