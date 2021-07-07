@@ -19,7 +19,11 @@
 
 # 好像还能用一些辅助软件？？
 若你在此框架中需要使用Live2D模型，那么可以使用Live2D模型动画编辑器，使编辑动画更加容易（此软件更适合一些独立团队）  
-[imgRenko Blog Live2D Animation Editor](https://imgrenko.gitee.io/2020/09/16/Live2DAnimationEditor/)
+[imgRenko Blog Live2D Animation Editor](https://imgrenko.gitee.io/2020/09/16/Live2DAnimationEditor/)  
+## 下一步
+适配mbg，使其可在此框架中播放。  
+注意：MBG是应用程序Crazy Storm的特有扩展名。  
+
 # 使用的一些插件
 * 1. [Siccity - xNode](https://github.com/Siccity/xNode)  
 * 2. Odin Inspector  
