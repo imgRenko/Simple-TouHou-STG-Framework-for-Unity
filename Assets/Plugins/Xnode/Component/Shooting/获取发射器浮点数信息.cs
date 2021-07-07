@@ -81,7 +81,7 @@ case ShootingEnumData.圆形弹幕半径:
 结果=发射器.Radius;
 break;
 case ShootingEnumData.圆形弹幕半径自增值:
-结果=发射器.RadiusIncrement;
+结果=发射器.RadiusWayIncrement;
 break;
 case ShootingEnumData.圆形弹幕半径随机范围:
 结果=发射器.RadiusOffset;

@@ -131,7 +131,10 @@ public class Shooting : STGComponent
     // 将子弹创建在以该Radius为半径的圆上。
     [FoldoutGroup("发射器属性/发射形状属性 -- 圆", expanded: false)]
     [LabelText("圆形弹幕半径自增值")]
-    public float RadiusIncrement = 0;
+    public float RadiusShotIncrement = 0;
+    [FoldoutGroup("发射器属性/发射形状属性 -- 圆", expanded: false)]
+    [LabelText("圆形弹幕半径逐条自增值")]
+    public float RadiusWayIncrement = 0;
     [FoldoutGroup("发射器属性/发射形状属性 -- 圆", expanded: false)]
     [Tooltip("令Radius参数产生随机数，偏移大小下面的RadiusOffset来决定")]
     [LabelText("允许圆形弹幕使用随机半径参数")]
@@ -812,6 +815,11 @@ public class Shooting : STGComponent
             DestroyImmediate(a.gameObject);
         }
     }
+    [ButtonGroup]
+    public void ResetOriginalInfo() {
+        ResetOrginalData();
+    }
+
     private static Vector2 defaultVector;
     private int TotalShotBatch = 0;
     [HideInInspector]
@@ -1047,7 +1055,7 @@ public class Shooting : STGComponent
         object p = this;
         foreach (var pi in properties)
         {
-            if (pi.Name == "ShootingOrginalData" || pi.Name =="thisTransform" || pi.Name == "rollBack") continue;
+            if (pi.Name == "ShootingOrginalData" || pi.Name =="thisTransform" || pi.Name == "rollBack" ) continue;
             object value = pi.GetValue(o);
             pi.SetValue(p, value);
 
@@ -1144,7 +1152,8 @@ public class Shooting : STGComponent
             Angle = rotation;
             Angle = Mathf.Clamp(Angle, MinAngle, MaxAngle);
         }
-        Angle = Angle % 360.0f;
+        Angle = Angle % 360.0f; 
+        Radius += RadiusShotIncrement;
         float thisRadius = Radius;
         if (AngleIncreament != 0 && UseRandomAngle == false)
             Angle += AngleIncreament;
@@ -1168,7 +1177,7 @@ public class Shooting : STGComponent
                 }
                 if (useEllipse == false)
                 {
-                    thisRadius += RadiusIncrement;
+                    thisRadius += RadiusWayIncrement;
                 }
                 if (Global.GameObjectPool_A == null)
                     break;
@@ -1661,7 +1670,7 @@ public class Shooting : STGComponent
     public override void UpdateInfo()
     {
         
-        _soundTimeCount += Global.GlobalSpeed;
+       
         if (Global.GamePause || Canceled)
             return;
         if (Global.WrttienSystem && IgnorePlot == false)
@@ -1676,7 +1685,7 @@ public class Shooting : STGComponent
         UseShootingUsingEvent();
         TotalFrame += Global.GlobalSpeed * Global.GlobalBulletSpeed;
         _shootingTimer += 1 * Global.GlobalSpeed;
-
+        _soundTimeCount += Global.GlobalSpeed;
 
 
 
@@ -1711,7 +1720,7 @@ public class Shooting : STGComponent
             ShotEvent ();
             ShootWhenStart = false;
         }*/
-        if (TotalFrame >= MaxLiveFrame + (CaluateDelayToPercent ? Delay : 0))
+        if (TotalFrame > MaxLiveFrame + (CaluateDelayToPercent ? Delay : 0))
         {
             if (rollBack)
             {
@@ -1741,7 +1750,7 @@ public class Shooting : STGComponent
                 CanShoot = true;
                 TotalFrame = 0;
                 ShotIndex = 0;
-                _shootingTimer -= Timer;
+                _shootingTimer = 0;
             }
         }
     }

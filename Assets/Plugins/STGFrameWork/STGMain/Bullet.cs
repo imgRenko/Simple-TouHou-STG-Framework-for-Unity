@@ -172,6 +172,7 @@ public class BulletTrackProduct
     private float frameCount;
     public void UpdateValue()
     {
+        
         if (conditionIncrementInterval != 0)
         {
             frameCount += Global.GlobalSpeed;

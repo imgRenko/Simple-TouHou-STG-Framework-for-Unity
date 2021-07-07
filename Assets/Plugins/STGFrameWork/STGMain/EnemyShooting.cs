@@ -161,6 +161,7 @@ public class EnemyShooting : Shooting  {
             Angle = Mathf.Clamp(Angle, MinAngle, MaxAngle);
         }
         Angle = Angle % 360;
+        Radius += RadiusShotIncrement;
         float radiusT = Radius;
         if (AngleIncreament != 0 && UseRandomAngle == false)
             Angle += AngleIncreament;
@@ -169,7 +170,7 @@ public class EnemyShooting : Shooting  {
         {
             if (useEllipse == false)
             {
-                radiusT += RadiusIncrement;
+                radiusT += RadiusWayIncrement;
             }
             if (Global.GameObjectPool_A == null)
                 break;

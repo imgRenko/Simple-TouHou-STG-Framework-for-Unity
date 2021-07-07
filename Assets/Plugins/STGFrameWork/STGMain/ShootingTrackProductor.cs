@@ -11,12 +11,35 @@ public class ShootingTrackProductor : MonoBehaviour
     private Bullet _temp;
     private Vector3 Origin;
     private ShootingTrackDisplayer displayer;
+    void ResetTimeLayout(TimeLayout[] Layouts)
+    {
+
+        foreach (var t in Layouts)
+        {
+                t.totalFrame = 0;
+        }
+    }
+    void UpdateTimeLayout(TimeLayout[] Layouts) {
+     
+        foreach (var t in Layouts)
+        {
+            t.totalFrame++;
+            if (t.loop && t.totalFrame >= t.maxFrame)
+                t.totalFrame = 0;
+        }
+    }
     void Cosplay()
     {
         trackFollower.transform.Translate(new Vector2(0, Tracker.Radius), Space.Self);
        // _temp.Speed = Tracker.Speed;
         ///_temp.Rotation = Tracker.Angle;
         BulletEvent[] _l = GetComponents<BulletEvent>();
+        TimeLayout[] _timeLayout = GetComponents<TimeLayout>();
+        TimeLayout[] _timeLayoutPar = GetComponentsInParent<TimeLayout>(true);
+        TimeLayout[] _timeLayoutChlids = GetComponentsInChildren<TimeLayout>(true);
+        ResetTimeLayout(_timeLayout);
+        ResetTimeLayout(_timeLayoutPar);
+        ResetTimeLayout(_timeLayoutChlids);
         foreach (BulletEvent a in _l)
         {
             a.AddEvent();
@@ -29,6 +52,9 @@ public class ShootingTrackProductor : MonoBehaviour
             BulletEventWhenBulletCreate(_temp);
         for (int i = 0; i != _temp.MaxLiveFrame; ++i)
         {
+            UpdateTimeLayout(_timeLayout);
+            UpdateTimeLayout(_timeLayoutPar);
+            UpdateTimeLayout(_timeLayoutChlids);
             if (BulletEvent != null)
                 BulletEvent(_temp);
             _temp.TotalLiveFrame++;
@@ -76,14 +102,14 @@ public class ShootingTrackProductor : MonoBehaviour
         trackFollower.transform.localPosition = Vector3.zero;
         _temp.Speed = Tracker.Speed;
         // t.transform.eulerAngles = new Vector3(0, 0, index * addRotation);
-        _temp.Rotation = Tracker.Angle+(index +1)* addRotation+ Tracker.AngleIncreament *index;
+        _temp.Rotation = Tracker.Angle+(index +1)* addRotation;
         Vector2 _positon = _temp.transform.position;
         Vector2 original =  Tracker.transform.position;
    
 
         _temp.transform.localRotation = Quaternion.Euler(0, 0, _temp.Rotation);
         if (!Tracker.useEllipse)
-            _temp.transform.Translate(Vector2.up * (Tracker.Radius + Tracker.RadiusIncrement * index), Space.Self);
+            _temp.transform.Translate(Vector2.up * (Tracker.Radius + Tracker.RadiusWayIncrement * index), Space.Self);
         else
         {
             _positon = Quaternion.AngleAxis(Tracker.ellipseRotation, original) * _positon;
