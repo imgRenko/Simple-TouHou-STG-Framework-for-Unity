@@ -15,11 +15,11 @@
 第二步，修复丢失的美术资源引用。将美术资源引用修复完毕后，此框架即可正常使用。  
 
 # 如何使用这个框架
-[imgRenko Blog STG框架使用教程](https://imgrenko.gitee.io/2021/03/12/TouHouSTGFrameWorkTutorials/)，此页面将说明此框架的使用方法，<font size = 1>(但是还没写完………………)</font>
+[imgRenko Blog STG框架使用教程](https://blog.imgrenko.co/2021/03/12/TouHouSTGFrameWorkTutorials/)，此页面将说明此框架的使用方法，<font size = 1>(但是还没写完………………)</font>
 
 # 好像还能用一些辅助软件？？
 若你在此框架中需要使用Live2D模型，那么可以使用Live2D模型动画编辑器，使编辑动画更加容易（此软件更适合一些独立团队）  
-[imgRenko Blog Live2D Animation Editor](https://imgrenko.gitee.io/2020/09/16/Live2DAnimationEditor/)  
+[imgRenko Blog Live2D Animation Editor](https://blog.imgrenko.co/2020/09/16/Live2DAnimationEditor/)  
 ## 下一步
 适配mbg，使其可在此框架中播放。  
 注意：MBG是应用程序Crazy Storm的特有扩展名。  
