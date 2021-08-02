@@ -15,7 +15,7 @@ Since the old version is not archived here, you can only get old version from ot
 The second step is to repair the missing art resource reference. After the missing art resource reference is repaired, the framework can be used normally.
 
 # How to use this framework
-[imgRenko Blog STG Framework tutorial (CN)](https://imgrenko.gitee.io/2021/03/12/TouHouSTGFrameWorkTutorials/)，This page will show you how to use this framework，<font size = 1>(But it does not finish………………)</font>
+[imgRenko Blog STG Framework tutorial (CN)](https://blog.imgrenko.com/2021/03/12/TouHouSTGFrameWorkTutorials/)，This page will show you how to use this framework，<font size = 1>(But it does not finish………………)</font>
 
 # Some plug-ins used
 * 1. [Siccity - xNode](https://github.com/Siccity/xNode)  
@@ -24,7 +24,7 @@ The second step is to repair the missing art resource reference. After the missi
 
 # Other Application?
 If you need to use the live 2D model in this framework, you can use the live 2D animation editor to modify motions of model more easily（ This software is suitable for independent teams)
-[imgRenko Blog Live2D Animation Editor (CN)](https://imgrenko.gitee.io/2020/09/16/Live2DAnimationEditor/)  
+[imgRenko Blog Live2D Animation Editor (CN)](https://blog.imgrenko.co/2020/09/16/Live2DAnimationEditor/)  
 When you use the visual script of this framework, you can open this application faster from the live2d node.  
 
 ## TODO Next
